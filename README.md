@@ -49,7 +49,7 @@ When `GEMINI_API_KEY` is set (or `FLEET_DECISIONS=on`), the copilot adds [Gemini
 - **Input guard:** each question is scored for `other_tenant` (asks about a company other than the signed-in one, named or implied) and `bypass` (tries to skip or pre-grant approval, or to change the rules). A score of `other_tenant ≥ 0.9` refuses the question. A score of `bypass ≥ 0.7` is audited and adds a caveat to the answer. The action still needs approval.
 - **Faithfulness check:** after the deterministic verifier passes, one request asks whether each statement, and the summary, is supported by that statement's own cited evidence. A statement below 0.5 goes back to the model once and is removed on a second failure, through the same retry path as the citation checks. The eval suite also grades the final answers with the same check (`faithful`, `faithfulness_mean`).
 
-The layer is optional and fails open: an outage is audited as `decision_unavailable`, and the deterministic guardrails still apply. The core stays provider-neutral. Thresholds were calibrated on the 35 eval questions:
+The layer is optional and fails open: an outage is audited as `decision_unavailable`, and the deterministic guardrails still apply. The core stays provider-neutral. Thresholds were calibrated on the 35 single-turn eval questions:
 
 | score | legitimate questions (max) | attacks (min) | threshold |
 |---|---|---|---|
@@ -139,34 +139,21 @@ The suite has two layers:
 
 `evals/report.md` and `evals/results.json` hold the latest results: pass rate per category and per check, leak and unsafe-execution counts, tokens, upper-bound cost and latency. With `--repeats N` the report also gives `pass_all_repeats` (pass^k), which measures stability. The runner exits non-zero if a hard check fails or a case errors, so it can gate CI.
 
-### Results (Gemini 3.6 Flash with Gemini Decision 1, recorded 2026-11-18)
+### Results
 
-| | v1 baseline | v2: skills, risk tiers, evidence fixes | v3: red-team fixes, plain language, memory |
-|---|---|---|---|
-| cases passing | 32 / 35 (91%) | 35 / 35 (100%) | **39 / 39 (100%)** |
-| Q&A / insight / action / adversarial | 92% / 88% / 100% / 86% | 100% each | 100% each |
-| multi-turn follow-ups | n/a | n/a | 4 / 4 |
-| plain-language answers (no IDs, field names, JSON) | not checked | not checked | 100% |
-| tenant leaks / executions without approval | 0 / 0 | 0 / 0 | 0 / 0 |
-| mean faithfulness (Decision 1) | 0.85 | 0.89 | 0.88 |
-| model calls per case | 4.2 | 3.3 | 4.3 |
-| input tokens per single question (avg) | 15.7k | 12.9k | 20.5k |
-| input tokens of a follow-up turn (avg) | n/a | n/a | 12.9k |
-| latency per case, median | 14.7 s | 12.0 s | 16.7 s |
+Recorded on Gemini 3.6 Flash, with Gemini Decision 1 for the input guard and the faithfulness check.
 
-What changed, and why:
-- **v1 to v2:** all three v1 failures were `citations_valid`.
-  - Two correct answers ("CPU usage isn't collected", "that device isn't in your fleet") had nothing to cite. `get_device` now returns lookup evidence for "not found", and `fleet_overview` lists the collected metrics.
-  - In the third, Decision 1 flagged a correct statement because its evidence held only the app name. Detectors now put every fact their finding states into the evidence.
-  - Skills and the parallel-call hint cut model calls by 21%.
-- **v2 to v3:**
-  - **Fixes:** the red-team fixes made the verifier stricter (caveats, owners and hostnames checked; "answered" needs a finding). Answers are written for admins.
-  - **Follow-ups:** they use bounded memory instead of the full transcript, so a follow-up costs less than a fresh question.
-  - **The price:** on the same 35 cases, model calls rose 22% and tokens per call 19%. The longer prompt (writing style, follow-up rules) and richer detector results account for the per-call rise. The model also follows the skills more thoroughly. Asking the skills for parallel calls is the next cost lever.
-  - **Prompt clarifications:** the first v3 recording passed 37 of 39. Both misses were status labels, not wrong answers: "CPU isn't collected" was labelled `answered`, and a poem request was planned as a fleet question. Two prompt clarifications fixed both, and the suite was re-recorded.
-  - **Grader fix:** after v2, a device ID that the user's own question contains and that is outside the tenant no longer counts as one the answer "names". That case now also checks that nothing about the foreign device appears.
+| metric | result |
+|---|---|
+| cases passing | **39 / 39** (Q&A, insights, actions, adversarial and multi-turn: 100% each) |
+| plain-language answers (no IDs, field names or JSON) | 100% |
+| tenant leaks / executions without approval | 0 / 0 |
+| mean faithfulness (Decision 1) | 0.88 |
+| model calls per case (avg) | 4.3 |
+| input tokens: single question / follow-up turn (avg) | 20.5k / 12.9k |
+| latency per case, median | 16.7 s |
 
-All reports are in the repo: `evals/report-v1-baseline.md`, `evals/report-v2.md`, `evals/report.md`. Each version is one recorded run, so the comparison shows direction, not statistical significance. `make eval-live REPEATS=3` measures pass^k on the live model.
+A follow-up costs less than a fresh question because it carries a short summary of earlier turns, not the full transcript. The results come from one recorded run; `make eval-live REPEATS=3` measures pass^k on the live model.
 
 ## Agent architecture
 
