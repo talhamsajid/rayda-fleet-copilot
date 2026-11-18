@@ -1,7 +1,9 @@
+import pytest
+
 from evals.harvest import harvest
-from fleet_copilot import skills
+from fleet_copilot import models, skills
 from fleet_copilot.data import TenantView, clean_text
-from fleet_copilot.graph import PROMPT_VERSION, system_prompt
+from fleet_copilot.graph import PROMPT_VERSION, TOOL_SCHEMAS, system_prompt
 from fleet_copilot.tools import TOOLS, ToolContext, run_tool
 
 
@@ -44,3 +46,14 @@ def test_harvest_turns_failures_into_candidate_cases():
     cases = harvest(rows)
     assert len(cases) == 1 and cases[0]["question"] == "Flag everything" and cases[0]["prompt_version"] == "abc"
     assert "refused" in cases[0]["observed_signals"][0]
+
+
+@pytest.mark.parametrize("spec", ["anthropic:claude-opus-5-5", "openai:gpt-5.1", "gemini:gemini-3.6-flash",
+                                  "deepseek:deepseek-chat", "kimi:kimi-k2", "qwen:qwen-plus", "openai_compat:llama3"])
+def test_every_provider_client_builds_and_binds_the_tools(spec, monkeypatch):
+    for cfg in models.PROVIDERS.values():
+        monkeypatch.setenv(cfg["env"], "test-key")
+    monkeypatch.setenv("FLEET_BASE_URL", "http://localhost:11434/v1")
+    tools = models._without(TOOL_SCHEMAS, "additionalProperties") if spec.startswith("gemini:") else TOOL_SCHEMAS
+    bound = models.chat_model(spec).bind_tools(tools, tool_choice="auto")
+    assert len(bound.kwargs["tools"]) == len(TOOL_SCHEMAS)

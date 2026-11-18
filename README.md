@@ -2,12 +2,12 @@
 
 [![ci](https://github.com/talhamsajid/rayda-fleet-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/talhamsajid/rayda-fleet-copilot/actions/workflows/ci.yml)
 
-An agent for IT administrators that answers fleet health and compliance questions from device telemetry, finds trends across the 30-day time series, and proposes operational actions. Nothing it proposes runs without a human approval. Built with LangGraph. It runs on Anthropic, OpenAI, Gemini, DeepSeek, Kimi, Qwen or any OpenAI-compatible endpoint, from a web UI, a CLI or LangGraph Studio.
+An agent for IT administrators that answers fleet health and compliance questions from device telemetry, finds trends across the 30-day time series, and proposes operational actions. Nothing it proposes runs without a human approval. Built with LangGraph. It is built to run on Anthropic, OpenAI, Gemini, DeepSeek, Kimi, Qwen or any OpenAI-compatible endpoint (evaluated on Gemini; see Limitations), from a web UI, a CLI or LangGraph Studio.
 
 You can check the results without an API key. The model responses of the eval run are committed, so the suite replays offline (CI runs the same three commands on every push):
 
 ```bash
-make setup && make test && make eval   # 90 tests, then 39/39 agent eval cases, 0 tenant leaks, 0 actions without approval
+make setup && make test && make eval   # 97 tests, then 39/39 agent eval cases, 0 tenant leaks, 0 actions without approval
 ```
 
 ![Web UI: a follow-up answered in plain language, with citations, the conversation list and the evidence inspector](docs/web-ui.jpg)
@@ -108,7 +108,7 @@ Every run writes to `runs/` (gitignored):
 ## Running evaluations
 
 ```bash
-make test                                  # 90 deterministic tests, no network, no API key
+make test                                  # 97 deterministic tests, no network, no API key
 make eval                                  # agent evals replayed from the committed recordings (gemini-3.6-flash + gemini-decision-1); offline, free
 make eval-record EVAL_MODEL=<p:m>          # record missing responses (needs a key; delete evals/cassettes/<model> to re-record)
 make eval-live MODEL=openai:<model> REPEATS=3   # live run against any provider, repeated; results go to runs/
@@ -383,4 +383,5 @@ How the copilot covers the usual agent-engineering checklist:
 - In-memory data: 750 rows load in milliseconds. A real fleet needs a store with row-level tenant security (for example Postgres RLS), behind the same `TenantView` interface.
 - The audit and outbox files are local JSONL. Production needs a write-once store and real connectors for ticketing, procurement and notifications.
 - Without Decision 1, prose faithfulness is checked only through the structured findings and device IDs. With it, faithfulness is a calibrated yes/no per statement. That is a judgment, not a proof, and the 0.5 threshold should be tuned on labeled answers.
+- Only Gemini 3.6 Flash has been run end to end; the committed recordings are from that model. For the other six provider settings, an offline test checks that each client builds and accepts the tool schemas, but no live eval has run on them. `make eval-live MODEL=<provider:model>` is the check to run before relying on one.
 - The approval step is all-or-nothing per proposal. Editing a proposal (changing the spec, say) before approving it would be a small extension of the resume payload.
