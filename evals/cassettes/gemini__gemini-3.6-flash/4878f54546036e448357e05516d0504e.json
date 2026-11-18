@@ -1,0 +1,115 @@
+{
+ "key": "4878f54546036e448357e05516d0504e",
+ "latency_s": 2.61,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_16578644977714401098": "EuICCt8CAWkUfROkNxSXvmXwBIKmdJq5L2Q3llB0oB2BW1gViwieEXQplmFinIbCHWMzTk18GvaJEhYdFCWh521J+5f7/pnT/5jlqXU0PuBGBf72vZPKCbtQ2rqSqjX3iHGASD6ybo4wdVx970At6Hk+5U8AMgeTdZvXL8NKliOq49HrBGlbHCEenr4KnM+wg2uxcfhQAaIQ+yakyz2uoZBlVWnBaoC/VJjuAycusmzdhQ9Cd/zCra8gpQGPjLkF+O0tWayaBw7iwV/2VsKon+OGNTVzqMZMxLYAFDqX8wBXJ7miekLt1ndsFj7XXmLAUBKeW7NqkssZAUm+b+MNoN4fUQ1Xfd+V4d+OcYxtx7aYWcOkKzRwM2RukcdKZCXGqRWcbrWm8K+XCUsOympiGM2+6tHSUTrIpr+YPBfyb50Dpimw06uN6u8Cq4uWmmc+yNk4l04hGUvBLpfr0yiCpPB2A9kX"
+    },
+    "function_call": {
+     "arguments": "{\"device_id\": \"XSU9UUDGU6AC\"}",
+     "name": "get_device"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef83-7223-70bd-a882-18958dfc0cbe-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "device_id": "1LYSSFD074BB"
+     },
+     "id": "call_16578644977714401098",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "8NM23J95R5I6"
+     },
+     "id": "call_16578644977714399237",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "9MXJVZ1I0DKA"
+     },
+     "id": "call_16578644977714397376",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "DLT35MHGTH2D"
+     },
+     "id": "call_16578644977714399611",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "DSYPSES7SKBB"
+     },
+     "id": "call_16578644977714397750",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "M4XVHUV1MEPZ"
+     },
+     "id": "call_16578644977714399985",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "MT7PJB7N5LRE"
+     },
+     "id": "call_16578644977714398124",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "Q3VUITEGQ400"
+     },
+     "id": "call_16578644977714400359",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "XSU9UUDGU6AC"
+     },
+     "id": "call_16578644977714398498",
+     "name": "get_device",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 12572
+    },
+    "input_tokens": 15732,
+    "output_token_details": {
+     "reasoning": 65
+    },
+    "output_tokens": 296,
+    "total_tokens": 16028
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

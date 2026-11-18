@@ -1,0 +1,66 @@
+{
+ "key": "4a21f3f737b8d88d5ea55750d0e57b5b",
+ "latency_s": 5.05,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_11564823767651951665": "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"
+    },
+    "function_call": {
+     "arguments": "{\"status\": \"answered\", \"findings\": [{\"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-05-27\", \"ev:snap:MT7PJB7N5LRE:2026-05-28\", \"ev:snap:MT7PJB7N5LRE:2026-06-12\"], \"device_ids\": [\"MT7PJB7N5LRE\"], \"statement\": \"acme-macbook-4 (MacBook Pro) has been failing screen lock compliance since 28 May 2026.\"}], \"caveats\": [], \"summary\": \"I have proposed a remediation ticket (P-1) to resolve the screen lock compliance failure on acme-macbook-4 (MacBook Pro).\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef84-c4c2-75ff-b9f1-0cebddb4e7b8-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-05-27",
+         "ev:snap:MT7PJB7N5LRE:2026-05-28",
+         "ev:snap:MT7PJB7N5LRE:2026-06-12"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) has been failing screen lock compliance since 28 May 2026."
+       }
+      ],
+      "status": "answered",
+      "summary": "I have proposed a remediation ticket (P-1) to resolve the screen lock compliance failure on acme-macbook-4 (MacBook Pro)."
+     },
+     "id": "call_11564823767651951665",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 2692
+    },
+    "input_tokens": 6962,
+    "output_token_details": {
+     "reasoning": 732
+    },
+    "output_tokens": 926,
+    "total_tokens": 7888
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

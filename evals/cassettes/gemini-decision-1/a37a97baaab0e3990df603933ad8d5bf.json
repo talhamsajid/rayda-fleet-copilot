@@ -1,0 +1,60 @@
+{
+ "key": "a37a97baaab0e3990df603933ad8d5bf",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T09:02:00Z\", \"device_id\": \"8NM23J95R5I6\", \"fields\": {\"battery\": {\"condition\": \"Service Recommended\", \"cycle_count\": 1157, \"full_charge_capacity\": 3872, \"percentage\": 99}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"fail\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 26.5, \"disk_free_pct\": 2.6, \"disk_size_gb\": 1024.0, \"employee_id\": \"emp-acme-1005\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-thinkpad-8\", \"mem_used_pct\": 68.8, \"model\": \"ThinkPad X1 Carbon\", \"os\": \"Windows 10 22H2\", \"processor\": \"Intel Core i7-1365U\", \"ram_gb\": 16, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:8NM23J95R5I6:2026-06-12\"}], \"finding\": 1, \"statement\": \"acme-thinkpad-8 (ThinkPad X1 Carbon) is currently running Windows 10 22H2.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:13:00Z\", \"device_id\": \"9MXJVZ1I0DKA\", \"fields\": {\"battery\": {\"condition\": \"Normal\", \"cycle_count\": 601, \"full_charge_capacity\": 4852, \"percentage\": 78}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 573.3, \"disk_free_pct\": 56.0, \"disk_size_gb\": 1024.0, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-thinkpad-10\", \"mem_used_pct\": 35.6, \"model\": \"ThinkPad X1 Carbon\", \"os\": \"Windows 10 22H2\", \"processor\": \"Intel Core i7-1365U\", \"ram_gb\": 16, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:9MXJVZ1I0DKA:2026-06-12\"}], \"finding\": 2, \"statement\": \"acme-thinkpad-10 (ThinkPad X1 Carbon) is currently running Windows 10 22H2.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T11:00:00Z\", \"device_id\": \"M4XVHUV1MEPZ\", \"fields\": {\"battery\": {\"condition\": \"Service Recommended\", \"cycle_count\": 948, \"full_charge_capacity\": 3262, \"percentage\": 77}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 221.1, \"disk_free_pct\": 43.2, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-dell-9\", \"mem_used_pct\": 99.0, \"model\": \"Dell XPS 15\", \"os\": \"Windows 10 22H2\", \"processor\": \"Intel Core i7-13700H\", \"ram_gb\": 16, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:M4XVHUV1MEPZ:2026-06-12\"}], \"finding\": 3, \"statement\": \"acme-dell-9 (Dell XPS 15) is currently running Windows 10 22H2.\"}], \"summary\": \"Three devices in our fleet are currently running Windows 10: acme-thinkpad-8 (ThinkPad X1 Carbon), acme-thinkpad-10 (ThinkPad X1 Carbon), and acme-dell-9 (Dell XPS 15).\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f3": {
+    "instructions": "Is every factual claim in the `statement` of finding 3 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9678406119402411,
+    "noul": 0.9678406119402411,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.9615934926269716,
+    "noul": 0.9615934926269716,
+    "type": "noul"
+   },
+   "f3": {
+    "confidence": 0.9559361562157396,
+    "noul": 0.9559361562157396,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9584343969456673,
+    "noul": 0.9584343969456673,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1826
+    }
+   ],
+   "total_input_tokens": 1826,
+   "total_output_tokens": 0,
+   "total_tokens": 1826
+  }
+ }
+}

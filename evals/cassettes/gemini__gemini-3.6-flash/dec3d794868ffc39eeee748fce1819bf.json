@@ -1,0 +1,75 @@
+{
+ "key": "dec3d794868ffc39eeee748fce1819bf",
+ "latency_s": 5.54,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_17066255822483205553": "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"
+    },
+    "function_call": {
+     "arguments": "{\"findings\": [{\"statement\": \"globex-dell-7 (Dell XPS 15) has 2% free disk space (about 12 GB remaining).\", \"device_ids\": [\"E4V0SB5I0MYU\"], \"evidence_ids\": [\"ev:snap:E4V0SB5I0MYU:2026-06-12\", \"ev:trend:storage_low:E4V0SB5I0MYU\"]}, {\"statement\": \"globex-thinkpad-8 (ThinkPad X1 Carbon) has 2% free disk space (about 21 GB remaining).\", \"evidence_ids\": [\"ev:snap:JRZSGXVMKE6M:2026-06-12\", \"ev:trend:storage_low:JRZSGXVMKE6M\"], \"device_ids\": [\"JRZSGXVMKE6M\"]}], \"status\": \"answered\", \"summary\": \"Two devices in the fleet are low on disk space: globex-dell-7 (Dell XPS 15) and globex-thinkpad-8 (ThinkPad X1 Carbon).\", \"caveats\": []}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef79-8611-73b3-a619-0c3ff2de9fd3-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "E4V0SB5I0MYU"
+        ],
+        "evidence_ids": [
+         "ev:snap:E4V0SB5I0MYU:2026-06-12",
+         "ev:trend:storage_low:E4V0SB5I0MYU"
+        ],
+        "statement": "globex-dell-7 (Dell XPS 15) has 2% free disk space (about 12 GB remaining)."
+       },
+       {
+        "device_ids": [
+         "JRZSGXVMKE6M"
+        ],
+        "evidence_ids": [
+         "ev:snap:JRZSGXVMKE6M:2026-06-12",
+         "ev:trend:storage_low:JRZSGXVMKE6M"
+        ],
+        "statement": "globex-thinkpad-8 (ThinkPad X1 Carbon) has 2% free disk space (about 21 GB remaining)."
+       }
+      ],
+      "status": "answered",
+      "summary": "Two devices in the fleet are low on disk space: globex-dell-7 (Dell XPS 15) and globex-thinkpad-8 (ThinkPad X1 Carbon)."
+     },
+     "id": "call_17066255822483205553",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5412,
+    "output_token_details": {
+     "reasoning": 863
+    },
+    "output_tokens": 1131,
+    "total_tokens": 6543
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

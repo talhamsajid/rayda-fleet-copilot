@@ -1,0 +1,56 @@
+{
+ "key": "495240bd964e931858ea9dcb1607bf7b",
+ "latency_s": 3.79,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_2203121776671099426": "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"
+    },
+    "function_call": {
+     "arguments": "{\"message\": \"Hi, your MacBook Pro (acme-macbook-4) has only 2% free disk space left (about 10 GB free). Please free up disk space this week. Reply to IT if you need help.\", \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\", \"ev:trend:storage_low:MT7PJB7N5LRE\"], \"employee_id\": \"emp-acme-1003\"}",
+     "name": "notify_employee"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef82-1c28-768d-9995-8b7ddd63b43e-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "employee_id": "emp-acme-1003",
+      "evidence_ids": [
+       "ev:snap:MT7PJB7N5LRE:2026-06-12",
+       "ev:trend:storage_low:MT7PJB7N5LRE"
+      ],
+      "message": "Hi, your MacBook Pro (acme-macbook-4) has only 2% free disk space left (about 10 GB free). Please free up disk space this week. Reply to IT if you need help."
+     },
+     "id": "call_2203121776671099426",
+     "name": "notify_employee",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4844,
+    "output_token_details": {
+     "reasoning": 445
+    },
+    "output_tokens": 574,
+    "total_tokens": 5418
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

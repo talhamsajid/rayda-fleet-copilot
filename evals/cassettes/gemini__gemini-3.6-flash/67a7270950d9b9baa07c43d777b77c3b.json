@@ -1,0 +1,60 @@
+{
+ "key": "67a7270950d9b9baa07c43d777b77c3b",
+ "latency_s": 2.31,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_603858695967180347": "EvgGCvUGAWkUfRPwqWFu4AMUoYAH3SZtfwroWZT+As3uNB2EB53uyfJYAmbsr1kNUlZlTML4xAhjDDOCxWdYs1BMNXlGn8rCVh4A+7x8fjG+7AC0mtIcLrcmhMzTtxGABKoWuTUdvWE8+Su6PsBf9P67wlwbCvatkusk3cU9LSh2ovCLXg0IpmC4ul8u4nxlEkHPQzboryMolEJFh0hX3BeSLql9kzHrBMzewGDpsC/gZJgnzvzHUByl2u9zb0lCZAxOg99fPcll5cLZFUcT6xzEQOxIJQSR+o2hjCfd1KmkvHz9i9fgYMiyLq2L8aVslOSoX8ZJh4gaFjtQXckzpNciRyRBksXuA/YhNFCeXRfnmG5A+Np0vtZkhUQnx3qQINo4F8JRAne4xLmquSL79CMfmRR03vzeTcfZ1X9XLmqJgzees4rfEhz4TKa7EUuEa+6smH6afofOS/Nf/cnZnCvcWFcL/0tj7ntipvbp25nqHM4+DaUKa0dVLCpNnLrQUDWsaTgrBGRKVnGR/AswOYBw/2NwdVKdHaU7wGFXhSqUMCta2US+YjloLXDo4lmgrdZhgGs30dqKlyHG7OLQ7E4n8APvrc+RARxSDbTaWIwclqkqJFb+u/+nhpIF2PN3tUXmLS6eoUpB3antI25FRxFrsyEHs76MkK9eOQxKiOkw8J4EgnZPVqBRV4tiNA3eyI+/PtreaABY13/twRFYFZxmRlBA5MktI64C/0f7kLHaziMoCh2ewvDuFBn4ahKTaa1RdIjs9FBQy/1fH4qa9bO8i8RTEMhTnSSLObKlkRImbzk36shbkn63l/uxDD9QsFKWbGqJkaAfiGPHwDWFb3boI5HB0vAkyxNqiaxWnOEMCf8SeQRdjgsdGI05OR7rrg4WSfuluZ0YNz0MPA+rlJAU627v3TRS37iGNZuSTldfa8vAOme2pDBHGOOtRjLkT93wUe5fvLPXRsp7RVcexhiYroe1cqZw3ZHGurSUxYPRcVKo8xBuBTxcjTBBHVqexSyzUuiXfZGEx+1hYvUwJCgzCXQJb7EwTGfZglYM2Sh2+/vQtcqg5mxhKirYJmIh0pIkhbCEru1bme7yAh0NhM6xInJNoA4YeMOEyptThvh2bXAvvRqrJov3hWphU+SB34rJ9sEQDPKhMO3TUidV1/omj0zQckNfV9Mo"
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Detect unapproved software findings using detect_insights\", \"Review evidence and draft findings\", \"Submit final answer\"], \"intent\": \"question\", \"tools\": [\"detect_insights\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7e-56a6-7489-b9b1-4fd1d39694b4-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Detect unapproved software findings using detect_insights",
+       "Review evidence and draft findings",
+       "Submit final answer"
+      ],
+      "tools": [
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_603858695967180347",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2792,
+    "output_token_details": {
+     "reasoning": 202
+    },
+    "output_tokens": 260,
+    "total_tokens": 3052
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

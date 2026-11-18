@@ -1,0 +1,52 @@
+{
+ "key": "a049a2f9f1cb17b65c52fea63db5dbc4",
+ "latency_s": 2.15,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_2339287446424649012": "EowGCokGAWkUfRPru59bfNgFgdLdTQoG86lBtisghrOPPzajHaoFxZcPLQ6KwKpEgZ1vhMTlK/hJMFe4W2GD6x3PFMsqp5Qi03cFNUPTDxEH3EII7W15dsn4TVN59CJ8yXMkCGotzv6oP/W9u1Hv+pBl9bxJ8pQB3DTzpvgE2RbW/9gNFaNXZxTD70+UeXZWB7IHFUUD7ttU8SKSQ59j2q53VeErdohhxct+mWrlBxU550Kf41TVVDtv03YGkVzk1cJdOllQBq91+l6UitoVwWMIyPxG/ItXHsd02P8zJM/iIV9l+Um35OPZ1sjKSexpfrBd4wPvQuAyOpYWQZlXscaMdhTEvW5xtc30j8u7UWr95fJxM+ChHtYs9TNoH1IpFfGT1yQtdMkEbNcSnWBeB4BVkK97KojlEBGDcwNEjxlorEQU0RycV8EM4lvE4utLHu5ArlKzTi2Pr/wwrQfvrEw89Bd/POLSMLPEpNXMn3hql6+KYaCWhKmchZnrj4GqWIaQiPYTj96VjoRlSrtvivlUw7U3BPSkuKz9CUoNVqTSSpM6UQkK+WRaEywp00we+NzGeYb2Jn0v8d4Z0vHzgNWfLI3rPZOWLFxDhsYB8bSM3JO6uwSEbRF/FgBE76/faw7+ZBVK0whOTf1vVBFWyudtRDki1aE3y1MTMP3rbgKuJtiPDInB1rdTrK64DpkE0isesZuc5QIJUoCr9BLPvHUwLNQXv2Rh4OpEKGZbqeX+ITkCilXWzOO6g0vZG2+yrlYJe3nHN5QORZGKl4JusdY4xQKxSKv14TgFyhPSlNLD7IZGL5p3Vu04Iwh2Mt9TOvhKhm+VE4flrWjyxbbA01JvYQInLu3VjkOW4JKGBsbOmt7qojW4GWH6X/OBf7ffVfFvmyQQK2JSUqcbUsIddRDV3HFH7PNXGzJ20y/Kjtjys6qqNniq+H6mSD0lYhDTDXilbF/o73q9+DxaNwD72DNdYqSwYfcZYd/d9A8hwUWFQDvwwnhtyMg7yEMc5qmZte3LcRdaOoFX3wIZOVqB"
+    },
+    "function_call": {
+     "arguments": "{\"os_name\": \"Windows\", \"os_version_below\": \"11\"}",
+     "name": "find_devices"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7b-c8db-74e2-b42a-ac4041ddd14c-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "os_name": "Windows",
+      "os_version_below": "11"
+     },
+     "id": "call_2339287446424649012",
+     "name": "find_devices",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3063,
+    "output_token_details": {
+     "reasoning": 203
+    },
+    "output_tokens": 232,
+    "total_tokens": 3295
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

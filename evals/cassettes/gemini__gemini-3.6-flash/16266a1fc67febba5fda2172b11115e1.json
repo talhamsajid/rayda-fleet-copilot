@@ -1,0 +1,63 @@
+{
+ "key": "16266a1fc67febba5fda2172b11115e1",
+ "latency_s": 6.07,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7669276975542932393": "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"
+    },
+    "function_call": {
+     "arguments": "{\"findings\": [{\"evidence_ids\": [\"ev:query:find_devices:3eb9e7a7\", \"ev:query:compliance_summary:205ad3fc\"], \"statement\": \"Zero laptops in the fleet are failing high-severity compliance checks, as disk encryption currently has a 100% pass rate with no failing devices.\", \"device_ids\": []}], \"status\": \"answered\", \"caveats\": [], \"summary\": \"There are currently no laptops failing high-severity compliance checks in the fleet.\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7a-32e5-72c0-b7b4-612ae6806def-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [],
+        "evidence_ids": [
+         "ev:query:find_devices:3eb9e7a7",
+         "ev:query:compliance_summary:205ad3fc"
+        ],
+        "statement": "Zero laptops in the fleet are failing high-severity compliance checks, as disk encryption currently has a 100% pass rate with no failing devices."
+       }
+      ],
+      "status": "answered",
+      "summary": "There are currently no laptops failing high-severity compliance checks in the fleet."
+     },
+     "id": "call_7669276975542932393",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4728,
+    "output_token_details": {
+     "reasoning": 1016
+    },
+    "output_tokens": 1139,
+    "total_tokens": 5867
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

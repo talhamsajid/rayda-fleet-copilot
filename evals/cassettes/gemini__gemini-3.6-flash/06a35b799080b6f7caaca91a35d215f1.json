@@ -1,0 +1,63 @@
+{
+ "key": "06a35b799080b6f7caaca91a35d215f1",
+ "latency_s": 2.45,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_6660205563594144448": "EtUFCtIFAWkUfRO5WiUeZQ5sqzl4TT9hvPC/mWyncQZAm/SX1C8J1mlvZ/Jq9HX7P/FbCGC0XHnTV9TeLvujWFFXYe9stEyuyVSDHlYDdThgkeQbTaWxjsKEYqgvczNEdo80QtuCpuQyrrObopdpejzKRJRVBdYMGx5V5y8z31rnfXw6kB7dSm6TxqnUynlJRUPnUt4XRT+TdPJYOtToToWpG5aX6K1ajODj6r83DPureciR57kqrkl1YSBIP7U0WeIFvzOEq55jETTIKMunDTeW0kyT3EWM9/ZBFIa/fv8NdbJ25ullF6uINIjuDYojBCR9dTDjlTLrI2jk1Vk0KlQSskl6BXU+4+c0GIhdEJGWSR06cJwdfauah8hKk/QLpfUUa3/ks65gSLccG753dcqabyFvQaVFhDmutlxJ90iwuF6MM+bFZEs1TG+rTUVaGinb13JyLxpia9JuC3lSGFBpc0f0ecaSKqokQsjDADbagAoDp0pE2GRgW4/Y7ngHPB6wRI8Wlx6uZsVIPnCg+8dhG57onq1V19uVARMgiF3R1WPF1M6Ox9rGnMwbb0oSIUDzsAjdPPs+I21DfMW1o5//HjqKtHIHCjBajwm5tl6hBak2adpolbbN/kNe6EM9dP0skvh/IYb10rwnypJZF3oZmx4kH796kcc9+S6P4Htdd8gqXfUW6zQML3NVWXURLniZFuvWqgWgtggp1qLnZop/Yjhz5uoYQOTR4YUFUCMtlgNLhZ8msiypFWzKOW3Al0KuLCSg+QzzJ7hQUJyYPtjS2jVZ5eFuiElKWr7vYdPEhza+GM3X7vLs9sHuEspFflkMiQE2+5TtWzDwudN91KUwpVo5murxi4cdBx7dLvqNzdEqHkb9tgzsLw05H5H/tsRItIU5BfLXfIIwBfFAMlvl0qBTYBU7PX459oNwweT+5IFdpVZXeGNYSNCaXOphNUt7E9bgiuw="
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"action\", \"tools\": [\"load_skill\", \"get_device\", \"create_upgrade_order\", \"submit_answer\"], \"steps\": [\"Load hardware-remediation skill\", \"Get hardware details for device I3JLKILKQTAC\", \"Propose RAM upgrade order for I3JLKILKQTAC\", \"Submit final answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef81-2f2b-73a3-b82e-86023198677d-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load hardware-remediation skill",
+       "Get hardware details for device I3JLKILKQTAC",
+       "Propose RAM upgrade order for I3JLKILKQTAC",
+       "Submit final answer"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "create_upgrade_order",
+       "submit_answer"
+      ]
+     },
+     "id": "call_6660205563594144448",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2796,
+    "output_token_details": {
+     "reasoning": 159
+    },
+    "output_tokens": 253,
+    "total_tokens": 3049
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

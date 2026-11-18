@@ -1,0 +1,42 @@
+{
+ "key": "41a554bdaf16a4bcd3f874c5627e8e03",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"fields\": {\"device_ids\": [\"4SEFDLPTKXAM\", \"CUXW0BQSV1B7\", \"DXUCJ272DCYX\", \"E4V0SB5I0MYU\", \"IZ6K51CBZR8F\", \"JRZSGXVMKE6M\", \"Q1AFVLH3YV33\", \"QPZSXKINA7GP\"], \"devices_scanned\": 8, \"match_count\": 8, \"query\": {}}, \"id\": \"ev:query:find_devices:44136fa3\"}, {\"fields\": {\"by_form_factor\": {\"laptop\": 8}, \"by_model\": {\"Dell XPS 15\": 1, \"MacBook Air\": 3, \"MacBook Pro\": 2, \"ThinkPad X1 Carbon\": 2}, \"by_os\": {\"Windows 10 22H2\": 1, \"Windows 11 23H2\": 2, \"macOS 13.6\": 1, \"macOS 14.5\": 1, \"macOS 15.3\": 1, \"macOS 15.4\": 2}, \"collected_metrics\": [\"hardware model, processor, RAM size\", \"OS name and version\", \"memory used/free\", \"disk size and free space\", \"disk encryption\", \"battery condition, cycle count, full-charge capacity, charge percentage\", \"installed software (name, version, publisher)\", \"network interfaces\", \"compliance checks: disk_encryption (high), screen_lock (medium), os_up_to_date (medium)\"], \"devices\": 8, \"employees\": 4, \"not_collected\": [\"CPU usage\", \"GPU\", \"network traffic\", \"user activity\", \"location\", \"warranty\", \"purchase cost\"], \"query\": {}}, \"id\": \"ev:query:fleet_overview:44136fa3\"}], \"finding\": 1, \"statement\": \"No devices in the fleet currently have batteries approaching end of life.\"}], \"summary\": \"No batteries across the fleet are approaching end of life.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.6933793804311997,
+    "noul": 0.6933793804311997,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.6466406257273951,
+    "noul": 0.6466406257273951,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 747
+    }
+   ],
+   "total_input_tokens": 747,
+   "total_output_tokens": 0,
+   "total_tokens": 747
+  }
+ }
+}

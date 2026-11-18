@@ -1,0 +1,42 @@
+{
+ "key": "91cc4405cefbd632ec5a6d2f4fe75a4c",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T11:00:00Z\", \"device_id\": \"M4XVHUV1MEPZ\", \"fields\": {\"avg_used_pct\": 94.2, \"battery\": {\"condition\": \"Service Recommended\", \"cycle_count\": 948, \"full_charge_capacity\": 3262, \"percentage\": 77}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 221.1, \"disk_free_pct\": 43.2, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-dell-9\", \"mem_used_pct\": 99.0, \"model\": \"Dell XPS 15\", \"os\": \"Windows 10 22H2\", \"peak_used_pct\": 99.0, \"processor\": \"Intel Core i7-13700H\", \"ram_gb\": 16, \"share_over_threshold\": 1.0, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:M4XVHUV1MEPZ:2026-06-12\"}, {\"device_id\": \"M4XVHUV1MEPZ\", \"fields\": {\"avg_used_pct\": 94.2, \"employee_id\": \"emp-acme-1002\", \"hostname\": \"acme-dell-9\", \"peak_used_pct\": 99.0, \"share_over_threshold\": 1.0}, \"id\": \"ev:trend:ram_constrained:M4XVHUV1MEPZ\", \"window\": {\"from\": \"2026-05-14T08:40:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T11:00:00Z\"}}], \"finding\": 1, \"statement\": \"acme-dell-9 (Dell XPS 15) experienced high memory pressure across all snapshots over the past 30 days, averaging 94% memory utilization on 16 GB RAM with peaks up to 99%.\"}], \"summary\": \"A proposal (P-1) to upgrade the memory on acme-dell-9 (Dell XPS 15) to 32 GB DDR5 has been submitted for administrator approval. Telemetry over the past 30 days shows sustained memory pressure averaging 94% utilization on its current 16 GB RAM.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9372806056884541,
+    "noul": 0.9372806056884541,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9065189102024641,
+    "noul": 0.9065189102024641,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 997
+    }
+   ],
+   "total_input_tokens": 997,
+   "total_output_tokens": 0,
+   "total_tokens": 997
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "key": "a9be67d24ab7ecc761967c23a930797e",
+ "latency_s": 2.87,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_6534511341553268081": "EsYICsMIAWkUfROeA8tlXupPiD3jIwZjGx4K+mgzULliO5UIm7NIy0QvLdyX1U8YLn2Z7MyIR/79c0qoUiOXm1VWZ5Lfds6OTStko5HKdV30UBGtVyz99LMdTJfA9gkV3WTZWMzWgXYqjx/j98un5ELELjqZzKiZnbCoLFDYw8tolvziRWp3S18JAk+jHj7cKmxubcxnU1OA2+POmYYSS6nW9eMiTx9DkIepg00taHCaL9o26CBgU9fSvgTme8hejObD4vLI7b3nbDEWjy+gbHYTtGfR8GR5YPpeudpuhVLw2TVPyRk9L0rO4QHZgzWppP0T2x+HYXV7q6slV0nlArrPBHDENM0T1yHm3PiHPCQdvZNiOUagvN9f+4pxQpL9JVeQyRcpw4ahqrAj824IsALAEcclEKDNHhjdTaN+6BRSC3XLuZFlzL+1S1ds1QYvv5NLqURDVHtGc9yMyvXAkvA3uQw2O7SR5QpN2xaQPRnnCrGSNovzScjWsvqXpOo06/R4KbRsKKY4dWwUl277mleHTAyFEgP4wvkEUEVoZcm5tRV86stnj3YXQkadDdnkAPgyT2uHkukeHKCGoE1djoxWngF3zTsd7NYw1HlMMaUHpWzrEOLDWxERRvN1317GQl+tNHGqB6/7Ags3bqrtOc+FYZVUgaNQ0jrcOyL9KeAQtp4WHu91YCxzBPBBIkevvvPN9HQnPuhDzNIIyXMNY3ZjVZqO3v1F5mQxMzsmLsk/HtmsfQyWglLbo/hWuZKEMrRDanskg40jkkg1r6zeyQa/mja+V4AXW1pVczLDe1COxBUkua7WRT0o8LtGS5vxwYdCJyxob5RknM0qocXSlWbSKa0QuVGWbUTNEDj8aO7zyYdo9ks+VdDmuvwAz4tXd188tNnbLRL8ZzSREZ6+CdbAdfOJe9PdRWRSsuf/avIvDsBcaAzii+QohywJJoQNTgI3pJ2IGJVChSdnckgRM1q+MT5UHB/w8aef2xQA4peun5MacF2q8ISDxJshodR/KHE8eTwEdPCbZHyfQCElunl9IIG6LjpdiT9tIvCqVJUQzixRoOAHdkphgMIyFCW9c2UI3pSAnrZcDs2oqfB0CIWopZaC8nlbnkdanZRcwvRmlP/8ist8Dv8w9vOjVL8ErJv6tfh0m0gel0fMA8dM25/AdZNeJqYW5J/BB7NMTB4TG/4driLHO6XqJCnLq2ABYwFTS4gadUj4m/JdwT94K9v4oGhOfPAv7DOcvq9ATWb/T4Onnjdi+njkCW3/Zn7nlYtbOuFqoCdd6d4Pt7WLM0k050N0ZbKVhCnK9WV17TER0kvERe0acUIjUHlgAbWQFSD4CBpewZeaHWcgljuO+DYf7l9wLslVQG1mOU8JI1qbBHbtYvJfn6NjLdzvG5sI6SXWeWVITCc5+BbrK4CVSzACiGY7YWL3NGW95IECp40uo6lfhwzhSxU="
+    },
+    "function_call": {
+     "arguments": "{\"device_id\": \"M4XVHUV1MEPZ\"}",
+     "name": "get_device"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef80-c33e-7333-8679-1bbfb50c5497-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "device_id": "7VP16KHV88LM"
+     },
+     "id": "call_6534511341553268081",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "8NM23J95R5I6"
+     },
+     "id": "call_6534511341553268180",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "M4XVHUV1MEPZ"
+     },
+     "id": "call_6534511341553268279",
+     "name": "get_device",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 6499,
+    "output_token_details": {
+     "reasoning": 289
+    },
+    "output_tokens": 369,
+    "total_tokens": 6868
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

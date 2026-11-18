@@ -1,0 +1,51 @@
+{
+ "key": "8e04dc0b8e4e3317b6b7eacbe5aefa6b",
+ "latency_s": 1.6,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_4651286121071434690": "EoADCv0CAWkUfRO1wWIHA32nQMXN8GLHeJUK8HB7by/H82xhlx+1I4qGpLPwp5KeWHC+2OFXnztF1PrWDMJqshj92r8VnmlHUnRkyuh30NZwvyLszHQOg0HhYAJDl/f1wcHKZiwC36FybIn1YiBNxzK5/ncCvKWRQprJNSag6jt07Q4lpKBQE4hf5/OQbbEnLC98fybOQR7LKeuPyUiOCvgk4MR5hzTz/JjsNTISegeZFqEjxCmTyTYBl9c2Yv8Bl9R2IHlgbC6NPdP+OjmGPRYn49dkECgQt3ZBtP5TwKCrpEvYMapRIWTmifCcmCM4CTtZ7rCu4qX91JsWJBQFcvNIhK4dn+ijmWVNsd1VSc5LrVZzF/bk5xZWaiCLrEPZ2nDR6jh/3GV+mqQa1KIMttLk1juf9r3hYYAI9gX9fdYYqpiRXf2Juf+tOumdwHeAwFVRvhRybAEEoa/AQ/TC2fIeIGi2PjK3GeNMP7zQer/8bZXuOyzvFp9cdMMnczMf2Fu8"
+    },
+    "function_call": {
+     "arguments": "{\"kind\": \"storage_low\"}",
+     "name": "detect_insights"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef79-7074-7210-8707-8abb64d88d55-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "kind": "storage_low"
+     },
+     "id": "call_4651286121071434690",
+     "name": "detect_insights",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 1228
+    },
+    "input_tokens": 3279,
+    "output_token_details": {
+     "reasoning": 73
+    },
+    "output_tokens": 91,
+    "total_tokens": 3370
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

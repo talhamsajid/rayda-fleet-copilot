@@ -1,0 +1,65 @@
+{
+ "key": "ef9ed8c20d21a0559929b9fff4d25f6d",
+ "latency_s": 3.27,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3493768269179278751": "ErQKCrEKAWkUfRPkH//tDxZuP8pTYErxO2vOrET2EH+FoMBtIAP6Y+aeSjBRQ3XWsvwGD4JgpAn8xFwQDGfiUs7pQu8KVNz/iAlpzOBg7ScyZ54De3c1zGF7lVMrCUzv+P44kuvqCSgk4ddiKDsT9ExhH0tI83yU9RYkaBDVNEcuEFOcVXJTYsPvywgSaJfrllRxdg+Ubc/Is0av01NEMpRazV4i2oE6txaRPffHi4JfQu6wbdF53+HpRoB3AzTIGpvo6gMNVm0VkSWWxmSHbJwQAHVzXcEyKMQFuhVTjQqcJv9YYLH2Kk5UZj0Cu69VoSVCDJJV4Asp3FjEh48EPPg2UlqQSI25+4P6CIc/lfR43Ny8Y6HZYLVbw6xVy64F1UUeyvUOt2PNCzzdKbWjAlDNht3zRM1nWZ5eLNA7cYXn5xzCGjmqMZi5bwbFOPfZ9q/hrpsYXE0D6d+Ia7qqgxE7okVfYKCVB5PA+DwiVNGQwvOS0tnCkEqgoAO3NvBGKeNRkCx0KyjYUTMY0HEdWpRngdWZS7lPd2KiPmaQRBAkb7jBwg+KZ6PS9TLZOEcboOldMVG6j13ow+PigdxWnvHB29VO4iXcCBHUbTwsHyrMDGnrRlj/B7ZP8hMIk73JeRp8q1eMXT03Os8J9a2vLixA/SqJa0lSLzda1yKTuFZFw+xLrTQ9fA5VlNDTu7vcXAs6zllw0JjUa81g9k3k2C/4yfQBrN9e/ri7vaP3PMs+LXbTkYJE9aUXu+HyYphq7NxlwQo80g9mmwml0etkMf6F7s+gGniL1QnYbfSIkS8SLqQQmf+w1TSDpDbBHxRecU/AQlmyndkBz9gP9zGy8Kg7ZNUx04OXsB3OA0gGxlZ8gZckMFnBcnCzLhl3Zhgh6i7Xjc8Wwi71HbRMT0OtE4WDEB8oABFI+dJZwSMgbunANRIJ9pqslW1oFhcNpJqzTo76/H9M7+d7/DPVYjzdivqlyKr6P2jt/ucLy9Qy+SOX/ny4o7Bl1Fo7VJcuNinQ32x42edwjLu+doZ+c5peCPFnahH7R8MEQtnBD/D2odR+GOI6hOkDVInixdKvvpowrdoM2usJUAjbKJkdlzkDkyHQFsZLTTortQ6LIVm5tWj+UHCF6vCaQ+PiEzbVA4DN/JDR8wnyqriiiIjRKK+ELjcregGXQxt8A5TUy2XAPYf/kjXEMUTwforXbY6k1XbnhFlpu19WZwtPzhiojRuXuggs6g0fEFoNzo56NeJ0fc64YVmJ0DPQxcyxsjTh/iHJwJgp0YnaMh0ExWiS/pPBecpKENyQW3JvQeXSfbQIVNDqNLMamaEkcKG2bGabdvdNh3izzhsqAqqSC7CKdtR7yKi0ow7xxcaj0P3cBR/0sq/Tvs2qSqkiDff0TatkAJCKSPrdp+5qGPFfR+xpR1RzqBINAPoeaVQ7RQq4qtdP24p+EybaqJhNrTinbYgDaiM0PeBKhAd2H+LAdyXQH65VCSbjcaru9Y+a2qEepVcq3owkrBZGcKU+SD/8TUzObF5k1s1texk4iJGaXpD+KFFG0GsbxyH4NhUQaABddXAK8eBQzVMD7637K3TRUmTFM9FivhvEUP2b1GFNrg3i0zmk+Nff+uhoeHg8x6t34+PMh080oinwgwszy2yh9bpSn4g67N4EXYtUrDE0eEVbv6bOqkq+YUeVXXIcvuD4oXG6McYAVGTF2UzYLUvegYy/UTKWwDbAcsFURPavwjf23wJz05G5uqSsx8yGvYP9YDpboGfarJFqfk2E"
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Load fleet-health-review skill.\", \"Fetch fleet overview for total counts and models.\", \"Run insight detection to find device-level risks.\", \"Fetch compliance summary for check pass rates and failing checks.\", \"Synthesize top risks into findings and submit answer.\"], \"tools\": [\"load_skill\", \"fleet_overview\", \"detect_insights\", \"compliance_summary\", \"submit_answer\"], \"intent\": \"insight\"}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7e-a341-72ca-9ba8-8b0f096506f8-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "insight",
+      "steps": [
+       "Load fleet-health-review skill.",
+       "Fetch fleet overview for total counts and models.",
+       "Run insight detection to find device-level risks.",
+       "Fetch compliance summary for check pass rates and failing checks.",
+       "Synthesize top risks into findings and submit answer."
+      ],
+      "tools": [
+       "load_skill",
+       "fleet_overview",
+       "detect_insights",
+       "compliance_summary",
+       "submit_answer"
+      ]
+     },
+     "id": "call_3493768269179278751",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2795,
+    "output_token_details": {
+     "reasoning": 319
+    },
+    "output_tokens": 432,
+    "total_tokens": 3227
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

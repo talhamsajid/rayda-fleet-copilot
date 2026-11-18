@@ -1,0 +1,42 @@
+{
+ "key": "9bf366cb48fda14e8f735e7cbced07c3",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"fields\": {\"device_ids\": [], \"devices_scanned\": 10, \"match_count\": 0, \"query\": {\"failing_severity\": \"high\", \"form_factor\": \"laptop\"}}, \"id\": \"ev:query:find_devices:3eb9e7a7\"}], \"finding\": 1, \"statement\": \"No laptops in the fleet are currently failing high-severity compliance checks such as disk encryption.\"}], \"summary\": \"There are currently no laptops in the fleet failing high-severity compliance checks.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.5153661464104877,
+    "noul": 0.48463385358951233,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9404219809588976,
+    "noul": 0.9404219809588976,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 391
+    }
+   ],
+   "total_input_tokens": 391,
+   "total_output_tokens": 0,
+   "total_tokens": 391
+  }
+ }
+}

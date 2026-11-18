@@ -1,0 +1,58 @@
+{
+ "key": "a8012b84c2c7236b93b677b06cd4421a",
+ "latency_s": 3.79,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_15101700154788191102": "EscJCsQJAWkUfROQ8qWiyOWbX/evuUKjRpmbprmAdcvWCgpKVaI+tWNDXmmnevrIe2zsPk/7W5jCftEJlK0ygZ1UpAV0nHbodFr5OSC7EPrJ2r97wm43kRI80yJ+BISi4W2Q2ulllXxdvIqtrNR/YSe5baKZd0MD+BwV8s9TIrsMa6kYhNCWPgqxHv2gHbjTU24IKMXAHYwjTQdEBnmNWjs9ZpvQA87W6XZXMdYjV0nxUcRtDVm20SYCUWfVamTlJKHETP9No+59sKkYCp+P7rn9AfcjjnjkrvBdXy4P48KPO5zu6O3m6vQSXw44BLNiSo8buw+qy57i/D4y6LLCKS6TVbu2rg2gEgPIAptP6pntCJG6VVeXkHrUyFdOQ+IV4i5byKuvHh03XPJ6xm/lbuabY1FDdy2iqa7jqLooMbfEUzQShhlRWBrV4J3LwOVSAR8Wz7lVUgBxjbC/5lg3Qx69jA2CHDuJpuv1wHPi2IHX5p/sMBcNYGbtIhkmkbhNSLnkU3Ehn3e6rRZiUwskxGWSgUKHO5VxYIyqWHbfcTxIlsMYfZ1FbZOXWgv5JXpzBjBsc8yzYPAeQUh90PxFp+m3bnPmJWYYgmTzSWGMPpKzQzSxsJDJcYMVU2mHTYO1cG1D9Z5MvKMxUhCRi1b4yj2HIoN6O8ldNmPukp8RQNw9ZavbjxVkjJrPWHR4wgIyR0K+VES+2Vn1r5HT0pYTJ0cXiLkxN2MzsKWaBLyZPF2NlFZP1zXbsVtMIGpNO678qc/2U4rbKLkD74zkPI0eEBgLfGCO3HiGsAvgDWOwzSLuS3NJjX0KNtft2DJFJ2zYT/jDTEMcBT4O7PbZUnOBnkFjO00qvAgK9B8GKCLI56vYzPA3n1h+lbP8bp5KOx7PYZ/8TPCbf4pv9QcUJ04pVexbjaNw0EHCrDVFWL9v0mnI6Up8pJcAQbLHQ93add1PbeUtazlv9MiinmD1VHxjSOw/TpsvuSxZeaok3tqqQv6ZmJo7VLaJahxhpUlXrv8Kl4pARKqZzFNX+m9X+6sJbORZ0ebEUuVG52kp4rG2o1QRczeFkzDiBlVlYGhUG3CWjJGLqGsOhQ72Yef9jT+J8cV53uNZSIOf+cCbJ+4IJ0mh3riOLPGGqwvhXB7k38rB37R6YHRGFhWTxihuj4YhsVj1W/4nps9bic2iLi6Mef4FCFBaeUs+yO/9nHKilV0EtxCnSi8EDJtbMTuB9QeGQ9VKt/Vz6kj6gfAQu1c7AyD3OGIQpM7di75MZU00yIUPLSIgmVlyq4BjNCblKIWlhxWUiXV3e4Ug9KTsL9l6Lh4Iv6GQX0Z/5H3/U7ow5YDAuNp/NrqsMGaTg3rFCqJFlcwGLc+bVdWtSHByZG1DrDEvOqKtiOLYwlHXpzIjr7SGOJ0dhNUp5/y5PQ4+DGdEDCFuLBLdIYDFgbRZte+qPdEuQWUIGshfz6jSnM+tF5/Y2Nvi/g62R3AEZr/LmAVQVEU9XICM11Y8uTZH2P5oAIwlBX3Sk5VD9djfGKYLuiYiFT16ipifbbEIcNTGFBShPcEzvfrwI2gFod43HLszPxvhSLUMw6idDWndG3i5EQYsfvVyFepEYrK6o1dr2JlQNybuBzyYcVXgMTo="
+    },
+    "function_call": {
+     "arguments": "{\"device_id\": \"MT7PJB7N5LRE\", \"note\": \"screen_lock failing on MT7PJB7N5LRE (MacBook Pro, macOS 14.5) since 2026-05-28. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock.\", \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-05-27\", \"ev:snap:MT7PJB7N5LRE:2026-05-28\", \"ev:snap:MT7PJB7N5LRE:2026-06-12\"], \"check_id\": \"screen_lock\"}",
+     "name": "open_remediation_ticket"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef84-b5f0-72ce-9e51-d7f04eec95b9-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "check_id": "screen_lock",
+      "device_id": "MT7PJB7N5LRE",
+      "evidence_ids": [
+       "ev:snap:MT7PJB7N5LRE:2026-05-27",
+       "ev:snap:MT7PJB7N5LRE:2026-05-28",
+       "ev:snap:MT7PJB7N5LRE:2026-06-12"
+      ],
+      "note": "screen_lock failing on MT7PJB7N5LRE (MacBook Pro, macOS 14.5) since 2026-05-28. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock."
+     },
+     "id": "call_15101700154788191102",
+     "name": "open_remediation_ticket",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 2690
+    },
+    "input_tokens": 6212,
+    "output_token_details": {
+     "reasoning": 476
+    },
+    "output_tokens": 675,
+    "total_tokens": 6887
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

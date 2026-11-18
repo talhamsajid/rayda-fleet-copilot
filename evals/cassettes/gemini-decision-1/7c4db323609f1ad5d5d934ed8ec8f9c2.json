@@ -1,0 +1,42 @@
+{
+ "key": "7c4db323609f1ad5d5d934ed8ec8f9c2",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-05-27T10:03:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"employee_id\": \"emp-acme-1003\", \"hostname\": \"acme-macbook-4\", \"screen_lock\": \"pass\"}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-05-27\"}, {\"collected_at\": \"2026-05-28T09:32:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"employee_id\": \"emp-acme-1003\", \"hostname\": \"acme-macbook-4\", \"screen_lock\": \"fail\"}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-05-28\"}, {\"collected_at\": \"2026-06-12T08:39:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"battery\": null, \"check_id\": \"screen_lock\", \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"fail\"}}, \"consecutive_failures\": 16, \"disk_encrypted\": true, \"disk_free_gb\": 10.2, \"disk_free_pct\": 2.0, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-05-28\", \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-4\", \"last_pass\": \"2026-05-27\", \"mem_used_pct\": 47.6, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"processor\": \"Apple M2 Pro\", \"ram_gb\": 16, \"screen_lock\": \"fail\", \"severity\": \"medium\", \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-06-12\"}], \"finding\": 1, \"statement\": \"acme-macbook-4 (MacBook Pro) has been failing screen lock compliance since 28 May 2026.\"}], \"summary\": \"I have proposed a remediation ticket (P-1) to resolve the screen lock compliance failure on acme-macbook-4 (MacBook Pro).\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9329290843375772,
+    "noul": 0.9329290843375772,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9347564683912432,
+    "noul": 0.9347564683912432,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 988
+    }
+   ],
+   "total_input_tokens": 988,
+   "total_output_tokens": 0,
+   "total_tokens": 988
+  }
+ }
+}

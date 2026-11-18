@@ -1,0 +1,63 @@
+{
+ "key": "664bd8aa86672fbe86be81f9ed1b769e",
+ "latency_s": 3.36,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_1105578735619033611": "EvsKCvgKAWkUfRNslZj+VxKFKFs6Xcifs3RV/r1D84XwsXR6tzqgRZP2a57oVuOG85/68aZ8Dg2BoEitCE45p8FWjoI8vJlOGFkjo+bm4RP+DbPtTaQfg3VlbPOcJlzVS/fWdyNBoCtnldLSz1lOFomq0Ooz8bl61We2MaPhN68zBU+9/4z+RITW8aZtTLdM3qrI6+cy/VDaHaSagLCmy88ONGpo0F0tpF6QRAEOAamI4CuyrzOnWfR2aAPxEQom3GcMqLe7Y1HbcFL8zyawWrXwy9mVB/mCTEl4JgmGmO3Ey8eGloYaUATBKSWQ4JL4/GB3LQBdAkqO0v+a+sIqMb04h5BhcPaoIPOwCJST7OZypNcMDgDH4OFpchIdT6+aXWWnZcUwtWJqEuI/lcpOz42UYjShaLtLItqgGIzNea7XlE7RUJQV4cKMBmVetTkWiJJfWIpPsB+4gJoHc9KsLbR2GyKcPHfD70TCA/+XT8L1lwzmR8HYwW3bs4rDoeGyuXmKV2Euh9F3/wWAq1t1lbaRvbbzBlMUj+8cZuXdB4oWwHTzm20vsT2Ec2jIgjPDTZ80CCPcoP1AQwO60zMj81Szw+gfFFMTYVApik7nx0o51nLihivpVqdTfq9vtkwY7ggTaOWnuy8wzpEql4NgqBxs+V/dCDq73oaXT0YyC5rd85ErF0Bwgs4tWL00jlN8EIjUdgrFqIY5s3ZajqP8oQFftSxSGgT3+b2JcDsnUnbsahqazBeXdSBye+e2eJrPRThtHvYYUFqSGcESquKJyrOuRI3HgOmYMccw1pnQs/ZqhwiV9xYqMxpSZ4+gEVoKX0eZ9cdptkHNhDyQlHQwpk+Y5oRduWheRFVVgG512MO+jw4mkySbsNd9t9qQGPrrOMeMQSKjc+LEAQn4BydZYyyfjNE0XqUtwokb62cGesBMiXnz5dbhhExNFYVHVTEBnicMty0ZkhFTLdfVKfotKEg0EJmmNigy3i+qoGHnkSJe2JsINhQSalSUnCSDkLqtZEeAscolioExjkdxelNf0h3Lf5RHRlCWVM5wteCuUoGCHcDan32oZgnRCKxl7ZzGyizMxygQJE08yuW8Azsc1o+aS++mJiaPJLsUNEXNWIuxb1trFQ9AWJBTQM6QRxGcmNb8vquvS+OGcW6c2kBw6w4CKttdBC3cePdA9yJLaUHGJAqAPwf9XEbhj7keiNrJf+AHD4zHfKGTZ1J5dE2mLnSc6Wz/G0ul0d1934RFY4QBUa4u0hpehB8c+lUz43pe+mR2bXk1SwL0gTd4C4tb61aE25wgqCy2It6CDUftHb7OAqQ11TWGqKGYvbsg3UMMacwuZK10avr4EzoyA/zi8rpCFrjmJqzdmz1Ha1W/Hgq1Ha4xUFQRueN3Htfd6Gydn/G3ynbDrOVJ481JWQQaU70iP8S09FS2nXqb2A7LxnEplCx+m1fSbiEwZJz+hWqJFTRi90RxhBW/G8WC9514OXWEvqQ0hz+RUUc91uWNqLB6s9uNpG9w2qXiZ7/3RB7L1SXC83/nqCE6sVCs1lRkq/VrCVCPed1L4HaTWUylomHaP8+CvDhXAchsE3hRk3leTkjJv2asUl1gYuQz/VYfVjHx4T+gvx+rN2x4CAN6w1xGTtUxwOeMHQKRIA8VDr6KMGw2CV6BhDb7ZrcCz4gj079xoAddF6WFPtH6/rIGa5ODgjfgsWg2UM+HfL1R/BgCWH+cV+GxCSxm3bkVHkAKkzEwedt5yEvnjv+sQ28Eg5NhrCQDg8hiC0XhF9gHA2TYVNWcPPqd1lnhnGwOcMe9vGb2sp0PYLjmujaqIsopaXhJd0tup27serraJHXfsDCXoi3ZKPs/8F1xoKbEPwE="
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"insight\", \"tools\": [\"load_skill\", \"compliance_summary\", \"detect_insights\", \"submit_answer\"], \"steps\": [\"Load the fleet-health-review skill.\", \"Check compliance summary trends (first-vs-last week) and pass rates.\", \"Detect compliance drift insights to identify specific devices that got worse over time.\", \"Submit final answer detailing compliance trends and specific worsening devices with evidence.\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7d-ee2e-72c4-a358-531831b19c30-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "insight",
+      "steps": [
+       "Load the fleet-health-review skill.",
+       "Check compliance summary trends (first-vs-last week) and pass rates.",
+       "Detect compliance drift insights to identify specific devices that got worse over time.",
+       "Submit final answer detailing compliance trends and specific worsening devices with evidence."
+      ],
+      "tools": [
+       "load_skill",
+       "compliance_summary",
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_1105578735619033611",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2792,
+    "output_token_details": {
+     "reasoning": 308
+    },
+    "output_tokens": 416,
+    "total_tokens": 3208
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

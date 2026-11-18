@@ -1,0 +1,66 @@
+{
+ "key": "04a511c5aca48d4c3031b5aa4f386a56",
+ "latency_s": 3.45,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7491646433088521125": "Eu0KCuoKAWkUfROFgIjBVXqpyFPN/nmxGVbhdxRb89lbJk0nx5qC0lDBU7X0ZRoBaJinKOeW4Mzik3kWT81ZjBUlhH4ESOE1FEFuiscQeZ79bJ6qEreKQbcUFQzUjUC1UX0nE/Y36myMIXAl2za9pZReraNBXosuPmGN3pP0vDDvPuYJz098U57zyA8oD60iv1TrSsIOJge+aoWewFUMYx4hoXNJp3s5W1HjhNU+p4wKo3b4gkvM8Z6iXZIKN4JY7XPMfrTPOF5S1RZao+3MqizwppYd2Wm+naTD2F8HuYaAcLAJ6tjlEtLC2825Sb55yAtQHMHkPVqZNvGTmy0p2w40qYcq5LSk1618tG2KzwBbYTWOinoZO4U7w3wR+ZEuS0PVrXvYq5MzDVx68ZWGH1Vxl+3+zg5IApwG7/mJyx9LXtz26+Z8JRqux1SfkIjjHPdXMb1my1+5H3gc5x7MDc8+2vSVC1C3Lyvr/Q6dOfBLauAs1DJgM3/qQSFrfP6RIYK8K4bIHtrk7fPzC5d9/JImT0KZdKd76+9uTCgpM8XdVaueysdG+zP/ZityLtTYlaKyv0elQi7UOWwJMgnpBzc9pTlOvx/YzIWeMy2FIq1MkAeV7j8Isnss0ksEP6bxmbPmADnzRkmg94rKuznRktN8VsFk69Jk05NyZjjh2G9pfRumZUw4DwvIZvxmshXtClJXOLMBTiL4URKPBpbRC3+zeIMiuMGRg3/ZuQUserYQrXH2XF8JpXuiShtVFh3RLH1GGNfr+OSbSPuq8NNEcORbY2HDcXizFwnNeqqiQVr+HAY0tU76Mk1k5GhF6cv5PyuVOyuD9QH2WeuxlKX+s7/Q5wqtszP8+y05G07B7r7la4WDpoMDTJwoFtVX1KksQV39PCCrThQzd3LUOCBuyNd/W26xW0pSS20pL09/jYIl3t7pNLXYz4qGrl3u2WQ4Z8ivYF02Sppx/DXvevXTL/VPcMIJe/t1JPEx/ylIJu6RNPIJ8nF/fPEw2pN62ZGTvrXwMBjrDWd+36JzG52g/3YaM8GmleA6vP9KwbV3/PVU0sYG+i1JCcRmX+7fVjXLrHGhK7TdC+s9zc/meinr2DMK4eCImBlVCOm8BThzC3TmNtV00c4PbJg51rMcbMEEpfrFJL1LKTBwKrDki+tuIhr1HCLl3IgEpSYbT7jTRcCrDyUUltF658sWH4+gMC19OHMlaADB031dI3FbvQACb6GQwgiFVWL8U2hQwDvVKtA7ehFnwY/Klk+OaYZo1taVaCyzTQcSrOg/NoSnXHjvHZbPYcLTDqbC61yKGyguZEF7y+1qSNPopd/qwZqHs4vqmBO6f4byeAH7MYFlBiRWGKXioRlefABugs+VQ75k63Wca/T3hngtVZlfFMnUduZBObpwr/B1HRgbQFud66bWhzh0U8RdyWOVbGxbGfIcgxVl92ytfIPK5G7IZdbWTqXT2QfUJ8VNsDX0ZLHVzZsm1MNy4T2hIHg+oD6xbvRxyn/d1Soo4Bo4NbFB7XwrPkuH6iMjrl2sHxp4FsGJq2LHNFBeLP8ocQYDmy+jr+Z7zE5e123Kljkfgde7GNay88QKIW7JIQUWDOrppswa5k4q6sPkcdPqgpbFj6RrFWQf0BGy35bMHFayAsH2Vxju2lQlokwkq0ju/zG8duA7i+Yu35wXvF9oBZ8Pkt776xTfv/yuS1XShIKYOvpP30N4FJdWMFfLNykelIBcf5M3/zMIqADwo3OploTS0BdwmSCM4UwAJAHrwGA0LHnZf70HL/gskK1mWMjhmx8lZal0SbBCySPwOEUxuaF8QgPoWE28QV3VJVJNhOP9M0sBVVgO3KsO"
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"load_skill\", \"detect_insights\", \"find_devices\", \"get_device\", \"flag_device_for_replacement\", \"submit_answer\"], \"intent\": \"action\", \"steps\": [\"Load hardware-remediation skill.\", \"Detect fleet hardware findings and list all fleet devices.\", \"Check device details for hardware issues justifying replacement.\", \"Propose flagging eligible devices for replacement.\", \"Submit final answer.\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef83-045f-7461-899f-98b945fffaab-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load hardware-remediation skill.",
+       "Detect fleet hardware findings and list all fleet devices.",
+       "Check device details for hardware issues justifying replacement.",
+       "Propose flagging eligible devices for replacement.",
+       "Submit final answer."
+      ],
+      "tools": [
+       "load_skill",
+       "detect_insights",
+       "find_devices",
+       "get_device",
+       "flag_device_for_replacement",
+       "submit_answer"
+      ]
+     },
+     "id": "call_7491646433088521125",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2788,
+    "output_token_details": {
+     "reasoning": 336
+    },
+    "output_tokens": 449,
+    "total_tokens": 3237
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -1,0 +1,60 @@
+{
+ "key": "d385364a32280b3789160b55e60d7154",
+ "latency_s": 3.17,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_6410738527557221122": "EqsKCqgKAWkUfRMSb2vJXYU9/XaF2KaCuzO/lHRZ3tlFVPxw6CaZEpI3rZS8h3ZsKLSW//A/GVvYGOOiuyIjwXfnQKfSQcqWPRNXPxxoTh1+XIjibH0/dFAPMMELw6S3iwmcyr6QlEwk/CYCc/JM5lWih8W3602vyIMKi7uCuuUf89ER8jKr9hcDQ8INJpahWGWeBFUN+dyYXKG+etgq7e1AUGwKp17lKQmQ7XCDmEUNeuyr+DUSV4X4uiyzqIWJkTfN6rsFTaUTavbpuEffQAVqP8lQCq6NH+el9hDg5FwsLvC3FLDUY4UGyPxmUHlA4xUFESzEak0B+xcEtC2tn7iZ0JZmBDptZhlpPsH4KvtSsZPiyKFibWFv2FnjNo+FxwzYlIuDxY3roOwfhu8PIHcWmKJgORz11aDACPpoENzcwqur8NQoM0tgHYzIpHjzMg2r/JRDzrA3oVu8wqKAhb2hsWPwj/g2MazBXIlUFdlz/CpH+4OFROFefQh09txnhiw97Dbf85877z1ylofpT5SjdCA3tnxCUuzyNXg/j3NbN7q7TlKWNd40xb1CY3SFp3zXWuP8BqlJz54z1YM9jsgilBDXvRzrvDnXFV1nMzfyoGq44g/usPnWarqCmuymqLOQYWI3Pb9G7b/FZnZujM1OaNK4Mb3KWcerGWyaFjT928yZpjVAGPqMMkB8qjf8BNO8AVV6HYila13vvRRUMKXT7jW8Ag6uuPI8KrGgjhpN/+eSeMMpG1n6DN6Ao1QauKQeYmi6eJOomVkxtbJfkySq3z7gtV/fOfa+fu34XtUQCWWmeprtVBNwwx5S8qE68qRzhnw2xp3IDM7mWSKBOxrl5iJIrNYhXR1XwuSBTB/sksClgf0ykcx/bEyQd9qbnMh+U8SXHVp9HIIzRDX8lNz6zbgBRa0GyZwlxXrr1dFHk8lBplsMPBkAGwvVvIqWj34p+PbHNPXiSLzKyK0AfDGWK2+sBs491xlGRjnBUek/aKHpZTeTw2DnjMaL079X/pSflbskrL9kx2w7GggEUL1HsoDGkJStqhRJJanAjwDj5KSrmwsRIqYCn9OLZo/SIH7UB6fjN0KajrofLgEq+mP2Z/qSOu5y3dVENdWyWNipTnkoPWEbMDK8R1SiWarPuYt6vFoGblj7ZpAKuazCxlMz2X/y5k+LZUdPqSWUP5WqDdM9SXZ4wZN1VY5zMPq9FY6g/TYgyEB4CXEs5IWtssgnMp2wLXVSigafmUMpqnrI0EQTI5T4nL7q1gvLnbUKZXsuq+ens1ypOFLpY3V5wBsqO1n2aIJ4giQK0+h2eNhSxEandB1B3Pmac66SpoDekNNmxb6XU+zo763KP1EnqGa72YQg8Su7LeoCrLz80kTmhqUrrxl6qKFz0xH3PGv6KzFD/pQigZG/KIgmiEeXzsuXDa91AQUnPP5D4Ku/pMjTY82+6y0gvNQGelhcHU+ZeD7WeHZDO+l0iiwWgWW2uMfzrlv4ivDiG1oTTyRhv7UisMBOueldczX5MdcGWQ/hM2sW5VFbRupS5ssv3jZfo4DiiP8eyOf4s4z2AcZn5V3WiMTEPqIJ28pKtQCjodCY2X8LjkjbX18AX8pi/8WaHjJd68qRsgMJdNPkXMftWVCoPWQOM8OiDYGCfb4Cbp4VwJ99BprHeI7O2/yY+gyYggNH8/Nw/2gmOou4crzOVLNiBaoBdFb3NAC+cCooXOOtMu9Uc+L8pvdU1Qnn8fxgcASpWAQGfriH16DneqMX"
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"insight\", \"tools\": [\"detect_insights\", \"submit_answer\"], \"steps\": [\"Detect battery EOL insights across the fleet\", \"Retrieve details for identified devices if necessary\", \"Submit findings with evidence IDs\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7c-c32a-7513-9439-fdadc4b7a3a5-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "insight",
+      "steps": [
+       "Detect battery EOL insights across the fleet",
+       "Retrieve details for identified devices if necessary",
+       "Submit findings with evidence IDs"
+      ],
+      "tools": [
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_6410738527557221122",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2790,
+    "output_token_details": {
+     "reasoning": 298
+    },
+    "output_tokens": 359,
+    "total_tokens": 3149
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

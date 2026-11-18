@@ -1,0 +1,82 @@
+{
+ "key": "9f3339f63e1726c9d74b5ebcf3ade0fa",
+ "latency_s": 8.82,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9156930558751163993": "EpgUCpUUAWkUfRP0XNYwzYvQtz8ql+nEHMVKt2yAR7ZWXLeYYqoBDi7Ne79VjezIncyVvaTgt4gJ3Sr1fp/uFDWui6l4x91J1A2TbGN+nwVa9Q1TiJDuVUGounCXefibyUENRKvd4BfXsWcsxCpAVaWpZTpEISd2p0Huh7HB4/G5v2GvfFJN5hLtHqC6fa+XA3bnY31+jlcysvijXY0Pql3txGvxQZKgSrdCeC7YhPap2msfTITKLJ7BTmjBTpAZBwyRlvY2IWmpiId28bGTMcBexXxtGa0ptodixYVdyVWMaIom1rRm5s+/fm1eukcLMF8i6cE6Nz32yqcd0AVJBppkNGZHw88HNlQT8glVGwniH57pUFne0Mr7xPdTDKteF4QmKq1t1w+wPBjii7svQorUTzrrWdLur+OaqlBVyF1/0XJS9cLH92mhCLoH+Q1vbqMlAAdxlcukFeM0wKsvXFPjZO0GRarHhoITmR+IfX1X+KLHp+ucS1zJQiUWBh1JNWkejONLu5ScOCWBchcNELeudQE1Gf9Vs+y8QZQ80P4JXdOB62ykhOzw1jpJRRzDL4IFO7uWHCHinBLaE7+rX1jGkX2Lvaivgr5AYLr9kf4qGNmUcLptV0etd9RFf2j0nF6FoVAPbVKg6lQJTGxYRTspWann5cyf/lEh6/ErffjsCMra5B0pMAFlbeV8kH3GrDB39prdQNEnKvgjuOxxHb2ldVgQf3Ype3Y+75rObRzgZgWxfEJsM+kEV5VAdH86GpsfulXbFZ3MuN5/0gAw51irrJiddz8mQ0sMTvoy8Rp70TUsuWPDE0hLi7jm4HZmmCuOSv6Hw6H/32gIkf0k0JaVVcRYmLcobzPkjjq7dGDA3xpzN1MM4HocEDcpvnswmCJbReRGJPG/yOXPDH+ZUU0T52b2Qr5rhN9s26r707gPJZqnje6Rg32Unohp2c5cbm1VUGNJj9EJIMotgPGoEzrSct9b1Im5LUEnHY/qQouQKvOo7NSl4ZNwdjCCaiCZc90PEdcUCcAIknTVqosqskL5Pv90FCjt9es5uipFPmae3u0dDMSz1uUJYaZ4b2x8qV3BIN2kJNx43dK1u8a/CNIiJ/xkD7YSgTkUFk3Xf7qWB1PjgT6PoehiVdI4mAoTvTg6mgYdsvyYhaKFCNp2faSE3w1QTxkd4Hkr7xNQgPUO5Z6Un9eNbH+vT90H6KQXWGZ+H0FyEysnrOsGKfi9VXydK5no9O+5HnjN/EKZZ6nQwcahMpzW3HVDgV85zgNQhtouQckrLJnKZgjd6dldke/dKxBXI4MimKiuBoxw/kgTiG71oCzdKxNrNRx2cSHTXg8dQptOnjRNs56e5xjl8SIHt/yWrDxARTq4Gyj1lyupAcevG0fTyt+/hhyNuoaC4P6uipiOKZM6KNMt5b5/c5cpk/n8MTPva3+ukH32t1HSV5LcZwiLeMgv+OJimH3sHR9c4GrqGPRdHlvxK944Xk7iW8NRzNy6JT6Rp60k+YC2M/AwRoO1NhEb0ebGhZ2nPKzjNtRVRKt63KTPBrQYlYSXLanjfzKx3+3VvCf+qMG6nR338Xjn0wV6OlrlWDnIY3ne5bwKQkZ5CVD3T7Y/1CdlnrIa853WIwDfVPn8wmoxnasqyQfpX7WFv1JxwTPFO2IvjPtEz5p0paIjIDdR3TNT0jPXJGB9nkJ3usxr8TLQGwOzhaPQ6W+GyHN6VBAhzsMxivI1MvF/O55awHYolgVXuRdvGg7o1BiQPgtdnuYjmdXyOQvnb6dyQ9bKsrrIGbfVTqqmqwxTgd9uSwc/nHj+ftuPhCZMvUYrHR2cZUYUX+LbtGDJbjM5OPNpKudYOSuTTewC5ahAjeMkTPL+CHASTroqRgxCid9TNQTFsGv6+H+5guSM7eCLI3VsV1DJvDpc4jv1lgfiaapYL1WZu9ZUeR12dV2bCPghCMzBRnV61D7AozPDqoKXFjOCbveOOvNmUlIuXl2bJs5/N/TXyZmWTYS7a9M3GOYfmE6Z3ao139dIppcuCwrhDpUu4jtdli7gB27TwQq1Y3Musnusrh7yvGrQJfGOV0M0lPDJTH9M1TxsnFAgHKhzNqSbu73Li14OvQF4EsLLyyzgN9WkCXNw5eZnrFhYRQdeDZoBjIJnD5AQhQm1sSrcHGMc+6V5f2SqKzv5+TFkgck3QOEt7anfYTZ2TmFFM7Zox2OKq8x6sIsAN+UxKlb87TPlJ8gzn7CrgmmIeWtsFoHD/2qmU9dZrp+K4W1XyjauPkdoJJ9NK9GjvW/kiEp6bDpvGpFqIyDrTdJUmf50j5Owin9m1XI5y/vGodaQe2W8nzuBAWsCY73KzYNA50RQXvqr/AV67CaLoRSQ70C3/ftLZDxjrJqDYOpZk7Z8TA7lJkJHk8cFJcxu/d3T2YNyeixqqd14jIuF02WtczVb7yGj2i+c9frJEhx4Embif3KCwQoT39BhPq5ViM96c66hSWGkX2ws/fXGntYcjIlZKuG9XxEdSbXNYTAqnn/N2yEN+YC0BUKWGQUGesGapNpbqFtWmpfnFM8j4Jz3omZXKxvbmd9FNAU07I9s/BBMhwG6aGyOEcGjgacIrko2TU3HCxFX6h1ta5xnCjlWQZjafWY7b3MM87c8TdU/7a2/CXSqXtuxdLz+lby46r6uWRLWYJ9qPoFFI40cZG/pV8vIH9a05JW/OqthtOV5XUJwKsqmFniLcWvrRqO99FelRpFzEigfYzq/Qj8lfDjyQnk0WeORuI+wlFA1HEa/G7AN2Pfq/vcykgf0WxqUp6m26KafGEcfJEU+1RjmZ2KwWFMUChI965/PozLZ3+2PF+hcdmMGxpuB0JcmudanxS2Fb/ojYsfOsphdJ6Eg2NJ/FFFgd0fYUGIQfUumINE6o+9U/EC9zJbgGCuwQaGyiMbQC/NvJEMtmvsskPfeZQeV+LPJ0/6a/9AvMaHmu+IbYdwkaA2WjZYzhzIWLfTnxHTk7YSPCETm4T19HZyRJ7fsJvQPjUm+oKaGcxWvdkoBmCRqi28Rndzz3yQAi5w6SyRz9/EhrIHcS/fjLmEMvYvGR2z9+6IxKZuuAOOPvSNoiezRcMuqodzcF4WLobp6o/9N2UEjHBQoGB2aeyY9wP4+AoxSNYy4yOinINfMo94eeQU6g6n/1e2Zixy8aDnkx2yV9zUrzP18jFmDHUT4Kzf94zN6HRSu602qTAa85oH1903HvuPFoI7d2uoRhAIMeuG1amzowTz0BocN2kH0mgdpaUo04apIIs/Y8rBmPmfY6gxxQeez6VI94zNx0I2r8DACmSBAyC+AGb4tINsv3irj9e28JFByLUbizpG3lg3hiKeVe2QBmWeE0lUt+V2CBUc+WBtNqrLfYAM0u8Of47vP+jedThc0CATwcVS/Q64i+GrOcww76s35u/hDZH20G8Xh7HhEYA=="
+    },
+    "function_call": {
+     "arguments": "{\"findings\": [{\"statement\": \"acme-thinkpad-8 (ThinkPad X1 Carbon) is currently running Windows 10 22H2.\", \"device_ids\": [\"8NM23J95R5I6\"], \"evidence_ids\": [\"ev:snap:8NM23J95R5I6:2026-06-12\"]}, {\"evidence_ids\": [\"ev:snap:9MXJVZ1I0DKA:2026-06-12\"], \"statement\": \"acme-thinkpad-10 (ThinkPad X1 Carbon) is currently running Windows 10 22H2.\", \"device_ids\": [\"9MXJVZ1I0DKA\"]}, {\"evidence_ids\": [\"ev:snap:M4XVHUV1MEPZ:2026-06-12\"], \"statement\": \"acme-dell-9 (Dell XPS 15) is currently running Windows 10 22H2.\", \"device_ids\": [\"M4XVHUV1MEPZ\"]}], \"status\": \"answered\", \"caveats\": [], \"summary\": \"Three devices in our fleet are currently running Windows 10: acme-thinkpad-8 (ThinkPad X1 Carbon), acme-thinkpad-10 (ThinkPad X1 Carbon), and acme-dell-9 (Dell XPS 15).\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7b-ddc0-71d3-8612-5b6566730105-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "8NM23J95R5I6"
+        ],
+        "evidence_ids": [
+         "ev:snap:8NM23J95R5I6:2026-06-12"
+        ],
+        "statement": "acme-thinkpad-8 (ThinkPad X1 Carbon) is currently running Windows 10 22H2."
+       },
+       {
+        "device_ids": [
+         "9MXJVZ1I0DKA"
+        ],
+        "evidence_ids": [
+         "ev:snap:9MXJVZ1I0DKA:2026-06-12"
+        ],
+        "statement": "acme-thinkpad-10 (ThinkPad X1 Carbon) is currently running Windows 10 22H2."
+       },
+       {
+        "device_ids": [
+         "M4XVHUV1MEPZ"
+        ],
+        "evidence_ids": [
+         "ev:snap:M4XVHUV1MEPZ:2026-06-12"
+        ],
+        "statement": "acme-dell-9 (Dell XPS 15) is currently running Windows 10 22H2."
+       }
+      ],
+      "status": "answered",
+      "summary": "Three devices in our fleet are currently running Windows 10: acme-thinkpad-8 (ThinkPad X1 Carbon), acme-thinkpad-10 (ThinkPad X1 Carbon), and acme-dell-9 (Dell XPS 15)."
+     },
+     "id": "call_9156930558751163993",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5609,
+    "output_token_details": {
+     "reasoning": 828
+    },
+    "output_tokens": 1153,
+    "total_tokens": 6762
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

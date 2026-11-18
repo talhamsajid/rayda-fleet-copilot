@@ -1,0 +1,73 @@
+{
+ "key": "13e451ec73e7032425c3dd000c420d67",
+ "latency_s": 5.19,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7876518358390960696": "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"
+    },
+    "function_call": {
+     "arguments": "{\"summary\": \"acme-macbook-4 (MacBook Pro) is assigned to employee emp-acme-1003 and has 2% disk space remaining (about 10 GB).\", \"caveats\": [], \"findings\": [{\"device_ids\": [\"MT7PJB7N5LRE\"], \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\"], \"statement\": \"acme-macbook-4 (MacBook Pro) is assigned to employee emp-acme-1003.\"}, {\"statement\": \"acme-macbook-4 (MacBook Pro) has 2% free disk space remaining, or about 10 GB.\", \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\"], \"device_ids\": [\"MT7PJB7N5LRE\"]}], \"status\": \"answered\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7b-a03a-7304-bed6-4f150a7a659c-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) is assigned to employee emp-acme-1003."
+       },
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) has 2% free disk space remaining, or about 10 GB."
+       }
+      ],
+      "status": "answered",
+      "summary": "acme-macbook-4 (MacBook Pro) is assigned to employee emp-acme-1003 and has 2% disk space remaining (about 10 GB)."
+     },
+     "id": "call_7876518358390960696",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3452,
+    "output_token_details": {
+     "reasoning": 616
+    },
+    "output_tokens": 842,
+    "total_tokens": 4294
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

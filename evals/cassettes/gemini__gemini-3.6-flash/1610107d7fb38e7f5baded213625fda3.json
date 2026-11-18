@@ -1,0 +1,63 @@
+{
+ "key": "1610107d7fb38e7f5baded213625fda3",
+ "latency_s": 4.43,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_8274130361412673291": "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"
+    },
+    "function_call": {
+     "arguments": "{\"summary\": \"No laptops in the fleet are currently failing high-severity compliance checks.\", \"findings\": [{\"statement\": \"There are no laptops in the fleet currently failing high-severity compliance checks, such as disk encryption.\", \"device_ids\": [], \"evidence_ids\": [\"ev:query:find_devices:3eb9e7a7\", \"ev:query:find_devices:a0007aaf\"]}], \"status\": \"answered\", \"caveats\": []}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7a-79c7-7398-b91f-7d33f949aa85-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [],
+        "evidence_ids": [
+         "ev:query:find_devices:3eb9e7a7",
+         "ev:query:find_devices:a0007aaf"
+        ],
+        "statement": "There are no laptops in the fleet currently failing high-severity compliance checks, such as disk encryption."
+       }
+      ],
+      "status": "answered",
+      "summary": "No laptops in the fleet are currently failing high-severity compliance checks."
+     },
+     "id": "call_8274130361412673291",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3580,
+    "output_token_details": {
+     "reasoning": 603
+    },
+    "output_tokens": 714,
+    "total_tokens": 4294
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

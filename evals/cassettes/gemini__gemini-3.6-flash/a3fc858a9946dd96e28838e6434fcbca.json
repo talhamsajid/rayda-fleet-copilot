@@ -1,0 +1,51 @@
+{
+ "key": "a3fc858a9946dd96e28838e6434fcbca",
+ "latency_s": 5.18,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_16817683956684908973": "Eq0WCqoWAWkUfRMwi8QYWbTsfXXqfDdBhGUcCi7LDL1nG+6+CVgDFyLZE1NCYP/f2v7kZ2VGINkl/XfdkGFyEXNLpK5Lf3PPTwDbq8LRjtSFqBkVMNe94ECGMAmkeKKXxNzF4Vzy92OAYPEMquvhX2+UWvywGMq2gIiXNOR1d+QG/zVtAHMZUcN5ad4UhBPNfPTAog6CfXgVLFzVovsnrqzAfjsGapXMMHTMnNsZ/xth8+fi5MkErSx27NbQjpRuFyRKsolgPQu0Yzzcvt3++ike6IKfqAYn6E8j97tP99KU5OYtDnh4KBv7b2XSpXmnCvc8JW+fVams5hR3utK3RQGoY/mHbd2PnT4NX42DtMt7KkAbdgOmQd96S+/xVfKZixbOsboKrujqPd4mjmWfyiPtVvfPuDgxszEZAuqjiKf54pzhNsH64Kph9Vn6qwluwEdrbif7m8lrXFxhDMgFntokP8XLCla91S27Supd9mzB0qTs+C2Lem8EIfARlzlRKHZowrprvQcjwFLeIZY4AG7MFb0eEhQYvGQq6CAowQeV7aKp7GIY24qwAq1wc8WCxEVk9CptqNU+D2c92BEebSFdfS5lpTEZFdNtgzLYbNE/8IyyGdVwG1D1W8EMY/dKGtZ5BYR8yX/Z1vLnFgZAqtn7FTxgCqyb2oDn3jRM6WPJ1o1yf0fKoLXRwHyrY+Qthl5H/tc1Rj8jmbpyOnJpog87pLpX+r2WO8+vE34Pji/KObEi2qlSRw1OALylA/c/2IE3Vyb7z7iRxeMKv9zGU6nHyalqoZPmSd46g3RxaJq1gsJ7NmvYNMV5TjIDzvhwBmtxbyqe4pLKJk7S0r2TZfrg6z5qMUVa/sNETeyX1MVhBicwMv23p/XswrNemCEVk6OtF9NVudsJukH3+roESzSVyhp6Vj/3oZuyn0mV3npJQqdgqMxQq5qLZ9D7zjA0f+fKBgsXMFDAsX8wpcB0SAQbKftbcetRV3uZ3/xcF9BwQ1Znz3E71qzlyFPrI7pmdB/Ev3SRGmVh0vbDAKjuHu5KpoHSBsU4h5aOvOARsKkXMtRg3Iv1F+2g8qQZfuHqlB60uQupTy2M+JOaVEAaqzsoGAPtVrBaV+6TEHxsSWuG6yMg0y80lv/P+7K6EIR+mYSarsjgFanbfxkSS4wBql+Dwii0YqM+RasTBAIXdcc98JKlB6303JyDqAaYNdRFQnZ/1inGnqFXAi3/uV5obS4RcVTKT0IJ8dVeofPqOwum2DIIQ7lDBSrCjo74lphPg/2gfAScXFWK6HlWPhJrtm6WQYGvwrF7vABTPYa9NnxWutT2jpikVPTEUwi1LqIPtsSyNi5jUttZftR05u6XTqpWZaemy9r5aAd95emRxn3p3P3tj0WoYh0+EwxNhINUBxL5ZQgH5X2B9bMz7KAp+JM6TBkJlyRwr278zG8n/I9+6IYTcFCsEDc1nAxsYR3zpfQcuuQT9WWZQ9zc91UCH7KhVpi7qx+yndWwAFwuzvKMivWgQDq0pIoj37F3L8tucSPYLneJ7XKGx9pGvtn7BPCyp1TP7zETK7A9csHLS4VQt6q5N4q2k282dCN/QtQUyGzgQQMfbXS10Vy2cANNTZk89+QuzSfAmLbUa5vZ2j3cSOmFaOVcdZqWIHI2vgGdKRmbPadynWEwp7KW+RaaY2ZviMvbU4Mkjq+txCR74zPA/c5EuBBB9HY2it+lLLDwzdRJaKqlo7mFSm+Ip4G0M6LgssfIx505PIVKZVlElrRO2C9vZbMYY8MBHOQaXdV3hYqoOLRhm4WFWuDKntAhDH+yiQXu2uhb048j2IrniBkAeb/dBrnKTMYzr4iylEKAu81KDNDCEZQSUptLYnl5dHY8OxhsYHWtT7IKBzg1n8Lm4rExNLaMgDUuXzFCB1E0W7d8B0+XjscL320vBNC7WdSHCvIPskM5V0KwL0yjQCodcJiR2g04OYERlF+Su6HzPvCBq6lKW0gVofdUIIBZ1B9HBSa6LUcfZClSu0vkNAefmRuPOrzUiOU7t666fZMKJ6y8ma7ip6lvewY7PcNe8uDWvrSmd6WmJdkMSttRF2txWUvSJ5S2a8wz9NubdaYJaUOAEJvw8x5vmFDJ6v4xvlDQfjVb35ip1RyNB3/L3yn5va/YT5FcdPe+d4QC9VEtM3WMMrj6bvIaB3EK8NNCLtzJEwpP8kC6e7h2gEdh+DFYiLzEzuSkfAipFKczVbejgvKRcnUSM7rwGoxnS+pU7pnpHM+az3UoKDdK4wsxNSkn9lxwpg8xkTc5VlL/RPLksQjwfz2FfvNIVegoPryUvnsO+sIwTdo3cTXHk0L6ivh6Dy8tdv4ONM50Xlyd4oV7tgtBIq3X6W1xmmOClp1U7PLHaiP0sVDOmmJaGkmGc2xs8jrLRlAxwxO+mye/ZaMyfOtQGOZf9k74en/1ZHW+x+2qmaUiL1mVgYfyK0/UFyKn60FzgC35XIsdF0MIy9s+YBVpnIKbV7+wzU7W3ZEymXYMmSuazthqffC8H2Sg7X1yjy74xBvpVU9KhY2j5wNQhWy1F5mrJwiTPCXsfDHz2JZuAxMxn3sCnLjsST6/RGW/e+olisBFEKkpzR/U+QIs4p9aoEHatvHiUW6aMf+7DPiyWtf6a6vkZjCzZcNJdpA4RVDUowyDbP+6IRVQC0YVhWVpkv2Pk5hZLUgldDAwW+2q5FAmCxiu6O+985IwxjUw8EN9quDdowRTkwlzV5nK4DSHCTWUtavpOIoTSO60k0vi+9CxwLGgv3sU0vq8tjs7svzviqf7lDoxv5N6zipvxrerCzhCvxk1b4ZE9E9qHiEhJV/POsM1RxQ9VDFaEyDvOt4e/vnwt22ED9MZLcmwKhgMo8aZmb4IZV1jLj599mPoJ9qNBiEtjCJSG99tI1mGLgypWj/Yc6+/hRfvRSX8upLYzGHJpG0rKE193YdvPJGGhZeRSD/c0oMxkZfRTFQzWACe9EJQADHWhxi71gKw+LWdM+P0ldcOSFTzp5IksDGcP/biI2YuS8TAueIZC9jw65nx8peyHcIYYFW8YEMVhKEgGq6NgkSy6yYHMheXbqK7J9zMjX6EAA8J/iKLS48MRzGnSa8LZ3BaKK+ob+akJFltnTWecCAWPUB4LjHgSvB40Z6nhCYZU9JGzu2NbR6X49SnktLjoAjKfYUClJWbxKrgqmkOZ/C7uLjYjDYtPbdY1PBNMAoiakW3uSOb8pugiH0+cGJ2Tcit5ayNWSHzH/zz+z6HKrisb/VsS6r39/LR6ClhwHHGo+FJRJkRUeVTgHSth7VKntH8LD9Qnvu7PiJmkDyDZnCZn0dBtdMZXNnlm9T2fqMHdih8XGajgVxCoPBN/Hn4BIBKRgR8+s1kjR2jTRrKo7/M4Gu13UjlNmgODWFLiBi+oUxdsxrfDUS5ZLPcAVZ34GQX3jmqtNVFy0EHhbzJN15+bo1LaYnQLHWikUqWSF9LIzbzt1dISFw3L1X0RMuUirLyszL4sz60C5PoBpnPJAQuNof5h2lKm7T1cVAzx/ScZaxaplUxfR6Fha/1Et7lV3DU/Bdxgt77h99gkunDlfHXvtvwh18B+/dlOWd4w1Xbn0tAdHP/zpEzIJza3WaGQLdeP0W3DPyf+SPaJy6FgH3nFvQOp8HY8LjUx9aGRXjoKZkMPfIJV0b/KWwi4O+ONI3rvk4ew5oK8516v2lx1+tr/1gBQqx250cTFxnff2heYIoJDgbdq3DkooP//PphaoRO/MDKX22cY+xSZ+of7GOaeMmga4C8rkjV0kwiuLqTjGjU6/44vZI="
+    },
+    "function_call": {
+     "arguments": "{\"device_id\": \"7VP16KHV88LM\"}",
+     "name": "get_device"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef83-5dde-76c2-b719-03ea7d8159d1-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "device_id": "7VP16KHV88LM"
+     },
+     "id": "call_16817683956684908973",
+     "name": "get_device",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 10483
+    },
+    "input_tokens": 14599,
+    "output_token_details": {
+     "reasoning": 701
+    },
+    "output_tokens": 727,
+    "total_tokens": 15326
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -1,0 +1,65 @@
+{
+ "key": "b892b728c599c57ee2f0d67d64f8c922",
+ "latency_s": 3.59,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_5804345425020837521": "EuwJCukJAWkUfRPnQwhKa37cSQuwsrfcfd2iVAUgPpsmn21oOX1KfD9G5ed6OHi5uffOD5t0GXoKhK8Kimqa/TmVsuRRXoxETRSrahyzm24IjBc8r/R6UuElmPt2xTWkIO5hszh9fHHbwzTzVvehV5BGUcNKQMZ5AILjKCwlNAg0R3AHVaBeynYiWiR3YUMohOrYIcSym6ee00MoRojP3ye0xCepvo+slIHGRqsYAACs0Dlra4DNp/bv4Wv6zrKD21yF9C6JMun3tcWp/ZidjilR9K65Y2GQmAnH8h18TeGopBoX93o1G76rw44Zvb+jTtOcpkQY1y/dxRAqJi3QurEqGtfkWscfEHSFcwUeQ09znvwOUp2jsPp1ww/3y1Uzx7sdUDv8+wWvRF7r8oHb4Xf1zXiy/qREIABzAuYjARKo9g+07i60Mrci3evsdtZ/+jhGrKqEOHK9+ppOQS6h3rQx9Ul2TTpXhn4C3UstaJVR6xXdHQENrejkh6HF3vf9YQ9Fzt5Kms4jVFhBI7QKY3/HcCQxOj/s4HK5U40AWMSshPcn/AJtt4h/8TjJUBtPdqQ6EUSYf00sR5BKo3rmgo1MSS3Ea4Fxhv6MSYQai18qusgTno7Jz8mmWdKyGkJp9xlEWCECBU/UBLy12gaSOsBJy71CP2yaNCeUkVHsB8zizFoBKjTBOLdweLcipnK6nmW2rylKI+2sM2Vrg++zzjIAO2rc9ICadKZlEg1Y7PSnOtyzFHzpgRBxE9mfLs6amMRHv2OKmM94vdy5OGoRIiSnG20OGcvH0hE2WdAAvXm1PxiSEB21znzzZQRIGPYD3+DTecdyQMxvm2HZVT9qjyWFIZkh8B9WmHmiUc6bcqKy76bqKP5Tk5ELAf1s3H5+ZrzvQ3pnQhbSUeFIryTpV7yuJSX8fZ8EAyDbrTKOdV13kMbzDiGi91rkgpUzfyW1uaDrowDQASQ17Ag7op98QmXqeKNOAJOS6sX4ZxLkCRSsHC71ztSn+t3Hkec2APAeD/B+I6YfkpVIRD6zTdl+YPYOLsDI55fsOtp7KFQIsyRdMSWxhSE7kvDXvhG2J0mfVVl5uC8cO7R6CmwVh9fkahCwz47jDYWaxZ1JLkOxa6n0XcZoB1U+xYGxDgFdonZyAK0K7iNaDssUzXPAzu7FczeJi4egnD3qLVT1bRkjoaGfXAA295KEeCAXrr+C3ggJsoqKIYFdA796ogY/ZaR64XIxkqUtqUBmUGWtjgQyKllUA0LXozRiT8ReTtoZeZraCdJf4zVc55/DjY+HhkZcTmVq3ZUZAfZUYQ+5Vj9mvR3Qao0DerQc1gSLn6o3LZHRPEORyVcy9266+b+5DqK262kl+lQgnKOcbRbh9BB9a/VsO8sIarzCFjO25Ue1GUoc40GX+hNTug6hz+gGDAubIASt9AlpvjkUN+ijTdPZio3bS7IfF1l4ZVsslS+LssJuwFckqOFckqwwUvmV51VYJfE31mafjceuvl4/OG73urxEy5B5KZHTdRnqXOuNAROxNRhqmfFSZlsf1LLUp+hnBna/LU52/F+/Hj9AyfFuyT/PzYdHEX272BhokXTk8aHdSLxWX/2Qc8zpTHkqV6ohhYzYO9LjaiAhZq/3lpKxfrgW7qiSF9L9tvN7NZWbCiyv+mc42F/HVbAwGcEPzp6y"
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Load the hardware-remediation skill procedure\", \"Get telemetry/insights for device XSU9UUDGU6AC to check for hardware findings\", \"Evaluate hardware replacement criteria based on evidence\", \"Propose flagging the device for replacement or report findings\", \"Submit the final answer\"], \"intent\": \"action\", \"tools\": [\"load_skill\", \"get_device\", \"detect_insights\", \"flag_device_for_replacement\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef81-aeb1-777a-b923-1814099612bc-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load the hardware-remediation skill procedure",
+       "Get telemetry/insights for device XSU9UUDGU6AC to check for hardware findings",
+       "Evaluate hardware replacement criteria based on evidence",
+       "Propose flagging the device for replacement or report findings",
+       "Submit the final answer"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "detect_insights",
+       "flag_device_for_replacement",
+       "submit_answer"
+      ]
+     },
+     "id": "call_5804345425020837521",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2796,
+    "output_token_details": {
+     "reasoning": 279
+    },
+    "output_tokens": 396,
+    "total_tokens": 3192
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

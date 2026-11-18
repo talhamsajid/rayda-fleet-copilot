@@ -1,0 +1,63 @@
+{
+ "key": "f66b8fad4546fe443fce8bd9a963ec74",
+ "latency_s": 4.89,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_17946224986581319618": "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"
+    },
+    "function_call": {
+     "arguments": "{\"caveats\": [], \"findings\": [{\"statement\": \"No devices in the fleet currently have batteries approaching end of life.\", \"evidence_ids\": [\"ev:query:find_devices:44136fa3\", \"ev:query:fleet_overview:44136fa3\"], \"device_ids\": []}], \"status\": \"answered\", \"summary\": \"No batteries across the fleet are approaching end of life.\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7c-f94b-772a-93ef-457a6b1b2854-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [],
+        "evidence_ids": [
+         "ev:query:find_devices:44136fa3",
+         "ev:query:fleet_overview:44136fa3"
+        ],
+        "statement": "No devices in the fleet currently have batteries approaching end of life."
+       }
+      ],
+      "status": "answered",
+      "summary": "No batteries across the fleet are approaching end of life."
+     },
+     "id": "call_17946224986581319618",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 6092
+    },
+    "input_tokens": 8672,
+    "output_token_details": {
+     "reasoning": 763
+    },
+    "output_tokens": 865,
+    "total_tokens": 9537
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

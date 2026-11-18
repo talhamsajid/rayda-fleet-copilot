@@ -1,0 +1,66 @@
+{
+ "key": "a7a0d1a876a3df9758c9e519c78a4ea6",
+ "latency_s": 4.83,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_17697906287525472858": "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"
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"action\", \"tools\": [\"load_skill\", \"detect_insights\", \"get_device\", \"create_upgrade_order\", \"flag_device_for_replacement\", \"submit_answer\"], \"steps\": [\"Load hardware-remediation skill\", \"Detect storage_low insights across the fleet\", \"Get detailed device information for affected devices\", \"Propose upgrade orders or replacement flags based on skill rules\", \"Submit answer summarizing recommendations and created proposals\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef82-429e-7626-a4ee-9c3fef28fa76-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load hardware-remediation skill",
+       "Detect storage_low insights across the fleet",
+       "Get detailed device information for affected devices",
+       "Propose upgrade orders or replacement flags based on skill rules",
+       "Submit answer summarizing recommendations and created proposals"
+      ],
+      "tools": [
+       "load_skill",
+       "detect_insights",
+       "get_device",
+       "create_upgrade_order",
+       "flag_device_for_replacement",
+       "submit_answer"
+      ]
+     },
+     "id": "call_17697906287525472858",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2793,
+    "output_token_details": {
+     "reasoning": 521
+    },
+    "output_tokens": 637,
+    "total_tokens": 3430
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

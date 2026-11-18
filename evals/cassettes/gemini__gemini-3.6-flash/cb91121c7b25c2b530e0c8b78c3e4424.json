@@ -1,0 +1,71 @@
+{
+ "key": "cb91121c7b25c2b530e0c8b78c3e4424",
+ "latency_s": 3.29,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_13588575163299497621": "EtAKCs0KAWkUfROKS1tlt9lXX4jPMlsRdHe55m/tWQX0dJNNZxdhQqEfWfJzAAHdq1ItfDrdKzOFXi9mJc2n+t8dpypwpQGz8ZrT81zt+GCWLqXkCT+ZUDB6/OYLVBuo500Kb2p6LWPcpi8GPtCsrxP8pfDWKSUnMUX/5vGR6UlKp+0C6MyS7MRK8O/6UMMACdyh3MOocPcq+u0W1W7Oo7FOmHaFShYOMePtxBJevp8B4RunSSSosXPn0f4aolyL7S4Wb8n6tx6cWB7uirE0d1u3V9sPn6tC+KBpEV61249/Akq93rilNU1TG5eHM4EcoLSIIAqksYAGr5vLe19kpkYHKQBjSRZnBJPzdrODeHAOU+MRbNDsTz5VdemHHYNtfTZUsTooy+HP2DpKvHb+tzAaF8cKQhRrIqSln83GOlTAs6ZK80YrTRW3P/CQD2P8dTBaoeOU9RyRUkJJzoJkTHNlIYtlsUU7G8n/7UZ37mpECXtgR4ZaHNmKiV8rA1eZgWwxAdg7Z4jLu+AvstFwIZ5is17ziQO3/lYgcZl09WY60Qonl7CnmNJ1uD0JicNY7f40tHFwUV16FjK6ZQAvK8HK0c0DuB6Rl3gZI6D2GF2TePnPEMBuZT5b4aormlr5yvNwJ3uHFIe+DG6pW2WsiPCyfLhdkYweYohmZ16Jwwj9n5P4dvUtv/aLYQD+ooyF8Ty/ENW1ObX3tyDTbsa0a6U9FhU2q1fIkl+Wpe/M80uXkILqPX37g/kt8Jper/jKz6J3U3NgCgffdIncgiqBdNqnBQl5yjs3pODnsE3Sc5tabI8fwYmU6i5fta/O8ifPg+92EsQ42HxV+3sJNac8hpjEHR1UjAf3eg7RRGtDmkjqHyLShUBS1SmJVaeaVmbUUz9EyVxlQiFAtExBmf3o2GxzhyYkHvNxNJzU6ZxoqZR8Vw2yaM6RgbyBgvZ7X7EBnuJpCSNH5kD227ezXqYx/gsYj71O6Kc2/4sQ62qxY9LFZVC6M3uy/SiaZO6E70JuccHfOGOHo1KE1ZPIcilRDZfLn4OCCbRnNVmUhRlDY50KBidgJTIbBGGnDi+nOwIPaGZW0HPGRk1Ssp3jIzu/dHAg9gurHHnIwyBMkOJL/3ctXlnQe+BjW83J/xKwpOZIszO/fQJkWzexGZMCgyEYmWnRgvuHpaLjrGnuDuz3EQ8CEi/cYAnbt8ke0GKKxhxedxKwvCCtZ1IhHJdWaxqqmh+dwbq5lwKpahWHdB2WmSjbVz30wxZS5TsrezcygXoJRBd8jeodhAelM/i9Ef4RO66AjWKtjcnTBWe5JAG0x2dpW7B3Z4+KhtTIF/8vmSuddFNYoJ/EbJVvgRQ+j77End19y2UQXD53V0Vmbz1nc1WyzYjVt6nBWBxBoiR46SKkdBDNH30YreAnmsAzUILz1Cgasyp7KN+In9+yya+ZmME/Gcn74RmVtSSpXGlUubrpEC6pMasDdc5x4fb22y08zgqj0oZyL+p5O0qqs50Bu2ndti/2kr/K0hE4DtO+CmtXT5H7VUsSW3UOc+kkVAR/z4YKg90aeuNxmsHt9hmzO5hDrdFGQumoMDp1NHkaPF7z7AWkYF0zM0o0emy3UdI/4mwjWNZtE9NDdmNtjxkH1rHrJphX85Tg39Lvfvc8I3M1ENLt89BPoTnVEXGDZPteTgTq+p9/YSkFuryrIj6gCuyb0G+m0C3V/e28qMU30RAPwrMovct8N5ch9gYcmdWuB9frZZmgKQ3f/LdDeS2JIUj++/CT3ZJOZqgpXx+Lam68C1aCN3qkozAgJzKWJCQYmskY+Q=="
+    },
+    "function_call": {
+     "arguments": "{}",
+     "name": "compliance_summary"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7e-b011-7174-8a65-44f4655f30e3-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "name": "fleet-health-review"
+     },
+     "id": "call_13588575163299497621",
+     "name": "load_skill",
+     "type": "tool_call"
+    },
+    {
+     "args": {},
+     "id": "call_13588575163299496142",
+     "name": "fleet_overview",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "kind": "all"
+     },
+     "id": "call_13588575163299498759",
+     "name": "detect_insights",
+     "type": "tool_call"
+    },
+    {
+     "args": {},
+     "id": "call_13588575163299497280",
+     "name": "compliance_summary",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3257,
+    "output_token_details": {
+     "reasoning": 325
+    },
+    "output_tokens": 381,
+    "total_tokens": 3638
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fleet Copilot</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header class="bar">
+    <span class="brand">Fleet Copilot</span>
+    <nav id="nav" class="nav" hidden aria-label="Main">
+      <button type="button" data-view="chat" aria-current="page">Chat</button>
+      <button type="button" data-view="insights">Insights <span id="urgent-badge" class="badge" hidden></span></button>
+    </nav>
+    <span id="who" class="who" hidden></span>
+    <button id="signout" class="quiet" type="button" hidden>Sign out</button>
+  </header>
+
+  <main id="login" class="login" hidden>
+    <form id="login-form" class="login-form">
+      <h1>Sign in</h1>
+      <p class="muted">Demo sign-in. In production this is your company's single sign-on.</p>
+      <label>Company
+        <select id="tenant" required></select>
+      </label>
+      <label>Your name
+        <input id="actor" value="it-admin" autocomplete="username" maxlength="64" pattern="[A-Za-z0-9._@\-]+" required>
+      </label>
+      <button class="primary" type="submit">Sign in</button>
+      <p id="login-error" class="error" role="alert" hidden></p>
+    </form>
+  </main>
+
+  <main id="app" class="app" hidden>
+    <nav class="sidebar" aria-label="Conversations">
+      <button id="new-chat" class="secondary" type="button">New conversation</button>
+      <ol id="conversations" class="conversations"></ol>
+    </nav>
+
+    <section class="conversation" aria-label="Conversation">
+      <div id="empty" class="empty">
+        <h2>Ask about your fleet</h2>
+        <p class="muted">Answers come only from device telemetry, and every claim links to its evidence. Actions are proposals until you approve them.</p>
+        <div id="suggestions" class="suggestions"></div>
+      </div>
+      <div id="turns" class="turns"></div>
+      <form id="ask-form" class="ask">
+        <label for="question" class="sr-only">Question</label>
+        <textarea id="question" rows="2" maxlength="2000" placeholder="Ask a question or a follow-up" required></textarea>
+        <button id="ask-btn" class="primary" type="submit">Ask</button>
+      </form>
+    </section>
+
+    <aside class="inspector" aria-label="Inspector">
+      <div class="tabs" role="tablist">
+        <button role="tab" type="button" data-tab="evidence" aria-selected="true">Evidence</button>
+        <button role="tab" type="button" data-tab="activity" aria-selected="false">Activity</button>
+        <button role="tab" type="button" data-tab="audit" aria-selected="false">Audit log</button>
+      </div>
+      <div id="tab-evidence" class="tabpanel" role="tabpanel"><p class="muted">Select a citation number to see the telemetry behind it.</p></div>
+      <div id="tab-activity" class="tabpanel" role="tabpanel" hidden><p class="muted">The plan and every tool call of the last question.</p></div>
+      <div id="tab-audit" class="tabpanel" role="tabpanel" hidden></div>
+    </aside>
+  </main>
+
+  <main id="insights" class="insights" hidden>
+    <header class="insights-head">
+      <div>
+        <h1>Daily briefing</h1>
+        <p id="insights-sub" class="muted"></p>
+      </div>
+      <label class="day-picker">Day
+        <select id="insights-day"></select>
+      </label>
+    </header>
+    <div id="insights-counts" class="counts"></div>
+    <div id="insights-body"></div>
+  </main>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

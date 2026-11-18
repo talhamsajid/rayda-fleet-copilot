@@ -1,0 +1,63 @@
+{
+ "key": "3d16c53b7427a069b3556f6b65b653ae",
+ "latency_s": 3.28,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_5345897887144717951": "EtIKCs8KAWkUfROcNtLvP00DZCfdyoX/nC1O/Dlp3jqMFzSiOahZnflxWkhLkV9Se0uREnABH01n0c9ckErP1Oo7Q19CcFMRQOOW9HrFzOk7Tsxk8ERaQuUA8iL8xnXR55lxxl0hqRA8j4ITJthnK4mZyTrG+Jyl4Dh51I+jcydV+RFICA7409P7eRIoMcC63SXWjiEuZh5kmHtVqEsF7e2PxILG0U9CUBBXWEg9SL5z+bJeOCwreKOeRTvVRH00/ELdMWRZX4xRTNX6AZ5EDuQMPRxrd4YK0tU/R8pO2G/HCpT74uny2pJ3TabkCjUIUaBMtuncvY7Lbi/TJpJLGe0uBD9A5V9RgDhaD/AJgLTZRblahWoC5PzX+AJZQc6AU1k8RQxhA0ruAnGRjO2ZKVmsPfwo0BKsPt/ARuKKJ2Lza8+zXHuC6zHo9ODMZDniPkh1TYZfJ4/S5ZNtDFK2Bpwwsisng80S/YAdZN0UyTXV+Szcc0VsqaEyj64idVPN7Lg2EORG0Un2kRCk5TPMPGqJAeIRztKS4I6aYIMmD7CR6iHlYKktwLQwAorkcOhOsox6jmSRfJF8RWR7UTBrgiehU36xKUk1P/MpzBVuK/gsHtN1qqDbG4qr49qvfrxDv4EVG5hS2SUxnZC5V4Oeq9gTKVUbJ8kwr88l36py/IxhchbPcCq4ke4/WZJf2IeivIS7yMvtRpq+iZRorVH6Yft0xAbJPFQGNBmZrhvvNuyr1CaNDnvRrUpDh0uPI+uQvxzR3QRz25N6QgfsbNMU6CdBn5rm8VlgFx5uDbzSh5loV3VJZNivuIBz3C5rbnJ4cTbe78P4a23pl3DcgMtdfzmh+4+oKor6aSVe6PqOANN+bQFzWLpt2DePeGL3MjAhlccGRr3Z6BEAqsw21Y5CX8QOoRFBIrmg9N8IC0/YJ13v6Igz3vL0/vGv/JcYXpW295DARsDNoNFUsuyQt6zl1Vnt3ouIKdhpQFyldIGcRUOmUtCqt6K6P2m2mHkjGPutlC6SBmdTQFLEQE9lLhn2YGfNVo0KyzXJsy0s+4QSVDOdT5XnG4D7BhVCY/DytpiwEEPoWXVbEYGXSzAf4+KaKCYwmE2DAhvr3IUa0VYyxY114Zy0VjlBswwN/pYKw7AmHbIHujLqX64fons48OxYPvzuln3RGIi14w75RFJ3IY/4hkCHFHHWujNe1M1xv1hL7DAwxqF71SI2rYoB4GekGdnE+ImE9uLOwgPRaZ+EWDx1Ez1wzc9jpy9QUbgTrAlVoxVEJr5YVa/Vj+vKzWZICs0biDiA9ZLCP9WRFUc/VeVSZvJh4NI041FlABsUkDr0Q386uLIrKMwgRim5mLKjD9/PMrbWRWLpHRvR/5JK9lgCUMu/pVhzPPnPSEhC2TSy1t3I9yiDYWFmtICOrBqQo6Cz3cPdPMVTOcHp0tPLCEI1SiZR3ItQN76Sc1rlLA+P5GfdxsI7er3/KXWQrT9irKljKFICtwqgzg3euthxbl+PelfOinzSVF/KSEgXLB13xg8+BqvMoj1izvewZ2KGXi/RUsiGu99MxaJeYJ8DDzNkskmu8L0H+NldewCeJpTeDQ0oQQ9QZYVutBoEfrFJG+/0fDinrAigh7rW696y+nfVUYb6cE74bYoxymrPRngjuisIfVvyIYCgvL+WMbHge6ZhfhEJQyPojv17molXCI6xkUebIuE9cd+bNkGkgVe4gzbERNlsLgucuSF2AFb96CMX4qjjQdARTU4+hIOb1ec8pUVUDk6M2Yeo5ORyNDzPs21f3Zwn80aU9Kr5c/t4ZRpIXR4R"
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"action\", \"steps\": [\"Load compliance-remediation skill\", \"Retrieve latest snapshot for MT7PJB7N5LRE to check failing screen lock check and get evidence ID\", \"Propose opening a remediation ticket for screen lock check on MT7PJB7N5LRE\", \"Submit final answer confirming ticket proposal\"], \"tools\": [\"load_skill\", \"get_device\", \"open_remediation_ticket\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef82-bf5b-7169-91cf-6d3c160ab88a-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load compliance-remediation skill",
+       "Retrieve latest snapshot for MT7PJB7N5LRE to check failing screen lock check and get evidence ID",
+       "Propose opening a remediation ticket for screen lock check on MT7PJB7N5LRE",
+       "Submit final answer confirming ticket proposal"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "open_remediation_ticket",
+       "submit_answer"
+      ]
+     },
+     "id": "call_5345897887144717951",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2816,
+    "output_token_details": {
+     "reasoning": 329
+    },
+    "output_tokens": 443,
+    "total_tokens": 3259
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

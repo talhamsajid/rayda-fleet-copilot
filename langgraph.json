@@ -1,0 +1,4 @@
+{
+  "dependencies": ["."],
+  "graphs": {"fleet_copilot": "fleet_copilot.graph:graph"}
+}

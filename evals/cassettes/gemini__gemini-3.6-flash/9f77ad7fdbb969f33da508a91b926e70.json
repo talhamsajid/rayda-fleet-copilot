@@ -1,0 +1,60 @@
+{
+ "key": "9f77ad7fdbb969f33da508a91b926e70",
+ "latency_s": 2.16,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_548848347759826711": "EtEECs4EAWkUfRMGOtf7ZsE6NVD9sjT3H7KrFhi7HIigT6DZLt7hUrWcZ/vIvsG83Z5fZ+If6IhXczt1oc7wjdRKz7KAnnR/7N6SzA/ZfAJ3Hb+Y8nMy0dIKsIme+k7d0YDcJAf2jo+/MuIWNRPRJtjik8NXmnK6JCFzEOLT9/r5sjLPDBN8daGs8eufPpxiuBq75BgZ08wcmo8WL4gsm2/FDG5mKZd4cmbdwh8szxJO1dWeSTjNgLbZwbcN5cwL+Jq2Jh3lbyADMVZjFWoAzDWs1E62lwWtrhr+gn4WvEbMwb+bSfU6nLhx14rqbKeyMa+0M3WA7oodd/ob3r0Vd+G/oimNGvoSuHMCwY7SnNwlQe6oH0YSIl/tZPtYifLARnq5QHqboMbBjty3Ril61ybw+ShyX+cDMMmLfhtCWry57GCrH0IBOEoNPYfD40zISI3AxiWjY6YJKQOajjqPQcs27exu/XCakqxtkT4ckSJp0AVB5+aghI+F+1wKW1xm5qNIB2WE5gVbGiSA+7fpThtzBfiax2FdNWKFmBkk63LjDLlHV/OK1gI8yPlgWl7nwKi5LHezkVL7PvBTyJaZY11or3jo9E2QizxAexgr9/EH8he28a0xtwj+huUWDOhlb7e2srItVActTM/fcXXPXHI5TN9EWsiR/VvJTHpHBlKgd4t0V3uf+VdKMCAck3JKL9jP0yW1X3VFrUa7Hj3dKDOqTjZ3BJHfpw0hCVnprXtu/Sd7NZJc2gE6aeh+mlQcFLTgUSAP9H+A2jorqVK7cgZrKf4="
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"get_device\", \"submit_answer\"], \"steps\": [\"Get device details for MT7PJB7N5LRE using get_device tool\", \"Extract employee assignment and disk space information\", \"Submit final answer citing evidence IDs\"], \"intent\": \"question\"}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7b-934d-731a-9808-31918ae6f4cd-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Get device details for MT7PJB7N5LRE using get_device tool",
+       "Extract employee assignment and disk space information",
+       "Submit final answer citing evidence IDs"
+      ],
+      "tools": [
+       "get_device",
+       "submit_answer"
+      ]
+     },
+     "id": "call_548848347759826711",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2801,
+    "output_token_details": {
+     "reasoning": 128
+    },
+    "output_tokens": 200,
+    "total_tokens": 3001
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

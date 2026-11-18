@@ -1,0 +1,42 @@
+{
+ "key": "62d3dfbadcda0b024ec7c55fddc89376",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"fields\": {\"device_ids\": [], \"devices_scanned\": 7, \"match_count\": 0, \"query\": {\"failing_severity\": \"high\", \"form_factor\": \"laptop\"}}, \"id\": \"ev:query:find_devices:3eb9e7a7\"}, {\"fields\": {\"device_ids\": [], \"devices_scanned\": 7, \"match_count\": 0, \"query\": {\"failing_check\": \"disk_encryption\"}}, \"id\": \"ev:query:find_devices:a0007aaf\"}], \"finding\": 1, \"statement\": \"There are no laptops in the fleet currently failing high-severity compliance checks, such as disk encryption.\"}], \"summary\": \"No laptops in the fleet are currently failing high-severity compliance checks.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.7155601563967299,
+    "noul": 0.7155601563967299,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.8237382062798614,
+    "noul": 0.8237382062798614,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 451
+    }
+   ],
+   "total_input_tokens": 451,
+   "total_output_tokens": 0,
+   "total_tokens": 451
+  }
+ }
+}

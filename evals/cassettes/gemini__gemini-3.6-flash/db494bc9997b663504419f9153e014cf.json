@@ -1,0 +1,62 @@
+{
+ "key": "db494bc9997b663504419f9153e014cf",
+ "latency_s": 4.01,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7211943932727796180": "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"
+    },
+    "function_call": {
+     "arguments": "{\"summary\": \"Battery health information is unavailable because device ZZZZ12345678 is not part of Acme's managed fleet.\", \"status\": \"insufficient_data\", \"findings\": [{\"statement\": \"Device ZZZZ12345678 is not part of Acme's managed device fleet.\", \"device_ids\": [], \"evidence_ids\": [\"ev:query:lookup:aea4b3ee\"]}], \"caveats\": []}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7c-6a9c-724f-9281-ed830a7086c3-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [],
+        "evidence_ids": [
+         "ev:query:lookup:aea4b3ee"
+        ],
+        "statement": "Device ZZZZ12345678 is not part of Acme's managed device fleet."
+       }
+      ],
+      "status": "insufficient_data",
+      "summary": "Battery health information is unavailable because device ZZZZ12345678 is not part of Acme's managed fleet."
+     },
+     "id": "call_7211943932727796180",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 1187
+    },
+    "input_tokens": 3685,
+    "output_token_details": {
+     "reasoning": 470
+    },
+    "output_tokens": 580,
+    "total_tokens": 4265
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

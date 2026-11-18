@@ -1,0 +1,61 @@
+{
+ "key": "2fdea95da624a0856ec34e16b9bfb1d2",
+ "latency_s": 2.71,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_14364635220755455241": "Et0GCtoGAWkUfRNJxHanCMaMD1vyW9h00XR8rSw6zVJvXtLWb2WVAPEq0ulRaZx/gLCaXxFYwDJvaiJmnE4yT1NM+6QXl5JHgRD040AUK28z0vm9+is2p84aGvHvlwb7aOnf2DCLPTAc8vcCxpXYLg0Bx0uVay4PCVa96kd44K4WMTGj8Uu7PMLsIptSnuH3atKIUwufpAUszDbMm7IZJto5sGgPkyC90r/ifSKlsKD5SToj76zTLjkCyR496lWwGrpLTO0ZC7FGNC70/2dEdCtJ1DcpRthz4UkaUxgUxEpGwQvp88F0Y3o6FTbHpwkYhXj364lwkYOFbumiaBUdiuOVMzQGxDoNOEqdaZk6IzMyy7tPe3DlkJ5Z4/jez0ZYTJgeqCOhrw+HyOWsKEmIdqWt6BdYO0Tpcq38Sx98qZYwQVpHxmDW3yoA7CR7Tjz/QrthGiq6Eq6ifKsc2WMqdWvrA1lZKFHXwiLGFmmts4Tpd7JKZIY8eXDyb1ndnHlu/tKpbU+ZUjQmrVeytStZY0IcAaZ2B4nl47Ak+dEbR168vr+7fb9QkfVJkBq+Ga1T2aovnpT8n2hzmoSDGHQADv6ulTK6aJe76EAWOoPAzROOJ2x6GW4IE+oxRSX5STlbjbIHb1An/ioiuRwEA3i1qyrpgVhCftr0aMbmbvGUp5d6pgv31Qi+Zxd6DcPCf5WlEM3kRxduLP7v4QNdLhk0NLQiMOWAXZ+ULfjqUNvGwp10BoTuNYe9sMjcpAQ7jyZ9ccfXdhsCAsUQevgJQOZvnK5lU6hd5k8jPpJN3dy+WxCXgeucEYBYZRI51obw0uDq1Zx3QHOwPF3Ku7liRDswZKBwR7Fd4qTuzuB7+rIIlLxEzkvkCmeTs4WokSz9sYaICTvAwftYY5JpTt/rak5VW+Wwt/fgf3kERvc73l0jUfaJXaehfrd+pFlfh7gBImN9HwCM34+xb3jtjAKExjqPaySJbgz0IBxJF20uPu8EqMuVUMCue1yAkSfwbKz+AsHeWPq33jNPLWU5ZfFVj59lBfSZY+IPeM2uDzfVirbqkLWrz2TExShCGMtYZDm1EqzHQcuTz/sKdT3YnxciNEQM9+G8Zr8lsM8A7zOri9IP8Jf/6x0RZVUzUn5kJLnb3vCa"
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"question\", \"tools\": [\"detect_insights\", \"find_devices\", \"submit_answer\"], \"steps\": [\"Detect storage_low insights or find devices with low disk space.\", \"Fetch detailed device information or history if needed.\", \"Submit final answer with evidence citations.\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef84-13e4-7421-ac2a-eee43b08815f-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Detect storage_low insights or find devices with low disk space.",
+       "Fetch detailed device information or history if needed.",
+       "Submit final answer with evidence citations."
+      ],
+      "tools": [
+       "detect_insights",
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_14364635220755455241",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2788,
+    "output_token_details": {
+     "reasoning": 186
+    },
+    "output_tokens": 262,
+    "total_tokens": 3050
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

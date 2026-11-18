@@ -1,0 +1,61 @@
+{
+ "key": "09a6bfb48528a26fd82d678334ddf4b6",
+ "latency_s": 3.58,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9561210359628833325": "EpwLCpkLAWkUfRMyYPjC3qWrfonRFKTAeneNY3F9e1DK2cs8xB8bBAXN0Cu5yrY+FzloDVSFAFphvYLd2NHUazG35Nw34mRYVzeSEgzlBrDr7XV1KpG9pZnY02L4xXbRYafHSGSjgksNVWBS4TtykCbqp+uzG3XpLKocZ6ZxzT4XjYINr89I76ZEuEpZn1R7tqXLzbQsRO7aTabzsStRVaojukjvQ6yiIY6isqvbDJF0CgyVX3ovBU4EPIFnoBGquM7HVRVjd+PLhbELIjfNweHj2Qi7U++vxC6LwZIaJTd+CyrjWIj7lSvAw4Bugf6KJ9r3obA+/CCcyZox5D4hsz7y0ykCWnrT3L9PJo5yKOc/b7CTikU3bS4pNW8Hh0GxOSzeTQ2vpiIC45dlriD/TC0SAidsSE/ZeHYFaBr5FQiGtzrwZjkjO/Ki9LCLQrSfflTGA9M7jFv+DV5eaU71t2XjEQrBS7sl+Gs/QtbZkhuphpDVdjJLIKcwGY6ZAXHfpVzpQo22phThuddoapyi4uiRpJ4R+vWCkk6H6F4yB1oPu3uvX3yCKDCnGqeBsXZWooQ+Pp1McQS9bPYbtcdY/Bc6vMNP+NLzE7qx10a+wE5sCZACFPiYtaMlL/cBI/qqKnha3AMXHW953EF/HP9x7Qa2L9hwpvkNgy+kckRZoPE3B4MX8yKp3Z2ZaUpAc+bBxLVpSG82WtTPsy/9amzhbPhEAn7JpySLn5reLiNNboDgjg+3YYe9skbYCrp1ZZSAvmdx4e+YiOcyQC5Vn2OXMv9Y9I3RrAtCd0+uZ1EMOfnI8n/2fsK674ld6LZzAmDlkMYVSNnwZC2VT8F1kEAQPluRNrjeMj1JRPxeTa2fQUclTHk1lJGGTStTOj9tkl1eIbWqjhoFXJDndbFohK01bCwjxBKgu5ZJjqpXMo2JD0rEApBwlKalMMDQekRTuokTzjzL1ygb0GD5pQCKDKLcU1QF6bq5tpYYZkRGaGN8Dl/yISLoDZitlMX0W+qFsNXfYdVdJkI0b4BLrnz6jYt8bG0eAN+hQZlYxAyKjLVyBh/vr2bXAcyupPMAoDiXx3jkgYzJYtatEDVBgn2wwONc9i5yGtaMe2BWQ85Dy1cL0qZow+5YF48YiEKHrE6e80fy2m2g3YjjXjgL3dSRKPWLtxbHti3DIoNePeOcWKbq6UYjvf7Z9NAgPDn+5+zKOwvDU+Bo6AqZAW4JWiJHjGrV8nOZM3WE1B8z5kTLBPbYrNdsO+xxY4PVCsHnw+nwvB3CQTqk/1qJCm4rKPPL2kWUBuB2zCL1k/TfWG7DEGR296g6rpXntq/MzCgy3prq/PlRe532zMYx/SVn1OoGtUWEiDHSEkjwv9B/tZyUJjIXrc3j+qHzAERFaVqreNw8VL5ulONVwKhx7jCOJhaUlJKlV1c7X8IFem/dyr8JnnLmvpfFkuqt/1lr8lg6NqitdO0HnuDIGOnU8gWXrS2kUyJzco1q6ygy6hlaay1VC8SLZAuQ0HQOc3f8Bs+V2qNL51WX4ueDHMimZLCDdHT6JycHIxfgv3i3xUG3DM+v6vTTC1aSy7BPYjML9tiraPlykYWrUlwmuKOXhpbP+kabI6QysUQFgo++nKkwMRUOKmw2ugeYx4fZPjzzqiWr8MpbEp3ZNjO3q39RaFK64k80AnuxuRHM74Sd8xv2JUTZOyr5dtWfWUQDGQfdBrQ/ZZ3b0yRqNB/2JB+SoFsT9D5GfvBU2P9uXdNUz0VwyGXU9DcD16TA+9KwZsmRc8LNnLIuYt7R9CY6w+hbIyM6mc1sCLDMRkSOC4GKtORPK+VAXiCqUsiAC1Bgz5WHrZAiXG3E7F+GDnggWWKDMBukJSjSUY5ckfEukaTLqZ72HwXWQvor62K/A/8WUYSCist5F02tZhc="
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"detect_insights\", \"find_devices\", \"submit_answer\"], \"intent\": \"insight\", \"steps\": [\"Run detect_insights for storage_low to identify devices with low disk space.\", \"Query details for identified devices using find_devices or get_device if needed.\", \"Submit the answer listing devices low on disk space with evidence IDs.\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef79-626d-7624-82d9-3f6cdb4526c4-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "insight",
+      "steps": [
+       "Run detect_insights for storage_low to identify devices with low disk space.",
+       "Query details for identified devices using find_devices or get_device if needed.",
+       "Submit the answer listing devices low on disk space with evidence IDs."
+      ],
+      "tools": [
+       "detect_insights",
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_9561210359628833325",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2792,
+    "output_token_details": {
+     "reasoning": 365
+    },
+    "output_tokens": 457,
+    "total_tokens": 3249
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

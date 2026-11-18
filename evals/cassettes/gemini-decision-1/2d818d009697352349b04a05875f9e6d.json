@@ -1,0 +1,51 @@
+{
+ "key": "2d818d009697352349b04a05875f9e6d",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T10:57:00Z\", \"device_id\": \"I3JLKILKQTAC\", \"fields\": {\"avg_used_pct\": 91.8, \"battery\": null, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 136.3, \"disk_free_pct\": 53.3, \"disk_size_gb\": 256.0, \"employee_id\": \"emp-initech-1001\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"desktop\", \"hostname\": \"initech-mac-3\", \"mem_used_pct\": 89.0, \"model\": \"Mac mini\", \"os\": \"macOS 15.3\", \"peak_used_pct\": 98.4, \"processor\": \"Apple M2\", \"ram_gb\": 8, \"share_over_threshold\": 1.0, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\", \"uTorrent 3.6\"]}, \"id\": \"ev:snap:I3JLKILKQTAC:2026-06-12\"}, {\"device_id\": \"I3JLKILKQTAC\", \"fields\": {\"avg_used_pct\": 91.8, \"employee_id\": \"emp-initech-1001\", \"hostname\": \"initech-mac-3\", \"peak_used_pct\": 98.4, \"share_over_threshold\": 1.0}, \"id\": \"ev:trend:ram_constrained:I3JLKILKQTAC\", \"window\": {\"from\": \"2026-05-14T09:19:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T10:57:00Z\"}}], \"finding\": 1, \"statement\": \"initech-mac-3 (Mac mini) experiences sustained high memory pressure, averaging 92% memory usage across all snapshots on 8 GB of RAM.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T10:57:00Z\", \"device_id\": \"I3JLKILKQTAC\", \"fields\": {\"avg_used_pct\": 91.8, \"battery\": null, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 136.3, \"disk_free_pct\": 53.3, \"disk_size_gb\": 256.0, \"employee_id\": \"emp-initech-1001\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"desktop\", \"hostname\": \"initech-mac-3\", \"mem_used_pct\": 89.0, \"model\": \"Mac mini\", \"os\": \"macOS 15.3\", \"peak_used_pct\": 98.4, \"processor\": \"Apple M2\", \"ram_gb\": 8, \"share_over_threshold\": 1.0, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\", \"uTorrent 3.6\"]}, \"id\": \"ev:snap:I3JLKILKQTAC:2026-06-12\"}, {\"device_id\": \"I3JLKILKQTAC\", \"fields\": {\"avg_used_pct\": 91.8, \"employee_id\": \"emp-initech-1001\", \"hostname\": \"initech-mac-3\", \"peak_used_pct\": 98.4, \"share_over_threshold\": 1.0}, \"id\": \"ev:trend:ram_constrained:I3JLKILKQTAC\", \"window\": {\"from\": \"2026-05-14T09:19:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T10:57:00Z\"}}], \"finding\": 2, \"statement\": \"The RAM upgrade order was refused because RAM is soldered on this model, so a replacement proposal (P-1) was created instead.\"}], \"summary\": \"A RAM upgrade order could not be placed for initech-mac-3 (Mac mini) because its memory is soldered, so the device has been proposed for replacement (P-1) instead.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.8766398350153496,
+    "noul": 0.8766398350153496,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.9541836471832029,
+    "noul": 0.045816352816797065,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.5970504642702201,
+    "noul": 0.5970504642702201,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1594
+    }
+   ],
+   "total_input_tokens": 1594,
+   "total_output_tokens": 0,
+   "total_tokens": 1594
+  }
+ }
+}

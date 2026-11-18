@@ -1,0 +1,68 @@
+{
+ "key": "ac846410f9456e0bffdbfb646517f562",
+ "latency_s": 5.05,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_5165211100936828807": "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"
+    },
+    "function_call": {
+     "arguments": "{\"status\": \"answered\", \"caveats\": [\"Action calls generate proposals that must be reviewed and approved by a human administrator before execution.\"], \"findings\": [{\"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-05-27\", \"ev:snap:MT7PJB7N5LRE:2026-05-28\", \"ev:snap:MT7PJB7N5LRE:2026-06-12\"], \"device_ids\": [\"MT7PJB7N5LRE\"], \"statement\": \"acme-macbook-4 (MacBook Pro) has been failing its screen lock check since 28 May 2026.\"}], \"summary\": \"I have submitted a remediation ticket proposal (P-1) to re-apply the screen lock configuration on acme-macbook-4 (MacBook Pro). Please note that actions only create proposals for human administrator approval and cannot be executed directly.\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef82-edf6-7339-9705-0464e56027a5-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [
+       "Action calls generate proposals that must be reviewed and approved by a human administrator before execution."
+      ],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-05-27",
+         "ev:snap:MT7PJB7N5LRE:2026-05-28",
+         "ev:snap:MT7PJB7N5LRE:2026-06-12"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) has been failing its screen lock check since 28 May 2026."
+       }
+      ],
+      "status": "answered",
+      "summary": "I have submitted a remediation ticket proposal (P-1) to re-apply the screen lock configuration on acme-macbook-4 (MacBook Pro). Please note that actions only create proposals for human administrator approval and cannot be executed directly."
+     },
+     "id": "call_5165211100936828807",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 6689,
+    "output_token_details": {
+     "reasoning": 717
+    },
+    "output_tokens": 950,
+    "total_tokens": 7639
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

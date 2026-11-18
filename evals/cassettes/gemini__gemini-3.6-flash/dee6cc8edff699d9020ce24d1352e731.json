@@ -1,0 +1,61 @@
+{
+ "key": "dee6cc8edff699d9020ce24d1352e731",
+ "latency_s": 3.25,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7761242066771429856": "Eo0LCooLAWkUfROKv5mpZh9KebeUoiXhRQnxCpjnDoMHoZz5mo8HUIKy864zapwedSag/Qr0GQgXinKNNL4hZ2VGXc71doPQQnOvwk1vkaZFFbrlVJHeAbf5eq522qkkGj/kMREZFiw9/oURThruaGEoiJp9v2ITwjldUuse6eBxVk8hB1tLUmRZiIGxK0XZh3WPUVFONV3HjSHyTTN+wPknpw8r7jZJ88cy5+TH8+tH6EJ14uKqRi6CCKmpBY5M2IayT3kQTZvkLsbudeTiFRd/6Fvmf/haPwRUGGC5LrsaD7gkFfmNUqkzIfrrFkGYESywFaQaPk4+R7Fxwg7sWJenhuIeFTMIWMdmm5b7LknEjSE50ZKgE8ceoUYeJVAXMFQk3dfSuyoTQneFvMxgaUzt4KD6MDSrqGC0n5jDJ4ABxfVZyyMcZlKvgKb9gyPc+6Jx3/P3zMjnDBHu8s50Gk+gUm+4iwiY//B2p6xcJ5ezY9gD0DdYVw46r6MOrPzTOrJXVPq0Mf4mFBKghXdZsUo7Xj/gdpNA4fBDiXO/Undn34u3WQB38zISOV3BePZa3uGq8AktEQlT69ffqeOT+JhNiOn4eaGWUT5QS2gynrW1h/I3JRffvJXW6Do2DETK1hUBDrul4xVOeYcQ9wy/dtvHpO8z5bGyGOE09+aQZjQzZCry/sHVznKIfDrALXW1P0JbwgGYcqnvzZGObf40O85n5VKSo8c5I2/W/jiCiZDBxWlmO5IR29cc/LWtprRMws+J4LrT2YHzSU6bSSItC3F9pivhsvf60jRSYKRrPYP5/4yGQWX6WADgaaMYv30N4ge2OXZ5tdjMbkcu2CKibi6DixxEhHB/3BfI7bMSFfTKCmd3mjGlaDaq6JOHfV1kqP0+8FMCkpae0PkdJ4MccVK9IcV8b3tCnhT2a6qI5IrygsnnZDpnb1xbfQ2qfo79KABFg9jjAkvncQZCCZeOty7Pvv2B4+fhQQlrIRedKuotFntl5UpHN9tltiSBaXzrMGOtjjlSAAeF+jG713Ix4t3m+TH0DNlKbfHLAXGB0WV4jdvgf61r0SJ7k92uAPjc3GFgp0Fe98rdcwW283P3o+UQ2qeXt/Vu5lgEvztagjKWjR0yEwbYQ04gIONIxUpGmJJ0xC2lwsiwLPIGMnBLmTkKojyLUUX39AvrJySpff07CHWoU6/aw+3WdH9cCGwzQB+AD5eDmBduiRUDhaFLRE4kgqLTWXzdH/gbZ+rmC8v5RyQuRwgkFXw3CuFnAhR9OAC2tEMJ56V0nR0X+/UMmgjJQHU+2UpQ7YZgtD48iD/6MYUUi9+u4Fz/8M84jMD3HZ+WSzsDh7fW3BrLWWiDI3mP2n4hgE0QuqmKB+yLy0Koa367mYl/AikPhvSO/vXkouXlgmv6CWvi7DEjKMS/3Y7PhbvtLvQFpWgDqK83oQsk6GbU0Pue0SlufACvKxSAg/M8vUBtBbxB99cN21f0NNdLe7kyiewrso2OPa9gyfLsZbeoned6cgCYNgAYeakqUhXUXRO94tWwWhqtUbxL1YAJBE2HNPkcSnVCZeX2rQHVQjTv9WJyWyya+PON7sE+dVbnFAsyfaMDJ3K4prTfKoUT16aQ2lfwJriLY4bmlEnBVQsdMzyFte1ZGDXqrP4c6eByqVazYeGibpn9DvpfQlNGEc5bwloSaDV0rKoOMeWHQTa1EQDgsLtubjDyXJcLX7XZNBjV8+PDpDEeu2DH0BR+ZkdjVOwHg17Vd7xCZnoZiHVstoXBi+IQfj0SqHn2x4TMWa8xP/GKZ5OB10d/RfOZm4j3kwgI0aXRhdXsNBwkCgMT/P5nERs9XMwRIiFoO0cfrX1uCxPFw25efjj2wGyG/wK7fyVL3pW++1G35ws="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Detect devices with storage_low insights or low disk space\", \"Gather snapshot details for affected devices\", \"Submit the final answer citing evidence ids\"], \"intent\": \"question\", \"tools\": [\"detect_insights\", \"find_devices\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef79-9fee-76e3-9a69-f9c0f9203088-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Detect devices with storage_low insights or low disk space",
+       "Gather snapshot details for affected devices",
+       "Submit the final answer citing evidence ids"
+      ],
+      "tools": [
+       "detect_insights",
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_7761242066771429856",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2792,
+    "output_token_details": {
+     "reasoning": 339
+    },
+    "output_tokens": 410,
+    "total_tokens": 3202
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

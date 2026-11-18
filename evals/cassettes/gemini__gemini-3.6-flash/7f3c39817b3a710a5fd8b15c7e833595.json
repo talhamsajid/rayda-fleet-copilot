@@ -1,0 +1,75 @@
+{
+ "key": "7f3c39817b3a710a5fd8b15c7e833595",
+ "latency_s": 45.27,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3455066772303680679": "EuQECuEEAWkUfRMXN+e0wIusOf5bsoTyVbiSKx2Bo53H0FcYj8vUChO+5O8DlLd49CMtxtXtVrV86NWc5cnlu1V1eu8jsPlbE2FnyCIyVQmcmvgX8VAf2sObXqcX8gFLAUsqxVeTC4VdlzqO1Z2k6s/SW+37WIhLucG6LGRm9pHlCdGYCUXBCmMxMJk4DO4+7UVN3GTumL/Z6TJHqk4GccIP2Xfa8tTkJsn1gM6WVk86bOMIkuzbBn5fYnmhnSyhzqS6inEn8QtccZs8wGg1kcmLCRmxsXnvLV63empvwamp/USFK1MzLY+9SKKGUWOLoJuQnd/A8bkSW4OJ53JQJxCJNYjFEnj98muataZHw091CBzTz7kpe96xarWuK74KsXh4MZ/U7vHNri+esMLjt9+9YqrLHATAZMsc5nPEp6lSL/hWmsN2nP/y5g9YXiAJDxH4vL5NvKkfkCvxKjB/wUHMRDAgQYHo0x+nNONWfpKWRjVsiUbDPNBXb7dxQNZDPgl9k/KjRZPd41uumf6cFQUyupUveVL3qhGw2ED78eBIf2jVwfjEIDq0wx7tKmqWmHr6Sl5f8Ce10jVmzYqY++WCJ8ulirPnL5pS/2+KDaHFsD3Y74AaOXGgzbKGW9j45cdQxYj5YGUauaHT2+jGEHbXwt1TjcTrUhU0yIxU+9OYElQc0Rbjxi/Z7/pguskLLYRIXE7qghJ+Y9XPBjyg5jl15G/6kE5unN3Jdk45Yipqb3BAoXSC0Y/EL1BachU0LBC8PatHLfOaC0Kq7R61c51nK35coSpKir0Hf9S0j/DIk8W4J1eJ"
+    },
+    "function_call": {
+     "arguments": "{\"device_id\": \"MT7PJB7N5LRE\"}",
+     "name": "get_device"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7f-b3b3-7116-a56e-50e37df8117b-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "device_id": "8NM23J95R5I6"
+     },
+     "id": "call_3455066772303680679",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "DLT35MHGTH2D"
+     },
+     "id": "call_3455066772303681872",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "DSYPSES7SKBB"
+     },
+     "id": "call_3455066772303683065",
+     "name": "get_device",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "device_id": "MT7PJB7N5LRE"
+     },
+     "id": "call_3455066772303680162",
+     "name": "get_device",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 7407
+    },
+    "input_tokens": 10519,
+    "output_token_details": {
+     "reasoning": 159
+    },
+    "output_tokens": 263,
+    "total_tokens": 10782
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

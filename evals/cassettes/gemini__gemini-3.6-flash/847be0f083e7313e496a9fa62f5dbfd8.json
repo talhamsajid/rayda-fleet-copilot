@@ -1,0 +1,75 @@
+{
+ "key": "847be0f083e7313e496a9fa62f5dbfd8",
+ "latency_s": 7.23,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9371674815812070365": "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"
+    },
+    "function_call": {
+     "arguments": "{\"caveats\": [], \"summary\": \"Two devices at Acme are currently low on disk space: acme-macbook-4 (MacBook Pro) and acme-thinkpad-8 (ThinkPad X1 Carbon).\", \"status\": \"answered\", \"findings\": [{\"device_ids\": [\"MT7PJB7N5LRE\"], \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\", \"ev:trend:storage_low:MT7PJB7N5LRE\"], \"statement\": \"acme-macbook-4 (MacBook Pro) has 2% free disk space, with about 10 GB remaining out of 512 GB.\"}, {\"evidence_ids\": [\"ev:snap:8NM23J95R5I6:2026-06-12\", \"ev:trend:storage_low:8NM23J95R5I6\"], \"statement\": \"acme-thinkpad-8 (ThinkPad X1 Carbon) has 3% free disk space, with about 27 GB remaining out of 1024 GB.\", \"device_ids\": [\"8NM23J95R5I6\"]}]}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef79-2cec-759b-af0a-f35e5932a24b-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12",
+         "ev:trend:storage_low:MT7PJB7N5LRE"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) has 2% free disk space, with about 10 GB remaining out of 512 GB."
+       },
+       {
+        "device_ids": [
+         "8NM23J95R5I6"
+        ],
+        "evidence_ids": [
+         "ev:snap:8NM23J95R5I6:2026-06-12",
+         "ev:trend:storage_low:8NM23J95R5I6"
+        ],
+        "statement": "acme-thinkpad-8 (ThinkPad X1 Carbon) has 3% free disk space, with about 27 GB remaining out of 1024 GB."
+       }
+      ],
+      "status": "answered",
+      "summary": "Two devices at Acme are currently low on disk space: acme-macbook-4 (MacBook Pro) and acme-thinkpad-8 (ThinkPad X1 Carbon)."
+     },
+     "id": "call_9371674815812070365",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5615,
+    "output_token_details": {
+     "reasoning": 1191
+    },
+    "output_tokens": 1480,
+    "total_tokens": 7095
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

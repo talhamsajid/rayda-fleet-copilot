@@ -1,0 +1,51 @@
+{
+ "key": "c2014dbc36b8fa6791ce47e545f062a5",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T08:34:00Z\", \"device_id\": \"4SEFDLPTKXAM\", \"fields\": {\"battery\": {\"condition\": \"Normal\", \"cycle_count\": 519, \"full_charge_capacity\": 4063, \"percentage\": 57}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 97.6, \"disk_free_pct\": 38.1, \"disk_size_gb\": 256.0, \"employee_id\": \"emp-globex-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"globex-macbook-3\", \"mem_used_pct\": 42.7, \"model\": \"MacBook Air\", \"os\": \"macOS 13.6\", \"processor\": \"Apple M2\", \"ram_gb\": 8, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:4SEFDLPTKXAM:2026-06-12\"}], \"finding\": 1, \"statement\": \"globex-macbook-3 (MacBook Air) is running macOS 13.6.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T10:04:00Z\", \"device_id\": \"QPZSXKINA7GP\", \"fields\": {\"battery\": {\"condition\": \"Normal\", \"cycle_count\": 61, \"full_charge_capacity\": 5767, \"percentage\": 68}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 246.2, \"disk_free_pct\": 48.1, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-globex-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"globex-macbook-5\", \"mem_used_pct\": 31.2, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"processor\": \"Apple M2 Pro\", \"ram_gb\": 16, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:QPZSXKINA7GP:2026-06-12\"}], \"finding\": 2, \"statement\": \"globex-macbook-5 (MacBook Pro) is running macOS 14.5.\"}], \"summary\": \"There are 2 devices running an OS older than macOS 15.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9596066806945742,
+    "noul": 0.9596066806945742,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.9610812699803521,
+    "noul": 0.9610812699803521,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.7587899543502613,
+    "noul": 0.7587899543502613,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1199
+    }
+   ],
+   "total_input_tokens": 1199,
+   "total_output_tokens": 0,
+   "total_tokens": 1199
+  }
+ }
+}

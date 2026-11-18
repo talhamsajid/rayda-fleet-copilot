@@ -1,0 +1,52 @@
+{
+ "key": "0d3e0cd22233db197e304c1a2c5261b2",
+ "latency_s": 1.29,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_4427701454080938784": "Et0BCtoBAWkUfRPvja0WxGmPaoJrzHotDfVFmkG9f3R4mqHCUac1BBBOJC/1jgKmTVczpYFl1W0k6rlS3kDVHjEHr0Gvnf47i8YhM/g07H8MT7bTFEkR313xarGDSGew6SBI196WZ1V1Y9+prqfdo3wDQKwvaYYXo8gahBn7YHZSZ1ScP8NJwKGNd8/JhCoNCwZzsk6OX/fV5gVeUQ/YSXUJmw0mdFZkPYZ0k2Hepux7GI/fEHFWP2mokItYQIpW2Q7ezspJbq1bGm3jVRKEF1/bGWFTqWyb/BCyo/U3pJM="
+    },
+    "function_call": {
+     "arguments": "{\"os_version_below\": \"15\", \"os_name\": \"macOS\"}",
+     "name": "find_devices"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7a-9601-77bd-b3bb-75d496c2cdc7-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "os_name": "macOS",
+      "os_version_below": "15"
+     },
+     "id": "call_4427701454080938784",
+     "name": "find_devices",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3017,
+    "output_token_details": {
+     "reasoning": 31
+    },
+    "output_tokens": 61,
+    "total_tokens": 3078
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

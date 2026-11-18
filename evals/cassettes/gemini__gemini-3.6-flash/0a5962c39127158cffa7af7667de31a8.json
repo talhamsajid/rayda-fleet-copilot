@@ -1,0 +1,59 @@
+{
+ "key": "0a5962c39127158cffa7af7667de31a8",
+ "latency_s": 6.69,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_14976123208737810932": "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"
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Identify if the prompt pertains to managing Acme's fleet, devices, compliance, or IT actions.\", \"Classify as out_of_scope since no specific fleet management question, insight, or action is requested.\", \"Submit answer with refused status.\"], \"intent\": \"out_of_scope\", \"tools\": [\"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef84-6e8d-70bc-bc9f-f0ca8a50fb78-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "out_of_scope",
+      "steps": [
+       "Identify if the prompt pertains to managing Acme's fleet, devices, compliance, or IT actions.",
+       "Classify as out_of_scope since no specific fleet management question, insight, or action is requested.",
+       "Submit answer with refused status."
+      ],
+      "tools": [
+       "submit_answer"
+      ]
+     },
+     "id": "call_14976123208737810932",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2797,
+    "output_token_details": {
+     "reasoning": 1035
+    },
+    "output_tokens": 1122,
+    "total_tokens": 3919
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

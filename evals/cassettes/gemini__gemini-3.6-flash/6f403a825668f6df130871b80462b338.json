@@ -1,0 +1,62 @@
+{
+ "key": "6f403a825668f6df130871b80462b338",
+ "latency_s": 3.35,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_10717283085156592633": "EswKCskKAWkUfRPvQUJhAzKkzuO5gxbroDdHf6/vWMi+IfCSR21v8FntNQJ79hLqQp8Vd91Retdm8HESYstWWROrD7bKlgyYod6Zr5v6G3SPpLcHTIu7hvHPXtkhOnwaPRFj34HLo0DpBAVB1L8wQ4QWJ0rsfaUG2WpxaE4cNCh+vytFwlfuD6mHoelQY+xHSDYs+NZAGLbuMZTfA2ENVNGAVk55ZlrPaldQclkerz28zz02/Ewf6vDvGvT7/wq42ZQ44Wt6ojkH0oAnz2iRYGEnD0bYgVqXOa8FGGi7aM2wkRpbgyEjNUaFfa2gczV+x/HYiETgLzs2MWpDDdBNiJrvn6M43ds/1ZtC+9UIEcmeMruI1kuTbLLaL6C7zpgt1nAu9i5j6rqQ7GH5WwVuzCmATZgOpJMXVbl4o+W4gt6Tc8jxa59o4bynSFzKLrFljh/0+LWAqRagKeAo2FXMCvZEFOxPFDk+PvZNZDLe+hoPiF7QJkG1R95Bd+aJkH7gTFfeT/OwxeORZgiutpo9gOaVkbF17D/j6IwJWqDTc/vHWyeVvyZjsZlHje0IaYntHwU9rO0Gy+yBl9+0fBOIBmFOOEJprZAye3FZwW46Qufa6e338TibkiYFqp1GUfHdxzmWO42/wFWoske6H6/p+gNjtqelXW0F4DCbf4U5IgPpCc+xMPs/ewiyr5zAraGIbbm1PvrH/q0vE31sLSff83TNQVIVEtXYyEXtPbMBZ1J+TEn64zJJQUrOvIkFIVGKCq8AnpJD36TDaWRhSwEyf7yMDJNcRdNQWr5Kx9qYXLMwkofCjD1VttlnjuqvONRO/jqrUIs+qyjq/rGmpJAhuCbPGyDQoKx14vEgDS6xDuKHRgW0H5+2759x0NpfKW+Hz+3SPHc5CllIg2VsN8qQ+NVCAMz/Rg5w/WfWA6YIvuwe+hRQ+tlb5ZHZU5tkW9m0pKoJKMgxYTPZMQ8Wj1LkHi6Osh8YxDae9A8vJHskGhxeZus86oiOduARCOQmTekxc3RUVjvvEbathfLPwQE1OqOhCGH/WRcy11D8yilbp1wM1yaZt6ITsaXfdi/TWO4xaVanqwe/8S7LxzWBe72usk/Mbz95YncAVflNnbuY36IIV/0LB5qeHCxeFrmgZL9p1IEhlKoZB+mncEjQWQf6VHwPoO0a7ECCWZ2CUrmZPlIvU3pltqr5oln73SQJNVX0jVJHcu57IzdgPkI1CP+aSSZJ533f9AXWEjdyj5WJbd7Lf5oQ6JvFcuqW81wWBb7teWQXiHjHjo426Bg/UTkAMBPPN6tK+2H9U40vYM2S193V/KfM2qWOEVjHMT/FfbGLfDWfVRI9Vw1HLdbWiUhaUMAwJl9RaHXVtm/VI+ASQAi7psXoYi88bPxs9jrYrUyOZo5O/HwXL/l7dSxzjtTl2qa6wYTDI1XyDcozi/WRHLNPIyL9WVwYAYNkucdpzuzhjdumxk8e3+XYNBUqWxrUDIeFQmrQrUUGqyClLYQL/ASL5MCRYl19DDII0gOK7VCI39KhzxYvRT0ha27L+3jpWlILaZ8fuJsODE0vGHG/Ew2S/1zPGKB08SbAA/GzGntBIu996pfBHT4VJ0HNFJZXucS0AhBo9B9DGq4FVM/49lZMHumFnbF8QY0c25S8JUhIIuTg+Da3p5OkY2MJKZ+ysejl33mpxsCQppghZDh9yxTZwa1kvW/P7BCMupNjQJN5EPaMpGgzC/RQsl0DSeJpxfAR6V9BB3ize5BjGTKG6Dplse/erCifRfBXr3nVGUJY4IaXjUmN5yOg/Pa32MrH"
+    },
+    "function_call": {
+     "arguments": "{\"status\": \"insufficient_data\", \"summary\": \"Device E4V0SB5I0MYU was not found in Acme's managed fleet, so no device details are available.\", \"caveats\": [], \"findings\": [{\"evidence_ids\": [\"ev:query:lookup:3807fe38\"], \"statement\": \"Device E4V0SB5I0MYU is not part of Acme's managed fleet, so details cannot be retrieved.\", \"device_ids\": []}]}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef82-ac24-7608-b198-40113e3c1a59-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [],
+        "evidence_ids": [
+         "ev:query:lookup:3807fe38"
+        ],
+        "statement": "Device E4V0SB5I0MYU is not part of Acme's managed fleet, so details cannot be retrieved."
+       }
+      ],
+      "status": "insufficient_data",
+      "summary": "Device E4V0SB5I0MYU was not found in Acme's managed fleet, so no device details are available."
+     },
+     "id": "call_10717283085156592633",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 800
+    },
+    "input_tokens": 3105,
+    "output_token_details": {
+     "reasoning": 341
+    },
+    "output_tokens": 457,
+    "total_tokens": 3562
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -1,0 +1,60 @@
+{
+ "key": "63bc5aab32a421d246d45e4df593c6b2",
+ "latency_s": 3.3,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_2383393909983830516": "EsIFCr8FAWkUfRPAby80XV0YnW0jOarjYsAG8cTirLq4eRnaPmE7F995d4PCvr2bZGG60bbgYzPn4neJ6cWKzsiuENHY0UREIR9y2W4ucqxYBwZ0dzMGM4DLPIutEYyrbGiW+DA5Z6bbZug9wd2NQn3pKTXFYUigNNaNZegXE2mC6/dsRkeT8s4MfPxM2oFKQylHNxof2rQV/eKpylhibJ27ioGGdap8LXRnr84j5uftk2MlZSyJG60Wb7Ooe8E0J4WfB4tMFGTMtXfdYQY58wckF/4+nxR67LNg3hkuL4XUPy5PE8q5JX3j7z7ZvAvUgbgctK3RlRJ+RL7n9a6EmIi2DaLVNkSVnGW9DiUp/mC8P+gt1w92IMgySX0hAi9iwhhfh3fXpIaxW7S8KALBZUu9nAjf4demf2TV2AHmXRZ2R3E42Fxfn7VYVMs8XGK0EVVPUuMeravGSFoI7s7GDABj7DGYumQPTbvt1AcR6eloRj0c2pqmFV+J0vTcOfNRmIHPieC9FbpGX5f49zAuMRIWN9kzDPZv3G3YAp900nygri6XymMmtBWkK4/Jjdpaz71vtt3dwYE8ayRizur7/Vc2yMJ8alyiGlk2Blw8sEH2Wv7lP3XDnXmJTGE+MWQ0raj/+ctfZw9rjTaF/IkyVT/wAKLbFDu20RgbP+8l+dlZo4TfsioxxQQc+vCYuK+fJd1j41Lt5NM9Bne1OPgx+ndCkJGBkdQnRitz/MCV1QG7meTRIZNSgtQlTNaubp2Ju3Fd/CndxrGHhEmGrXyXy26jxpmjb9bkanawdDDvQ1hHCa+Qrkq8nCo1vxtBCHkc62Djn5IJOCPerQSAuhMw04+031wsI1wmLvWyoTBF395LQe7+f6YHviqtD2WmBAcjFJmmStbUW5hRbyXJr5Nuane0dKqYKKChV6m1k+cGNUrX0VHjGg=="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Search for Windows devices running an OS version below Windows 11.\", \"Compile the list of identified devices with their details.\", \"Submit final answer with findings and evidence citations.\"], \"intent\": \"question\", \"tools\": [\"find_devices\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7b-bbef-754b-8713-46e6757e28f1-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Search for Windows devices running an OS version below Windows 11.",
+       "Compile the list of identified devices with their details.",
+       "Submit final answer with findings and evidence citations."
+      ],
+      "tools": [
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_2383393909983830516",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2791,
+    "output_token_details": {
+     "reasoning": 168
+    },
+    "output_tokens": 242,
+    "total_tokens": 3033
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

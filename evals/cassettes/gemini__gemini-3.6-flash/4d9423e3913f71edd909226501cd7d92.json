@@ -1,0 +1,60 @@
+{
+ "key": "4d9423e3913f71edd909226501cd7d92",
+ "latency_s": 4.32,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_11804989712410931647": "EsUHCsIHAWkUfRMFBBiXRji47yqfu6vsrSJCe9BjNWHYCFdkmJT9IE1utXSMcx6u0qLQ5SPrWZ+HV2BqF2tL6xWb1OYTACyPzXwI5/daPNPg2NwUFytqk4l9HR4ltx7AJOpykFxB6FUKkxu7reAugl17lb+AphnPbwnA704v8pbvqheMgk/3WAkK9XojJU/7clwR7upbLdHcVKpohhkPaGVDNQW3aCsSxdxT5qtzrM6qlzH/+BGT+1+CrjffEUq8hw29eF1U14YqcqzHf7FPAYe728jKn0YHP3TIKJVhzUXWrNS521h4sPe9Cp93FLt8t1ycA6MEuEN2irjhFZVZuVkQkFdjtKx8XnWTQXFYH/5UiUOSOEcYm8ttjXp0Y2RKjE6Ic3tI1SyOfjd6ApArxKMJCjxCgQrfABUfnwI9vVx1YNSU4TvvSplU3d7QQxUwQcdM2FbIeKlZZ2iP6hw8pl5kL86xSHAIVKaXH/l+lcvfm8K4jtl8KYCq074iaOpuRoRwdA7ih/wA7Y1Fih8EQzRB+6IaqbcoQHbU+uYbc9gKvStS0Vy69ay7AeeQEVyewUnFNT9g8h1FuUwhGlWcRimLSN0ObyuIZN90IH2LgTpe3oA1NJl/NnsSwBh24azLYIkauwySPZeA7jIjgaUWskO5n15LsUthXLVHevGAnHF535G/l4ZWb5B3EyYcmrGfYJITZFKwKAnUthVm7bYr6BOlSOyb1OMRnxGu/vudHSH9t/SZeU+UNVydV2ZRQiAkfjPIB8/hrlS2tAG3IRSXyTgzvIIRuRh3YdIRJzsf2XlCI39Mb68eeeeYnZP6OWNAv3LweBxxWCL4F/xZzXBOm3h53+JS17rkREN7DJLZlnz+wzCQuUDzRfZw/KHabOTNkxb0udOy1KpBlnlfRodvKdYsiwLdMax46lHswKnoIsMHd1fpSER6Q+FtvCYS2AThi4GvvCZKwuW0Lur8FNl4AAiDAjIaeNbRpmAAZcdlvKo80RjRitvGQBQSUHZLxWWVfIVzanmbkfYGKj3rRBNG8kkS5XVRSOSoqGTJDwFenpKPamp1PIuaIdIiQNsCOrCgGWWa2VdHO1wBG5HM1EOqtW0tv6fj6J1b1GpxvmPLwyAvXCZbW9rATM1QDBbxrMHh0SPrC7SNYtgzJQ28Y3GJILg1ycxpLza4yeHUwH8V/6JdBzBiskUlz3Hr2+889SpmDLCOyJKpGozHbwoMOch4OQRIdNWXeqkL5IIcjlLMNl5/e9kwBm+RufHtAzWrOB9b9Pz1tE65wBo="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Search for macOS devices with OS version below 15 using find_devices\", \"Summarize the device count and details based on tool evidence\", \"Submit the final answer\"], \"tools\": [\"find_devices\", \"submit_answer\"], \"intent\": \"question\"}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef7a-d985-7460-922c-931a31a1e10c-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Search for macOS devices with OS version below 15 using find_devices",
+       "Summarize the device count and details based on tool evidence",
+       "Submit the final answer"
+      ],
+      "tools": [
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_11804989712410931647",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2796,
+    "output_token_details": {
+     "reasoning": 272
+    },
+    "output_tokens": 343,
+    "total_tokens": 3139
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

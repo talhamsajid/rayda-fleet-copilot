@@ -1,0 +1,71 @@
+{
+ "key": "8ae3b92b1d6e1f19559a6a75c848c82a",
+ "latency_s": 5.42,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7466670555488996041": "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"
+    },
+    "function_call": {
+     "arguments": "{\"spec\": \"2 TB NVMe\", \"component\": \"storage\", \"device_id\": \"JRZSGXVMKE6M\", \"evidence_ids\": [\"ev:snap:JRZSGXVMKE6M:2026-06-12\", \"ev:trend:storage_low:JRZSGXVMKE6M\"]}",
+     "name": "create_upgrade_order"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef82-6b6f-7794-9c4c-fb8ac51cc2ff-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "component": "storage",
+      "device_id": "E4V0SB5I0MYU",
+      "evidence_ids": [
+       "ev:snap:E4V0SB5I0MYU:2026-06-12",
+       "ev:trend:storage_low:E4V0SB5I0MYU"
+      ],
+      "spec": "1 TB NVMe"
+     },
+     "id": "call_7466670555488996041",
+     "name": "create_upgrade_order",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "component": "storage",
+      "device_id": "JRZSGXVMKE6M",
+      "evidence_ids": [
+       "ev:snap:JRZSGXVMKE6M:2026-06-12",
+       "ev:trend:storage_low:JRZSGXVMKE6M"
+      ],
+      "spec": "2 TB NVMe"
+     },
+     "id": "call_7466670555488993618",
+     "name": "create_upgrade_order",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5700,
+    "output_token_details": {
+     "reasoning": 856
+    },
+    "output_tokens": 1044,
+    "total_tokens": 6744
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

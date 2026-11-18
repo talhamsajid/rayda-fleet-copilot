@@ -1,0 +1,59 @@
+{
+ "key": "de2d3fac9e6d56cb72125988c6c69a55",
+ "latency_s": 2.09,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9053209005413961845": "EvcDCvQDAWkUfRPoh05Jov7MKbT3Yq+VcGzXAKqR6nWpLRjDVR2Txk0J35e3VxLceRCP7HlZpw6kT6CAsUhOrhS1ePdkJbRbYd78e9uL2Q96AKKghyxgv9nbHttZYQTgHlP1Teeg9wPIgcq8jdd67ixYN/tbHw0H1vffKJsEIEBAJNCotaE8onAnHRR5X8Vc0CZMhwOVBoK0PUCZqg15B9EZEMEX7cwb4cNqno0pS7n7obx19peMyn+jns9alWXejm4D0QVBQt2g0Bp91/IaXnANsrlRm0SOuZVes9K+ZTUtxHqN4et/lSV0KwjrGTs2IoVNmv4NCKCVw6rTXeiL233EXVDq7Q459L7tHNgVRH83Dm44zAaDkenmj/NiQot+oqBQ5HgBBdVMjZ9SifXM9PfiHyWKimxccZjbUZ9Px+XGnqCWFUl65J1qWzMIw3Qh0PYD7cRani/bJX5gcheVqmIHBXMsN1zTlqvg2Dm7+s+7v/FIwe95PjU0K6dhNsLJ8UkKC3j3Rv/L9gXE1XGnOKMqP2H58lrJB5Qys7h6gNOHFN9huV2pUmuDEVcTWJ7HEUINvLcW9b7R0lXNyB8r28izo6SO5q5/dK8th9SoEppWk4rV6qq2B0M0CKNW6awRJ6zBfrNyPhVvJNwgb508TNeMT+5nSuDh0kU="
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"question\", \"steps\": [\"Check latest snapshot / compliance status for devices 8NM23J95R5I6 and MT7PJB7N5LRE to see if they fail the screen lock check.\", \"Submit final answer citing the device evidence.\"], \"tools\": [\"get_device\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef84-4aa1-74f4-9bb0-5c2cb0be4af6-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Check latest snapshot / compliance status for devices 8NM23J95R5I6 and MT7PJB7N5LRE to see if they fail the screen lock check.",
+       "Submit final answer citing the device evidence."
+      ],
+      "tools": [
+       "get_device",
+       "submit_answer"
+      ]
+     },
+     "id": "call_9053209005413961845",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3046,
+    "output_token_details": {
+     "reasoning": 123
+    },
+    "output_tokens": 209,
+    "total_tokens": 3255
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

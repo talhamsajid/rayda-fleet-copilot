@@ -1,0 +1,65 @@
+{
+ "key": "2da0e9e56be813564bbfcb80b1e2b653",
+ "latency_s": 4.93,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_1208465373700480709": "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"
+    },
+    "function_call": {
+     "arguments": "{\"caveats\": [], \"summary\": \"A notification proposal (P-1) has been created to inform the owner of acme-macbook-4 (MacBook Pro) that their disk space is almost full. The device currently has only 2% free disk space (about 10 GB), and the message asks the employee to free up storage space this week.\", \"status\": \"answered\", \"findings\": [{\"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\", \"ev:trend:storage_low:MT7PJB7N5LRE\"], \"statement\": \"acme-macbook-4 (MacBook Pro) has 2% free disk space (about 10 GB), and notification proposal P-1 has been queued for its owner.\", \"device_ids\": [\"MT7PJB7N5LRE\"]}]}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef82-2afc-76f6-8760-23bd0abfed19-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12",
+         "ev:trend:storage_low:MT7PJB7N5LRE"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) has 2% free disk space (about 10 GB), and notification proposal P-1 has been queued for its owner."
+       }
+      ],
+      "status": "answered",
+      "summary": "A notification proposal (P-1) has been created to inform the owner of acme-macbook-4 (MacBook Pro) that their disk space is almost full. The device currently has only 2% free disk space (about 10 GB), and the message asks the employee to free up storage space this week."
+     },
+     "id": "call_1208465373700480709",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 2680
+    },
+    "input_tokens": 5661,
+    "output_token_details": {
+     "reasoning": 725
+    },
+    "output_tokens": 932,
+    "total_tokens": 6593
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

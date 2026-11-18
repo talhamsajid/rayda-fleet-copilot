@@ -1,0 +1,59 @@
+{
+ "key": "c58c0b7ab49a684f57e37096747dde85",
+ "latency_s": 2.34,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9181293116717983265": "Eq8HCqwHAWkUfRPtw3aCoHba92UHZVv+aRGWWqr3jCDfqZnaW80fuxoIXTJ6yjxsKZWbLSjDJmykOFZlU5d7G6nMNso2xq3/i6xlAGJqBC8TJmtEtQt2e0e8RKqOf/AhdbyzePrlIx+hjqUKRy5D3oKxDJiJxHp+LLrF+XTaPTGfLE2mqw2M95yisyNIDz+nc8h7Jd8q2Ab82Qk1CTii+ommpFfwsywqB7pL+2Rk0xQ21fc27xLGeAgT1viJEukGbvkvJ/BAsJVhw/xwlVL4OAUwhpxtDhr6sglXf8fg8VSjOy8vmO7pwlBbphJI2RJR7oqMIirm2FLHo5BB5M7F5UBOBVJNdT5IpApAD/eHECkWadrDYdQ/ih1dyvtpvKE8xfMKQ6t+yx3dVW1ODYGqSeC9s86EkE/b1hqSQem10jyoIfHiPAjGE8CBl6hBoNIXmPZacirQAUaKKWYALvX8Mx38eBasqmtKWQmZHdZ88YnFulRnkWmWj+ztFE6rsKkMBjf1ZiboXMhyp0SzhDLNDn8XKmJ0dmhgNl6NErkQnDI2A3LWXO4kPuUQsUpJt7Mp2WtdzTUoR1vGurAFtBEVdm0TzELMukE1izu1vtzsUfH/9n0Yepk4BykJ80UTTMo6PNK9+SyWFT6xmRSfXcCvgdEcjmmbQCPuYgI4pdKZFRQf5X8v8vG0N2XIwLJ034g0vA0zEVaS3n8qsuyZtAbCTQdb05G6/85YcAN0qLHQZVZKSdDsSGAN8mNY33xMByAoc9e0lWn5VYgTp5wUTbS10joWhBRk/wGdEbl7D8/BkpNXhcUpP9zpg4g9gJpw+7tDS6IZg9Q68zkAQQKDj7lJkcYTHujvR2sUbcqtWWIxSqmrJHaKw0bJpPNrWAdXBHQBTZujKeCcsZatlClbvNPeX4iG8zzjFMNyaRKDf/u+Px6Un5LnjKdh3g13lM36Hi5S/kxwd8JcJ53a1Dqd2DTeOhmOCoiwG9OE9p1f6sSqsPbhehITw4ooNj1bO1O0xl/vGwVpZGfVNdaVJZ1PbYpCWLEMDGOfdxGxjLHDg9dq4GMxaTvSZNnlfOrgfzMT456y27KyPPmlGs5S0+pXmMhsFyuNKRZgihHc9QJhdzKCoA7gMLqKiM3tm7A7MXoXgdL5ccFqWg4JEvsAv/Esi3Xq+gdl7ndeQWrg6vLLr7u/Nh8KrEBEGUxx4Bg4o/UjabOSbhlju5gzgra4RL0poVeolPHX2ZbWL4+E8+N3TqvPTTATfA=="
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"find_devices\", \"submit_answer\"], \"intent\": \"question\", \"steps\": [\"Call find_devices with form_factor=laptop and failing_severity=high\", \"Submit final answer with findings and evidence ids\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1ef79-f35a-72c5-a40e-4b09dee32d2a-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Call find_devices with form_factor=laptop and failing_severity=high",
+       "Submit final answer with findings and evidence ids"
+      ],
+      "tools": [
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_9181293116717983265",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2790,
+    "output_token_details": {
+     "reasoning": 212
+    },
+    "output_tokens": 274,
+    "total_tokens": 3064
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}
