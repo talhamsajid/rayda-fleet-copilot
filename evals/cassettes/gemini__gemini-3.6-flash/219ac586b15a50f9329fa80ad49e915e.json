@@ -1,0 +1,82 @@
+{
+ "key": "219ac586b15a50f9329fa80ad49e915e",
+ "latency_s": 9.81,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_244186428265605147": "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"
+    },
+    "function_call": {
+     "arguments": "{\"caveats\": [], \"status\": \"answered\", \"summary\": \"Three devices in the fleet are currently running Windows 10: acme-thinkpad-8 (ThinkPad X1 Carbon), acme-thinkpad-10 (ThinkPad X1 Carbon), and acme-dell-9 (Dell XPS 15).\", \"findings\": [{\"statement\": \"acme-thinkpad-8 (ThinkPad X1 Carbon) is running Windows 10 22H2.\", \"evidence_ids\": [\"ev:snap:8NM23J95R5I6:2026-06-12\"], \"device_ids\": [\"8NM23J95R5I6\"]}, {\"device_ids\": [\"9MXJVZ1I0DKA\"], \"evidence_ids\": [\"ev:snap:9MXJVZ1I0DKA:2026-06-12\"], \"statement\": \"acme-thinkpad-10 (ThinkPad X1 Carbon) is running Windows 10 22H2.\"}, {\"device_ids\": [\"M4XVHUV1MEPZ\"], \"statement\": \"acme-dell-9 (Dell XPS 15) is running Windows 10 22H2.\", \"evidence_ids\": [\"ev:snap:M4XVHUV1MEPZ:2026-06-12\"]}]}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00b-ed86-7018-b004-9d5be57df7fe-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "8NM23J95R5I6"
+        ],
+        "evidence_ids": [
+         "ev:snap:8NM23J95R5I6:2026-06-12"
+        ],
+        "statement": "acme-thinkpad-8 (ThinkPad X1 Carbon) is running Windows 10 22H2."
+       },
+       {
+        "device_ids": [
+         "9MXJVZ1I0DKA"
+        ],
+        "evidence_ids": [
+         "ev:snap:9MXJVZ1I0DKA:2026-06-12"
+        ],
+        "statement": "acme-thinkpad-10 (ThinkPad X1 Carbon) is running Windows 10 22H2."
+       },
+       {
+        "device_ids": [
+         "M4XVHUV1MEPZ"
+        ],
+        "evidence_ids": [
+         "ev:snap:M4XVHUV1MEPZ:2026-06-12"
+        ],
+        "statement": "acme-dell-9 (Dell XPS 15) is running Windows 10 22H2."
+       }
+      ],
+      "status": "answered",
+      "summary": "Three devices in the fleet are currently running Windows 10: acme-thinkpad-8 (ThinkPad X1 Carbon), acme-thinkpad-10 (ThinkPad X1 Carbon), and acme-dell-9 (Dell XPS 15)."
+     },
+     "id": "call_244186428265605147",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3806,
+    "output_token_details": {
+     "reasoning": 844
+    },
+    "output_tokens": 1166,
+    "total_tokens": 4972
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -108,7 +108,7 @@ Every run writes to `runs/` (gitignored):
 ## Running evaluations
 
 ```bash
-make test                                  # 97 deterministic tests, no network, no API key
+make test                                  # 106 deterministic tests, no network, no API key
 make eval                                  # agent evals replayed from the committed recordings (gemini-3.6-flash + gemini-decision-1); offline, free
 make eval-record EVAL_MODEL=<p:m>          # record missing responses (needs a key; delete evals/cassettes/<model> to re-record)
 make eval-live MODEL=openai:<model> REPEATS=3   # live run against any provider, repeated; results go to runs/
@@ -149,9 +149,10 @@ Recorded on Gemini 3.6 Flash, with Gemini Decision 1 for the input guard and the
 | plain-language answers (no IDs, field names or JSON) | 100% |
 | tenant leaks / executions without approval | 0 / 0 |
 | mean faithfulness (Decision 1) | 0.88 |
-| model calls per case (avg) | 4.3 |
-| input tokens: single question / follow-up turn (avg) | 20.5k / 12.9k |
-| latency per case, median | 16.7 s |
+| model calls per case (avg) | 3.6 |
+| input tokens: single question / follow-up turn (avg) | 16.3k / 11.0k |
+| cost of the whole run, upper bound | $1.64 (at $1.50 / $7.50 per million input / output tokens) |
+| latency per case, median | 22.4 s |
 
 A follow-up costs less than a fresh question because it carries a short summary of earlier turns, not the full transcript. The results come from one recorded run; `make eval-live REPEATS=3` measures pass^k on the live model.
 
@@ -216,14 +217,14 @@ Read tools never take a tenant argument. The tenant comes from the session.
 | tool | arguments | returns |
 |---|---|---|
 | `fleet_overview` | none | device and employee counts by model, OS and form factor; data-as-of |
-| `find_devices` | optional `os_name`, `os_version_below`, `form_factor`, `model_name`, `failing_check`, `failing_severity`, `disk_free_below_pct`, `mem_used_above_pct`, `employee_id`, `software` (all combined with AND) | matching devices from their latest snapshot, one evidence id per device, plus a query evidence id that records the filters and the match count (used to cite "none found") |
-| `get_device` | `device_id` | full latest snapshot: hardware, OS, disk, memory, battery, software, checks |
-| `get_device_history` | `device_id`, `metric` ∈ disk_free_pct, mem_used_pct, battery, compliance, software | daily series over the window |
+| `find_devices` | optional `os_name`, `os_version_below`, `form_factor`, `model_name`, `failing_check`, `failing_severity`, `disk_free_below_pct`, `mem_used_above_pct`, `employee_id`, `software` (all combined with AND) | matching devices (with hostname) from their latest snapshot, one evidence id per device, plus a query evidence id that records the filters and the match count (used to cite "none found") |
+| `get_device` | `device_id` (serial number or hostname) | full latest snapshot: hardware, OS, disk, memory, battery, software, checks |
+| `get_device_history` | `device_id` (serial number or hostname), `metric` ∈ disk_free_pct, mem_used_pct, battery, compliance, software | daily series over the window |
 | `detect_insights` | `kind` ∈ all, storage_low, ram_constrained, battery_eol, compliance_drift, os_outdated, unapproved_software, telemetry_gaps | findings, each with finding, explanation, metrics and evidence ids; thresholds used |
 | `compliance_summary` | optional `check_id` | pass rate now, first week vs last week, devices failing now |
 | `load_skill` | `name` ∈ the skills listed in the system prompt | the full procedure for that kind of work (see Skills below) |
 
-Action tools *propose*. They return `queued_for_approval: P-n`, `already_proposed` or `refused: <reason>`.
+Action tools *propose*. They return `queued_for_approval: P-n`, `already_proposed` or `refused: <reason>`. A refusal by a precondition also returns an evidence id, so the answer can cite why an action was not possible ("RAM is soldered on this model").
 
 | tool | risk | arguments | precondition (recomputed from data, not taken from the model) |
 |---|---|---|---|
@@ -237,7 +238,7 @@ Every action needs a human decision. The risk tier sets how that decision is mad
 Every action also requires:
 - the `evidence_ids` come from tool results in this session;
 - at least one of them is about the target device;
-- at least one of them shows the problem that justifies the action.
+- at least one of them shows the problem that justifies the action. For upgrades and replacements that is the detector's trend record; a snapshot from a device list is not enough.
 
 Proposals are deduplicated, and a request can create at most 10.
 
@@ -254,7 +255,7 @@ Domain procedures live in `src/fleet_copilot/skills/<name>/SKILL.md`, each with 
 | `employee-notification` | when a notice is the right action, what it may and may not contain, template |
 | `fleet-health-review` | which tools to run for a health summary and how to rank the risks |
 
-Skills are procedures, not facts: nothing in them can be cited as evidence. A live run showed why skill wording matters. The first version of `compliance-remediation` said nothing about cost, so the model fetched each device's history one at a time and ran out of its tool budget before it proposed anything (10 model calls, no tickets). After the skill pointed to the one-call path, the same request took 3 model calls and produced all 5 tickets.
+Skills are procedures, not facts: nothing in them can be cited as evidence. A live run showed why skill wording matters. The first version of `compliance-remediation` said nothing about cost, so the model fetched each device's history one at a time and ran out of its tool budget before it proposed anything (10 model calls, no tickets). After the skill pointed to the one-call path, the same request took 5 model calls and produced all 5 tickets.
 
 ### Detectors and thresholds (`policy.py`)
 
@@ -271,7 +272,7 @@ Skills are procedures, not facts: nothing in them can be cited as evidence. A li
 ## Grounding strategy
 
 1. **Tools compute, the model composes.** Counting, filtering, version comparison, thresholds, slopes and drift detection all happen in plain Python. The model is told not to compute statistics itself.
-2. **Every fact has an evidence id.** IDs are content-derived and stable: `ev:snap:<device>:<date>` is one snapshot, `ev:trend:<detector>:<device>` is a window statistic, and `ev:query:<tool>:<hash>` is an aggregate or empty result. Each record keeps the device, timestamps or window, field values, and a source pointer to the raw NDJSON line or a device/date range. The ledger lives in graph state, so citations can be traced back to raw telemetry.
+2. **Every fact has an evidence id.** IDs are content-derived and stable: `ev:snap:<device>:<date>` is one snapshot, `ev:trend:<detector>:<device>` is a window statistic, `ev:query:<tool>:<hash>` is an aggregate or empty result, and `ev:policy:<action>:<target>` is a precondition refusal. Each record keeps the device, timestamps or window, field values, and a source pointer to the raw NDJSON line or a device/date range. The ledger lives in graph state, so citations can be traced back to raw telemetry.
 3. **The answer is structured.** `submit_answer` puts each statement next to its `device_ids` and `evidence_ids`.
 4. **The verifier is deterministic and does not trust the model.**
    - Every finding cites at least one id that a tool actually returned.
@@ -279,9 +280,9 @@ Skills are procedures, not facts: nothing in them can be cited as evidence. A li
    - Every device ID that appears in the prose is cited somewhere.
    - No ID from another tenant appears.
 
-   - With Decision 1 on, each statement and the summary must also be supported by the statement's own evidence (P ≥ 0.5). A citation can be real and still be misread, and this check catches that.
+   - With Decision 1 on, each statement must also be supported by its own evidence, and the summary by the findings' evidence and the queued proposals (P ≥ 0.5). A citation can be real and still be misread, and this check catches that.
 
-   A failed answer goes back to the model with the list of problems, once. If it fails again, the failing statements are removed and the answer is labeled *not fully verified*. It is never silently passed through.
+   A failed answer goes back to the model with the list of problems, once. If it fails again, the failing statements are removed, a summary that fails is replaced by a plain notice, and the answer is labeled *not fully verified*. It is never silently passed through.
 5. **"None" is an answer with evidence.** "Laptops failing high-severity checks" returns zero matches. The answer cites the query evidence id, which records the filters and the count of 0. This is a trap in the brief: the only high-severity check is `disk_encryption`, and it passes on every device.
 6. **Gaps are stated, not filled.** The system prompt lists what the telemetry does not cover: CPU, network traffic, cost, warranty. Questions about those get `insufficient_data`. Missing battery blocks on laptops are reported as data gaps, not as "no battery".
 7. **"Now" is the latest snapshot**, not the wall clock, and every answer prints its data-as-of.
@@ -318,6 +319,18 @@ A separate agent, given only the repo and no context from this build, tried to b
 | 9 | Duplicate audit sequence numbers under concurrency | low | Locked appends |
 | 10 | A CLI session with no recorded owner could be resumed by any company; a Decision 1 timeout crashed the turn instead of failing open | low | Conversations store records the owner at creation; every Decision 1 error fails open |
 | 11 | Action text (order spec, employee message) is only length-checked | informational | Unchanged: the human approver sees the full text before anything runs |
+
+A second review before submission found the issues below. All are fixed, with regression tests in `tests/test_redteam.py`.
+
+| # | finding | severity | fix |
+|---|---|---|---|
+| 12 | Device lists and insight findings had no hostname, and no tool took one, so the model called `get_device` once per device to name it (29 of 39 eval cases; 12 now), and "open a ticket for acme-macbook-4" had no lookup path | high | Hostname in every device row and finding; device tools accept a serial number or a hostname |
+| 13 | A snapshot from an unfiltered device list shares its id with the detector's snapshot, so it counted as proof for a battery replacement | high | Upgrades and replacements need the detector's trend record |
+| 14 | After the second failed check, an unsupported summary was still shown, and carried into the next turn's memory | high | A failing summary is replaced by a notice; unverified turns are labeled in memory |
+| 15 | 12-letter words such as NOTIFICATION read as device IDs; a capitalized foreign hostname or employee ID was not caught; `compliance_summary` did not cover the devices it lists as failing | medium | Device IDs need a digit; hostnames and employee IDs match case-insensitively; failing devices count as covered |
+| 16 | A turn that ran out of tool budget still asked to approve its proposals, without an audit event; a `submit_answer` at the budget limit used up the verifier retry | medium | Unfinished turns discard their proposals with a caveat; plan and answer calls don't count as tool rounds |
+| 17 | The `count` grader matched the "-4" in a hostname; two `status` checks accepted every status | medium | The count must appear as a word or a standalone number; status sets tightened |
+| 18 | Found while re-recording: the faithfulness judge saw neither policy refusals nor proposals, so a correct summary ("RAM is soldered, so P-1 proposes a replacement") scored as unsupported | medium | A precondition refusal is an evidence record; the judge also gets the queued proposals |
 
 ## Key design decisions and trade-offs
 

@@ -1,0 +1,57 @@
+{
+ "key": "5e970e17894910f2351c062bebf31939",
+ "latency_s": 8.32,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3701268638532517389": "EtcICtQIAWkUfRMKn0IowpKO5wF3MSeN3GsVvbWIWWO+zmQW7MpVNW2hNKmZi/g27vOBYaUSL/NGD4xmJHuqXecF9AUIsjsFogKWJmAX7UfUcZ8nXVKvjUaJv6cuiHeI8xJ8SL7iqTNE1JEB8M7JYlPnJWn8YEosqb79TiXHHZ4J63ErunwoUDhAPBXthWi90/CTH59AzHh91NxArC+M8bW3QadD8XIuCKGMEVieEBtVVwkTEDbNWb4Tkh5cvKkzZnevDqUvvLQTcB04Vmnrl5d/LB1t4rrY1pcEd1opYCXPqim6PIkCSUTWno0A09GcSYr0dfys1DrgkapYtw1uO0zgYFlFIE4Qzh5SoNrcV7RQbE/HYAdqHDmjHvZXUPcAp3s9a58Ag4HWZTID6q4eFTiaWgKq0OCxNfxj+YO/D3A21VxHltjKjMlH2599eB9awbVMPQBiCy+yNx5Dr546vl14BiX603mB/P8bZ3D0CYstPdoLpbSiAhy8hZTPISJ+dqm67qHeBYCzm7BQzx9tuSl5DXiLgAJzmHfHhdQ4JP/Y+Sk+VICR5RanuFpnwSYr2c31/kli8F6pzqviItOFCZWCIIzmQbQCpOqqmp8c+5gQK8iOrkViyixoVmbbHta5y1GaqvfF4dTSRYZ9unz65GKTxfkm+K6z256+e3+uAe4t3hduer2JX3A75J/BOfTkXCIhsQtHhkTiKvu3OFo3cx+EwrV9ZgQq3R/bk/1ibMpwZgaDtjI+F/ET+tWeLyv+7JrsQXfyXckXeM6ysIBzx7A95XMmwJuGBzdG10lbkzH95Sgf91GupI3I/dkpEc9zor+3QpbgynXCgnUeR3uIz8ZQ2qgSrSW/vZDWRb2C+LWFJX6nha5uMquDqc5Ai+Q/Rp1hevihKfeiFYrEEbaHk857+gxzdjcwSVTi8F6DT5L+kGYC1kB+aGIz1NzlSZqyp5nMNpmQhiGsv6AyNNRmXMa9YkJMtd2MKLrtxndujuCoJabyEfwvww5juOq4stpRFIMPbIX1JICIWnjuCBIBJUZE5Jjwjk1PvrjNxcAbOp1OJ5R6aLxD4L1mHnSHWvZv8A9MANNDe4cKzw0dJ7qfD5U3mNs7tED6qet+dUE0wmnbHEW/soF0U32xB0zE/AFeMAmRpgtK6irJymHplhiIJnj5nZIuIrPfxhNYbXLND40C5QuUI/PbMUto77I715GIMq9iZXgznRI8h/SMD5AQme5MfXEA0Vh8dmSkwdcZQKFMigNyjxEsRMCZDuGSiHgHcoAbsVEgsZWV53ykgGIO1vMNOWCCJ0FLCLcE1XHELDB2qT2gWPCtlR+QxgNscK9Lgn75EKM/KjLVudF9qQnEwmAE69VgqkRPYuXPl+F3bmCVeCn/mmaKqjCVRRiXYERkqzEmBG84rFGaBX83KNDy9LiaherYbx1vCCbYrK8G1nL67dYER2V6XCch34qFqPQ06Nd7v5XHPQg5Og=="
+    },
+    "function_call": {
+     "arguments": "{\"kind\": \"compliance_drift\"}",
+     "name": "detect_insights"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00f-612c-7672-a56d-228947b0186f-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {},
+     "id": "call_3701268638532517389",
+     "name": "compliance_summary",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "kind": "compliance_drift"
+     },
+     "id": "call_3701268638532516200",
+     "name": "detect_insights",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3483,
+    "output_token_details": {
+     "reasoning": 272
+    },
+    "output_tokens": 300,
+    "total_tokens": 3783
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -6,8 +6,12 @@ from langchain_core.messages import AIMessage, HumanMessage
 from langgraph.checkpoint.memory import InMemorySaver
 
 from evals import ground_truth as gt
-from fleet_copilot import audit, data, decisions, models
+from evals.run import grade
+from fleet_copilot import audit, data, decisions, graph, models
+from fleet_copilot.data import TenantView
 from fleet_copilot.graph import MAX_ROUNDS, Context, build_graph
+from fleet_copilot.policy import check_replacement
+from fleet_copilot.tools import ToolContext, run_tool
 
 FULL_QUERY = "ev:query:find_devices:"
 
@@ -53,6 +57,7 @@ def test_summary_only_fabrication_is_not_verified(monkeypatch):
     values, _ = run_graph(monkeypatch, [plan(), ai(("find_devices", {})), lie, lie], decide=all_unsupported)
     assert values["answer"]["verified"] is False
     assert "MT7PJB7N5LRE" not in " ".join(values["answer"]["caveats"])
+    assert "stolen" not in values["answer"]["summary"] and "stolen" not in values["final"]
 
 
 def test_unfiltered_query_does_not_cover_device_claims(monkeypatch):
@@ -127,3 +132,83 @@ def test_decisions_timeout_fails_open(monkeypatch):
     monkeypatch.setenv("FLEET_LLM_MODE", "live")
     with pytest.raises(decisions.DecisionError):
         decisions.decide("x", {"q": {"type": "noul", "instructions": "?"}})
+
+
+def test_unfiltered_snapshot_does_not_justify_hardware_action():
+    ctx = ToolContext(TenantView(gt.ACME))
+    run_tool(ctx, "find_devices", {})
+    flag = {"device_id": "7VP16KHV88LM", "reason": "battery", "evidence_ids": ["ev:snap:7VP16KHV88LM:2026-06-12"]}
+    assert run_tool(ctx, "flag_device_for_replacement", flag)["result"]["status"] == "refused"
+    run_tool(ctx, "detect_insights", {"kind": "battery_eol"})
+    flag["evidence_ids"] = ["ev:trend:battery_eol:7VP16KHV88LM"]
+    assert run_tool(ctx, "flag_device_for_replacement", flag)["result"]["status"] == "queued_for_approval"
+    assert check_replacement(ctx.view, "8NM23J95R5I6")[2] == ["ev:trend:battery_eol:8NM23J95R5I6"]
+
+
+def test_identifier_matching_ignores_words_and_case():
+    acme = TenantView(gt.ACME)
+    assert graph._issues({"summary": "NOTIFICATION VERIFICATION", "findings": [], "caveats": []}, acme, {}) == []
+    issues = graph._issues({"summary": "Globex-Macbook-1 of EMP-GLOBEX-1002", "findings": [], "caveats": []}, acme, {})
+    assert len(issues) == 2 and all("not in your fleet" in i for i in issues)
+
+
+def test_compliance_summary_covers_its_failing_devices():
+    ctx = ToolContext(TenantView(gt.ACME))
+    check = run_tool(ctx, "compliance_summary", {"check_id": "screen_lock"})["result"]["checks"]["screen_lock"]
+    f = {"statement": "Screen lock is off", "device_ids": check["failing_now"], "evidence_ids": [check["evidence_id"]]}
+    assert graph._issues({"status": "answered", "summary": "", "findings": [f], "caveats": []}, ctx.view, ctx.ledger) == []
+
+
+def test_submit_at_tool_budget_still_gets_its_retry(monkeypatch):
+    ev = run_tool(ToolContext(TenantView(gt.ACME)), "fleet_overview", {})["evidence_ids"][0]
+    good = submit("Acme has 10 devices.", [{"statement": "Acme has 10 devices", "device_ids": [], "evidence_ids": [ev]}])
+    values, _ = run_graph(monkeypatch, [plan(), *[ai(("fleet_overview", {})) for _ in range(MAX_ROUNDS)], submit("none"), good])
+    assert values["answer"]["verified"] is True
+
+
+def test_aborted_turn_discards_proposals_instead_of_asking(monkeypatch):
+    flag = ai(("flag_device_for_replacement", {"device_id": "7VP16KHV88LM", "reason": "battery",
+                                               "evidence_ids": ["ev:trend:battery_eol:7VP16KHV88LM"]}))
+    values, _ = run_graph(monkeypatch, [plan(), ai(("detect_insights", {"kind": "battery_eol"})), flag,
+                                        *[ai(("fleet_overview", {})) for _ in range(50)]])
+    assert values["proposals"] == [] and "Discarded 1" in " ".join(values["answer"]["caveats"])
+
+
+def test_device_lookup_by_hostname():
+    ctx = ToolContext(TenantView(gt.ACME))
+    assert run_tool(ctx, "get_device", {"device_id": "ACME-MACBOOK-4"})["result"]["device_id"] == "MT7PJB7N5LRE"
+    assert all(row["hostname"] for row in run_tool(ctx, "find_devices", {})["result"]["devices"])
+    assert run_tool(ctx, "get_device", {"device_id": "globex-macbook-1"})["result"]["status"] == "not_found"
+
+
+def test_count_grader_ignores_hostname_suffixes():
+    def counted(text):
+        o = {"devices": [], "proposals": [], "answer_text": text, "status": None, "error": None, "verified": True,
+             "leaked": [], "unapproved_executions": 0}
+        return next(c["pass"] for c in grade({"expect": {"count": 4}}, o) if c["check"] == "count")
+
+    assert counted("Four devices.") and counted("4 devices.") and not counted("Ten devices, such as acme-macbook-4.")
+
+
+def test_policy_refusal_is_citable_evidence():
+    ctx = ToolContext(TenantView(gt.INITECH))
+    run_tool(ctx, "detect_insights", {"kind": "ram_constrained"})
+    order = {"device_id": "I3JLKILKQTAC", "component": "ram", "spec": "16 GB",
+             "evidence_ids": ["ev:trend:ram_constrained:I3JLKILKQTAC"]}
+    refused = run_tool(ctx, "create_upgrade_order", order)["result"]
+    f = {"statement": "RAM is soldered on initech-mac-3", "device_ids": ["I3JLKILKQTAC"],
+         "evidence_ids": [refused["evidence_id"]]}
+    assert refused["status"] == "refused"
+    assert graph._issues({"status": "answered", "summary": "", "findings": [f], "caveats": []}, ctx.view, ctx.ledger) == []
+
+
+def test_faithfulness_judge_sees_the_proposals(monkeypatch):
+    seen = {}
+    monkeypatch.setattr(decisions, "decide", lambda doc, qs: seen.update(doc=json.loads(doc), qs=qs) or
+                        {k: {"noul": 0.9} for k in qs})
+    p = {"id": "P-1", "tool": "flag_device_for_replacement", "args": {"device_id": "I3JLKILKQTAC"},
+         "justification": "RAM pressure"}
+    decisions.faithfulness({"summary": "Proposed P-1.", "findings": []}, {}, [p])
+    assert seen["doc"]["proposals"][0]["id"] == "P-1" and "proposals" in seen["qs"]["summary"]["instructions"]
+    decisions.faithfulness({"summary": "x", "findings": []}, {})
+    assert "proposals" not in seen["doc"]

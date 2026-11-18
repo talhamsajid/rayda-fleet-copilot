@@ -1,0 +1,62 @@
+{
+ "key": "0a9ebd07c84aafe0d4e0ec0513097328",
+ "latency_s": 11.84,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_2321784698147701579": "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"
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"question\", \"steps\": [\"Run detect_insights or find_devices to identify devices low on disk space.\", \"Get detailed telemetry for any flagged devices if necessary.\", \"Submit final answer with evidence citations.\"], \"tools\": [\"detect_insights\", \"find_devices\", \"get_device\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f008-6cbd-7461-b013-1b64e06e468f-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Run detect_insights or find_devices to identify devices low on disk space.",
+       "Get detailed telemetry for any flagged devices if necessary.",
+       "Submit final answer with evidence citations."
+      ],
+      "tools": [
+       "detect_insights",
+       "find_devices",
+       "get_device",
+       "submit_answer"
+      ]
+     },
+     "id": "call_2321784698147701579",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2808,
+    "output_token_details": {
+     "reasoning": 402
+    },
+    "output_tokens": 488,
+    "total_tokens": 3296
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

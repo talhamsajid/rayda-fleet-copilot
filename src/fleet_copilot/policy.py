@@ -11,7 +11,6 @@ BATTERY_CAPACITY_DROP_PCT = 3.0
 APPROVED_SOFTWARE = {"Google Chrome", "Slack", "Zoom", "1Password", "Visual Studio Code"}
 CHECKS = {"disk_encryption", "screen_lock", "os_up_to_date"}
 
-# ponytail: static upgradeability by model; replace with a vendor/SKU catalog when the fleet grows
 UPGRADEABLE = {
     "Dell XPS 15": {"ram", "storage", "battery"},
     "ThinkPad X1 Carbon": {"storage", "battery"},
@@ -38,6 +37,7 @@ def _finding(kind: str, s: Snapshot, finding: str, explanation: str, evidence: l
     return {
         "kind": kind,
         "device_id": s.device_id,
+        "hostname": s.hostname,
         "employee_id": s.employee_id,
         "model": s.model_name,
         "finding": finding,
@@ -241,6 +241,10 @@ def _evidence_ids(f: dict | None) -> list[str]:
     return [e["id"] for e in f["evidence"]] if f else []
 
 
+def _proof(f: dict) -> list[str]:
+    return [e["id"] for e in f["evidence"] if e["id"].startswith("ev:trend:")]
+
+
 def check_upgrade(view: TenantView, device_id: str, component: str) -> tuple[bool, str, list[str]]:
     h = view.history(device_id)
     finding = HARDWARE[component](h)
@@ -249,8 +253,8 @@ def check_upgrade(view: TenantView, device_id: str, component: str) -> tuple[boo
     model = h[-1].model_name
     if component not in UPGRADEABLE.get(model, set()):
         return False, (f"{component} is not field-upgradeable on {model}; "
-                       "consider flag_device_for_replacement instead."), _evidence_ids(finding)
-    return True, finding["finding"], _evidence_ids(finding)
+                       "consider flag_device_for_replacement instead."), []
+    return True, finding["finding"], _proof(finding)
 
 
 def check_replacement(view: TenantView, device_id: str) -> tuple[bool, str, list[str]]:
@@ -261,15 +265,15 @@ def check_replacement(view: TenantView, device_id: str) -> tuple[bool, str, list
         f = detector(h)
         if not f:
             continue
-        ids += _evidence_ids(f)
         if component == "battery" or component not in UPGRADEABLE.get(model, set()):
             reasons.append(f["finding"])
+            ids += _proof(f)
         else:
             fixable.append(component)
     if reasons:
         return True, "; ".join(reasons), ids
     if fixable:
-        return False, f"Issues are fixable by upgrade ({', '.join(fixable)}) on {model}; use create_upgrade_order.", ids
+        return False, f"Issues are fixable by upgrade ({', '.join(fixable)}) on {model}; use create_upgrade_order.", []
     return False, f"No hardware finding (battery, RAM, storage) supports replacing {device_id}.", []
 
 

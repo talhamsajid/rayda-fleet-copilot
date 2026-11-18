@@ -1,0 +1,65 @@
+{
+ "key": "9b6f20858dcb4bdc57c6a4457140d752",
+ "latency_s": 2.19,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_5866436373194514796": "EqEECp4EAWkUfRMvAerAipkfdhg+r+zgyXST2tAhIajYJpfpnRlwOYTV8akODvkhkP7mwa5swQ/KQHM+kjf259jheXeWuCBW1YnDpHZmaKyMmWPyu6flCp5PYBXxsO574C4BZrtL0vFHtkhBG+oh0n8HpQu6O2mWlXXSMdsy62c3BWzgQQVx1RJTW7JEiC+n57aFZoqbvkUBYzVmIyaf6G2HG4n8jpoFh6n14k/CSXVKlfdyUY9KxYwyQZbHgsMk7Xj4MyVW87UwaZ/tFGybYr/zWy4MUoUfJuOqbFOYyErdkvmY8BhWEepI3eclRN5sSjz0UHMZnh0R9SSH0mGGCvWowbXC09WC+/IPkHCV29cAr6mzLpdCw9ZuATiKECE3ceTBN4O532RUIZRWsc1LMADEgmZU1n4zzqCJENQUB7tMkagn6D07fIBZR58hSih3xIpw1V1G59YO53z9LrxZumKPaAORrSCwZP2WSU0ykJ2sVgTgIIb0vW4/RK2g+MZN0/7yztKiZXDN09F0sv5hmgTBqtGRz/5zDmDyFArUuekBt0as6ESlkMDMNPjhnpIGAwfPDBLrwRW1Fe3Z7emncvz7D162JmBjsIeH566oF9rVmRIcRe8bUdrySPlR+EGmjlvcRT6WKsf5F0Izuldp45FVzW0jnoiucJ2sFkdS6MaPm545lp4Pre1m+1K9XcFOb1X0+wuE/K6dRSrUq4aNioL7dQ8="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Load hardware-remediation skill\", \"Get details of device I3JLKILKQTAC\", \"Detect hardware insights to get evidence for RAM issues\", \"Create upgrade order proposal for RAM\", \"Submit answer\"], \"intent\": \"action\", \"tools\": [\"load_skill\", \"get_device\", \"detect_insights\", \"create_upgrade_order\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f012-57cd-7525-985e-ab36b1fd85aa-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load hardware-remediation skill",
+       "Get details of device I3JLKILKQTAC",
+       "Detect hardware insights to get evidence for RAM issues",
+       "Create upgrade order proposal for RAM",
+       "Submit answer"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "detect_insights",
+       "create_upgrade_order",
+       "submit_answer"
+      ]
+     },
+     "id": "call_5866436373194514796",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2814,
+    "output_token_details": {
+     "reasoning": 122
+    },
+    "output_tokens": 224,
+    "total_tokens": 3038
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

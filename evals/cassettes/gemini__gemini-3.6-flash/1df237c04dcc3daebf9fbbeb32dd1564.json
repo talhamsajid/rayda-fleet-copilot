@@ -1,0 +1,66 @@
+{
+ "key": "1df237c04dcc3daebf9fbbeb32dd1564",
+ "latency_s": 4.0,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_16915241008257366816": "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"
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"action\", \"steps\": [\"Load hardware-remediation skill\", \"Detect storage_low insights across the fleet\", \"Inspect affected devices for disk details and upgradeability\", \"Propose upgrade orders or replacements as appropriate\", \"Submit final answer with evidence citations\"], \"tools\": [\"load_skill\", \"detect_insights\", \"get_device\", \"create_upgrade_order\", \"flag_device_for_replacement\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f013-d599-77af-a623-13c5dc9a9595-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load hardware-remediation skill",
+       "Detect storage_low insights across the fleet",
+       "Inspect affected devices for disk details and upgradeability",
+       "Propose upgrade orders or replacements as appropriate",
+       "Submit final answer with evidence citations"
+      ],
+      "tools": [
+       "load_skill",
+       "detect_insights",
+       "get_device",
+       "create_upgrade_order",
+       "flag_device_for_replacement",
+       "submit_answer"
+      ]
+     },
+     "id": "call_16915241008257366816",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2811,
+    "output_token_details": {
+     "reasoning": 486
+    },
+    "output_tokens": 600,
+    "total_tokens": 3411
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

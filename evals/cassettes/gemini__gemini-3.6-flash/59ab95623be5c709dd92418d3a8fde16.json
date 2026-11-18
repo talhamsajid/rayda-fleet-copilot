@@ -1,0 +1,63 @@
+{
+ "key": "59ab95623be5c709dd92418d3a8fde16",
+ "latency_s": 4.26,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3974743256305563442": "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"
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"load_skill\", \"get_device\", \"open_remediation_ticket\", \"submit_answer\"], \"steps\": [\"Load compliance-remediation skill\", \"Get snapshot for device MT7PJB7N5LRE\", \"Open remediation ticket for screen_lock on device MT7PJB7N5LRE\", \"Submit final answer\"], \"intent\": \"action\"}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f017-3be0-7444-989f-ea93dcab3dee-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load compliance-remediation skill",
+       "Get snapshot for device MT7PJB7N5LRE",
+       "Open remediation ticket for screen_lock on device MT7PJB7N5LRE",
+       "Submit final answer"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "open_remediation_ticket",
+       "submit_answer"
+      ]
+     },
+     "id": "call_3974743256305563442",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2880,
+    "output_token_details": {
+     "reasoning": 576
+    },
+    "output_tokens": 675,
+    "total_tokens": 3555
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -16,6 +16,7 @@ RISK = {"open_remediation_ticket": "low", "notify_employee": "medium",
         "create_upgrade_order": "high", "flag_device_for_replacement": "high"}
 Check = Literal["disk_encryption", "screen_lock", "os_up_to_date"]
 EvidenceIds = Field(min_length=1, description="Evidence ids from earlier tool results that justify this action.")
+DeviceId = Field(description="Serial number or hostname")
 
 
 @dataclass
@@ -53,11 +54,11 @@ class FindDevicesArgs(Args):
 
 
 class DeviceArgs(Args):
-    device_id: str
+    device_id: str = DeviceId
 
 
 class HistoryArgs(Args):
-    device_id: str
+    device_id: str = DeviceId
     metric: Literal["disk_free_pct", "mem_used_pct", "battery", "compliance", "software"]
 
 
@@ -124,6 +125,7 @@ class MakePlanArgs(Args):
 def _device_row(s) -> dict:
     return {
         "device_id": s.device_id,
+        "hostname": s.hostname,
         "employee_id": s.employee_id,
         "model": s.model_name,
         "form_factor": s.form_factor,
@@ -218,7 +220,6 @@ def get_device(ctx: ToolContext, a: DeviceArgs) -> dict:
     b = s.battery or {}
     detail = {
         **_device_row(s),
-        "hostname": s.hostname,
         "processor": s.processor,
         "disk_size_gb": s.disk_size_gb,
         "disk_encrypted": s.disk_encrypted,
@@ -293,6 +294,15 @@ def load_skill(ctx: ToolContext, a: SkillArgs) -> dict:
     return {"result": {"skill": s["name"], "applies_to": s["applies_to"], "instructions": s["body"]}}
 
 
+def _refusal_evidence(ctx: ToolContext, tool: str, args: BaseModel, reason: str) -> str:
+    target = getattr(args, "device_id", None) or args.employee_id
+    s = ctx.view.latest(target)
+    fields = {"hostname": s.hostname, "employee_id": s.employee_id, "model": s.model_name} if s else {"employee_id": target}
+    e = {"id": f"ev:policy:{tool}:{target}", "device_id": s.device_id if s else None,
+         "fields": fields | {"action": tool, "allowed": False, "reason": reason}, "source": "policy preconditions"}
+    return ctx.remember([e])[0]
+
+
 def _propose(ctx: ToolContext, tool: str, args: BaseModel, targets: list[str], check, hint: str) -> dict:
     cited = args.evidence_ids
     unknown = [i for i in cited if i not in ctx.ledger]
@@ -302,7 +312,7 @@ def _propose(ctx: ToolContext, tool: str, args: BaseModel, targets: list[str], c
         return {"status": "refused", "reason": f"None of the cited evidence is about {targets}. Call {hint} first."}
     ok, reason, support = check()
     if not ok:
-        return {"status": "refused", "reason": reason}
+        return {"status": "refused", "reason": reason, "evidence_id": _refusal_evidence(ctx, tool, args, reason)}
     if support and not set(cited) & set(support):
         return {"status": "refused",
                 "reason": f"Cited evidence does not show the problem. Call {hint} and cite its evidence ids."}
@@ -444,4 +454,6 @@ def run_tool(ctx: ToolContext, name: str, raw_args: dict) -> dict:
         args = tool.args.model_validate(raw_args or {})
     except ValidationError as e:
         return {"error": "Invalid arguments", "details": json.loads(e.json(include_url=False, include_context=False))}
+    if isinstance(getattr(args, "device_id", None), str):
+        args.device_id = ctx.view.resolve(args.device_id)
     return tool.fn(ctx, args)

@@ -1,0 +1,123 @@
+{
+ "key": "cd59ada53edcf34a7596fab5dd360c5b",
+ "request": {
+  "input": "{\"caveats\": [\"Only four devices meet policy criteria for replacement based on hardware telemetry findings; six devices have healthy hardware metrics and cannot be flagged for replacement.\"], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T10:41:00Z\", \"device_id\": \"7VP16KHV88LM\", \"fields\": {\"approved\": false, \"battery_condition\": \"Service Recommended\", \"capacity_drop_pct\": 4.2, \"condition\": \"Service Recommended\", \"condition_since\": \"2026-05-30\", \"cycle_count\": 1049, \"cycle_limit\": 1000, \"disk_free_pct\": 31.4, \"employee_id\": \"emp-acme-1000\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"first_seen\": \"2026-05-25\", \"form_factor\": \"laptop\", \"full_charge_capacity\": 4166, \"hostname\": \"acme-macbook-1\", \"installed\": \"CleanMyMac X\", \"mem_used_pct\": 57.6, \"model\": \"MacBook Pro\", \"os\": \"macOS 13.6\", \"os_up_to_date\": \"fail\", \"share_failing\": 1.0, \"software\": \"CleanMyMac X\", \"version\": \"4.15\"}, \"id\": \"ev:snap:7VP16KHV88LM:2026-06-12\"}, {\"device_id\": \"7VP16KHV88LM\", \"fields\": {\"capacity_drop_pct\": 4.2, \"employee_id\": \"emp-acme-1000\", \"first_capacity\": 4348, \"first_cycles\": 1017, \"hostname\": \"acme-macbook-1\", \"last_capacity\": 4166, \"last_cycles\": 1049}, \"id\": \"ev:trend:battery_eol:7VP16KHV88LM\", \"window\": {\"from\": \"2026-05-14T11:09:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T10:41:00Z\"}}], \"finding\": 1, \"statement\": \"Proposed replacement under P-1 for acme-macbook-1 (MacBook Pro) due to battery health requiring service with 1049 cycles.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:02:00Z\", \"device_id\": \"8NM23J95R5I6\", \"fields\": {\"battery_condition\": \"Service Recommended\", \"capacity_drop_pct\": 4.2, \"check_id\": \"screen_lock\", \"condition\": \"Service Recommended\", \"condition_since\": \"2026-05-23\", \"consecutive_failures\": 14, \"cycle_count\": 1157, \"cycle_limit\": 1000, \"days_to_full\": 5, \"disk_free_gb\": 26.5, \"disk_free_pct\": 2.6, \"disk_size_gb\": 1024.0, \"employee_id\": \"emp-acme-1005\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-05-30\", \"form_factor\": \"laptop\", \"full_charge_capacity\": 3872, \"hostname\": \"acme-thinkpad-8\", \"last_pass\": \"2026-05-29\", \"mem_used_pct\": 68.8, \"model\": \"ThinkPad X1 Carbon\", \"os\": \"Windows 10 22H2\", \"os_up_to_date\": \"fail\", \"screen_lock\": \"fail\", \"severity\": \"medium\", \"share_failing\": 1.0, \"slope_gb_per_day\": -5.18, \"sustained\": true}, \"id\": \"ev:snap:8NM23J95R5I6:2026-06-12\"}, {\"device_id\": \"8NM23J95R5I6\", \"fields\": {\"capacity_drop_pct\": 4.2, \"employee_id\": \"emp-acme-1005\", \"first_capacity\": 4043, \"first_cycles\": 1127, \"hostname\": \"acme-thinkpad-8\", \"last_capacity\": 3872, \"last_cycles\": 1157}, \"id\": \"ev:trend:battery_eol:8NM23J95R5I6\", \"window\": {\"from\": \"2026-05-14T10:10:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T09:02:00Z\"}}, {\"device_id\": \"8NM23J95R5I6\", \"fields\": {\"employee_id\": \"emp-acme-1005\", \"first_free_gb\": 176.8, \"hostname\": \"acme-thinkpad-8\", \"last_free_gb\": 26.5, \"share_below_sustained_pct\": 0.83, \"slope_gb_per_day\": -5.18}, \"id\": \"ev:trend:storage_low:8NM23J95R5I6\", \"window\": {\"from\": \"2026-05-14T10:10:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T09:02:00Z\"}}], \"finding\": 2, \"statement\": \"Proposed replacement under P-2 for acme-thinkpad-8 (ThinkPad X1 Carbon) due to battery health requiring service with 1157 cycles and low storage at 3% free disk space (about 27 GB free, 5 days to full).\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T11:00:00Z\", \"device_id\": \"M4XVHUV1MEPZ\", \"fields\": {\"avg_used_pct\": 94.2, \"battery_condition\": \"Service Recommended\", \"capacity_drop_pct\": 4.2, \"condition\": \"Service Recommended\", \"condition_since\": \"2026-05-24\", \"cycle_count\": 948, \"cycle_limit\": 1000, \"disk_free_pct\": 43.2, \"employee_id\": \"emp-acme-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"full_charge_capacity\": 3262, \"hostname\": \"acme-dell-9\", \"mem_used_pct\": 99.0, \"model\": \"Dell XPS 15\", \"os\": \"Windows 10 22H2\", \"os_up_to_date\": \"fail\", \"peak_used_pct\": 99.0, \"ram_gb\": 16, \"share_failing\": 1.0, \"share_over_threshold\": 1.0}, \"id\": \"ev:snap:M4XVHUV1MEPZ:2026-06-12\"}, {\"device_id\": \"M4XVHUV1MEPZ\", \"fields\": {\"capacity_drop_pct\": 4.2, \"employee_id\": \"emp-acme-1002\", \"first_capacity\": 3406, \"first_cycles\": 928, \"hostname\": \"acme-dell-9\", \"last_capacity\": 3262, \"last_cycles\": 948}, \"id\": \"ev:trend:battery_eol:M4XVHUV1MEPZ\", \"window\": {\"from\": \"2026-05-14T08:40:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T11:00:00Z\"}}, {\"device_id\": \"M4XVHUV1MEPZ\", \"fields\": {\"avg_used_pct\": 94.2, \"employee_id\": \"emp-acme-1002\", \"hostname\": \"acme-dell-9\", \"peak_used_pct\": 99.0, \"share_over_threshold\": 1.0}, \"id\": \"ev:trend:ram_constrained:M4XVHUV1MEPZ\", \"window\": {\"from\": \"2026-05-14T08:40:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T11:00:00Z\"}}], \"finding\": 3, \"statement\": \"Proposed replacement under P-3 for acme-dell-9 (Dell XPS 15) due to battery health requiring service and memory usage averaging 94% on 16 GB RAM.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T08:39:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"check_id\": \"screen_lock\", \"consecutive_failures\": 16, \"days_to_full\": 11, \"disk_free_gb\": 10.2, \"disk_free_pct\": 2.0, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-05-28\", \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-4\", \"last_pass\": \"2026-05-27\", \"mem_used_pct\": 47.6, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"os_up_to_date\": \"fail\", \"screen_lock\": \"fail\", \"severity\": \"medium\", \"share_failing\": 1.0, \"slope_gb_per_day\": -0.92, \"sustained\": true}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-06-12\"}, {\"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"employee_id\": \"emp-acme-1003\", \"first_free_gb\": 36.8, \"hostname\": \"acme-macbook-4\", \"last_free_gb\": 10.2, \"share_below_sustained_pct\": 1.0, \"slope_gb_per_day\": -0.92}, \"id\": \"ev:trend:storage_low:MT7PJB7N5LRE\", \"window\": {\"from\": \"2026-05-14T11:14:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T08:39:00Z\"}}], \"finding\": 4, \"statement\": \"Proposed replacement under P-4 for acme-macbook-4 (MacBook Pro) due to non-upgradeable soldered storage at 2% free space (about 10 GB free, 11 days to full).\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:47:00Z\", \"device_id\": \"1LYSSFD074BB\", \"fields\": {\"approved\": false, \"battery\": {\"condition\": \"Normal\", \"cycle_count\": 532, \"full_charge_capacity\": 6163, \"percentage\": 88}, \"check_id\": \"screen_lock\", \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"fail\"}}, \"consecutive_failures\": 22, \"disk_encrypted\": true, \"disk_free_gb\": 522.2, \"disk_free_pct\": 51.0, \"disk_size_gb\": 1024.0, \"employee_id\": \"emp-acme-1001\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-05-22\", \"first_seen\": \"2026-05-31\", \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-2\", \"installed\": \"uTorrent\", \"last_pass\": \"2026-05-21\", \"mem_used_pct\": 55.9, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"os_up_to_date\": \"fail\", \"processor\": \"Apple M3 Pro\", \"ram_gb\": 32, \"screen_lock\": \"fail\", \"severity\": \"medium\", \"share_failing\": 1.0, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\", \"uTorrent 3.6\"], \"version\": \"3.6\"}, \"id\": \"ev:snap:1LYSSFD074BB:2026-06-12\"}], \"finding\": 5, \"statement\": \"acme-macbook-2 (MacBook Pro) has normal battery health with 532 cycles, 51% free disk space (about 522 GB free), and 56% memory usage, so replacement is not warranted.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:13:00Z\", \"device_id\": \"9MXJVZ1I0DKA\", \"fields\": {\"battery\": {\"condition\": \"Normal\", \"cycle_count\": 601, \"full_charge_capacity\": 4852, \"percentage\": 78}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 573.3, \"disk_free_pct\": 56.0, \"disk_size_gb\": 1024.0, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-thinkpad-10\", \"mem_used_pct\": 35.6, \"model\": \"ThinkPad X1 Carbon\", \"os\": \"Windows 10 22H2\", \"os_up_to_date\": \"fail\", \"processor\": \"Intel Core i7-1365U\", \"ram_gb\": 16, \"share_failing\": 1.0, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:9MXJVZ1I0DKA:2026-06-12\"}], \"finding\": 6, \"statement\": \"acme-thinkpad-10 (ThinkPad X1 Carbon) has normal battery health with 601 cycles, 56% free disk space (about 573 GB free), and 36% memory usage, so replacement is not warranted.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:36:00Z\", \"device_id\": \"DLT35MHGTH2D\", \"fields\": {\"battery\": null, \"check_id\": \"screen_lock\", \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"pass\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"fail\"}}, \"consecutive_failures\": 12, \"disk_encrypted\": true, \"disk_free_gb\": 130.4, \"disk_free_pct\": 50.9, \"disk_size_gb\": 256.0, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"screen_lock\": \"medium\"}, \"failing_since\": \"2026-06-01\", \"form_factor\": \"desktop\", \"hostname\": \"acme-mac-5\", \"last_pass\": \"2026-05-31\", \"mem_used_pct\": 39.1, \"model\": \"Mac mini\", \"os\": \"macOS 15.4\", \"processor\": \"Apple M2\", \"ram_gb\": 8, \"screen_lock\": \"fail\", \"severity\": \"medium\", \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:DLT35MHGTH2D:2026-06-12\"}], \"finding\": 7, \"statement\": \"acme-mac-5 (Mac mini) has 51% free disk space (about 130 GB free) and 39% memory usage on 8 GB RAM, so replacement is not warranted.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T10:57:00Z\", \"device_id\": \"DSYPSES7SKBB\", \"fields\": {\"battery\": {\"condition\": \"Normal\", \"cycle_count\": 411, \"full_charge_capacity\": 5876, \"percentage\": 64}, \"check_id\": \"screen_lock\", \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"fail\"}}, \"consecutive_failures\": 12, \"disk_encrypted\": true, \"disk_free_gb\": 274.5, \"disk_free_pct\": 26.8, \"disk_size_gb\": 1024.0, \"employee_id\": \"emp-acme-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-06-01\", \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-3\", \"last_pass\": \"2026-05-31\", \"mem_used_pct\": 37.3, \"model\": \"MacBook Pro\", \"os\": \"macOS 15.3\", \"os_up_to_date\": \"fail\", \"processor\": \"Apple M3 Pro\", \"ram_gb\": 32, \"screen_lock\": \"fail\", \"severity\": \"medium\", \"share_failing\": 1.0, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:DSYPSES7SKBB:2026-06-12\"}], \"finding\": 8, \"statement\": \"acme-macbook-3 (MacBook Pro) has normal battery health with 411 cycles, 27% free disk space (about 275 GB free), and 37% memory usage, so replacement is not warranted.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:26:00Z\", \"device_id\": \"Q3VUITEGQ400\", \"fields\": {\"battery\": {\"condition\": \"Normal\", \"cycle_count\": 592, \"full_charge_capacity\": 5781, \"percentage\": 36}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 194.0, \"disk_free_pct\": 37.9, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1000\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-7\", \"mem_used_pct\": 32.2, \"model\": \"MacBook Pro\", \"os\": \"macOS 15.3\", \"os_up_to_date\": \"fail\", \"processor\": \"Apple M2 Pro\", \"ram_gb\": 16, \"share_failing\": 1.0, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:Q3VUITEGQ400:2026-06-12\"}], \"finding\": 9, \"statement\": \"acme-macbook-7 (MacBook Pro) has normal battery health with 592 cycles, 38% free disk space (about 194 GB free), and 32% memory usage, so replacement is not warranted.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:52:00Z\", \"device_id\": \"XSU9UUDGU6AC\", \"fields\": {\"battery\": {\"condition\": \"Normal\", \"cycle_count\": 212, \"full_charge_capacity\": 5336, \"percentage\": 49}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"pass\"}}, \"disk_encrypted\": true, \"disk_free_gb\": 242.5, \"disk_free_pct\": 47.4, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-6\", \"mem_used_pct\": 55.4, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"os_up_to_date\": \"fail\", \"processor\": \"Apple M2 Pro\", \"ram_gb\": 16, \"share_failing\": 1.0, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"]}, \"id\": \"ev:snap:XSU9UUDGU6AC:2026-06-12\"}], \"finding\": 10, \"statement\": \"acme-macbook-6 (MacBook Pro) has normal battery health with 212 cycles, 47% free disk space (about 243 GB free), and 55% memory usage, so replacement is not warranted.\"}], \"proposals\": [{\"action\": \"flag_device_for_replacement\", \"id\": \"P-1\", \"justification\": \"Battery approaching end of life: condition 'Service Recommended' since 2026-05-30; 1049 cycles (limit 1000); full-charge capacity down 4.2% over 30 snapshots\", \"status\": \"queued for administrator approval\", \"target\": \"7VP16KHV88LM\"}, {\"action\": \"flag_device_for_replacement\", \"id\": \"P-2\", \"justification\": \"Battery approaching end of life: condition 'Service Recommended' since 2026-05-23; 1157 cycles (limit 1000); full-charge capacity down 4.2% over 30 snapshots\", \"status\": \"queued for administrator approval\", \"target\": \"8NM23J95R5I6\"}, {\"action\": \"flag_device_for_replacement\", \"id\": \"P-3\", \"justification\": \"Battery approaching end of life: condition 'Service Recommended' since 2026-05-24; full-charge capacity down 4.2% over 30 snapshots\", \"status\": \"queued for administrator approval\", \"target\": \"M4XVHUV1MEPZ\"}, {\"action\": \"flag_device_for_replacement\", \"id\": \"P-4\", \"justification\": \"2.0% disk free (10.2 of 512.0 GB), losing 0.92 GB/day (~11 days to full)\", \"status\": \"queued for administrator approval\", \"target\": \"MT7PJB7N5LRE\"}], \"summary\": \"Proposals P-1, P-2, P-3, and P-4 have been created to flag acme-macbook-1 (MacBook Pro), acme-thinkpad-8 (ThinkPad X1 Carbon), acme-dell-9 (Dell XPS 15), and acme-macbook-4 (MacBook Pro) for replacement due to active hardware findings. The remaining six devices in the fleet show healthy hardware telemetry, so policy does not permit flagging them for replacement. Cheaper component upgrade options exist for acme-macbook-1 (battery upgrade order), acme-thinkpad-8 (battery and storage upgrade orders), and acme-dell-9 (battery and RAM upgrade orders).\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f10": {
+    "instructions": "Is every factual claim in the `statement` of finding 10 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f3": {
+    "instructions": "Is every factual claim in the `statement` of finding 3 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f4": {
+    "instructions": "Is every factual claim in the `statement` of finding 4 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f5": {
+    "instructions": "Is every factual claim in the `statement` of finding 5 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f6": {
+    "instructions": "Is every factual claim in the `statement` of finding 6 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f7": {
+    "instructions": "Is every factual claim in the `statement` of finding 7 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f8": {
+    "instructions": "Is every factual claim in the `statement` of finding 8 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f9": {
+    "instructions": "Is every factual claim in the `statement` of finding 9 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Statements about the listed `proposals` count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.8268819554799843,
+    "noul": 0.8268819554799843,
+    "type": "noul"
+   },
+   "f10": {
+    "confidence": 0.7918792500192671,
+    "noul": 0.7918792500192671,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.8396382517382793,
+    "noul": 0.8396382517382793,
+    "type": "noul"
+   },
+   "f3": {
+    "confidence": 0.7028133437045752,
+    "noul": 0.7028133437045752,
+    "type": "noul"
+   },
+   "f4": {
+    "confidence": 0.7887195238436332,
+    "noul": 0.7887195238436332,
+    "type": "noul"
+   },
+   "f5": {
+    "confidence": 0.6715850669181155,
+    "noul": 0.6715850669181155,
+    "type": "noul"
+   },
+   "f6": {
+    "confidence": 0.7413095792832408,
+    "noul": 0.7413095792832408,
+    "type": "noul"
+   },
+   "f7": {
+    "confidence": 0.7578889000160499,
+    "noul": 0.7578889000160499,
+    "type": "noul"
+   },
+   "f8": {
+    "confidence": 0.7416604442294068,
+    "noul": 0.7416604442294068,
+    "type": "noul"
+   },
+   "f9": {
+    "confidence": 0.7205759906082402,
+    "noul": 0.7205759906082402,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.5701503866041788,
+    "noul": 0.5701503866041788,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 7491
+    }
+   ],
+   "total_input_tokens": 7491,
+   "total_output_tokens": 0,
+   "total_tokens": 7491
+  }
+ }
+}

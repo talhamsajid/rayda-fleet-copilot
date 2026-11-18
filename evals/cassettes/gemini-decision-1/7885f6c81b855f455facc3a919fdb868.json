@@ -1,0 +1,51 @@
+{
+ "key": "7885f6c81b855f455facc3a919fdb868",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T08:34:00Z\", \"device_id\": \"4SEFDLPTKXAM\", \"fields\": {\"disk_free_pct\": 38.1, \"employee_id\": \"emp-globex-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"globex-macbook-3\", \"mem_used_pct\": 42.7, \"model\": \"MacBook Air\", \"os\": \"macOS 13.6\"}, \"id\": \"ev:snap:4SEFDLPTKXAM:2026-06-12\"}], \"finding\": 1, \"statement\": \"globex-macbook-3 (MacBook Air) is running macOS 13.6.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T10:04:00Z\", \"device_id\": \"QPZSXKINA7GP\", \"fields\": {\"disk_free_pct\": 48.1, \"employee_id\": \"emp-globex-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"globex-macbook-5\", \"mem_used_pct\": 31.2, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\"}, \"id\": \"ev:snap:QPZSXKINA7GP:2026-06-12\"}], \"finding\": 2, \"statement\": \"globex-macbook-5 (MacBook Pro) is running macOS 14.5.\"}], \"summary\": \"There are 2 devices running an OS older than macOS 15.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.968718724789461,
+    "noul": 0.968718724789461,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.9622777459376958,
+    "noul": 0.9622777459376958,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.8425329089061292,
+    "noul": 0.8425329089061292,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 803
+    }
+   ],
+   "total_input_tokens": 803,
+   "total_output_tokens": 0,
+   "total_tokens": 803
+  }
+ }
+}

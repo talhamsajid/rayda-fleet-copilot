@@ -1,0 +1,61 @@
+{
+ "key": "2410bf0506d7be5c0f9dd392083fc738",
+ "latency_s": 1.95,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3199386601628950740": "EqwHCqkHAWkUfRPknwZX/yQDSzABeX9N4YPisEQK0Ax0mLVK1zYr1f36MFdO30pEKfYyGURQdAZSC00HgAa5cT6+sHQX0mzoltwjE+m84sYaeNdI8iJTdKbvNkBtHePjxIhya5a9TiDZ4bmpkP0/wsfiROEQIA+9N9PHb/uzHs+97ZN8hNDxQSwSLueYQ+LXb/8yYaG2nEIBCUbZ2Mo0MOA/5Wh0w5Wfox7o9yAnF2znzIytza2j5T59pjxWR6155nNN9VPql+enuQd8GeOiB5HMHEZRGFe7QRanWvKLmDCK0pUgmFjqgfqtzpj/34bw6M9+SzPDP5gOTtN2VQuDITjnBqreYWeD9yPmkS+RuplLzdB/cTaycO7PiV/SbIMyhIzEK6V6YmkmyufHcrSsPRhAGJf3g6KE79EN2GnOZFe5Umy8e9SOt6Lyn+rYBVKTLdX5MUNZq0tOTVOEHt91UfahqmMk9wNpooqGtZf7vROxBbHuODkVxq4yXFHAl5jxXH0yJl8UBjdDf6PEYDn64MCbYbodObDdwCKVyAqzERywwWb52PB1ZBglenTnsZTeB+5fYmeZj+9Uv4fIUBADZW50nO9Ph0FHklyqAnvvvVQWPpOoK1FpHSoceMDEdcBnVpej4FjZBJQnkkbg/qTs8K/NJ+AwztG+sYvE0q+JDsSutPYCa5yoZlHRmbihHUV/r5Ez/WbTm7drW7QRrRgcayAb92WFNCxAZ9oSWPQRUo8Bk75VnXG9dtzEqWnr7RiaEedKWcCAmfvRjIwfBz2GlpdjWpYGfIN6tKNUee+Ku4y9/p/PIPPVXwFFJVROZJwuEBT4zhcECcx76gioZGdbnjEyF1xl7oHtm3+PKVD2fXgHGJIAqG7FblyhQqNhowVVqniosDP71trCr66cgHO2NXEfRTerX30L23oZzFqF5pOVAkRuhnwjyzN9ATSatYKhNtcaahnGb1dqSg3tBR+MNKmu6A59qoLRLD7C+Pm47BJbtWJMq2I1BCC0DaJj4gBp/FzRIBpntdv5PgAQ7BMe9YwlneU46TCclGDslPkEajhp53HR156JwjZ4FkAXt7O0Oa11/JAMF1zcF0zoONHJ1GB8RjHLW/ikQvlJZQfF4nxgQ1puQ9DkpIyH5PFvrv9D80Tm3dFd3Cx6nduaruWHfOTBKeuubi7iBZAjA3BbfcqjsEoOVkTJBVvurDcxBjiV6XDSVY0sj5tEmrEk13mATVi+5fNaLMB23GKBJibyJA=="
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"find_devices\", \"get_device\", \"submit_answer\"], \"intent\": \"question\", \"steps\": [\"Filter devices by form factor 'laptop' and failing severity 'high'.\", \"Get details for any matching devices if necessary.\", \"Submit answer with findings and evidence IDs.\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f009-a6fb-71fc-afd4-c823b9997069-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Filter devices by form factor 'laptop' and failing severity 'high'.",
+       "Get details for any matching devices if necessary.",
+       "Submit answer with findings and evidence IDs."
+      ],
+      "tools": [
+       "find_devices",
+       "get_device",
+       "submit_answer"
+      ]
+     },
+     "id": "call_3199386601628950740",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2808,
+    "output_token_details": {
+     "reasoning": 218
+    },
+    "output_tokens": 296,
+    "total_tokens": 3104
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

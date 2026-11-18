@@ -1,0 +1,75 @@
+{
+ "key": "f7ed79b9fd52dc9f4996b482206cb1ed",
+ "latency_s": 10.98,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_11025703017290372979": "EtAYCs0YAWkUfROn/AJAlbnKMpl1I1L+EGK4Oe+TDqiOBQeTy/CLCTFYT3MLUkF+BmO5IjmypXwmM59k5pnnIq5YrAXZij2mlT7CcWYPg3uRTz5RnmEe0g7YJFwxcszPAYOvQYda/3mZYFnZE67gpCNN2vVKdIZvKIZlFclktBQziL3srVtiomPfgjL1tCrRACdbI6pmLQCIivQTwKXQTDl5krcjCamjtLh7pjCeXu02EsQCm2Zee2EdqrPKWe8+rRNXBGqc0Kk38XYKe8gQ2HBJJWlpqqOEXyKPNHgAjqfP96zIod/CAULDP4YkL7ZbN7Sn0+Flxf4sRBMAFueJGNb3tbJZYCl7qkPk2BhatOdluAbasJcxm6U2CaNncaf5fWnkVngUn4la77BaHX1N2BIVCv1cU24XnOYDPezhuAfP8Unshta4o8Ho33aGxWmddWJCDQfoYcEPK0OfgGuLu/Ne1WYKixVr1pBTBjDjEeiA01J8WrgCpxCZwFuOezsOmM2Heq6GmcbWXideSEYzbXgGzDz6T2+UwIRUHlhjmhLi1da3+aTZ1QCaQvhL/bniSrRb/4AveBpgreMH2KhZAec7Uzi8AMsKbKai/vQbTbcVONodta/SmYycarcwBbIw53D6mp/yLDzoWQ6vBuLITpqxbSbpxJf4qT+hrXtk03bXqR0ezUKUYecYTgMuueJE0KkDGeCy3dOqZR35JRBGB1LYPyjuQDLxQdZib46+Vtfj0+cZJzjnWC8CFtopNU3/aRZRv4pN87KcLlhbbPNYY1p2iRM0YWeLisZxPsQuFg16nHwcfxamOcDsE+J3X6SputYczOEEjnijClldGYCHI06veyDJpn6BFDC5Kbtlivh3VGNxA9CChivNdFb9gu40neZEYUPCCy6gQ/fQHgAfB5v9oAPaqIM6Gg64cOYitItNoJyiX8+m9RtVZIPdyk9orZNrcrkrHoOI8Bojidm0XsbHJa1SdqSlDl6qFBh6VEVziX0cJ1vQKXbwOP5YFtBXW3LhKIxCCuM+pNfa68rbN6pjtsXDuAj32Xkcm2edahMySobkA0/e8Lq8rGPxraWrYmP1mO6PZ0Q7YJGfOOICZt1LjtXwRMCFfbdqMpKGonUHbk/PizWz+sfvG671DrdYya9NimAObINy6rRgZ5FvvCVCDDCkBdubjTAJiIAtD9rq1jWfkDxjovFq5G8BVWjQOD7nHAvx7lqV8taPk6Zwfh2SKAfJB0wx/7jKo4bhZ+Ts70XiKoJptfn/geTsTYsQeWJ+tKTKg636vVnqjA4IYOKw9W6wLH6uferEYE4ma+u7RdcTxpdPkEj2pN2nap5vnmJskuHfD2oiC/zE5GAil//wvzTuwJJw10HFjvTzJShPGKCruy3eO1hWtoJz/orDDjyMadMQGF7IPXaXd4Jb9F4hiyysTgIbDuIoyRn01JNR31DvurCE7Ij+g1aMVK5cnsCh3dBQ2G8gq2OV/1r8KJYvac/iY1T+OaTe4Cs1c7EwkRKC81KAqaHnsNdwa0fT9ioMcAnpPw4mAVC+xjsIgbWzEmYX3GJ3JbbJsyN0R4jewNHBwaO2s93zGjAe77Fd2TU7P08W6N32A6AkiLyyaSzYkHIJO8q4ShbyqvARnCL3ZQtWxqMqyfikUyk7XIUT6gaF+Xv5ubYDgac2rm9WLYrgb8C+AtthGpkemhH3wfMa0itmW4lJ05AdIHoSBYxTRkE+r1QOWIjUgMpl2nQniLfjsxSsH0aHctO75sy4q3/xueEcHGiFJ3K5+/NDbk/rFOhycFzswhio1tOHQJERAvaS0ZVPAj+iTpb+2kapnqjWax9/qkzzk19McBRcnHC0TJGaZANeXo9/Yo5zPYm/NObqknsqdXFID907H2wvWcQXp8Axu4vcpiAyvNXHRR1iQeIviPlmwR7uV/8IuhSFkjUKYyrGwpFFvJ1B1k7gEfA3XAApuF9TOIJAizqJ5MsLQe1uk+DGzt/WzEay7T6MYBuLBYst11H2884HpFffgUh/h2g3JT3LLZjF5hHVG/a1lwiufb0jP03iuQ55MqbFmg04MXEq4wdylnvuvcCciKa/QhUFpzpxWFd7gq/nZ8aQ3HWyd8In8osj96GCGdp/IibC6EmclwPhC66R5JVzNTMWJSPNrnjSHHgMTTyfFC2lw0LXEhKDOQWfqsIFgH6CeMZkXFzdkNAmmqn2BbB+PlTga7n5HuOeiAnH9+7qg8aY7SwtPXxEhJOwtLU+GrKbHnLZo87qHqxylS5caaiZhc+n/iOTzHnxAZ2yEy04yjp6WChisHz7gY8am4/EtJ7Fq5fLA3fAfqRcBI6EVhmXuxO3Ahk5ycWPTLkEzaWEpzY5kuUEoi03wbEqBYSaQlM053dYEIS+cZ57N72VDDeDY9oPBF5mdJ4IhruHuoFoAJxmq8XArP371S/euEyKQpFm77yrN+cbiyp4Uq/DWizO5jxC2O1Cy86PwVDgCoTHu3HLmmMaJ2M9tzYe6BA9/y9hkHK3l7S3C/ONGPQavFtZDp/v1KcDI4VBkgGDBjIvVYwh7LMNO2GcDDnRvOYtpqKT5PqXD6NWjpJEBAFI0kcJuhIhFHGK+tzyUU6WwnefHPa6f5AJ+pd0OTLOOhzypQoLE1qJEL3OH83F4mac/pjYOkYmOoDtYeWfOJTdQFOwdOSplvr2BaBna6TFDKPInIUCRq1InI0eC19fy0eSIC+6Yz/uhzc06uOcCPHg/1/IEnM/DxmbrAuogtMkEyVh/L9sjCQcroNKTGPODgC5z+TduZwKSpcF1GzT4bTatnm1YcLiB5Lqie6mbp0WVUYq5bzVfnef5jTLbYM26QY8yIei3WYHCxsI5r5X4THaEvZmbQan3xwNvKbCatP6zH0EPEBUj9wiS9Z0MietCSSoXNDod3Kl+VsNLzcCfT0cKX7tsOQq96lAnozdCzz1HyXfXg1d0ccjnDpm978eH734Whnn+HT54HvJVJaZgH/hfyNMAOrjDLTN0WdNZIE0Leetk9Zwc3dl/AXiliTVGOUoIK1qlLpBj2f7DueMgt9Q0hhKjJUwqnMNSP7a98DD07Tk6JurxdLRkhloh2/18G4kX+PpJqhrMG6Tx+8Q4V0BoixgUogIaoB/rLl+eFrkbUbuQcEiYr6Wtp7j4vc1aUeyTsmtRh2p+i8zKlJuzdRBS20iizS+NHaET5kN1BG0yq7i37X/HwOY0AHLeLEjesqy/EwGCdQDuR/Molsc0LnY5dZS8YxvIEqnAiLO+CWxVQ3sjgwA9SPb+sYRePDMpHAXNn5MG/wsIlgyeyXO1Ptn3eXBsO9JlqfQ1UrzSXi8Bi5ZWBbuPNnrjy2tmfUTJXZReFwK4SnkbBIH0dq5afPYWQyjdKld+485WWtxz6XrPrhrgOIFDNPgfiWNgmhGUf+BZQApcQ8trUAJr5DtolzErJVtZOzoM9u34DdKVAyKzpDnzQ47L0bCLz/nAZSkeYITyXZKYCGBOu2N34OiitE3+rhXNdi9p8KoR/nZvksmB4EvCkWS9xRzuGgaIfiP+inm22Pnm/9vYkpkPP9cEFBC+/CH0TJSTMjnm2RZTE7hfhZLS0Lh6Ezu9sBhxfQjekRK72yqAW3V7YEl4V1T3fOzW/Z6EiJdDQXrVrm8GS0fcJTU/BPLsggKSaw4z7FETp6jEK7iLpso9N/zf6sK+q5Pz8hvcXgchlHLbC2ypZagXD1AIHhWqe8uMPJcfFMJSAKgtHgiTreXAbfo8kamLREnfcCl+PWoS8tGNLZEOvLJFmJ5NY2s86NlaLQqs89hXA8rbjLlTeTMa0j3uDpAys66/zPwoawZnBRlbe0a5eF/GrSFpX11b0v/w8uk0D9b8TgONY1VKwhEn48lEei3fCZqIq6n4vQSVwapqI81qMCb0iffvhCnef9cVvUYsnY1LZA2DWuhgyvwqE3KYAHXEwRT0CWc5RlNQlWD9WxxROzYRc4BaX7jOEM6JPh9rvaF2LkD5O30dtDzYvTysiE/I++Smv6kC3X5GW4rj52wo2oSIsWuP7FY/8PygVtY6v0prLgY3P88vMi5YugmflOZIQLEhedi/WwsMajrkBBUM72Zb2S18cDD6NMBnGUcP0y5zKwcnpt5oVcSKvIJ4/uD5rlkdgkPran44FS11cGewsAu8HwMxsqXHyftzW+96yiG4I/T8y+Et10A+y0="
+    },
+    "function_call": {
+     "arguments": "{\"findings\": [{\"statement\": \"globex-dell-7 (Dell XPS 15) has 2% free disk space (about 12 GB remaining).\", \"evidence_ids\": [\"ev:snap:E4V0SB5I0MYU:2026-06-12\", \"ev:trend:storage_low:E4V0SB5I0MYU\"], \"device_ids\": [\"E4V0SB5I0MYU\"]}, {\"device_ids\": [\"JRZSGXVMKE6M\"], \"evidence_ids\": [\"ev:snap:JRZSGXVMKE6M:2026-06-12\", \"ev:trend:storage_low:JRZSGXVMKE6M\"], \"statement\": \"globex-thinkpad-8 (ThinkPad X1 Carbon) has 2% free disk space (about 20 GB remaining).\"}], \"caveats\": [], \"status\": \"answered\", \"summary\": \"Two devices in the fleet are low on disk space: globex-dell-7 (Dell XPS 15) and globex-thinkpad-8 (ThinkPad X1 Carbon).\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f009-2784-74f5-a818-2857a4476aa5-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "E4V0SB5I0MYU"
+        ],
+        "evidence_ids": [
+         "ev:snap:E4V0SB5I0MYU:2026-06-12",
+         "ev:trend:storage_low:E4V0SB5I0MYU"
+        ],
+        "statement": "globex-dell-7 (Dell XPS 15) has 2% free disk space (about 12 GB remaining)."
+       },
+       {
+        "device_ids": [
+         "JRZSGXVMKE6M"
+        ],
+        "evidence_ids": [
+         "ev:snap:JRZSGXVMKE6M:2026-06-12",
+         "ev:trend:storage_low:JRZSGXVMKE6M"
+        ],
+        "statement": "globex-thinkpad-8 (ThinkPad X1 Carbon) has 2% free disk space (about 20 GB remaining)."
+       }
+      ],
+      "status": "answered",
+      "summary": "Two devices in the fleet are low on disk space: globex-dell-7 (Dell XPS 15) and globex-thinkpad-8 (ThinkPad X1 Carbon)."
+     },
+     "id": "call_11025703017290372979",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5093,
+    "output_token_details": {
+     "reasoning": 1064
+    },
+    "output_tokens": 1332,
+    "total_tokens": 6425
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

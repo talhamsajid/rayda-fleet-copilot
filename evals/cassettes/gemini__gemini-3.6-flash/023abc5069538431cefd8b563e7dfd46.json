@@ -1,0 +1,57 @@
+{
+ "key": "023abc5069538431cefd8b563e7dfd46",
+ "latency_s": 7.27,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_1636817633172057270": "EucHCuQHAWkUfRP4T0xvMHwLM1tT9P1+Crh1EqbWV2u9lb5sRw5HLagOGtn0D48vP9omuxphnbmggE/Te6XmefA/kQdTsvKY9jQkG3iOGEjpqrd9kdc6Qk7tac356P9XPVsAOxH2sQQCWrckBSN4Mx0a4ghIrDyZQw/E1Ur51pQSEgIgRd6t0vPsm7mgcyhHTuraw0GMZGV6mM9iyS4yzK/hOHdoRD1B5Gvbj850cQE0FwsMr4DPuaSADh+o7nIrYrFJaa7cdA3kv4rmTFEtbAPMoYjoWcvGHDO2etRa9WWPCwlBVsWpGsixK9ADezdMUiK1wp7FwacjRoSkyfdcPbRJNnLkt+BFf54mBlaY7CODzyqTyEpjHHX8KhZ6SDEBxAlJ4ZxUVdHF9wPk5LhJF+dbG7NUehGPVJyf4+Cdtn4hg4bUfNnGoqCPopcpqjiHaY27So2BptWZEoq8vc0lfpIAiNelQpNPBpVCXiGIGl2GBqI9K7UY28pvRfUs4mt7Zb4D5Yqos4MnEkkYsNhW24jHK22nuNWQSioQZgrEAPH9PjM9WxAc7Rtv9y/bv/KfLNWzWDu42qpAQbtfQcQPaW44d1HVzZNlkvxekeiLSItu104UymR57wjXqcWbIGay00rSkqjQNHpPYoaKiZCHYFZuzCr6IDkcvqdVCUV3BCgRfZOW1WHPZau3TAcvCCNGJ2XbI732vYvKT1CyxoABM6JQFD3h9ufotZHRKYVP7irNh/uyuFWvzFSAa1nuUqIvAmNIuXDyOX5bbwAlTObgSdtoutas/KhmUvSK4t2D8pa3QM9QMauvh891gjRhrkkSLeYZfEqBxKp6uAqBOW31YSppzrSC8VA6o1xc22IVkztH3NdwoGoA4UYA5hoH9/Yj4Y5DTLs60TlXCXb1J9VrWjIk2GvfgOYwNBdDadRyzfWPbCRfj4t4XWoEy6ZsML1MS1/8XflURE4Uz7Zn3k9g11tk0rHRyIRn/+kwKs2zYLkZtdhTaSW6xH4VuL8c2Z3kDaJDgZfsLm/N5wv0lx9aEScvoNDTVa68yurF7FYtpp2A0PCVRR3aLAVqHmbZc5oo7hmuYYtjvkZ0S3Jj9PXrm3QBV9AMOAdVQdPmVLaFy0Pe8wSn1vIo6jN3s1xusK7PZBX5iFtHMMYaGAv+rJJwva3Bc4r3okTvFH8+hrqvJt2gJ4IDJ4eTwzMYGkIVcUfAOve+F9fidLWgJQPIdbj0NZ45xsehblkUv9ZlCIvA5v829K28mjT2S6h5uY9Tabaj1G+zwxPWGKvdPL6OBJtC+RK8pYHCX368rVj1XfYneOLBwS+ix/XYphds"
+    },
+    "function_call": {
+     "arguments": "{\"component\": \"ram\", \"evidence_ids\": [\"ev:snap:M4XVHUV1MEPZ:2026-06-12\", \"ev:trend:ram_constrained:M4XVHUV1MEPZ\"], \"device_id\": \"M4XVHUV1MEPZ\", \"spec\": \"32 GB DDR5\"}",
+     "name": "create_upgrade_order"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f012-188a-7380-8f42-f0c319eddf2d-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "component": "ram",
+      "device_id": "M4XVHUV1MEPZ",
+      "evidence_ids": [
+       "ev:snap:M4XVHUV1MEPZ:2026-06-12",
+       "ev:trend:ram_constrained:M4XVHUV1MEPZ"
+      ],
+      "spec": "32 GB DDR5"
+     },
+     "id": "call_1636817633172057270",
+     "name": "create_upgrade_order",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4421,
+    "output_token_details": {
+     "reasoning": 350
+    },
+    "output_tokens": 445,
+    "total_tokens": 4866
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -1,0 +1,85 @@
+{
+ "key": "fca0e2912875d270f454018eb3a5fd58",
+ "latency_s": 12.22,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_17962122961543617241": "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"
+    },
+    "function_call": {
+     "arguments": "{\"summary\": \"Yes, three devices in the fleet have unapproved software installed. Specifically, initech-macbook-6 (MacBook Pro) has TeamViewer installed, while initech-mac-3 (Mac mini) and initech-dell-1 (Dell XPS 15) have uTorrent installed.\", \"caveats\": [], \"findings\": [{\"device_ids\": [\"DARFCP0BQM2G\"], \"evidence_ids\": [\"ev:snap:DARFCP0BQM2G:2026-05-21\", \"ev:snap:DARFCP0BQM2G:2026-06-12\"], \"statement\": \"initech-macbook-6 (MacBook Pro) has unapproved software TeamViewer 15.5 installed, first detected on 21 May.\"}, {\"device_ids\": [\"I3JLKILKQTAC\"], \"evidence_ids\": [\"ev:snap:I3JLKILKQTAC:2026-05-29\", \"ev:snap:I3JLKILKQTAC:2026-06-12\"], \"statement\": \"initech-mac-3 (Mac mini) has unapproved software uTorrent 3.6 installed, first detected on 29 May.\"}, {\"evidence_ids\": [\"ev:snap:W2656QDAE2ZJ:2026-06-02\", \"ev:snap:W2656QDAE2ZJ:2026-06-12\"], \"statement\": \"initech-dell-1 (Dell XPS 15) has unapproved software uTorrent 3.6 installed, first detected on 2 June.\", \"device_ids\": [\"W2656QDAE2ZJ\"]}], \"status\": \"answered\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00f-f904-7350-9230-5bebd37a23ba-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "DARFCP0BQM2G"
+        ],
+        "evidence_ids": [
+         "ev:snap:DARFCP0BQM2G:2026-05-21",
+         "ev:snap:DARFCP0BQM2G:2026-06-12"
+        ],
+        "statement": "initech-macbook-6 (MacBook Pro) has unapproved software TeamViewer 15.5 installed, first detected on 21 May."
+       },
+       {
+        "device_ids": [
+         "I3JLKILKQTAC"
+        ],
+        "evidence_ids": [
+         "ev:snap:I3JLKILKQTAC:2026-05-29",
+         "ev:snap:I3JLKILKQTAC:2026-06-12"
+        ],
+        "statement": "initech-mac-3 (Mac mini) has unapproved software uTorrent 3.6 installed, first detected on 29 May."
+       },
+       {
+        "device_ids": [
+         "W2656QDAE2ZJ"
+        ],
+        "evidence_ids": [
+         "ev:snap:W2656QDAE2ZJ:2026-06-02",
+         "ev:snap:W2656QDAE2ZJ:2026-06-12"
+        ],
+        "statement": "initech-dell-1 (Dell XPS 15) has unapproved software uTorrent 3.6 installed, first detected on 2 June."
+       }
+      ],
+      "status": "answered",
+      "summary": "Yes, three devices in the fleet have unapproved software installed. Specifically, initech-macbook-6 (MacBook Pro) has TeamViewer installed, while initech-mac-3 (Mac mini) and initech-dell-1 (Dell XPS 15) have uTorrent installed."
+     },
+     "id": "call_17962122961543617241",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4005,
+    "output_token_details": {
+     "reasoning": 1244
+    },
+    "output_tokens": 1666,
+    "total_tokens": 5671
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

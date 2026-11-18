@@ -1,0 +1,59 @@
+{
+ "key": "b87c2a7c79b5548124c4acb3d174431a",
+ "latency_s": 2.09,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_10236336726493915043": "Eo0GCooGAWkUfRNDe5gbOfQaAgHm6O7FDfv1qZEKjpv2LL3GscAG4CqU9BJJrrMpLU6m3/KXKqifgbWu+oWXNp54/c6njGo0SjFIgA/YsxrhQkLkkmbh/18lpdw0BBi0Ykk9WU4I4zouPXENyHXKjAD0s+VZg06LTNtwnrgza4VWPGTdWk7lT1jYVe5kpC4nGfyxb7Z/w+kjq2G5nc2ufxaKLuGkmLkygkO4RTHgKVwS+jque/BXbs/bxHSMk4WXu6mvECUWUw3crSk4TP4Rqq4cI7/W3YcFNfY1r+4qJ5M3PO4I9RzHItiOJgem/0/06HfWtD9HvsZLIwGZINXMZWIxvDS4OPfbx2l2XOnkyMkDAI5CzzRQbQaboHRK9wVODU/Kb1mSZP/CiS41cTT742qQB77DAHKfpx1evXusiIb8Ewl7e/8Q58iKiiBBjna+LnR14ZdXgsGvNOT0rl6z5NnGIO+XKYu5DXhwM3poVOqbIcV/SBF6T2LYhpHVAIkw4WStCKr3+mODut/Ply751ICgFsx7WJQBDjRHynjF7+43JK7Vofo8l7PZTILxi5LJZsxeKWgId6STEx8T/51YaThLwyw/V//2qLPnBvgXcs2FdDlzxybU7mu61i72i2ju3jqoaKjfHjKWbcZyFY8R/MMtQ0ZCoUiPBz8j+suh3q+5bfdytOtNx9kC2OCyysXv/3I01HOOLQpM2JaIgmZAos113qOjX2cpx8wSoUijW3Ixs0GQLA4CNHnl+Gk555CVNWvgAu2h/amxEl6r9FdVIzU8qRx+qWGuthTkqRqj317rD8jxdVBSTKcel+L2KX/H9T0+LGLddu++lu20seGqHKurvxZCUbilH/+RHEs/udi6WmXIB6H3F2fKiN51i4c5kFo9K0peI0JPUMcIUfvWAX9+2mQygnS5kbg6GsrfNlOdxLKbntwjEoOXIJn9ttcBxrYC+xWHOZWtQcZtI8okpSEK/onoPGsS2HcT726mH3b3Cxs81eaCQM3mvAUj+jU/R1+e2zVOaTIV3mwucY46aA=="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Search for devices running macOS with version below 15 using find_devices tool.\", \"Submit the final answer with findings and evidence IDs.\"], \"tools\": [\"find_devices\", \"submit_answer\"], \"intent\": \"question\"}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00a-ec05-7523-ae3a-f05eac6ce90a-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Search for devices running macOS with version below 15 using find_devices tool.",
+       "Submit the final answer with findings and evidence IDs."
+      ],
+      "tools": [
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_10236336726493915043",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2814,
+    "output_token_details": {
+     "reasoning": 183
+    },
+    "output_tokens": 248,
+    "total_tokens": 3062
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

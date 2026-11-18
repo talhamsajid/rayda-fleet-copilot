@@ -1,0 +1,59 @@
+{
+ "key": "4ffa8f8f2b7230495e31bdbc39fdf8be",
+ "latency_s": 8.33,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7974102284668730829": "EqkDCqYDAWkUfRN1kx0MP+cwE3LDuein3K6FLZwYrTqLROUWa7aZ/GenCiyzpcK2lBBLGpTi/dBBkJjm77EnsKuTM+SjaFQJHHNCGQ0Iu8iL9+RVM4cVeBfoHfhki2zRYhS0x8ODPPdbQ0r2kk1/bDSLYbsurgPyEz4ddqg+08lVJxPWhwYBvNUcx/N38nGAaikzYyPhFG9fo/DEIMNKKS2ByMUvQlWfWq/gVKMRBmEJAC+XB/DxugkmGE6t0CqY3yJBfe7kKFxif9JlHWG5/BG4cG82sQCZvwMJFE/5mRVVw0mXN1xJ1kxiqG6I6md3NlyLGkx/NJN9Yc0IbG6S53Lv94k4UaU6NyneCSXcSlsiCoeyArmXBflUPypg1UvX3oKUHVOC7gqIJ/P3KNRvgAF5JSS85QNkglarjLQwYMN+6uRTT9xU8Dpl6bIqc6JBpx6cjKs8DRL0Z6a9Kk7J+FqNdVTbSmhnfG22bCse9jcIH5LmBi/GGoGLz/7G/xKpEsGqEPeTmMMtcWiqE65ao9sHP6ItseWCsPS9QGvITA4Hc+nPLKT7yYBJi4M="
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"get_device\", \"submit_answer\"], \"intent\": \"question\", \"steps\": [\"Check compliance check status for screen lock on acme-macbook-4 and acme-thinkpad-8\", \"Submit answer citing evidence\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f016-cb78-7393-b122-8a0004a2c39f-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Check compliance check status for screen lock on acme-macbook-4 and acme-thinkpad-8",
+       "Submit answer citing evidence"
+      ],
+      "tools": [
+       "get_device",
+       "submit_answer"
+      ]
+     },
+     "id": "call_7974102284668730829",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3098,
+    "output_token_details": {
+     "reasoning": 97
+    },
+    "output_tokens": 162,
+    "total_tokens": 3260
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

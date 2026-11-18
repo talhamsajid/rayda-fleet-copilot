@@ -1,0 +1,75 @@
+{
+ "key": "c7087eaece53e87673daf848111a7eac",
+ "latency_s": 10.61,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_6464720797065989162": "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"
+    },
+    "function_call": {
+     "arguments": "{\"summary\": \"Two devices in your fleet are low on disk space: initech-macbook-6 (MacBook Pro) and initech-mac-4 (Mac mini). Both devices currently have only 2% free disk space remaining.\", \"caveats\": [], \"status\": \"answered\", \"findings\": [{\"device_ids\": [\"DARFCP0BQM2G\"], \"statement\": \"initech-macbook-6 (MacBook Pro) has 2% free disk space (about 21 GB remaining) and is losing roughly 4 GB per day.\", \"evidence_ids\": [\"ev:snap:DARFCP0BQM2G:2026-06-12\", \"ev:trend:storage_low:DARFCP0BQM2G\"]}, {\"statement\": \"initech-mac-4 (Mac mini) has 2% free disk space (about 5 GB remaining) and is losing roughly 0.5 GB per day.\", \"evidence_ids\": [\"ev:snap:RLD7WV7J82SH:2026-06-12\", \"ev:trend:storage_low:RLD7WV7J82SH\"], \"device_ids\": [\"RLD7WV7J82SH\"]}]}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f009-7846-71fc-a94a-7611d4975967-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "DARFCP0BQM2G"
+        ],
+        "evidence_ids": [
+         "ev:snap:DARFCP0BQM2G:2026-06-12",
+         "ev:trend:storage_low:DARFCP0BQM2G"
+        ],
+        "statement": "initech-macbook-6 (MacBook Pro) has 2% free disk space (about 21 GB remaining) and is losing roughly 4 GB per day."
+       },
+       {
+        "device_ids": [
+         "RLD7WV7J82SH"
+        ],
+        "evidence_ids": [
+         "ev:snap:RLD7WV7J82SH:2026-06-12",
+         "ev:trend:storage_low:RLD7WV7J82SH"
+        ],
+        "statement": "initech-mac-4 (Mac mini) has 2% free disk space (about 5 GB remaining) and is losing roughly 0.5 GB per day."
+       }
+      ],
+      "status": "answered",
+      "summary": "Two devices in your fleet are low on disk space: initech-macbook-6 (MacBook Pro) and initech-mac-4 (Mac mini). Both devices currently have only 2% free disk space remaining."
+     },
+     "id": "call_6464720797065989162",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4296,
+    "output_token_details": {
+     "reasoning": 1102
+    },
+    "output_tokens": 1391,
+    "total_tokens": 5687
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

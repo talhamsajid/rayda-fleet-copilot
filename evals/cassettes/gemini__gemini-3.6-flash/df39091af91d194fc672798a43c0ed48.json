@@ -1,0 +1,57 @@
+{
+ "key": "df39091af91d194fc672798a43c0ed48",
+ "latency_s": 10.47,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_13397016025502444590": "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"
+    },
+    "function_call": {
+     "arguments": "{\"device_id\": \"I3JLKILKQTAC\", \"evidence_ids\": [\"ev:snap:I3JLKILKQTAC:2026-06-12\", \"ev:trend:ram_constrained:I3JLKILKQTAC\", \"ev:policy:create_upgrade_order:I3JLKILKQTAC\"], \"reason\": \"RAM is soldered on Mac mini and experiencing sustained memory pressure (avg 91.8% utilization).\"}",
+     "name": "flag_device_for_replacement"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f018-d04d-703b-8d1e-e5483902c8e5-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "device_id": "I3JLKILKQTAC",
+      "evidence_ids": [
+       "ev:snap:I3JLKILKQTAC:2026-06-12",
+       "ev:trend:ram_constrained:I3JLKILKQTAC",
+       "ev:policy:create_upgrade_order:I3JLKILKQTAC"
+      ],
+      "reason": "RAM is soldered on Mac mini and experiencing sustained memory pressure (avg 91.8% utilization)."
+     },
+     "id": "call_13397016025502444590",
+     "name": "flag_device_for_replacement",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5694,
+    "output_token_details": {
+     "reasoning": 398
+    },
+    "output_tokens": 523,
+    "total_tokens": 6217
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

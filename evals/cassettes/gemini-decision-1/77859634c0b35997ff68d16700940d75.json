@@ -1,0 +1,42 @@
+{
+ "key": "77859634c0b35997ff68d16700940d75",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T10:57:00Z\", \"device_id\": \"I3JLKILKQTAC\", \"fields\": {\"avg_used_pct\": 91.8, \"employee_id\": \"emp-initech-1001\", \"hostname\": \"initech-mac-3\", \"mem_used_pct\": 89.0, \"model\": \"Mac mini\", \"peak_used_pct\": 98.4, \"ram_gb\": 8, \"share_over_threshold\": 1.0}, \"id\": \"ev:snap:I3JLKILKQTAC:2026-06-12\"}, {\"device_id\": \"I3JLKILKQTAC\", \"fields\": {\"avg_used_pct\": 91.8, \"employee_id\": \"emp-initech-1001\", \"hostname\": \"initech-mac-3\", \"peak_used_pct\": 98.4, \"share_over_threshold\": 1.0}, \"id\": \"ev:trend:ram_constrained:I3JLKILKQTAC\", \"window\": {\"from\": \"2026-05-14T09:19:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T10:57:00Z\"}}], \"finding\": 1, \"statement\": \"initech-mac-3 (Mac mini) is consistently constrained by RAM, averaging 92% memory usage across all recorded daily snapshots on its 8 GB memory configuration.\"}], \"summary\": \"Only initech-mac-3 (Mac mini) is consistently constrained by RAM across the fleet.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.8300434660884648,
+    "noul": 0.8300434660884648,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.8974357753300148,
+    "noul": 0.8974357753300148,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 676
+    }
+   ],
+   "total_input_tokens": 676,
+   "total_output_tokens": 0,
+   "total_tokens": 676
+  }
+ }
+}

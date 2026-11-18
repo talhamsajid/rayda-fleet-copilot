@@ -1,0 +1,51 @@
+{
+ "key": "7a4f20f815fdfd36b697cb12a31c6b1d",
+ "latency_s": 5.28,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_14944688942974500785": "Es4BCssBAWkUfRMQRAoFhuyW3AJUCVQM3NDjLt5GU6xmN2OrT/JtMSLbB4Vjjul6+wOGwGvb3mzUncbygtC2kt+nFYTTPk+YNGePNrUeQDaLmoahcWgbvQMQeP6QYrCpFdmHGoMIatZZLc4KryImPZdxErNst/c3jt0jgk7gYdSoK/oDxjLuvCi73f8yPvE9PeHhKa1a2bj72DbbConkLNJh2Q8r6X9iZAAWUCL7z6BoxMPV4NYIHHdkuxoN6nhpwc5aY+Z873UUCyQAsmuEDOs="
+    },
+    "function_call": {
+     "arguments": "{\"kind\": \"battery_eol\"}",
+     "name": "detect_insights"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00d-cba1-73d0-a64f-955cd66a5002-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "kind": "battery_eol"
+     },
+     "id": "call_14944688942974500785",
+     "name": "detect_insights",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3040,
+    "output_token_details": {
+     "reasoning": 20
+    },
+    "output_tokens": 38,
+    "total_tokens": 3078
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

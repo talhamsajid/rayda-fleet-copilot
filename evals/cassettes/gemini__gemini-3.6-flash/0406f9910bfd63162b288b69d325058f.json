@@ -1,0 +1,75 @@
+{
+ "key": "0406f9910bfd63162b288b69d325058f",
+ "latency_s": 12.07,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_5552597364896222271": "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"
+    },
+    "function_call": {
+     "arguments": "{\"summary\": \"Two devices at Acme are low on disk space: acme-macbook-4 (MacBook Pro) and acme-thinkpad-8 (ThinkPad X1 Carbon).\", \"status\": \"answered\", \"findings\": [{\"statement\": \"acme-macbook-4 (MacBook Pro) has 2% free disk space, with about 10 GB remaining.\", \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\", \"ev:trend:storage_low:MT7PJB7N5LRE\"], \"device_ids\": [\"MT7PJB7N5LRE\"]}, {\"device_ids\": [\"8NM23J95R5I6\"], \"evidence_ids\": [\"ev:snap:8NM23J95R5I6:2026-06-12\", \"ev:trend:storage_low:8NM23J95R5I6\"], \"statement\": \"acme-thinkpad-8 (ThinkPad X1 Carbon) has 3% free disk space, with about 27 GB remaining.\"}], \"caveats\": []}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f008-bd9b-737b-b91a-3ef7649ab2e4-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12",
+         "ev:trend:storage_low:MT7PJB7N5LRE"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) has 2% free disk space, with about 10 GB remaining."
+       },
+       {
+        "device_ids": [
+         "8NM23J95R5I6"
+        ],
+        "evidence_ids": [
+         "ev:snap:8NM23J95R5I6:2026-06-12",
+         "ev:trend:storage_low:8NM23J95R5I6"
+        ],
+        "statement": "acme-thinkpad-8 (ThinkPad X1 Carbon) has 3% free disk space, with about 27 GB remaining."
+       }
+      ],
+      "status": "answered",
+      "summary": "Two devices at Acme are low on disk space: acme-macbook-4 (MacBook Pro) and acme-thinkpad-8 (ThinkPad X1 Carbon)."
+     },
+     "id": "call_5552597364896222271",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4916,
+    "output_token_details": {
+     "reasoning": 1489
+    },
+    "output_tokens": 1762,
+    "total_tokens": 6678
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

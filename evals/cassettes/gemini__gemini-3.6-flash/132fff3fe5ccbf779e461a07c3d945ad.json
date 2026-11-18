@@ -1,0 +1,63 @@
+{
+ "key": "132fff3fe5ccbf779e461a07c3d945ad",
+ "latency_s": 2.41,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_4697455842876618001": "EpAHCo0HAWkUfRMGOgXF7tH3BStMTUjg1MxXdm6S32+zVyWOFZfXvCbU4xeeBH+YPr16xKdjoIfnk8TJrnoQM3hatrdbwHhGU0Plc8hvpLcD4tECJCL6dpQ90Is1PMIVk955916haTl3ZVnhMY51oR8Lkj5V+/Cxghpjq/MunLK3LSkwMFs42wb+233xpYknj2/+LeWHbnUBjKBfLe+CNXXPFxC3TW8C/kgwcZQyk9deI0f/UexJkDQLRPzV8EQk/SNdW+KR4Fl7Lru7Utum6rnBh9hf5P929TMhbPgcpHF113oaUVoA0hOmo7Je3cuPBFqnRyo9+yPc/jnP6Qn3SqdI63yF8B8Qap4Z7Mwobt/LBywTF46866ToXfRZ3OaMTtJslZP8/soYJhMBj8I1QDBP50gUAVIwNBbPsI26bkjXcJkAtmwRfsSdpa+gRPkvuPVbAD1KL7ssCvRyYxVnoB5Yci/nA5Hg8ieXrJNOT/RQpKbsoGv0TADMqxUkl5lDwwZoH/BlwXZ2spL5DejsK5vbCRa/nfYQ9ytHMki/rlguernbJ3OrMihX8XJ2zKo52ZhXp6J55WLc07h+kvIv7MTcsiB/iNXiOod88jLvvHhFExDIm97mCiOrslgO6vUWtYc1Z1qkbMZF1P7U4TrXDzM/bA3OMDhpNOWAgb1Kxq3DUHN5OvCWfnlyzqyyefzGdo6zMxOyGeseQ4glNGH33Znszf+Sk8YnnrLJwZy1JJSHm2SB5x2EXIiXqHDmls4rDpRJPHoCm/XygzAsiuvRLmGFoqWFaHlvW0dWGis6zbRXxMIlAkR28s7EoVvQZQYOv0tlwuhHc84rBMMfSRlaWPxcJeMVRj9a2xee19Ag4Kk1qFsvVlZvPcz1eiTHqDmYKmwdipt4EntgkrwC3CS/X8g0/dRWOa+IqzPBkekJcBsjFguhk4dYEmbahyD1/eACNlmRAIHNNssZK07SlGIDYlcAWlKpyMH9FuMK9oGPE5pl+mueh/TST3DotzFMfLU6KVupMI/E/ZMX1pVFdbCFLJNB7dmBtL4udHI08a+SIV3vOB0PWA1D3kQ7ZR6N1qaus8lVGXjh0i/nPmhDhongS2fsJCjG9D0LdZ8XFAK36isgkmDh/FwOG8fL8CvY6cqmwcaJ8wSprnyRd/T+qPGs53mj4jHN6pyhSXA9FjMVEMJVAu68b6Hrmxj2O6wwbIZzzx3U"
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"action\", \"steps\": [\"Load the hardware-remediation skill\", \"Detect battery_eol insights across the fleet\", \"Flag identified devices with dying batteries for replacement\", \"Submit the final answer\"], \"tools\": [\"load_skill\", \"detect_insights\", \"flag_device_for_replacement\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f011-8dd1-74a2-a42e-4f9ad344e185-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load the hardware-remediation skill",
+       "Detect battery_eol insights across the fleet",
+       "Flag identified devices with dying batteries for replacement",
+       "Submit the final answer"
+      ],
+      "tools": [
+       "load_skill",
+       "detect_insights",
+       "flag_device_for_replacement",
+       "submit_answer"
+      ]
+     },
+     "id": "call_4697455842876618001",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2807,
+    "output_token_details": {
+     "reasoning": 193
+    },
+    "output_tokens": 280,
+    "total_tokens": 3087
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

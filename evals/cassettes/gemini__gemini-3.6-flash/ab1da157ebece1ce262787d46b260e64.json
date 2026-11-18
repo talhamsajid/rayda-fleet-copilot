@@ -1,0 +1,52 @@
+{
+ "key": "ab1da157ebece1ce262787d46b260e64",
+ "latency_s": 5.29,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_11617617978961388976": "EvMBCvABAWkUfRM9IoSW8c9H5prST7wTteXmw4WMYJSbzFxfUYaxCEmeBXrC8bAf3rzIVF11GlP7rzFWva1B2wRUbuk7P55kVdJloGABDm7OkqKfWgK+XRRpC8vvuSOHkBxNd8SUt0a4t/u9mM+nEW2rrUhUwDClwPyuPREgurk7wHABG6pNlcXQq04z5rKPSDiL9MBMYYJmtiPf3NgwXCNwUo6jFLGeOSs65oxzP3eIsKy+hWDC2JZlFXeu4lqxZ834ISPfZ37/zaq+8Z/Ob/Dfef2WxZKvuxbdvFSDjm2eYJ5LNy66FL9jiNg0mZZfTMFWoCQb"
+    },
+    "function_call": {
+     "arguments": "{\"form_factor\": \"laptop\", \"failing_severity\": \"high\"}",
+     "name": "find_devices"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00a-4885-767b-b311-9ffdc4f293d4-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "failing_severity": "high",
+      "form_factor": "laptop"
+     },
+     "id": "call_11617617978961388976",
+     "name": "find_devices",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3100,
+    "output_token_details": {
+     "reasoning": 29
+    },
+    "output_tokens": 56,
+    "total_tokens": 3156
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

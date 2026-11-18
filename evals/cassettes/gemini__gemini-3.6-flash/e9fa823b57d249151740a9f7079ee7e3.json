@@ -1,0 +1,59 @@
+{
+ "key": "e9fa823b57d249151740a9f7079ee7e3",
+ "latency_s": 2.41,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7910861162848563560": "EtAJCs0JAWkUfRPVklpigt2gQa2Cgf1IxzW11nnNAmJSb6ePzyfux/FVN1XYko0wVAxL6qRSjtt98EgfyGSQNhVHnriMfwc7B8yotjRrAJDiNisBxXS54TLn86BhO6Tyu1CVqPNDXz4Tqe6pHYUU7eady0FvpkfZdoiZeTnnGsXZAmDEqAFO0WoOeQRDfc0pFLILvYnrgTdtDih1hwMjjh1yX0RuYt8lNAWnt3x+6I/aFft4S7O4HQKrEE2iNoOUAYrvCH6hEZ0uN1vDkA6b8tSqGeFQzPoY+DrOUB4CL7VTnqfXJdxtbSVBnFbRnUZJRp/yMCPeC59zo74Elbmg/cYH4e2OEKzxoJo4timvfRmvYpcQbpgeakUY23YPlKxcJ7AX3n4vuOs7GDSsheBOCJHTFJtMEY+OS3fiDcocnvjoXCSnyxvzhhXmA1eEbtbWF+T1DLmkS0MSvvK1MuJmjTVbkCTao985E0azoSZQr1A07jGbZVPYVd9aPXKv0HWMag0lAYGGfBUzYe9qtF0bdZp9kYiwnubN/sV4ojuGyfuknzeerRni2NNBF+q26+3StKIEVy9gLxodWwt1p67pz0JHfR335zk7vPF7TeZYCrjP/gbZfYYz0EIdsyPlUGpkgusjEVdEJYQxlQo+A7J+Ix83yZ5kMFA5wlVfivxy2PZiImr3L+d7QeC24KSJ33HMPs3Fc19OiEqg2jIfKW4AURzDxkThZnp3nZFos6GWgFcfnsUNPiWM8FIG8ppk233VxsJdwsSvsKRzXOpHxbzHV1trdSFhbFBE/qB7xjF7/V7SJ79F27Q9PNgdKfl1kH+LgV/vX8hERTn97V/5ZqixSWVsyA1l6plVoYkwqxZ0rFzWmXqdSmBcObcq2ZxY27yug41hct2svDkNiNjlZnV5Mkiv6OBx7HnDwuZQdZxJAd6j8JS5VhlLciOtigAgJvWKtHkumAF7MZ0azsD6jJnxaGq6h6CA6O8WSPF0dLfCu0kJVKSpOsNNiO958JAxSER2ENw3f1Ys1SdBnJQcw3BnSqmIbzf7BPX5hdMKr9PLSrfC74wub2BJjI7vQIUG3zfGOp7G91WGg6dDp68R+Q4ZxIB9xMBPC8tIrZ3fJEzMml6PnV6ItXvEJxhf+htFyh5jpqYHxHc5HAmat8PvuzbIpfJx92MoCcVVmH9v7bKVRm7u91i6G6qXmW5NBuXgkdMBGzwBeXKOdr3rmBgwZaG3Cy+LNeQg/pCPrcMfbv2HQrMRmPhTiOvYLHjiuZ6HKTGiBc17D4OZiY0VmSUpqNZ8stYP/wDRvK57PqjPzeqJ8jBvH6z+ld3c1ezx2P6VLyHRyz3AxVC6PYbY1fCJ8cN//E74TWiqWgtLscIOhu0RlYUvPh3g4aP+b3zsK60Y4KNLocgJAYd+qAJMFDRpoR9eW8UnxhVvNSCRnUSIyrSB6N+Luo0YiPFErX7PRlczZZRWVpwehzmcv3lHOlv05AETsP3h7514hMHASOi195XRiDZBsa7EsKwWbHYMa7pYnQbDX8dA5h6vLh6wMGRSmXhjBgH9OSEvTe2yJ5Vkf/sR4BjzVET0kNm7EqvcR+FjIl9vOplqSlrm92bcz1PFTJt5v2QG6DDTc6b8AzLRDZLrATb34bM="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Run detect_insights for unapproved_software to check if any device has unapproved software installed.\", \"Submit the answer citing the evidence IDs returned.\"], \"intent\": \"question\", \"tools\": [\"detect_insights\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00f-d9e0-70cf-aaf3-5b259bf5836c-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Run detect_insights for unapproved_software to check if any device has unapproved software installed.",
+       "Submit the answer citing the evidence IDs returned."
+      ],
+      "tools": [
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_7910861162848563560",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2810,
+    "output_token_details": {
+     "reasoning": 277
+    },
+    "output_tokens": 344,
+    "total_tokens": 3154
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

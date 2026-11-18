@@ -3,6 +3,7 @@
 const $ = (id) => document.getElementById(id);
 const CHECK = { disk_encryption: "disk encryption", screen_lock: "screen lock", os_up_to_date: "OS updates" };
 const COMPONENT = { ram: "RAM", storage: "storage", battery: "battery" };
+const OK_STATUSES = ["ok", "queued_for_approval", "already_proposed"];
 const STATUS_LABEL = { answered: "Answered", refused: "Can't help with that", insufficient_data: "Not enough data" };
 const SUGGESTIONS = [
   "Which devices are low on disk space?",
@@ -208,7 +209,7 @@ async function ask(question) {
         steps.append(el("li", {}, `Planned ${data.steps.length} steps`));
       } else if (kind === "tool") {
         state.activity.tools.push(data);
-        const ok = ["ok", "queued_for_approval", "already_proposed"].includes(data.status);
+        const ok = OK_STATUSES.includes(data.status);
         steps.append(el("li", { class: ok ? "ok" : "bad" }, `${data.name.replaceAll("_", " ")}: ${data.status.replaceAll("_", " ")}`));
       } else if (kind === "verify") {
         state.activity.verify.push(data.status);
@@ -457,7 +458,7 @@ function renderActivity() {
   if (a?.plan) parts.push(el("h3", {}, `Plan: ${a.plan.intent}`), el("ol", { class: "findings" }, a.plan.steps.map((s) => el("li", {}, s))));
   if (a?.tools.length) {
     parts.push(el("h3", {}, "Tool calls"), el("ul", { class: "steps" }, a.tools.map((t) =>
-      el("li", { class: t.status === "ok" ? "ok" : "" }, `${t.name.replaceAll("_", " ")}: ${t.status.replaceAll("_", " ")}`))));
+      el("li", { class: OK_STATUSES.includes(t.status) ? "ok" : "bad" }, `${t.name.replaceAll("_", " ")}: ${t.status.replaceAll("_", " ")}`))));
   }
   if (a?.verify.length) parts.push(el("h3", {}, "Evidence check"), el("p", {}, a.verify.join(", then ")));
   panel.replaceChildren(...(parts.length ? parts : [el("p", { class: "muted" }, "The plan and every tool call of the last question.")]));

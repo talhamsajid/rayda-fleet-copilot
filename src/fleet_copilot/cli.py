@@ -7,9 +7,9 @@ import sys
 from langchain_core.messages import HumanMessage
 from langgraph.types import Command
 
-from .data import UnknownTenant, all_tenants
+from .data import TenantView, UnknownTenant, all_tenants
 from .conversations import Conversations
-from .graph import Context, build_graph, durable_checkpointer
+from .graph import Context, build_graph, durable_checkpointer, render
 
 
 def _ask_approvals(payload: dict) -> dict:
@@ -28,13 +28,18 @@ def _ask_approvals(payload: dict) -> dict:
     return decisions
 
 
+def _approve(state, context: Context) -> Command:
+    print("\n" + render(state.values, TenantView(context.tenant_id)))
+    return Command(resume=_ask_approvals(state.interrupts[0].value))
+
+
 def run_turn(graph, question: str | None, config: dict, context: Context, verbose: bool) -> None:
     payload = {"messages": [HumanMessage(question)]} if question else None
     if payload is None:
         state = graph.get_state(config)
         if not state.interrupts:
             return
-        payload = Command(resume=_ask_approvals(state.interrupts[0].value))
+        payload = _approve(state, context)
     while True:
         for update in graph.stream(payload, config, context=context, stream_mode="updates"):
             for node, delta in update.items():
@@ -49,7 +54,7 @@ def run_turn(graph, question: str | None, config: dict, context: Context, verbos
                             print(f"  tool {m.name}: {m.content[:140]}{'...' if len(m.content) > 140 else ''}")
         state = graph.get_state(config)
         if state.interrupts:
-            payload = Command(resume=_ask_approvals(state.interrupts[0].value))
+            payload = _approve(state, context)
             continue
         print("\n" + state.values.get("final", ""))
         return

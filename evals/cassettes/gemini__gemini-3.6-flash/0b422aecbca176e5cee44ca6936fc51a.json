@@ -1,0 +1,51 @@
+{
+ "key": "0b422aecbca176e5cee44ca6936fc51a",
+ "latency_s": 3.35,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_13634403354632895739": "Ev0BCvoBAWkUfRPvwSQj3zAVySoAaSK3nCsVTPiPMhYkziEPvv3WXK8uouJ8CyTLVqfoAY45jK9nSqpSh7VIUzekJT6tRo3a40yjpHoX6azFKYROIMzVgPN9tcVZmJM/d06pY5yad9W9yIO79QRqPSjGkoNt8OTD363yt31T4S0V4WhV3ixuK6MMlUKkie/6uguWNt2HSo8jewMGjfKjvP0mZvS6A0HV28yGuQBTmXa+JYPxw2q6FerOjLYxpqkUIwwbX1cn84/2KYyhu7Tce7BCXAfGavI9YY/BwkBHnUQRkG3tCVbY6iAh7wuoY18ChuYXeFNxBfHnyMT7L7Ex/A=="
+    },
+    "function_call": {
+     "arguments": "{\"name\": \"hardware-remediation\"}",
+     "name": "load_skill"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f013-e544-7571-92d3-74a3239d226d-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "name": "hardware-remediation"
+     },
+     "id": "call_13634403354632895739",
+     "name": "load_skill",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3441,
+    "output_token_details": {
+     "reasoning": 32
+    },
+    "output_tokens": 51,
+    "total_tokens": 3492
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

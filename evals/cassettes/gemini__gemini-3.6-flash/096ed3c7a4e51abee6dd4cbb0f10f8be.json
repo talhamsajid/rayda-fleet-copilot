@@ -1,0 +1,60 @@
+{
+ "key": "096ed3c7a4e51abee6dd4cbb0f10f8be",
+ "latency_s": 2.75,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_10784391510674906037": "EuMHCuAHAWkUfRPDnGDIpOU38c2o4PJ1iUIVNzRQIjZt0pjkYlG1LeKU8dtRnQggww/8vPlOZ5T6Kgyr02RAZ5gTIYyg6/k938Zh4kls2f6NbLhPCQeVXypMuV+9UEui50ruykzL03fhfOTx1Shp6WISv2qRVQsNzl2DR2IquazCOAsNdQMnZBRumj1daB1TIQ0he82wFAd1BklEsSE1oEvA2P4AKVVd/lSJXHk6gYZmvr0OSpMkYcgeZvy19cUB5kHSxotCf85O66zOfCrfc9ak9fnKHF6d4FK+jph2w9evWRbhSdN1o/dpkbuXN9vhAR37HY+6RVJBn1jT801VaqiyNWsSeAq+39zwWmd2uegr5z9JIVfAwZekvBaYaWgRGNq0RYXRxt95IliistfAd7QLnvd6cvov/Pqd8E1zsDiZKcphgMryu56NEfNQ1JG8QJoohPiamnZ+780Xbv6Ofo8pu3A2kpK6HvCiBaH62Cjqp9grXkBvYw5FmFpUJZhWaNOzP0zLAUSruqxYjHXHYhVjwJZRB4YMxZLSoaoskdMOn43A1SYQCnxVDM5eL583Y5hf5jTW0Sw7CcyCgT1RQfXkTxtuhzxwQUoo2+DPuU5XWygPbjri5iQiq02v4X3/8PZbCN2qUzPvMn7l2qYDm734g8C6YNwzEyMBZedCdj8l7T9yjZs29Reiv84+ec12OeP7Z5pqitBtkyzL0HvMuE4yVAWNrWMZdsChmXQV/15LNIXjKDI6+xWHTO27F0FONt+sOQt76OsRP5TyobPuDnAvWQGmkQm3halCTkq4BpTX/8qyPKAKh46rDA5pbNi8mWzu6QFlWGi7KUQALD97YgmXV91b8GYTOjjx321nWER4QOxiJ7THVKWC0YS3J1Kp6sZNknoKb+xeHwcjvpFI1ynsur6jKUQOJEUMIYQGYu9kjyjVg2PKTneH76ySTFDIqhh/tgGq2e2v00aB5FPce9r755g1fbodMfsx0G+Ig0fMJaoPVXdW8FzP5HRrzzNELDAm689FYP9Bd1UiXbIDUWzQGstGeFBqyfP7LoknHObBIMstx+r6UuHSOeeyWELKWaGL1teTGfqByy79dUV4D0cN5Y3zy79N/X2HSf0pjpSo99ssti6heebmPMcQRJ7Lh09FZPCOgB9VdY3htPYhY5cbpy3n44cPBzY5HvB8Y7nHzIpZ1wX2Nmve8R3nEXEfWMEJwk1VW+0lUbRt46Qc9kKE80/Eb91NJr8RfYaqHpRhl/u5JkxXO95YloJtFt46+uz27YAjmC8KwT98AcgzsXcoSVBiw9oPvEF2A1ZXHse22WNY6Qw="
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"question\", \"steps\": [\"Detect devices with low storage space using telemetry insights and inventory filter\", \"Submit final answer detailing devices low on disk space with evidence\"], \"tools\": [\"detect_insights\", \"find_devices\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f009-579a-738b-b936-282a935282f8-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Detect devices with low storage space using telemetry insights and inventory filter",
+       "Submit final answer detailing devices low on disk space with evidence"
+      ],
+      "tools": [
+       "detect_insights",
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_10784391510674906037",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2810,
+    "output_token_details": {
+     "reasoning": 234
+    },
+    "output_tokens": 301,
+    "total_tokens": 3111
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

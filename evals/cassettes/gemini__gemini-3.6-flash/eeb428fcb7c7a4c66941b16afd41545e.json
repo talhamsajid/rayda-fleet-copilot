@@ -1,0 +1,71 @@
+{
+ "key": "eeb428fcb7c7a4c66941b16afd41545e",
+ "latency_s": 5.06,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9413898080322940233": "EpIFCo8FAWkUfRN45Qjf2l33+xzGSDwOva2azAEytXncoM8scnFQjErmqp7SzAJhfCnQc8KFFZDgCn5FmlUH1cK9BkJyD+Tda2czxVLXs1yiB1vGr4QVz7gwyFhafeqxa0un5JR8Knr38GwJML3X1wy6KR73Lpa50FXJbrmWN/HKrICAdUdTRV29ChOo4b4lJCdyzCBJnd9k7C9Xjw4fjrtlFWyOYzPb8/PkDFitj39rMAnbT75kt7/7ec+7AXgNX2gxW4jJJUqEZN82BWrJXkOngd6Xz4eBsBUNcmutPqCeGHqZCKFqUhL0I9O+Afdi6tc9aWbuu2BS7onjpyhBgtu3062mxSCnrI0rN9rRUiFD5JtnT9aypnHIjoT/Irgj0EKwEAhFG38ZiQLHkogXsuU9ikMTWcfxkFdZqATtkVzUHVQCJDiQ1+oF3qhxaqU2Aqp3jNNzXOk5rbM5BX++5fqdKShk8wxvVtKPMAu8o2hgF233HjIpHfAFxxFQOIPus3lm1X/CVYZkuvAhrbT9XXcyIyz+YIXd7SoXO8KxcDaM+SoqrmPIEsU1e9ZCAuDoM8Cxi2Hyl9FgK0rC30vfYKtvhbGnLpCdwkXSFQ/bqSW5ScakOYVJ5QeAqPnJND+teWot7FWaqkJ0149hFvagizqBJ9Vc282KIaG4D89rcZ3nJMBrDyBnIxhD2MM5I4jOvFVRPTGi2fNd7JFpm2Pmll3scvnnk3xoxuEbVLK5w3zz9KzzISMRiEreXMGpnlGqH62HRFkzY34cqq8l9a/d+nZJkN0ESRdpM5XNF4wylC5b713rGi5x9g2s3KwDQ/KLYE/NcLcdVX//mXOW6MhCV+JQnip5VChrVHcRsbHE1GoqiFU0KA=="
+    },
+    "function_call": {
+     "arguments": "{\"kind\": \"all\"}",
+     "name": "detect_insights"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f010-3be7-7236-a041-3c4c8228986e-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "name": "fleet-health-review"
+     },
+     "id": "call_9413898080322940233",
+     "name": "load_skill",
+     "type": "tool_call"
+    },
+    {
+     "args": {},
+     "id": "call_9413898080322939670",
+     "name": "fleet_overview",
+     "type": "tool_call"
+    },
+    {
+     "args": {},
+     "id": "call_9413898080322939107",
+     "name": "compliance_summary",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "kind": "all"
+     },
+     "id": "call_9413898080322938544",
+     "name": "detect_insights",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3309,
+    "output_token_details": {
+     "reasoning": 131
+    },
+    "output_tokens": 187,
+    "total_tokens": 3496
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

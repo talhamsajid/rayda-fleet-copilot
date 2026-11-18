@@ -1,0 +1,60 @@
+{
+ "key": "29a12d8619feb3e1ab822f17f006303a",
+ "latency_s": 2.93,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_13605372279705798": "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"
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"detect_insights\", \"submit_answer\"], \"intent\": \"insight\", \"steps\": [\"Run detect_insights to identify devices that are ram_constrained across the 30-day telemetry window.\", \"Retrieve details or metrics for the identified devices if necessary.\", \"Submit the final answer with findings citing the evidence IDs.\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00e-a5e2-740e-8345-8f772bac0ffb-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "insight",
+      "steps": [
+       "Run detect_insights to identify devices that are ram_constrained across the 30-day telemetry window.",
+       "Retrieve details or metrics for the identified devices if necessary.",
+       "Submit the final answer with findings citing the evidence IDs."
+      ],
+      "tools": [
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_13605372279705798",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2808,
+    "output_token_details": {
+     "reasoning": 359
+    },
+    "output_tokens": 444,
+    "total_tokens": 3252
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

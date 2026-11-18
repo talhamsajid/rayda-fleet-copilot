@@ -1,0 +1,63 @@
+{
+ "key": "c32f03fae83a893d057d2c66ca676346",
+ "latency_s": 3.71,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3806335746391771869": "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"
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"load_skill\", \"get_device\", \"open_remediation_ticket\", \"submit_answer\"], \"intent\": \"action\", \"steps\": [\"Load compliance-remediation skill\", \"Fetch device details for MT7PJB7N5LRE to get evidence of failing screen lock check\", \"Propose remediation ticket for screen lock check\", \"Submit response confirming proposal creation and queued approval status\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f014-b8ce-74c7-bc52-2eaffd6a0cdc-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load compliance-remediation skill",
+       "Fetch device details for MT7PJB7N5LRE to get evidence of failing screen lock check",
+       "Propose remediation ticket for screen lock check",
+       "Submit response confirming proposal creation and queued approval status"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "open_remediation_ticket",
+       "submit_answer"
+      ]
+     },
+     "id": "call_3806335746391771869",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2834,
+    "output_token_details": {
+     "reasoning": 477
+    },
+    "output_tokens": 580,
+    "total_tokens": 3414
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

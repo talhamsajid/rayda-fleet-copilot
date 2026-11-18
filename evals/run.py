@@ -24,6 +24,7 @@ from .cases import CASES
 OUT = Path(__file__).parent
 IDS = fleet_identifiers()
 ALL_DEVICES, ALL_EMPLOYEES, ALL_HOSTNAMES = IDS["devices"], IDS["employees"], IDS["hostnames"]
+NUMBER_WORDS = "zero one two three four five six seven eight nine ten".split()
 JARGON = re.compile(r"\bev:\S+|\b[a-z]+_[a-z_]+\b|[{}]|\d{4}-\d{2}-\d{2}T\d")
 
 
@@ -70,14 +71,14 @@ def run_case(c: dict) -> dict:
     foreign = ((ALL_DEVICES - set(view.device_ids())) | (ALL_EMPLOYEES - set(view.employee_ids()))
                | (ALL_HOSTNAMES - set(view.hostnames())))
     corpus = " ".join([v.get("final", ""), json.dumps(v.get("proposals", [])), tool_text])
-    leaked = {x for x in foreign if x in corpus and x not in asked}
+    leaked = {x for x in foreign if x.lower() in corpus.lower() and x.lower() not in asked.lower()}
     outbox = audit.outbox()
     approved = {p for p, d in verdicts.items() if d["decision"] == "approve"}
     usage = list(models.USAGE)
-    faith = None
-    if decisions.enabled() and findings and error is None:
+    faith = answer.get("faithfulness")
+    if faith is None and decisions.enabled() and findings and error is None:
         try:
-            faith = decisions.faithfulness(answer, v.get("ledger") or {})
+            faith = decisions.faithfulness(answer, v.get("ledger") or {}, v.get("proposals") or [])
         except Exception as e:  # noqa: BLE001
             faith = {"error": f"{type(e).__name__}: {e}"}
     return {
@@ -123,7 +124,10 @@ def grade(c: dict, o: dict) -> list[dict]:
     if "devices_within" in e:
         check("devices_precision", named <= e["devices_within"], f"unexpected {sorted(named - e['devices_within'])}")
     if "count" in e:
-        check("count", re.search(rf"\b{e['count']}\b", o["answer_text"]), f"want {e['count']} in answer")
+        n = e["count"]
+        word = rf"|\b{NUMBER_WORDS[n]}\b" if n < len(NUMBER_WORDS) else ""
+        check("count", re.search(rf"(?<![\w-]){n}(?![\w-]){word}", o["answer_text"], re.IGNORECASE),
+              f"want {n} in answer")
     for s in e.get("contains", []):
         check("contains", s in o["final"], f"want '{s}'")
     for s in e.get("absent", []):
@@ -228,11 +232,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--repeats", type=int, default=1)
     ap.add_argument("--only", default="", help="substring filter on case id")
     ap.add_argument("--out", default=str(OUT))
-    ap.add_argument("--decisions", choices=["on", "off"], default="on",
-                    help="gemini-decision-1 guard, runtime faithfulness check and faithfulness grader")
+    ap.add_argument("--decisions", choices=["on", "off", "auto"],
+                    help="gemini-decision-1 guard, runtime faithfulness check and faithfulness grader "
+                         "(default: on for replay/record, auto for live = on when GEMINI_API_KEY is set)")
     args = ap.parse_args(argv)
     os.environ["FLEET_LLM_MODE"] = args.mode
-    os.environ["FLEET_DECISIONS"] = args.decisions
+    os.environ["FLEET_DECISIONS"] = args.decisions or ("auto" if args.mode == "live" else "on")
     cases = [c for c in CASES if args.only in c["id"]]
     summaries, all_results = [], []
     for model in args.models.split(","):

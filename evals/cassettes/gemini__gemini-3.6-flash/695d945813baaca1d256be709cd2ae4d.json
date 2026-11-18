@@ -1,0 +1,65 @@
+{
+ "key": "695d945813baaca1d256be709cd2ae4d",
+ "latency_s": 3.11,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_5651817894355188649": "EskICsYIAWkUfROJ7ZGSpvLsxJPr4TAdhJ00EAuZj0llCwB+HiupRphRlCR/kO0El+lTLSmwv79xYRUFotqMRYXFZaLc1aUmsnKoZcAK2YRk+pBxB9oB9yN6SsnlXUrgnkkx8V53HAvo7+7JuYgXwRxpaGzUPx9VfBcVVWgvX75HiLY/YCjawAxZ89nj+wK2T0nb1UXI0k9uW6fpZYwey3i67QnT9IFMCWX5GO3AEFmTyaALS3ehEGArzSrWhBPXQEnVxQpsesKSbStM3C+0Q6OvQtVNm501GQi94ohOy1ctlMF2WYVN1hq4UQDjWu1JyUrsyTnOqRztDMfE8W5s9W2Xwjhfh9tF4DxysPHSrgbUO/igZ5r141M95sbH9acemk2zoacg9aR0nrTWrYrvQFIrbbsSVzlCLz/zYiLVAIU1Hlru9bNyfGdQvSzPDHbPGYaQSuBUgVcssMHwMbHigs/s0X7GFlPmZc8xSwVTJBkzoN24d2OGIQBauCiLO+OOp8j/3jTvBc04hZErM7A4QM9qX823nRuAUns++vHuFD5lp81NKUxKSb3pD2SnJbJxjqlA6M7bu7qumFbX2LyYlBLNkpPtsTw8ea2rsfIQMIeeZIB5S7GDLHKhi3nia8o5Uj0pnViibKqb8PVTS/FX5lXbiq3jkZ+pdzVrlHlfUa20XZhKBmuRsl0Kv0kEbSlQyFP701TQzHN1LVwhL/XoTapwmvp0cWXE5jcFkgWq0jK03stgYtf0yTovq8np0pIBWDk2MjSLMpiAehpmoJwEyXmJkrZ7iaEY8KiPGNXM5/n03VWScBXVNFzAdSWr0xBO0XuLgmQvyWb6PJTUKuc42EI7myg2qS16ZnD2jdlzYIU/sCvxghoc5R07FHStuNVbXKAWqwrs2UX6XqR1+HsRlr0R/3LVDSwMRGtRnR2rfyZlChPyTVwUTLz51hQ3bJFayITTLGn2gjwegSp2AXIUu+Xy0gyhaKw6jJtDMgXSVV8jEtOu/IfWUoS89MjmuKQmkRD/LQ/XAtdwGVyKQ+0Rj5UQF9qr02ugyuXe1/3PFHsmSBIuTI3bX1sqRqVI9Bq7XJUI+jY1CpYyEflGpnIPGtG68C41V7i0sih/sH9hnoSqf+hgrugfDKnc2j/1YFyeFetdfH5FSAycXM9lynE9TjFuB8zhx1w60oMsYi0cg/q4Ge6odnegoZuzHoWut+SAKJoLBSEk9N3DBEW7IETgveCy9pv199cGg9cbl3TBcWcunvnCNx6dH7JVXYsZRhncvRzOCRK81RduxzCd2FzSgxgVLQ+KK7DNeoRMQn5/PHxI3QQ0eFDBhFDbXl8wCbhewGALNt1pvT67XiL53uBeA0nNRf4+bv5COywqdHbK/+0ZfiU4/TZ6mFd7QVs6hWQf4G3NJQ45gvHu9zQb1FTBPhwH+84OHO4Ezra7mnD1QsTOaxKZCh8Pu3ydqQg="
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"action\", \"steps\": [\"Load hardware remediation skill\", \"Retrieve hardware and health details for device XSU9UUDGU6AC\", \"Evaluate replacement eligibility and hardware findings\", \"Propose device replacement if hardware criteria are met or handle refusal\", \"Submit final answer\"], \"tools\": [\"load_skill\", \"get_device\", \"detect_insights\", \"flag_device_for_replacement\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f013-198c-76ac-a914-de00f331123c-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load hardware remediation skill",
+       "Retrieve hardware and health details for device XSU9UUDGU6AC",
+       "Evaluate replacement eligibility and hardware findings",
+       "Propose device replacement if hardware criteria are met or handle refusal",
+       "Submit final answer"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "detect_insights",
+       "flag_device_for_replacement",
+       "submit_answer"
+      ]
+     },
+     "id": "call_5651817894355188649",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2814,
+    "output_token_details": {
+     "reasoning": 266
+    },
+    "output_tokens": 375,
+    "total_tokens": 3189
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

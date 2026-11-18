@@ -1,0 +1,52 @@
+{
+ "key": "7fba7bbc59cab9fdcbc05107e5825433",
+ "latency_s": 6.0,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_14573202520728804463": "Ev8CCvwCAWkUfRNz4zeQDTSZoD+E/ehvb7wDl6BwE7sC4FIzxfXVIivlv5FUA85WQrKOXsrezAN5dkFftXLe9TeQzu57+uAuzTEFJPfAJXCT2VQukbomtDapWat4Ue9Aa0u/msJpji514UhORkUgkptYMn4KeCwwWaBkFgyYkLLy9m0tZ0UhjW+U+YpaX1gaDFRJrVQeYS5Yiv9zA6gYmgk4o0YwmKJzH8qFkjSkS/GcJ9HrozxMhszYgV5NyHYKy4M2eIgqo0YcjnFml8L2etlwn1xGjmIB84ZfbuaV+OP2gGYTb4Xdz8cpCog+XVfJYUVYTFTq5XoTMm2mognRM24zd/hqyzuJGoEQv9++ZLwQRV7BG2TAa4Zs1xREkBhA+l3xU4ScYCG2EWl16a7Llf+yAZlyjgrd5B+CrdWETu3Kimr3USq09SPnnsaLL4Vxf7v5Cgl0vZy6tsQ+sRJUvm2IrMQjZFqkKRIY96FE5RvkwXt3tUa6MQSYysFxj3tcQRA="
+    },
+    "function_call": {
+     "arguments": "{\"os_version_below\": \"11\", \"os_name\": \"Windows\"}",
+     "name": "find_devices"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00b-d60a-7110-8032-b7e60bd60ccf-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "os_name": "Windows",
+      "os_version_below": "11"
+     },
+     "id": "call_14573202520728804463",
+     "name": "find_devices",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3040,
+    "output_token_details": {
+     "reasoning": 85
+    },
+    "output_tokens": 114,
+    "total_tokens": 3154
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

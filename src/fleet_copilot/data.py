@@ -186,6 +186,11 @@ class TenantView:
     def devices_of(self, employee_id: str) -> list[str]:
         return [s.device_id for s in self.latest_all() if s.employee_id == employee_id]
 
+    def resolve(self, key: str) -> str:
+        if key in self._history:
+            return key
+        return next((s.device_id for s in self.latest_all() if s.hostname.lower() == key.strip().lower()), key)
+
     def owns(self, device_id: str) -> bool:
         return device_id in self._history
 

@@ -27,7 +27,7 @@ ANTHROPIC_FALLBACK_MODELS = {"claude-opus-5-5", "claude-sonnet-5-5", "claude-opu
 NO_TEMPERATURE_PREFIXES = ("gpt-5", "o1", "o3", "o4")
 
 PRICES = {"anthropic:claude-opus-5-5": (4.0, 20.0), "anthropic:claude-sonnet-5-5": (2.0, 10.0),
-          "anthropic:claude-haiku-5-5": (0.10, 0.50)}
+          "anthropic:claude-haiku-5-5": (0.10, 0.50), "gemini:gemini-3.6-flash": (1.50, 7.50)}
 
 USAGE: list[dict] = []
 
@@ -106,8 +106,8 @@ def chat_model(spec: str):
     kwargs = {}
     if temperature != "none" and not (provider == "openai" and model.startswith(NO_TEMPERATURE_PREFIXES)):
         kwargs["temperature"] = float(temperature)
-    # ponytail: thinking variants that require reasoning_content echo (DeepSeek/Kimi "thinking") need their
-    # native LangChain packages; the OpenAI-compatible path targets their non-thinking chat models
+    # DeepSeek/Kimi thinking variants need reasoning_content echoed back, which this client drops; use their
+    # native LangChain packages for those. This path targets their non-thinking chat models.
     return ChatOpenAI(model=model, base_url=base_url, api_key=api_key, max_retries=3, timeout=300,
                       use_responses_api=False if provider != "openai" else None, rate_limiter=limiter, **kwargs)
 

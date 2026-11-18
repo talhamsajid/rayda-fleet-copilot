@@ -1,0 +1,118 @@
+{
+ "key": "94f64304ec2364336a536443811e436f",
+ "latency_s": 14.15,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_12809517667991046147": "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"
+    },
+    "function_call": {
+     "arguments": "{\"check_id\": \"screen_lock\", \"device_id\": \"MT7PJB7N5LRE\", \"note\": \"screen_lock failing on MT7PJB7N5LRE (MacBook Pro, macOS 14.5) since 2026-05-28. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock.\", \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-05-27\", \"ev:snap:MT7PJB7N5LRE:2026-05-28\", \"ev:snap:MT7PJB7N5LRE:2026-06-12\"]}",
+     "name": "open_remediation_ticket"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f011-02fa-76f3-b989-43d034f77352-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "check_id": "screen_lock",
+      "device_id": "1LYSSFD074BB",
+      "evidence_ids": [
+       "ev:snap:1LYSSFD074BB:2026-05-21",
+       "ev:snap:1LYSSFD074BB:2026-05-22",
+       "ev:snap:1LYSSFD074BB:2026-06-12"
+      ],
+      "note": "screen_lock failing on 1LYSSFD074BB (MacBook Pro, macOS 14.5) since 2026-05-22. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock."
+     },
+     "id": "call_12809517667991046147",
+     "name": "open_remediation_ticket",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "check_id": "screen_lock",
+      "device_id": "8NM23J95R5I6",
+      "evidence_ids": [
+       "ev:snap:8NM23J95R5I6:2026-05-29",
+       "ev:snap:8NM23J95R5I6:2026-05-30",
+       "ev:snap:8NM23J95R5I6:2026-06-12"
+      ],
+      "note": "screen_lock failing on 8NM23J95R5I6 (ThinkPad X1 Carbon, Windows 10 22H2) since 2026-05-30. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock."
+     },
+     "id": "call_12809517667991045370",
+     "name": "open_remediation_ticket",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "check_id": "screen_lock",
+      "device_id": "DLT35MHGTH2D",
+      "evidence_ids": [
+       "ev:snap:DLT35MHGTH2D:2026-05-31",
+       "ev:snap:DLT35MHGTH2D:2026-06-01",
+       "ev:snap:DLT35MHGTH2D:2026-06-12"
+      ],
+      "note": "screen_lock failing on DLT35MHGTH2D (Mac mini, macOS 15.4) since 2026-06-01. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock."
+     },
+     "id": "call_12809517667991044593",
+     "name": "open_remediation_ticket",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "check_id": "screen_lock",
+      "device_id": "DSYPSES7SKBB",
+      "evidence_ids": [
+       "ev:snap:DSYPSES7SKBB:2026-05-31",
+       "ev:snap:DSYPSES7SKBB:2026-06-01",
+       "ev:snap:DSYPSES7SKBB:2026-06-12"
+      ],
+      "note": "screen_lock failing on DSYPSES7SKBB (MacBook Pro, macOS 15.3) since 2026-06-01. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock."
+     },
+     "id": "call_12809517667991047912",
+     "name": "open_remediation_ticket",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "check_id": "screen_lock",
+      "device_id": "MT7PJB7N5LRE",
+      "evidence_ids": [
+       "ev:snap:MT7PJB7N5LRE:2026-05-27",
+       "ev:snap:MT7PJB7N5LRE:2026-05-28",
+       "ev:snap:MT7PJB7N5LRE:2026-06-12"
+      ],
+      "note": "screen_lock failing on MT7PJB7N5LRE (MacBook Pro, macOS 14.5) since 2026-05-28. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock."
+     },
+     "id": "call_12809517667991047135",
+     "name": "open_remediation_ticket",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 6027,
+    "output_token_details": {
+     "reasoning": 1208
+    },
+    "output_tokens": 2204,
+    "total_tokens": 8231
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

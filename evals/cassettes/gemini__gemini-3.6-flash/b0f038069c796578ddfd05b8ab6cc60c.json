@@ -1,0 +1,60 @@
+{
+ "key": "b0f038069c796578ddfd05b8ab6cc60c",
+ "latency_s": 2.17,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7412487856336619210": "ErYHCrMHAWkUfRO7kMN1zAHu6ack1axcx2Gciyqm9lR3TePPyH0meTZfizg14IcSY1IU37MdcPd7E08TDL/Gtgv1Xm4muOoyloju60GG6qrVxHfC389WIOTPZJHNaI55lf6FXaV2faCyzkd/iR2chMt94teVw+n95hl9cYUxTocngz0KgcXqzZApysokrRpgX62637juNe7FAUYkS4YQLcATxKnHKS8QIw/BT989iaa8dqGwep5rMIgrMkKc75uTf8Aa5LUEXPRw+d7wIxCMr5SzHBwkHV64OpkYOnwvEvFk3qMNmvBbwuiNLWroDjl2zaRTt7GMoFFFnud7Q9sXT2G/opsOYR1XdeWGK5Xpw7W0mHM5v1sX5D+q9sKx5/cqaijoN94mZnYUtmcCuXTMvo6JVhmcGscdS97LzpxUHE9GXyyC9C/c0i9uaPVTTHoHKFvAwAtlbXEvccnMRVtze2Pz32FhqkfBv4nf6Df0/7P56sho7E/AFdVQSjgGo5yvvlL1DI4GKIl3AL/SaNmphIXoVW/uXD3E2APBIegD6lWczUKmghWVAHuC/pE9S9D9HAwZvgFRHr/f+G29Mj28gncVBE97KDo39KdHvmXSA2CpPL/+BfdHy3I71w6SD5J5s9E9xpl+A9vs8fJQAuj2kP8UP1utL/2JIUZteJgmL9YN418A/FsYkQRcoXIEOZc0U63K30VEzoOPLA+pqIS9+aEhbc2Nu0J9RgfMKEn3svdZv7yR2sP1cftnB0h6dxuTxWKiHkmsb41Qdvz6Uuq4lOuiYikrER7m2bkFMl0gxyF8NS90vB+ZwkRNLFDPpNslCVyqcb4N10ik67dOYVQmH2mTJTXpgypYnH/sBlSBXaMMZ3Gs2t3ED0gw+12q4C5X2i5Qn5FVxdqFhdMUMi2eDjUmKwAYIBsnz8O0mAkjWEMRbOLAvZ3OFUmm3FIbfFnwabpZbKiwAUS7ZvXFTZ+eiRccI/GriR7SStpCwfqt6frwhHy9Ac8df5ZV6Ee3AUExsuiOpOMEUIXf+IGotGEOXbPrlWTDVIwOHryc1JYZrOE5tynuxol1NxKPZdPxqa3GKetrmuVcj1H8pY6DaIs8JzZj+Jmz0A4iuSDa0nOZcrBReSysgRzHoZjBlAG6gAEd0ruK6am0wnq3MX9n/6RNO1Bkcd34q7zr6fMxjEV85YcdjBg5HzJXDtFWT1p7VG37OMUSN5ezaYhoZYMl/Y0olEbviYtUms7YxRpctg7FvNkSbluwKk3dFm4="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Find laptops with high-severity compliance check failures using find_devices.\", \"Get device details if needed.\", \"Submit answer citing evidence IDs.\"], \"tools\": [\"find_devices\", \"submit_answer\"], \"intent\": \"question\"}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00a-3ffd-70b6-8698-d2c8c4b7c8c8-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Find laptops with high-severity compliance check failures using find_devices.",
+       "Get device details if needed.",
+       "Submit answer citing evidence IDs."
+      ],
+      "tools": [
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_7412487856336619210",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2810,
+    "output_token_details": {
+     "reasoning": 193
+    },
+    "output_tokens": 260,
+    "total_tokens": 3070
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

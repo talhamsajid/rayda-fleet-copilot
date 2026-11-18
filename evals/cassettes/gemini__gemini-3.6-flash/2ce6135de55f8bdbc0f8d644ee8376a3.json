@@ -1,0 +1,75 @@
+{
+ "key": "2ce6135de55f8bdbc0f8d644ee8376a3",
+ "latency_s": 10.73,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_4009948968064973812": "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"
+    },
+    "function_call": {
+     "arguments": "{\"findings\": [{\"device_ids\": [\"MT7PJB7N5LRE\"], \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\", \"ev:trend:storage_low:MT7PJB7N5LRE\"], \"statement\": \"acme-macbook-4 (MacBook Pro) has 2% free disk space (about 10 GB remaining of 512 GB) and is estimated to run out of storage in 11 days.\"}, {\"statement\": \"acme-thinkpad-8 (ThinkPad X1 Carbon) has 3% free disk space (about 27 GB remaining of 1 TB) and is estimated to run out of storage in 5 days.\", \"evidence_ids\": [\"ev:snap:8NM23J95R5I6:2026-06-12\", \"ev:trend:storage_low:8NM23J95R5I6\"], \"device_ids\": [\"8NM23J95R5I6\"]}], \"status\": \"answered\", \"summary\": \"Two devices are low on disk space: acme-macbook-4 (MacBook Pro) and acme-thinkpad-8 (ThinkPad X1 Carbon).\", \"caveats\": []}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f016-9a25-77f8-aa3c-1b164baf07e2-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12",
+         "ev:trend:storage_low:MT7PJB7N5LRE"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) has 2% free disk space (about 10 GB remaining of 512 GB) and is estimated to run out of storage in 11 days."
+       },
+       {
+        "device_ids": [
+         "8NM23J95R5I6"
+        ],
+        "evidence_ids": [
+         "ev:snap:8NM23J95R5I6:2026-06-12",
+         "ev:trend:storage_low:8NM23J95R5I6"
+        ],
+        "statement": "acme-thinkpad-8 (ThinkPad X1 Carbon) has 3% free disk space (about 27 GB remaining of 1 TB) and is estimated to run out of storage in 5 days."
+       }
+      ],
+      "status": "answered",
+      "summary": "Two devices are low on disk space: acme-macbook-4 (MacBook Pro) and acme-thinkpad-8 (ThinkPad X1 Carbon)."
+     },
+     "id": "call_4009948968064973812",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3709,
+    "output_token_details": {
+     "reasoning": 891
+    },
+    "output_tokens": 1197,
+    "total_tokens": 4906
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

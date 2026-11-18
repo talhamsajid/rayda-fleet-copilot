@@ -1,0 +1,64 @@
+{
+ "key": "e6693e40a98261995a7495874c8e8264",
+ "latency_s": 6.16,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_17459886771687500930": "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"
+    },
+    "function_call": {
+     "arguments": "{\"status\": \"answered\", \"findings\": [{\"device_ids\": [\"MT7PJB7N5LRE\"], \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\"], \"statement\": \"A remediation ticket was created to address the failing screen lock check on acme-macbook-4 (MacBook Pro).\"}], \"summary\": \"I have proposed a remediation ticket (P-1) to resolve the screen lock failure on acme-macbook-4 (MacBook Pro).\", \"caveats\": []}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f017-7de9-726f-91f3-cb32a1dfb488-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12"
+        ],
+        "statement": "A remediation ticket was created to address the failing screen lock check on acme-macbook-4 (MacBook Pro)."
+       }
+      ],
+      "status": "answered",
+      "summary": "I have proposed a remediation ticket (P-1) to resolve the screen lock failure on acme-macbook-4 (MacBook Pro)."
+     },
+     "id": "call_17459886771687500930",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5290,
+    "output_token_details": {
+     "reasoning": 537
+    },
+    "output_tokens": 672,
+    "total_tokens": 5962
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

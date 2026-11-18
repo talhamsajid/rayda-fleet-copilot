@@ -1,0 +1,59 @@
+{
+ "key": "b2e8de10320e0cfcc2265833441b1cc3",
+ "latency_s": 5.25,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_4598296725094071200": "ErACCq0CAWkUfRMYY6XcI2x88ZYoFI5XsQ/vOWYWzGaFtpM74yNYz/Hv99zu1dU4WLAHtSe7NBWSvMbLLh4/1sGIoxc/BRPd2rsVzj0Hrpwqy48hInxmeBSz5uazY7Lr2MeTWBTlMocAMOxlkz2+iPzp2Rn/60NGFn75upPnsp8iyW0AhqyiuUrpgvKixCR7whbMz4OI74YgxTm0EUpf16cHj8v1z6suSeR6ItArg38oQrepf+w2n2VBTb3lXHCEcMDYK1tVL5vOiZHIgNWyZz4tPuIbu/Tf8GjkLz1pIjww2hsivzH3XFSSuU7C+2GXxd5J4MBPhV/Wky28n4c5WYd06rHzhwSNqTpJRH5IX0RVF1wL/R7+JyeNkR5rppsFnT4iJlmLnIYVrxqUbRdtXN4HNw=="
+    },
+    "function_call": {
+     "arguments": "{\"failing_check\": \"screen_lock\"}",
+     "name": "find_devices"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f010-d668-73ff-a484-3510636049b2-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "name": "compliance-remediation"
+     },
+     "id": "call_4598296725094071200",
+     "name": "load_skill",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "failing_check": "screen_lock"
+     },
+     "id": "call_4598296725094069783",
+     "name": "find_devices",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3066,
+    "output_token_details": {
+     "reasoning": 41
+    },
+    "output_tokens": 81,
+    "total_tokens": 3147
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

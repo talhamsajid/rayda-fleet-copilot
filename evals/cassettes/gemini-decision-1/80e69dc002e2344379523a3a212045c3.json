@@ -1,0 +1,51 @@
+{
+ "key": "80e69dc002e2344379523a3a212045c3",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T08:39:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"days_to_full\": 11, \"disk_free_gb\": 10.2, \"disk_free_pct\": 2.0, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1003\", \"hostname\": \"acme-macbook-4\", \"model\": \"MacBook Pro\", \"slope_gb_per_day\": -0.92, \"sustained\": true}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-06-12\"}, {\"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"employee_id\": \"emp-acme-1003\", \"first_free_gb\": 36.8, \"hostname\": \"acme-macbook-4\", \"last_free_gb\": 10.2, \"share_below_sustained_pct\": 1.0, \"slope_gb_per_day\": -0.92}, \"id\": \"ev:trend:storage_low:MT7PJB7N5LRE\", \"window\": {\"from\": \"2026-05-14T11:14:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T08:39:00Z\"}}], \"finding\": 1, \"statement\": \"acme-macbook-4 (MacBook Pro) has 2% free disk space (about 10 GB remaining of 512 GB) and is estimated to run out of storage in 11 days.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:02:00Z\", \"device_id\": \"8NM23J95R5I6\", \"fields\": {\"days_to_full\": 5, \"disk_free_gb\": 26.5, \"disk_free_pct\": 2.6, \"disk_size_gb\": 1024.0, \"employee_id\": \"emp-acme-1005\", \"hostname\": \"acme-thinkpad-8\", \"model\": \"ThinkPad X1 Carbon\", \"slope_gb_per_day\": -5.18, \"sustained\": true}, \"id\": \"ev:snap:8NM23J95R5I6:2026-06-12\"}, {\"device_id\": \"8NM23J95R5I6\", \"fields\": {\"employee_id\": \"emp-acme-1005\", \"first_free_gb\": 176.8, \"hostname\": \"acme-thinkpad-8\", \"last_free_gb\": 26.5, \"share_below_sustained_pct\": 0.83, \"slope_gb_per_day\": -5.18}, \"id\": \"ev:trend:storage_low:8NM23J95R5I6\", \"window\": {\"from\": \"2026-05-14T10:10:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T09:02:00Z\"}}], \"finding\": 2, \"statement\": \"acme-thinkpad-8 (ThinkPad X1 Carbon) has 3% free disk space (about 27 GB remaining of 1 TB) and is estimated to run out of storage in 5 days.\"}], \"summary\": \"Two devices are low on disk space: acme-macbook-4 (MacBook Pro) and acme-thinkpad-8 (ThinkPad X1 Carbon).\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.8747905767435038,
+    "noul": 0.8747905767435038,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.8041228591947738,
+    "noul": 0.8041228591947738,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9464875478511752,
+    "noul": 0.9464875478511752,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1278
+    }
+   ],
+   "total_input_tokens": 1278,
+   "total_output_tokens": 0,
+   "total_tokens": 1278
+  }
+ }
+}

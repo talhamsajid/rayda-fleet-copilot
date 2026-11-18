@@ -1,0 +1,63 @@
+{
+ "key": "86c4a0284f03d6ab1e82290580d47c73",
+ "latency_s": 2.45,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3413654947317303414": "EuUECuIEAWkUfRMhlihucINzMAN3XuV78FBkC7Eh0V/BrVfZiXp6oMsIFvqZ3UO4hq1cINcDCxJbO0pNiOjhaNBqivxfAIV3kyHRPSy7Lfh2zoL1M6uLEf2bvms6UCjDUu453ncmDHB5vOvzEn6KusO4nYGNvb4hE9O0gz8RTvEX0AEu9laO8A5uTSFg8Dd+xSYv0k2cojBsUvoHTElQtoulZnpoFE+RMtrDp1lqP6NCfL+oe68d5/Vru5Aph/p9WMntwNuNwp+vncTyNQNIdhqkX3f5ArIvRiBh7qKR4VCEpf98dA6al+2SLBFBmubePo8Phy12ddCo7Xt8YV8WoGtSBQfzIf6k+6QeSjYs/htNhtZxEIn7DgICfo2Oe3XCLbLHYBAz0WSPr1dAVuJ2zdq8JcU8tyfpU5dOfQlcxfwrYHFpfPGaceFyGxV9/i9j2IWKqNlpaTNG9QpxyUpvuUq6oHUMb4PuYatj2u9a1wcrgOxGJ5/8P64X/Qgu+Qpk6a4VtXcNrcrb22yV81gYM/F18WJ6o7JJqeFMLK1/2gcNDehd484fcmHvMLkNtiRPwW8dBhrTiBpvRN5tyDYwI0i5ezw/uGgJCI6rvZTW7GmspUtNgHwJ8Fwp4EwHUx8zdaFqbexmYFiRr7CtNpE9YlLAPYo80126f25DgXABA/fKL3rTbVbRI4uO8xJJq8c2Mk8P/8W9mYcs5XqDTyDBuKzXSF7T+X5Pa+OR0OoHpOQ0DhCqqS9woQQSDeQb8vFzG0J/KEcuTbGq7oDDYC1xMShdrp7Aj11AJmbT45q+/B13kzv8ClsBqg=="
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"action\", \"tools\": [\"load_skill\", \"find_devices\", \"open_remediation_ticket\", \"submit_answer\"], \"steps\": [\"Load the compliance-remediation skill procedure.\", \"Find devices currently failing the screen lock check.\", \"Open a remediation ticket for each failing device using the appropriate check_id and evidence.\", \"Submit the answer summarizing the proposed tickets.\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f010-ccca-711b-ae90-6e8f2c7221e3-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load the compliance-remediation skill procedure.",
+       "Find devices currently failing the screen lock check.",
+       "Open a remediation ticket for each failing device using the appropriate check_id and evidence.",
+       "Submit the answer summarizing the proposed tickets."
+      ],
+      "tools": [
+       "load_skill",
+       "find_devices",
+       "open_remediation_ticket",
+       "submit_answer"
+      ]
+     },
+     "id": "call_3413654947317303414",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2810,
+    "output_token_details": {
+     "reasoning": 124
+    },
+    "output_tokens": 226,
+    "total_tokens": 3036
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

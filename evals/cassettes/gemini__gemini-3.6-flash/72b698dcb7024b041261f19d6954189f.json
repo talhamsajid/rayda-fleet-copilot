@@ -1,0 +1,59 @@
+{
+ "key": "72b698dcb7024b041261f19d6954189f",
+ "latency_s": 2.18,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9201987579770633563": "Ev8FCvwFAWkUfRNEGfCtMcpTyo6nZAZeOeqXGBWTzRY1VqksIKwiuUz3W4uWRE+kJIRZJQER0KIZ8QLL8zLSrCelrNjydBH7+s7ystCrqfG9VIs+qccD+gmlR7crOS+eXJXYeZSK0pjFGccSCQKMLg4+B2FjC+DKPAkH3Z59pET5OraCAb9ftZKGVIf55Chvz/dZbQolbDEHEjhpKL7Gp+q/TFDl9b4g6HZlVL1vsJxQYeB0WKJBnw0dgdj+iveHbHR8ajUNiG1KFdf+N5YYniffsMq9gPip0rzf91HSIMlo06ZlZU/p3qF+KItz07QuuYQhaUyqWWz5Y/LqFb7Bo6B2CY03k7/eXgB7y3EfWALHywFm0UV2iOO8DkDROrxOqdHb1btSmpzYoIzA4K3bKEXTBKV4LyoG1owlCHlMyvgasFPf/6DE8o7Zcc9Fu0xaK27uLrqZZ4poECkXnQYeIQMP2DxBwgs3oZXggdTm5Fsj9FlcAdQTwrCK9xQaF/ssB/aQrclOEJlHAUZlaG20lkKIbwU7xZX0Q6NK1C7NIGsNVUes0zF4JtDBaas1cXJgfMvLe0nENkxe9qWowqX0S+um8+EuVNsyVSwcKcbeAn7o3fj2gNWsOhiDQxa5Qx2EtOWCuS7A1xfLH7ARcwI/yh3OZlJQU3VJ5Q57yvvQfh5bZQntA6yccjCx0odM2dh+OA/696dN82PB7ElbmbdimOJJ+SKmTMEUkzo1tgrU756tYF1eYyIWcwyw1UkQZltXBhciuaMRHHYYqgyROrlGWVYvO0UtquZBqWUvJaCPA3omadSFA+L000QalHKPokYaqZiUJuTsv3EL5bI8hVBcn0EPlY2U4+CC7scE0RGwBBFWnZfyegIKxT9FRli+YNaPW9+bhMx864IxBxEGhLXgN4w230yIehz2won0EQ7ZdndiQPC4EX5ATxQDCXTelYMpuyIB9BSn/uP+iahCP5KUmvH0QZwxo4YhtCa/Q8Ku8ERXsQQx2XZhqdJoEoOk/vNAm40="
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"detect_insights\", \"submit_answer\"], \"intent\": \"question\", \"steps\": [\"Detect insights for low storage across the fleet\", \"Submit final answer listing devices low on disk space\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f016-7cab-74b1-b1a9-5f42974a736a-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Detect insights for low storage across the fleet",
+       "Submit final answer listing devices low on disk space"
+      ],
+      "tools": [
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_9201987579770633563",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2806,
+    "output_token_details": {
+     "reasoning": 172
+    },
+    "output_tokens": 227,
+    "total_tokens": 3033
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

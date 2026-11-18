@@ -1,0 +1,51 @@
+{
+ "key": "f6d69587d064e1aab221d99d74786dcc",
+ "latency_s": 5.55,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3104467814223324380": "EqcFCqQFAWkUfROzdIapG/Eego7RZD00vvq2qYlPmG7z9XhRbgbnSkUegyOqCn7rC6Z6Ges5eYJ/eXC4CNi1O5YxekdzjRp8kaQhZmBoI0K9Fz+wT9gOqZu9ojv3VU6lNrbBIldsxItx/SfXGyFna8KGPWSp01xL1/FyhCrTM9Kr+GtVgx38vhW/JKUkMcnZbejkpGYPaXmPnkj4D22McWoVa6DytEZRXvzzt2zZ2hZ0SY9/J3CYgJct7NUoL8hkQW3tBhvrxrI4YixU+w0ROBOoVYC+6XOGyCTGCS/vV0Nm42TI8NA/rTLlAgUAABhJ14x2wbpiX/+yOPU46q5lt6YyRBdTPtsCRW4hkkom0pdJEkGJoA+1oFAl6CUvcTJiWTRZh+onJGHmVKFhXxwcudnyx4bvLggWC5lTlYkVJ+q0pGa5vNCMlKVCXohzhvNscTeO6bInHSM92RnrmaIC6TUwJwe8aG9lB45oE5yg0W51Ff2CNR2xlwSAzg2qA2NfstntNukE9V3ee1CoLzoBk7dlncCyJKHzxHHVhDzJIrCVJ5sFrbMm7uzXiMpimxBdfLE5Gd7hNVm3h52M3AHaB3vNBHC63cwuhCLxPgSPheJislEH+WK4htca+UqoIUuZ6yo5Sm5mhqrNZBdAgcht1boejI7MQPUDzEs1qciwAXzRrdqabRoz4wPXdb6Uy8NMSBaKIg73X4gFqoOaAGkAzQMczzj/qXhsLvQtu7QIu/+NbEAxJQA75l2+bq0V8OjJcuYWCEB8ruMTCxtDYDMsoaDVeWJ7mw54XVXpAMVrZNtcF0aaCeMC5s2To4rPn3B6r9dzgQuAC4Gj44sFRMscfLOo+biy/IgiZg87eC6K9SaJymojqIozSYrhRE1rjWkGeU8tWLu6myZFRw=="
+    },
+    "function_call": {
+     "arguments": "{\"kind\": \"unapproved_software\"}",
+     "name": "detect_insights"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00f-e34d-765b-b606-d960eba4edd1-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "kind": "unapproved_software"
+     },
+     "id": "call_3104467814223324380",
+     "name": "detect_insights",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3184,
+    "output_token_details": {
+     "reasoning": 127
+    },
+    "output_tokens": 146,
+    "total_tokens": 3330
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

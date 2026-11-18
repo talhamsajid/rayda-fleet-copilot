@@ -1,0 +1,62 @@
+{
+ "key": "fee73d0722a5e65d87d0c56f7a12d46b",
+ "latency_s": 9.07,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_16856055156148310957": "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"
+    },
+    "function_call": {
+     "arguments": "{\"summary\": \"Device E4V0SB5I0MYU could not be found in your tenant's managed fleet.\", \"findings\": [{\"device_ids\": [], \"evidence_ids\": [\"ev:query:lookup:3807fe38\"], \"statement\": \"Device E4V0SB5I0MYU is not present in Acme's managed fleet telemetry.\"}], \"status\": \"insufficient_data\", \"caveats\": []}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f014-89e7-7080-ad03-1a5c3183cb57-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [],
+        "evidence_ids": [
+         "ev:query:lookup:3807fe38"
+        ],
+        "statement": "Device E4V0SB5I0MYU is not present in Acme's managed fleet telemetry."
+       }
+      ],
+      "status": "insufficient_data",
+      "summary": "Device E4V0SB5I0MYU could not be found in your tenant's managed fleet."
+     },
+     "id": "call_16856055156148310957",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3167,
+    "output_token_details": {
+     "reasoning": 516
+    },
+    "output_tokens": 622,
+    "total_tokens": 3789
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

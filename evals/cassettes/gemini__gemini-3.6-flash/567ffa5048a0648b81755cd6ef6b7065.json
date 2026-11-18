@@ -1,0 +1,51 @@
+{
+ "key": "567ffa5048a0648b81755cd6ef6b7065",
+ "latency_s": 2.74,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_2003303488211013267": "Er4MCrsMAWkUfRPMjBvEHMPwoMpSP5HWtjSgcy5MfyvG1NLGJfiNlPachESIpZlRHE8VQaslPkdE+WJIhU6Pp1CBZKqppxLei3eI275lMDhOFgj7Fd81LRVzZgPMpKvdlwCAUoswMBYv1hcxPfBKR5/plhg1amvFNTXuF2TrrPVCP7oX7mLOtDi5korZjM8JAmyLP7jCMo384lYsZg6B2+Xe92bzdpDKv3ok4154sAhg3DN0slzPxrAvIIVyFDNnqsvgR4B6ggxjY+cpsuLHyfRdOQ8HAYAoUpXHZGzGt1qp1fa8bdtK9jQmYdfUs40K6e0s5l3PU/+Fr0ykgRRcTJfE6Y6emWNakbTZtmZuuJizmI5sa4isJprbw6ykU8PJ0D5apaYzvO4agrO6NIGPAl+3EzaHGeJFuEn6pEGH+06c4frhcGP0aqmFNwmcsZD9conjVQmzEDej0TMQAE5lrg1xG8VVFsffjWjD5AD4YadkxizkEqgrYzgtV0SksoFCRlW8xPZFx3F3F+hYsRmajBqDucrAdrFBOfIlAB9q6M0JIPVvx6rWedFgwwAQRVXNSeG7by9/0qW+2of+TGVDzB6NI+omQTc2gL+ZWLJLVgXV0jMy8gYp8TLB8ouUPAx/abOiOjZrHtP3em+an8S6ogvQRc1pSsOX4xIFcZY8LMit+Rpy/hO0jpTCbox//p/luKl15KBx8rS+2JIMkmoaaGbaYx1WljiL5mxwbq1nFH53Ee0TyiSpqMbimbXtKlOda+kQjQ+HU3pq3q6PhGE2PmxiEG7DlrBj/R8A4PT3pgCcwE+1RXqdDj79sCveCUccw2bpjRa0UhiZ6v7EZuYQ5brJXAzRYci1yKxRUE3MYSUfuOranl9UjpENU+wuKe5ItKQR3huFqLQ48HeY9HHt5pmhCMGKDoGWOpM8m4WHZKWFFgljcTXT8haP0XX2C4BkFhar30EYx1zDgyNH35OUPadwAki2BSWN8eZVpHLupm30hc2QsTAb+AZbL2XfLr8yC49h8y0p7a379xQ744lJV1dy680mAr+E/PmLdgUWWoRODZsjOmqoywXCbJGjSOZxuIWGLxV9Q+ua1D7Mr+0Fzwthk0lfVIGywlAKaul8bTM4AfcXXEAP1v8AsQzLJjInz6boaxYzFH+B2SQT8LqMTOdeySL+gn8GTjsuN3MXctpm7FMw13Qg4Z+MUXSPx/kZzixn6F0S2pKPL5ws93fnNTuQq6CFFyGn5W2gVzkB4XhULwN4iuULf+Y/OK1Y89h6R4ResSMhnfYipIySxUpwKR/lBB2LTF/qikAzhruY01TxWPhSwrT982YrDEYN6/cHgJB3DL490VdiAissWWxcJQercEik2bNn4+1n537e7dvhORpb6Tl+fNm4WPPriCY0X50O3o/cyA22wLn2kJrj73SzUrdx1nQproPD9gR434Ly6d9hvvVPzCrRCBNoQrxi/L/e3Gz694LqLQl0Se8o7ShqLvRFqy6NBrpp7LfayG84nz5LcWyG5cBqWEfzpRiBgDJjNnCl5kkLb2a2Zz7tavulcIbpNlXGEbJ3lscRsCy4ypfLt5OQazvnrUoLu+IDgsI30UKbXqmTi5bI9HIK9LHNVGROYkIBCZp027nfL5BJDZF32NNAsJJTNegecOIk+9pTUTsG9z/17S7m0ICMI+ryYjkIkqk0zMgUOfFPZWu8HiTBUE3gXUdcRtHhvvjscaK4dLZDWWS4q5SyS/Z20UhOd4TUrWi1bIux5LxrCnl1tTOmnJaEj5hu9ilaSNU3Clbhkri3IKa+y8oyE5lMpojaKqL0WEEmXQxyKJmIEiMI5BSbo6+SxkRlhPbG2Ua4g0P3bQ2y+pXP4CyalPdBAelGey+Ys2H/80yvm6qMg+Pl1QzR7VKGouOJhYaUMqRjH1N2UU+1WW90DjRRIbWXDhy0NhJHdZbG57kmtInuSWMoQ0RUjnw2HLHQoLSzEsJSF0Dzxw7kQ5pt8LreZpPvA4YzTkjGgjEfcxfdKF+OpAgA4K85XX3Fni82iM0M4igtnpwQrHpHoGUTe0HAKQj0tqTyMEmrjXvgUWKyUPntJ0Kh/7y8xPvMJsG/1z813Gov8q/s2n/qcTN25jBTEhNy40M="
+    },
+    "function_call": {
+     "arguments": "{\"check_id\": \"disk_encryption\"}",
+     "name": "compliance_summary"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f009-f68f-777a-88bd-3da5aaadea01-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "check_id": "disk_encryption"
+     },
+     "id": "call_2003303488211013267",
+     "name": "compliance_summary",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4386,
+    "output_token_details": {
+     "reasoning": 437
+    },
+    "output_tokens": 457,
+    "total_tokens": 4843
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

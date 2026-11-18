@@ -46,7 +46,6 @@ def _lines(path: Path) -> list[dict]:
 
 def _append(path: Path, event: str, **fields) -> None:
     with _locked(path):
-        # ponytail: seq = line count under a file lock; a real deployment uses an append-only store with its own sequence
         seq = len(_lines(path)) + 1
         with path.open("a") as f:
             f.write(json.dumps({"seq": seq, "ts": _now(), "event": event, **fields}, sort_keys=True, default=str) + "\n")

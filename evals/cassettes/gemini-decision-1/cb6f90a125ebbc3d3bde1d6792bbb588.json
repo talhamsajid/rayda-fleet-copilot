@@ -1,0 +1,51 @@
+{
+ "key": "cb6f90a125ebbc3d3bde1d6792bbb588",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T08:39:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"battery\": null, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"fail\"}}, \"days_to_full\": 11, \"disk_encrypted\": true, \"disk_free_gb\": 10.2, \"disk_free_pct\": 2.0, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-4\", \"mem_used_pct\": 47.6, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"processor\": \"Apple M2 Pro\", \"ram_gb\": 16, \"slope_gb_per_day\": -0.92, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"], \"sustained\": true}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-06-12\"}], \"finding\": 1, \"statement\": \"acme-macbook-4 (MacBook Pro) fails the screen lock check.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T09:02:00Z\", \"device_id\": \"8NM23J95R5I6\", \"fields\": {\"battery\": {\"condition\": \"Service Recommended\", \"cycle_count\": 1157, \"full_charge_capacity\": 3872, \"percentage\": 99}, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"fail\"}}, \"days_to_full\": 5, \"disk_encrypted\": true, \"disk_free_gb\": 26.5, \"disk_free_pct\": 2.6, \"disk_size_gb\": 1024.0, \"employee_id\": \"emp-acme-1005\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-thinkpad-8\", \"mem_used_pct\": 68.8, \"model\": \"ThinkPad X1 Carbon\", \"os\": \"Windows 10 22H2\", \"processor\": \"Intel Core i7-1365U\", \"ram_gb\": 16, \"slope_gb_per_day\": -5.18, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"], \"sustained\": true}, \"id\": \"ev:snap:8NM23J95R5I6:2026-06-12\"}], \"finding\": 2, \"statement\": \"acme-thinkpad-8 (ThinkPad X1 Carbon) fails the screen lock check.\"}], \"summary\": \"Both acme-macbook-4 (MacBook Pro) and acme-thinkpad-8 (ThinkPad X1 Carbon) fail the screen lock check.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9633187775759139,
+    "noul": 0.9633187775759139,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.9487100974468528,
+    "noul": 0.9487100974468528,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9521247362569875,
+    "noul": 0.9521247362569875,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1284
+    }
+   ],
+   "total_input_tokens": 1284,
+   "total_output_tokens": 0,
+   "total_tokens": 1284
+  }
+ }
+}

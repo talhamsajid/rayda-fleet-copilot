@@ -1,0 +1,61 @@
+{
+ "key": "5b00b555da827516582a7a9d550e114f",
+ "latency_s": 3.29,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_443001146973671223": "EtELCs4LAWkUfRPmxk4Cjl9ZJ8vgLCzMwHTd60Dk4+Iqa+JIZAl6UFsvGLtywgEkdiQKlMXB5y3i3N3hkZpsjZIGEV2uWL8q/cCJnV60uJxBjKZkAG9KofLXI1sbciPgDvH4C89E+MY6vQ+yfdazVFiYCSID93d7o2Ztv7PFQRjyj3hzmPkcjGVKRXXGgQNgizfrgiJtQhyuaCJoWz+Y19QDdjGnooO4nsiHt5rxbjUWsKSrR7myYlMD2SiCQdzgqjdszlkIvqMPuwd09yhTLocZDgMqqvtg2Oi4Am++9sxuJEOQrkjy/M8MdrzClo9+YTw8fT5S9Khd8yKhlCLRYUS528lR9ixBbco3FsAHY6xtwYGTcxrqvrKbdxrTN16nKFk+VNigjunQKsWotD54d1C4xZGux6Ez1u6YtEijyH6ZWaStn2G0LW9yB86G/L2NrQCeb7qttXBH/7uIqBTNds7bQ/gdEgtHeYdUR0sq7k18qXGdgcprliRgquutvj4k4OyxwELASxnI9iUTehVuQgYhnmx4Cffp7PoyO3RmDcdePsXyNbDTu0L0xqIYUtXLKxvWakRib4poBS+4FIV8cnKUm17vzj/osEkomPIZigPX5bYW6dsfFVnsaSVfyYbceMQNzizGQtaF1rwIT0cTDNwrfZrQlxUeK15WQGiA9BStK+zekyFz2DWGXc7H4rN0kwvrtjCiy215og8lpGLDXfJrgx//W3MtTl1vhQZLQrxmxWFni7kZySSUAv9+2hNdZfBGtf2inoSahOr/ol7ueEwOqrJfNfP10m3p7UW8TOCFmYgEVNphgOx1i4WBvwRO2zSiUS2bQjQqzv3PDUWbsR3t2Yc5ogPkdnP2a0dOiWoJMTPa9UZGo9enG87eMsqKqXbzDJhALFL1ze09haiisGF8uEzJhnGsjxYd/4NmScl6Vyno1CBR5s6PIZ38TuMIyGGpMhGvAFOwfjysfvbi98cyrF8bos5h4Mvz5vY5HW67mAYoe27Yd+2bsa2JLx9mjyz/OSb754ccIcbtiCZRFmxjiL1SIO68TKdPr8Q79njkCMy4SwUJ84Wxtfj8m5w5obCxM3CEEGmrTfDSdIC2oXy73FsmYeQhMRBjBrRPt8CKkYH3LcDa2yMeetsFPIgeCvo6GbnJJSVICaQdAxA3qyyq7iJw3KmPkJW9JoNxuo70ibukx/mRlrWwTdfo9z4V7iihmIVAwNhNLSin4aVz8r7+sOc/CpLBo+rW/94xmsWtWPIx8mk3sWiBIs3unJFkZEAj1fOVGpZV5VkgNoDSzTG84C8DPhT+i9yaEeeRVOb9yfOOvuXagvl1bPobuTNPcdJgwuoo+LHxAoCMe1o3WPP4XOobomBnvU5Zj1aytJVi2am807YdA0SsgU56oThfTHLMlxmCX/6I5eYECqISQcdEg2Q8Lp6rxnb7xWh97G5VaP92yWc+m0UEfJym21+tuRTbgZWJ28+i9eXezojvkvjStC4ONajc7+fU1joX/iXwLEBbyis9K0m+ZJSUySGxFMSF9cBlcGSt5mA2uCRiTE8QMsq0k0WJc8fjSMhmq1KEyH65+qnY9pjaFgEE1tlXgE0aqusYCfCN1FDPFBqZNIeCltNLFWu+/4zAiCqTcVcwmKQCs3ER7Y+IAQAc7911o3Y3caWc+QEYa/iqhoph8SL/iIoR6dtMXBiOvlcLSi1hkzkXZxPEmtkbHwJwV4WiMrlLCrTGnb7Uianz0WLQ/S9rLPYh6ltvqtHNUFNgyQpDRzEg4yhUvGUCEmUurww4pEDNudiovjaUqUrJ1+U8LxekjanV+Ww7YEvwkvCPKg7yBDPOPgXPO0QUwC6KhHe+59jIeG5VX7dp9kaYSPmk+0NWiiS7BUwp6FmEBwtN5jVDmoJjxxUceyGu1JERo35su+IQUse4kFkeKaiol/p+UUzirA4W8x46pvXWoqlOetJDz5HcqI3pFw6cgrSFHVRSHZrHsQ=="
+    },
+    "function_call": {
+     "arguments": "{\"tools\": [\"detect_insights\", \"get_device_history\", \"submit_answer\"], \"intent\": \"insight\", \"steps\": [\"Run insight detection for low storage findings across the fleet\", \"Retrieve detailed disk usage history for the identified devices to determine their rate of filling up\", \"Submit final answer summarizing consistently low storage devices and their filling rate\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00e-f433-7204-a926-7e978ecfbaa8-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "insight",
+      "steps": [
+       "Run insight detection for low storage findings across the fleet",
+       "Retrieve detailed disk usage history for the identified devices to determine their rate of filling up",
+       "Submit final answer summarizing consistently low storage devices and their filling rate"
+      ],
+      "tools": [
+       "detect_insights",
+       "get_device_history",
+       "submit_answer"
+      ]
+     },
+     "id": "call_443001146973671223",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2814,
+    "output_token_details": {
+     "reasoning": 331
+    },
+    "output_tokens": 418,
+    "total_tokens": 3232
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

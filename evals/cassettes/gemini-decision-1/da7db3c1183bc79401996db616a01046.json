@@ -1,0 +1,42 @@
+{
+ "key": "da7db3c1183bc79401996db616a01046",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"fields\": {\"by_form_factor\": {\"desktop\": 1, \"laptop\": 9}, \"by_model\": {\"Dell XPS 15\": 1, \"Mac mini\": 1, \"MacBook Pro\": 6, \"ThinkPad X1 Carbon\": 2}, \"by_os\": {\"Windows 10 22H2\": 3, \"macOS 13.6\": 1, \"macOS 14.5\": 3, \"macOS 15.3\": 2, \"macOS 15.4\": 1}, \"collected_metrics\": [\"hardware model, processor, RAM size\", \"OS name and version\", \"memory used/free\", \"disk size and free space\", \"disk encryption\", \"battery condition, cycle count, full-charge capacity, charge percentage\", \"installed software (name, version, publisher)\", \"network interfaces\", \"compliance checks: disk_encryption (high), screen_lock (medium), os_up_to_date (medium)\"], \"devices\": 10, \"employees\": 5, \"not_collected\": [\"CPU usage\", \"GPU\", \"network traffic\", \"user activity\", \"location\", \"warranty\", \"purchase cost\"], \"query\": {}}, \"id\": \"ev:query:fleet_overview:44136fa3\"}], \"finding\": 1, \"statement\": \"CPU usage telemetry is not tracked or collected for managed devices in the fleet.\"}], \"summary\": \"CPU usage data is not collected by the fleet telemetry system, so it is not possible to determine which devices had the highest CPU usage this month.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.932616493366503,
+    "noul": 0.932616493366503,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9494455696428065,
+    "noul": 0.9494455696428065,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 624
+    }
+   ],
+   "total_input_tokens": 624,
+   "total_output_tokens": 0,
+   "total_tokens": 624
+  }
+ }
+}

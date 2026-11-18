@@ -1,0 +1,51 @@
+{
+ "key": "35758de5ee94e651909525358145061d",
+ "latency_s": 5.34,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_1411377629723603870": "ErYCCrMCAWkUfRMBWsrPfxbgen7p++2MqF0MG4o0x4H6yP9jDcthYevxhRvguob59ralp8/Qq3eVeKk5BEgk1BwswEbHxpkt63MKuLb4m9dhyC1tcMCQA92CkvU01GI3LyjNDy/TbyCqBJvErPok/r7S3UfXPRv1TwU15L7OPTGpVWROLlIHjAmJTVIg3+iYLuJlt7pyHxFaYkyNWpgMp8A6yKjE10XNphwg9GlU6rXWXC/SDyGkc3KEnY66rgsdwSG5Y8dSOOPjt12M9nR6pbrCGZ+PfQTOvYc+0CWT1pSPXZQ8HaedV/ZpNM8ECzdpsWJzs7iwNBGAvvXjbIm5WoCKH4Hxwi+FzvXHKV33z3TJpOyxBiFjDzm0wIxzKEwdcQks5TAmSmluINxm5JVwBa1Im+ZbP3H7Bw=="
+    },
+    "function_call": {
+     "arguments": "{\"kind\": \"storage_low\"}",
+     "name": "detect_insights"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f016-853c-712e-bd56-8716f38e222f-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "kind": "storage_low"
+     },
+     "id": "call_1411377629723603870",
+     "name": "detect_insights",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3063,
+    "output_token_details": {
+     "reasoning": 53
+    },
+    "output_tokens": 71,
+    "total_tokens": 3134
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

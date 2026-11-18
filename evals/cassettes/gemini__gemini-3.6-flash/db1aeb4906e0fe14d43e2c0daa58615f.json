@@ -1,0 +1,56 @@
+{
+ "key": "db1aeb4906e0fe14d43e2c0daa58615f",
+ "latency_s": 9.47,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_16957086161616087462": "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"
+    },
+    "function_call": {
+     "arguments": "{\"device_id\": \"MT7PJB7N5LRE\", \"note\": \"screen_lock failing on MT7PJB7N5LRE (MacBook Pro, macOS 14.5) since the whole 30-day window. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock.\", \"check_id\": \"screen_lock\", \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\"]}",
+     "name": "open_remediation_ticket"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f017-58e2-70b3-ac77-df51fbfdf225-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "check_id": "screen_lock",
+      "device_id": "MT7PJB7N5LRE",
+      "evidence_ids": [
+       "ev:snap:MT7PJB7N5LRE:2026-06-12"
+      ],
+      "note": "screen_lock failing on MT7PJB7N5LRE (MacBook Pro, macOS 14.5) since the whole 30-day window. Fix: re-apply the screen-lock policy (MDM profile on macOS, Group Policy or Intune on Windows) and confirm the idle lock."
+     },
+     "id": "call_16957086161616087462",
+     "name": "open_remediation_ticket",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4407,
+    "output_token_details": {
+     "reasoning": 666
+    },
+    "output_tokens": 808,
+    "total_tokens": 5215
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

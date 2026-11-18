@@ -1,0 +1,60 @@
+{
+ "key": "76be7f15cb1e123771e1a31c516259a4",
+ "latency_s": 1.74,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_17336545243277469757": "EucECuQEAWkUfRPMIiq34ssDjgHj2UR7BoooJ5MLdSD5ziSPnrgSsQBSLbKelZ+5wpT+8o+Nx8WmQZcluGVuAVKEynpAXCObRbaq/qO7zhPUkTMKYLe80OZXXv4JzIrnZeSKi8Ihj9aTKWvHvomm7Er/l93Fv8r+W21ZAssoiAHoS9AZ85X4WqgXG7g/X4t6XlZrxWKP01CcrwXk+WQCk5mR3gavqP6JkuaY4JZOnfbTZJy9bv7GreMwRCIUQZB0CswBz/0Q91qFCwr7Cu6+gRaCFXMxXm6iszTb6q2F0TQy1Fxkm4XJ/fo70ZiwCRSi10oxEnzB9ekeHuz+fGVQipxh7w52zGbR0vwM/PfxYtdtla/kqTHqjGuW5UBEd6nqHJaT2ZzR/HK9FWgzmAIN3sKfAuyYQ0LyYI5WjO17yMXSoOhM0Xsme7xljYoh7TIQlKgmEbwvIHLFsOUDabEPh3cXa1paBE73cMIhmVqX54ndiRskKdlBp3hra1hdRXBGWPwKg0YcdExK/aS2X+lu6Plri9Tf9ZVpfZEJGt3C4jbjwa+rUFEn0DUqtFFT8w9CRoOO1RybWpl2YheXtwXjeLUxvKUi1bn3q0q1G46RxM6JdX8n82dmG+Z8HQuaMrdEs3Se98dKbmSmmp9QeiIqtd1z0iEU3Ziyk2vg61ssNL5hIlLFaOLQsc8viUeqGX/j4ux9x5KdZoCQFsA7TJ2CSjBgRwf75ul3uFpzilEHqniLux0ZopKQZCDDsQqVXY6fzfOqLoBE0Vwt4nK07okKNIyjMXWeHj2WxbU8s/r74xk54hbLBfWelGcy"
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"question\", \"steps\": [\"Find devices low on disk space using fleet telemetry tool\", \"Submit answer listing devices with low disk space\"], \"tools\": [\"find_devices\", \"detect_insights\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f008-f198-7382-b4f0-638532afac27-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Find devices low on disk space using fleet telemetry tool",
+       "Submit answer listing devices with low disk space"
+      ],
+      "tools": [
+       "find_devices",
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_17336545243277469757",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2810,
+    "output_token_details": {
+     "reasoning": 149
+    },
+    "output_tokens": 211,
+    "total_tokens": 3021
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -25,8 +25,8 @@ MAX_QUESTION = 2000
 MEMORY_TURNS = 8
 RECURSION_LIMIT = 60
 TOOL_SCHEMAS = [schema(t) for t in TOOLS.values()] + [schema(PLAN_TOOL)]
-DEVICE_ID = re.compile(r"\b[A-Z0-9]{12}\b")
-EMPLOYEE_ID = re.compile(r"\bemp-[a-z]+-\d+\b")
+DEVICE_ID = re.compile(r"\b(?=[A-Z0-9]*\d)[A-Z0-9]{12}\b")
+EMPLOYEE_ID = re.compile(r"\bemp-[a-z]+-\d+\b", re.IGNORECASE)
 
 PLAN_INSTRUCTION = (
     "Planning step: call make_plan now and no other tool. Classify the intent as question (facts about the fleet), "
@@ -104,6 +104,8 @@ PROMPT_VERSION = hashlib.sha256("\n".join([
 
 def _ctx(runtime: Runtime[Context]) -> tuple[Context, TenantView]:
     c = runtime.context
+    if c is None:
+        raise ValueError('Set the run context, for example {"tenant_id": "acme-001"}.')
     return c, TenantView(c.tenant_id)
 
 
@@ -128,7 +130,8 @@ def memory_note(turns: list[dict]) -> str | None:
     for n, t in enumerate(turns[-MEMORY_TURNS:], 1):
         a = t.get("answer") or {}
         lines.append(f"Turn {n}. Question: {t['question']}")
-        lines.append(f"  Answer ({a.get('status')}): {a.get('summary', '')}")
+        status = a.get("status") if a.get("verified") is not False else f"{a.get('status')}, not verified"
+        lines.append(f"  Answer ({status}): {a.get('summary', '')}")
         for f in a.get("findings", []):
             lines.append(f"  - {f['statement']} [devices: {', '.join(f['device_ids']) or 'none'}; "
                          f"evidence: {', '.join(f['evidence_ids'])}]")
@@ -182,17 +185,26 @@ def plan(state: State, runtime: Runtime[Context]) -> dict:
     return {"messages": [instruction, ai], "usage": [_llm_call(c, "plan", ai)]}
 
 
+def _abort(c: Context, state: State, reason: str, answer: dict) -> dict:
+    _log(c, "answer_unverified", reason=reason)
+    proposals = state.get("proposals") or []
+    if proposals:
+        _log(c, "proposals_discarded", proposals=[p["id"] for p in proposals])
+        answer["caveats"].append(f"Discarded {len(proposals)} proposed action(s) because the request did not finish.")
+    return {"answer": answer | {"verified": False}, "proposals": []}
+
+
 def agent(state: State, runtime: Runtime[Context]) -> dict:
     c, view = _ctx(runtime)
     if state.get("rounds", 0) > MAX_ROUNDS:
-        _log(c, "answer_unverified", reason="tool budget exhausted")
-        return {"answer": {"status": "insufficient_data", "verified": False, "findings": [],
-                           "summary": "I could not finish this request within the tool budget.",
-                           "caveats": ["Stopped after the maximum number of tool turns; nothing here is verified."]}}
+        return _abort(c, state, "tool budget exhausted", {
+            "status": "insufficient_data", "findings": [],
+            "summary": "I could not finish this request within the tool budget.",
+            "caveats": ["Stopped after the maximum number of tool turns; nothing here is verified."]})
     extra = []
     if isinstance(state["messages"][-1], AIMessage):
         extra.append(HumanMessage("Continue: use the tools for your plan, then call submit_answer."))
-    if state.get("rounds", 0) >= MAX_ROUNDS - 1:
+    if state.get("rounds", 0) >= MAX_ROUNDS:
         extra.append(HumanMessage("Tool budget reached. Call submit_answer now with the evidence you have."))
     ai = models.invoke([SystemMessage(system_prompt(view)), *state["messages"], *extra], TOOL_SCHEMAS)
     return {"messages": [*extra, ai], "usage": [_llm_call(c, "agent", ai)]}
@@ -204,7 +216,8 @@ def tools(state: State, runtime: Runtime[Context]) -> dict:
     last = state["messages"][-1]
     updates: dict = {}
     out = []
-    foreign = fleet_identifiers()["devices"] - set(view.device_ids())
+    ids = fleet_identifiers()
+    foreign = (ids["devices"] - set(view.device_ids())) | (ids["hostnames"] - set(view.hostnames()))
     exhausted = state.get("rounds", 0) >= MAX_ROUNDS
     for call in last.tool_calls:
         name, args = call["name"], call["args"]
@@ -239,23 +252,24 @@ def tools(state: State, runtime: Runtime[Context]) -> dict:
         updates["answer"] = {"status": "refused", "summary": "That request is outside what Fleet Copilot covers: "
                              "device health, compliance, trends and IT actions for your fleet.",
                              "findings": [], "caveats": []}
-    rounds = state.get("rounds", 0) + (0 if planning else 1)
+    control = all(call["name"] in ("make_plan", "submit_answer") for call in last.tool_calls)
+    rounds = state.get("rounds", 0) + (0 if control else 1)
     return {"messages": out, "ledger": ctx.ledger, "proposals": ctx.proposals, "rounds": rounds, **updates}
 
 
 def _coverage(evidence: dict) -> dict[str, set[str]]:
     fields = evidence.get("fields", {})
     devices = {evidence.get("device_id")} - {None}
-    if fields.get("query") and fields.get("device_ids"):
-        devices |= set(fields["device_ids"])
+    if fields.get("query"):
+        devices |= set(fields.get("device_ids") or []) | set(fields.get("failing_now") or [])
     return {"devices": devices, "employees": {fields.get("employee_id")} - {None},
             "hostnames": {fields.get("hostname")} - {None}}
 
 
 def _mentions(text: str, view: TenantView) -> dict[str, set[str]]:
     hostnames = fleet_identifiers()["hostnames"] | set(view.hostnames())
-    return {"devices": set(DEVICE_ID.findall(text)), "employees": set(EMPLOYEE_ID.findall(text)),
-            "hostnames": {h for h in hostnames if re.search(rf"\b{re.escape(h)}\b", text)}}
+    return {"devices": set(DEVICE_ID.findall(text)), "employees": {e.lower() for e in EMPLOYEE_ID.findall(text)},
+            "hostnames": {h for h in hostnames if re.search(rf"\b{re.escape(h)}\b", text, re.IGNORECASE)}}
 
 
 def _own(view: TenantView) -> dict[str, set[str]]:
@@ -296,22 +310,22 @@ def _issues(answer: dict, view: TenantView, ledger: dict, question: str = "") ->
     return issues
 
 
-def _redact(text: str, view: TenantView, question: str) -> str:
-    own, echoed = _own(view), _mentions(question, view)
-    for kind, found in _mentions(text, view).items():
-        for value in found - own[kind] - echoed[kind]:
-            text = text.replace(value, "[redacted]")
-    return text
-
-
-def _drop_unverified(answer: dict, view: TenantView, ledger: dict, unsupported: set[int], question: str) -> dict:
+def _drop_unverified(answer: dict, view: TenantView, ledger: dict, unsupported: set[str], question: str) -> dict:
     kept = [f for n, f in enumerate(answer["findings"], 1)
-            if n not in unsupported and not _issues({"summary": "", "findings": [f]}, view, ledger, question)]
-    caveats = [c for c in answer.get("caveats", [])
-               if not _issues({"summary": c, "findings": kept, "caveats": []}, view, ledger, question)]
+            if f"f{n}" not in unsupported and not _issues({"summary": "", "findings": [f]}, view, ledger, question)]
+    caveats = [] if "summary" in unsupported else [
+        c for c in answer.get("caveats", [])
+        if not _issues({"summary": c, "findings": kept, "caveats": []}, view, ledger, question)]
     dropped = len(answer["findings"]) - len(kept) + len(answer.get("caveats", [])) - len(caveats)
+    summary, status = answer["summary"], answer["status"]
+    if ("summary" in unsupported or (status == "answered" and not kept)
+            or _issues({"summary": summary, "findings": kept, "caveats": []}, view, ledger, question)):
+        summary = "I could not verify this answer against the evidence." + (
+            " Only the findings below passed the checks." if kept else "")
+        dropped += 1
     caveats += [f"Removed {dropped} statement(s) that failed evidence checks."] if dropped else []
-    return {**answer, "summary": _redact(answer["summary"], view, question), "findings": kept, "caveats": caveats}
+    status = "insufficient_data" if status == "answered" and not kept else status
+    return {**answer, "status": status, "summary": summary, "findings": kept, "caveats": caveats}
 
 
 def verify(state: State, runtime: Runtime[Context]) -> dict:
@@ -324,26 +338,25 @@ def verify(state: State, runtime: Runtime[Context]) -> dict:
             return {"verify_attempts": 1, "messages": [HumanMessage(
                 "You must finish by calling submit_answer with findings that cite evidence ids.")]}
         text = last.text if isinstance(last, AIMessage) else ""
-        answer = {"status": "insufficient_data", "summary": text or "No structured answer was produced.",
-                  "findings": [], "caveats": ["The model did not submit a structured answer; nothing here is verified."]}
-        _log(c, "answer_unverified", reason="no submit_answer")
-        return {"answer": answer | {"verified": False}}
+        return _abort(c, state, "no submit_answer", {
+            "status": "insufficient_data", "summary": text or "No structured answer was produced.", "findings": [],
+            "caveats": ["The model did not submit a structured answer; nothing here is verified."]})
     if answer.get("verified") is not None:
         return {}
-    issues, unsupported = _issues(answer, view, ledger, state.get("question", "")), set()
+    issues, unsupported, scores = _issues(answer, view, ledger, state.get("question", "")), set(), None
     if not issues and answer["status"] == "answered" and decisions.enabled():
         try:
-            scores = decisions.faithfulness(answer, ledger)
+            scores = decisions.faithfulness(answer, ledger, state.get("proposals") or [])
             _log(c, "faithfulness", scores=scores)
             for key, p in scores.items():
                 if p >= decisions.SUPPORTED_MIN:
                     continue
+                unsupported.add(key)
                 if key == "summary":
                     issues.append(f"The summary or caveats make claims the cited evidence does not support "
                                   f"(P={p:.2f})")
                 else:
                     n = int(key[1:])
-                    unsupported.add(n)
                     issues.append(f"Finding {n} ('{answer['findings'][n - 1]['statement'][:70]}') does not match "
                                   f"its cited evidence (P={p:.2f}); restate it from the evidence")
         except decisions.DecisionError as e:
@@ -357,7 +370,7 @@ def verify(state: State, runtime: Runtime[Context]) -> dict:
         _log(c, "answer_rejected", issues=issues, final=True)
         answer = _drop_unverified(answer, view, ledger, unsupported, state.get("question", "")) | {"verified": False}
     else:
-        answer = answer | {"verified": True}
+        answer = answer | {"verified": True} | ({"faithfulness": scores} if scores else {})
     _log(c, "answer", status=answer["status"], verified=answer["verified"],
          findings=len(answer["findings"]), proposals=[p["id"] for p in state.get("proposals", [])])
     if state.get("proposals"):
@@ -416,8 +429,7 @@ def execute(state: State, runtime: Runtime[Context]) -> dict:
     return {"executions": results}
 
 
-def respond(state: State, runtime: Runtime[Context]) -> dict:
-    c, view = _ctx(runtime)
+def render(state: State, view: TenantView) -> str:
     answer, ledger = state["answer"], state.get("ledger") or {}
     refs: dict[str, int] = {}
     lines = [f"[{answer['status']}{'' if answer.get('verified', True) else ', NOT fully verified'}] {answer['summary']}"]
@@ -448,7 +460,13 @@ def respond(state: State, runtime: Runtime[Context]) -> dict:
     cost = f", ~${totals['cost_usd']}" if totals["cost_usd"] is not None else ""
     lines.append(f"Tenant {view.name} | data as of {view.data_as_of()} | {totals['model_calls']} model calls, "
                  f"{totals['input_tokens']} in / {totals['output_tokens']} out tokens{cost}")
-    final = "\n".join(lines)
+    return "\n".join(lines)
+
+
+def respond(state: State, runtime: Runtime[Context]) -> dict:
+    c, view = _ctx(runtime)
+    answer, totals = state["answer"], turn_usage(state.get("usage") or [])
+    final = render(state, view)
     _log(c, "response", status=answer["status"], verified=answer.get("verified"), prompt_version=PROMPT_VERSION,
          **totals)
     outcomes = {r["proposal_id"]: r["status"] + (f" {r['reference']}" if r.get("reference") else "")

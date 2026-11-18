@@ -1,0 +1,59 @@
+{
+ "key": "a333279a8ea5a760525d20326ddf2ecb",
+ "latency_s": 6.86,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_16776839001395321133": "Es4HCssHAWkUfRPfn/+m+4sbnqrPDJH1tnoTxp/X+Xoo9OW2ymkD/qEpOWlKH+xsPdtpnGFJswyHSV+SFnjDvxsc4FlEm4pE+8eh1S6xjkt6UP+1yRJ+Oe5YJFbXi9v1RuiRalp0YUSi6G0fiByuSOIgUq5RSmknHOua0rQZTQEO1Xbhr9MffczdX43QMLIui7OFeJ9kxLkiE6AhiNYezrDc4BC/zyZhDo4VX2bbUmMKyfU0GkyhOEpIOevvBlZO1EC4wrXcWFdEWc53DJKPuFLRYCgHcxhwAxsSX0TXzTswDxfgjDgA0S8+bvrfyEka0Nyz522y9sFaJtzONBqkewtr3wNU4DjlXKhGn2wXCH2uk9MugL9eVjHCy54MZtTq6ynlsr0DUZ1oeDhLl2IR9oHIr70uv44ZUUHd5Bp4wx1NLiquU5Oq/PS3714Zv/9OnF01XKCt51B7EVcZfxhpvaNGkUPzyLycS9fhYKy9hhBInDIcKnfcRiWGxc9FqLCJppWtaUwm7/x7OgntmqR+b5+GC5mLfQWISBpDaQ5NSaghFfHJDeO9yeNyUCCSO6dQroXDuKJ0U0nlgHTyaaBrMYtZKib2RJLOTD9q4tIybXhhWEKGOttnQwXgdsVxUyKlz0qVZoJ6ZnSME7HT1xcxiiV27HDObZkQs6gAePywwORNYwlC0taEAWlN4Yze5fPwvLxZA90Jigt+7NSjgAj8Ql6eYX7olvzmhKFHXGx38U15s/7IDRCJKSv4LvTFfVVTxEbV0Y4lid97JsWjrha8T1vfk/RVwm5uhovGzAbJzSuk/KgMjGZF8J0arOrgk5df8j7HATq4OUi38prZDfl79ytgqCzsoXAJMKONQnatt05d64BJUO++Yrd4uymXpq2MClJfItChZSmHJHRRtD8tO6kClBBtlUk13iQdpZdIVyOpLEylJI0w3pzay83uy2qW56xmJepyZC9IBPso6C7PWdWMeoURckTcEpiFCEcNwHyYzs6kqoS8Kw+3UzKIfyAyhmyrvTSg8Zm9CXccqD7/vsXwKY//04MS8a8BuDhPicl2miaBsR6VCqTJ8bqfl/XKhrdlilLsUcKAdOmvi5rrjeIqO5Mn3AYMfh4U+bFJw3tMMkMAeBh6nRe/GN7qT0ikaPEnLZz8rtiLnYAxW2um/9yMy9m7QwCVVooA7TKLXAfFs9E7FFTRmZLukeJVve7PmXAh9VutLg26huBh8dSjd0ZFarjgnQj27UR1OdUm2DFoEEw6PhBcuPoY3wRMqPVbZGJp9CzjIxzowEVrBbVbxRU="
+    },
+    "function_call": {
+     "arguments": "{\"disk_free_below_pct\": 15}",
+     "name": "find_devices"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f008-f881-744e-8b93-f930db0e5959-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "kind": "storage_low"
+     },
+     "id": "call_16776839001395321133",
+     "name": "detect_insights",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "disk_free_below_pct": 15
+     },
+     "id": "call_16776839001395319506",
+     "name": "find_devices",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3051,
+    "output_token_details": {
+     "reasoning": 253
+    },
+    "output_tokens": 292,
+    "total_tokens": 3343
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

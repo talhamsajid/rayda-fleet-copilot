@@ -1,0 +1,51 @@
+{
+ "key": "2613899726f1acc820d57f3b478d5706",
+ "latency_s": 6.9,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_2643544586592726028": "EvcFCvQFAWkUfRPdul1/vKnsxJ6fycqLVKYWxlcfKZjquuAMmj9Rb0kppirynHDIG2R8Rlxl5fOW8ozr/2qcpn2XqNDiJ3gIhRF5ETbZvoCXkcrg7/8LxbSR/76WdpvHDDNhIKc6xgEhLDx/JcvysiWg5rsE4fKpB5NcSPdvRpEYeXB4D4RXFaBIrL6OiKykCcpNvaASJ4xGbsYoDXOa4n/MFyB8KqILpbsdtU7r39RHKzXtWxuBf+TW4FYShqofaVD+1m8RwiOFNlOcccE7sH4iHGJUsUqH6gVnPQ9bfyOzoN4Beh2yu4/8CDwmlsK9oDC/zyEnmMxiG5zoZJHdz0aurlnaDDiJhVgf936pDmeMPqTZGApBXENJwQ/ibqgcmmYZ2ecilfKFS8aDZWOeyEpVBkAzrwP7G0uR0aarqC9tLGJ9DIU2vm90rKcgO18q6GJqAt8rSfeCzZZ6xALF1vTGgRmH9ibNssLZlLriBidCS1l2NyUQPwFKFvvOGauXxwknkT9N+GJmgAJxfW4SB/AwxG9AkW0fMzzNT1QadFJXXmzmqWqxY1pfdY1n6/oAOZ3Hi2JIOY0iGBiaCB4qONc29aXVhV8eWd2YqDl7MSSFgU7zMTRh7YWrHoC5JuMerXJ+V/o4ryBouDq7jS583+BdFRqkL497eT/Be8PTp6dd4Je13aluM23l/b13snuv9Gu5hIY6LC1nVBkaqiFIPSDBc6v5OcMAliSAJ/yDS649WEY2odvd2R9md3Vk+QIJDalXjoiKtNR5bn+4AKgUtpR/G35Hcy/5VW1RBzZmn8SfYS7Wnm46ltFFPzaIM/Fxdp80gyo6PNvZi6Ot0K40CjKteaD1VUsIAd29uNUSHmFIqiBaopZ8RrxFnzrHL5OlFTSM2s3oHChSZykoAnNAezUqtqKAkA2ernwD+1tLow/BVp5T2aAekLIN94fB4s8TvpT8y4NxhecLqkciafVURDLnppca0uYfQE64dFa0QCLc5ihtxbmjEbCu"
+    },
+    "function_call": {
+     "arguments": "{\"kind\": \"all\"}",
+     "name": "detect_insights"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00d-e04b-76a3-aebe-d2716dad0ec2-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "kind": "all"
+     },
+     "id": "call_2643544586592726028",
+     "name": "detect_insights",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3163,
+    "output_token_details": {
+     "reasoning": 153
+    },
+    "output_tokens": 169,
+    "total_tokens": 3332
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

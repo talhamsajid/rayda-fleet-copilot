@@ -1,0 +1,63 @@
+{
+ "key": "8ce8d73d641a844435167c4c050ef143",
+ "latency_s": 8.18,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_11601128240719273112": "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"
+    },
+    "function_call": {
+     "arguments": "{\"summary\": \"No laptops in the fleet are currently failing high-severity compliance checks.\", \"caveats\": [], \"status\": \"answered\", \"findings\": [{\"evidence_ids\": [\"ev:query:find_devices:3eb9e7a7\", \"ev:query:compliance_summary:205ad3fc\"], \"device_ids\": [], \"statement\": \"No laptops in the fleet are currently failing high-severity compliance checks such as disk encryption.\"}]}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00a-777f-70a4-8aa5-421329ebdc5b-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [],
+        "evidence_ids": [
+         "ev:query:find_devices:3eb9e7a7",
+         "ev:query:compliance_summary:205ad3fc"
+        ],
+        "statement": "No laptops in the fleet are currently failing high-severity compliance checks such as disk encryption."
+       }
+      ],
+      "status": "answered",
+      "summary": "No laptops in the fleet are currently failing high-severity compliance checks."
+     },
+     "id": "call_11601128240719273112",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3581,
+    "output_token_details": {
+     "reasoning": 707
+    },
+    "output_tokens": 816,
+    "total_tokens": 4397
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

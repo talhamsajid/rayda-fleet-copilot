@@ -1,0 +1,78 @@
+{
+ "key": "6f9fd597b1e88ed915b9722bb7b533cd",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"fields\": {\"device_ids\": [\"DARFCP0BQM2G\", \"RLD7WV7J82SH\", \"SPKRRDF0L786\", \"XZYK11QTPWEC\"], \"devices_scanned\": 7, \"match_count\": 4, \"query\": {\"os_name\": \"macOS\", \"os_version_below\": \"15\"}}, \"id\": \"ev:query:find_devices:8a6852b0\"}], \"finding\": 1, \"statement\": \"There are four devices running an OS version older than macOS 15.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T10:31:00Z\", \"device_id\": \"DARFCP0BQM2G\", \"fields\": {\"disk_free_pct\": 2.0, \"employee_id\": \"emp-initech-1000\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"initech-macbook-6\", \"mem_used_pct\": 30.9, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\"}, \"id\": \"ev:snap:DARFCP0BQM2G:2026-06-12\"}], \"finding\": 2, \"statement\": \"initech-macbook-6 (MacBook Pro) is running macOS 14.5.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T08:50:00Z\", \"device_id\": \"RLD7WV7J82SH\", \"fields\": {\"disk_free_pct\": 2.0, \"employee_id\": \"emp-initech-1000\", \"failing_checks\": {\"os_up_to_date\": \"medium\"}, \"form_factor\": \"desktop\", \"hostname\": \"initech-mac-4\", \"mem_used_pct\": 50.9, \"model\": \"Mac mini\", \"os\": \"macOS 14.5\"}, \"id\": \"ev:snap:RLD7WV7J82SH:2026-06-12\"}], \"finding\": 3, \"statement\": \"initech-mac-4 (Mac mini) is running macOS 14.5.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T10:13:00Z\", \"device_id\": \"SPKRRDF0L786\", \"fields\": {\"disk_free_pct\": 49.1, \"employee_id\": \"emp-initech-1003\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"initech-macbook-2\", \"mem_used_pct\": 44.6, \"model\": \"MacBook Air\", \"os\": \"macOS 13.6\"}, \"id\": \"ev:snap:SPKRRDF0L786:2026-06-12\"}], \"finding\": 4, \"statement\": \"initech-macbook-2 (MacBook Air) is running macOS 13.6.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T10:36:00Z\", \"device_id\": \"XZYK11QTPWEC\", \"fields\": {\"disk_free_pct\": 33.0, \"employee_id\": \"emp-initech-1000\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"initech-macbook-7\", \"mem_used_pct\": 37.8, \"model\": \"MacBook Pro\", \"os\": \"macOS 13.6\"}, \"id\": \"ev:snap:XZYK11QTPWEC:2026-06-12\"}], \"finding\": 5, \"statement\": \"initech-macbook-7 (MacBook Pro) is running macOS 13.6.\"}], \"summary\": \"Four devices are running an OS version older than macOS 15. Two devices are running macOS 14.5 and two devices are running macOS 13.6.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f3": {
+    "instructions": "Is every factual claim in the `statement` of finding 3 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f4": {
+    "instructions": "Is every factual claim in the `statement` of finding 4 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f5": {
+    "instructions": "Is every factual claim in the `statement` of finding 5 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9553197229131566,
+    "noul": 0.9553197229131566,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.9426854836946108,
+    "noul": 0.9426854836946108,
+    "type": "noul"
+   },
+   "f3": {
+    "confidence": 0.9249908977247492,
+    "noul": 0.9249908977247492,
+    "type": "noul"
+   },
+   "f4": {
+    "confidence": 0.9227866007104998,
+    "noul": 0.9227866007104998,
+    "type": "noul"
+   },
+   "f5": {
+    "confidence": 0.954479448045581,
+    "noul": 0.954479448045581,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9647561895816105,
+    "noul": 0.9647561895816105,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1699
+    }
+   ],
+   "total_input_tokens": 1699,
+   "total_output_tokens": 0,
+   "total_tokens": 1699
+  }
+ }
+}

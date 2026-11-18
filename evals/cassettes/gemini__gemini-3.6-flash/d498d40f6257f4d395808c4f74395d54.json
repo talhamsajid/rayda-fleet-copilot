@@ -1,0 +1,71 @@
+{
+ "key": "d498d40f6257f4d395808c4f74395d54",
+ "latency_s": 7.94,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_18172621612311932494": "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"
+    },
+    "function_call": {
+     "arguments": "{\"evidence_ids\": [\"ev:snap:JRZSGXVMKE6M:2026-06-12\", \"ev:trend:storage_low:JRZSGXVMKE6M\"], \"spec\": \"2 TB NVMe SSD\", \"device_id\": \"JRZSGXVMKE6M\", \"component\": \"storage\"}",
+     "name": "create_upgrade_order"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f014-28bd-776d-a103-73e7e9699627-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "component": "storage",
+      "device_id": "E4V0SB5I0MYU",
+      "evidence_ids": [
+       "ev:snap:E4V0SB5I0MYU:2026-06-12",
+       "ev:trend:storage_low:E4V0SB5I0MYU"
+      ],
+      "spec": "1 TB NVMe SSD"
+     },
+     "id": "call_18172621612311932494",
+     "name": "create_upgrade_order",
+     "type": "tool_call"
+    },
+    {
+     "args": {
+      "component": "storage",
+      "device_id": "JRZSGXVMKE6M",
+      "evidence_ids": [
+       "ev:snap:JRZSGXVMKE6M:2026-06-12",
+       "ev:trend:storage_low:JRZSGXVMKE6M"
+      ],
+      "spec": "2 TB NVMe SSD"
+     },
+     "id": "call_18172621612311930183",
+     "name": "create_upgrade_order",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5812,
+    "output_token_details": {
+     "reasoning": 742
+    },
+    "output_tokens": 932,
+    "total_tokens": 6744
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

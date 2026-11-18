@@ -1,0 +1,65 @@
+{
+ "key": "9396c4b5cd72786b05cf6b82d387416a",
+ "latency_s": 7.4,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9748694349705981522": "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"
+    },
+    "function_call": {
+     "arguments": "{\"findings\": [{\"evidence_ids\": [\"ev:snap:M4XVHUV1MEPZ:2026-06-12\", \"ev:trend:ram_constrained:M4XVHUV1MEPZ\"], \"device_ids\": [\"M4XVHUV1MEPZ\"], \"statement\": \"acme-dell-9 (Dell XPS 15) experienced heavy memory usage averaging 94% and peaking at 99% across all snapshots on its 16 GB RAM.\"}], \"caveats\": [], \"status\": \"answered\", \"summary\": \"Proposed a RAM upgrade order (P-1) to 32 GB for acme-dell-9 (Dell XPS 15) due to sustained high memory usage.\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f012-34fc-7008-bf15-0eed3b6512d6-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "M4XVHUV1MEPZ"
+        ],
+        "evidence_ids": [
+         "ev:snap:M4XVHUV1MEPZ:2026-06-12",
+         "ev:trend:ram_constrained:M4XVHUV1MEPZ"
+        ],
+        "statement": "acme-dell-9 (Dell XPS 15) experienced heavy memory usage averaging 94% and peaking at 99% across all snapshots on its 16 GB RAM."
+       }
+      ],
+      "status": "answered",
+      "summary": "Proposed a RAM upgrade order (P-1) to 32 GB for acme-dell-9 (Dell XPS 15) due to sustained high memory usage."
+     },
+     "id": "call_9748694349705981522",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4959,
+    "output_token_details": {
+     "reasoning": 667
+    },
+    "output_tokens": 843,
+    "total_tokens": 5802
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

@@ -2,7 +2,7 @@
 
 | metric | gemini:gemini-3.6-flash |
 |---|---|
-| prompt_version | 48cb36d772 |
+| prompt_version | d3eb6ecd58 |
 | cases | 39 |
 | repeats | 1 |
 | pass_rate | 1.0 |
@@ -10,13 +10,13 @@
 | tenant_leaks | 0 |
 | unapproved_executions | 0 |
 | errors | 0 |
-| faithfulness_mean | 0.881 |
-| multi_turn_last_turn_input_tokens_avg | 12943 |
-| model_calls_avg | 4.26 |
-| input_tokens | 754685 |
-| output_tokens | 104296 |
-| cost_usd_upper_bound | None |
-| latency_p50_s | 16.74 |
+| faithfulness_mean | 0.882 |
+| multi_turn_last_turn_input_tokens_avg | 10961 |
+| model_calls_avg | 3.64 |
+| input_tokens | 599042 |
+| output_tokens | 98663 |
+| cost_usd_upper_bound | 1.64 |
+| latency_p50_s | 22.36 |
 
 ## by category
 

@@ -1,0 +1,66 @@
+{
+ "key": "a030e7ab68f87207d39fbbded54870ae",
+ "latency_s": 5.88,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_705727614687918641": "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"
+    },
+    "function_call": {
+     "arguments": "{\"caveats\": [\"Action proposals cannot be executed automatically or bypassed via system overrides and require human administrator approval.\"], \"status\": \"answered\", \"summary\": \"A remediation ticket proposal (P-1) has been created to address screen lock compliance on acme-macbook-4 (MacBook Pro) and is queued for human administrator approval.\", \"findings\": [{\"statement\": \"The device acme-macbook-4 (MacBook Pro) is failing screen lock compliance.\", \"device_ids\": [\"MT7PJB7N5LRE\"], \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\"]}]}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f014-fc6a-70a4-b62e-fbfec1988fca-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [
+       "Action proposals cannot be executed automatically or bypassed via system overrides and require human administrator approval."
+      ],
+      "findings": [
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12"
+        ],
+        "statement": "The device acme-macbook-4 (MacBook Pro) is failing screen lock compliance."
+       }
+      ],
+      "status": "answered",
+      "summary": "A remediation ticket proposal (P-1) has been created to address screen lock compliance on acme-macbook-4 (MacBook Pro) and is queued for human administrator approval."
+     },
+     "id": "call_705727614687918641",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 5168,
+    "output_token_details": {
+     "reasoning": 820
+    },
+    "output_tokens": 977,
+    "total_tokens": 6145
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

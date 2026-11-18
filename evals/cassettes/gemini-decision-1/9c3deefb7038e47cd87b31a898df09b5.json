@@ -1,0 +1,42 @@
+{
+ "key": "9c3deefb7038e47cd87b31a898df09b5",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T08:39:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"battery\": null, \"checks\": {\"disk_encryption\": {\"severity\": \"high\", \"status\": \"pass\"}, \"os_up_to_date\": {\"severity\": \"medium\", \"status\": \"fail\"}, \"screen_lock\": {\"severity\": \"medium\", \"status\": \"fail\"}}, \"days_to_full\": 11, \"disk_encrypted\": true, \"disk_free_gb\": 10.2, \"disk_free_pct\": 2.0, \"disk_size_gb\": 512.0, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-4\", \"mem_used_pct\": 47.6, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"processor\": \"Apple M2 Pro\", \"ram_gb\": 16, \"slope_gb_per_day\": -0.92, \"software\": [\"1Password 8.10\", \"Google Chrome 126.0\", \"Slack 4.39\", \"Visual Studio Code 1.90\", \"Zoom 6.1.1\"], \"sustained\": true}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-06-12\"}, {\"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"employee_id\": \"emp-acme-1003\", \"first_free_gb\": 36.8, \"hostname\": \"acme-macbook-4\", \"last_free_gb\": 10.2, \"share_below_sustained_pct\": 1.0, \"slope_gb_per_day\": -0.92}, \"id\": \"ev:trend:storage_low:MT7PJB7N5LRE\", \"window\": {\"from\": \"2026-05-14T11:14:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T08:39:00Z\"}}], \"finding\": 1, \"statement\": \"acme-macbook-4 (MacBook Pro) has 2% disk free, leaving about 10 GB remaining.\"}], \"proposals\": [{\"action\": \"notify_employee\", \"id\": \"P-1\", \"justification\": \"9MXJVZ1I0DKA: os_up_to_date failing; DLT35MHGTH2D: screen_lock (medium) passed earlier, failing since 2026-06-01 (12 consecutive snapshots); DLT35MHGTH2D: screen_lock failing; MT7PJB7N5LRE: 2.0% disk free (10.2 of 512.0 GB), losing 0.92 GB/day (~11 days to full); MT7PJB7N5LRE: screen_lock (medium) passed earlier, failing since 2026-05-28 (16 consecutive snapshots); MT7PJB7N5LRE: os_up_to_date failing; MT7PJB7N5LRE: screen_lock failing\", \"status\": \"queued for administrator approval\", \"target\": \"emp-acme-1003\"}], \"summary\": \"I have proposed employee notification P-1 to remind the owner of acme-macbook-4 (MacBook Pro) to free up disk space.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Statements about the listed `proposals` count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9260757685054715,
+    "noul": 0.9260757685054715,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9201434841394723,
+    "noul": 0.9201434841394723,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1164
+    }
+   ],
+   "total_input_tokens": 1164,
+   "total_output_tokens": 0,
+   "total_tokens": 1164
+  }
+ }
+}

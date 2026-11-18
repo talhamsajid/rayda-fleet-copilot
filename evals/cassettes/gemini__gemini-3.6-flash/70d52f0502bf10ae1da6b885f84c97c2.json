@@ -1,0 +1,59 @@
+{
+ "key": "70d52f0502bf10ae1da6b885f84c97c2",
+ "latency_s": 33.03,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_14383847238513825550": "Er0JCroJAWkUfRPf8qE1Tvjv3c8fg4VkP4qUBgMUbxRA5rIMHgZSd5jseol3e4nS4bH0lhhcOdU/A2Vl392f46qan11RSKe7+HpTYW5nmY12cE9szZUCLDKgXkpJb6zm2gcW+WkDPCvJJ4IJyuCbYjZo6jyX4E9QJK/NQjh0INY14nonqDciDEpletSkRM26rKWTTahpaoahOp3XNqjUuyTmcpZWXnoTs4TbL4hIlxGH19ef15hpsjUTRBEJ94cqRg02zIAcvPTEfeDGJCiOALodn9pTay7/+q8EY+DUA3RJRKJ3adMEnCcsUb/i1kjreDLuRVZTQ+ObIpU5l3FuAxa5gST4bPDgSilSdsZMZ3z4ieSU311xVN/Y+TttLaqPkwnafvUlDvFYIfiXytJRlskDgBx9q0erRYj+jQmh636AaEJDXOhZ2t+xz0aksFaWiqFYo5ElDEWgb5zAGvilD2gLcbrzoZZDNMZTpLuF3RuBispdi7xGPl/Qt/m0OMioFgPSibFGLdwpI7WIHpF8ObgDXN+GmS8hI85K3xzS5Pfmj5ox/cN9r0dB97Nf7R7uYdeeTgt3byYWJ0svp3yWKWUr4jwcHOOxYmyKp2JbCJ5Gjh++XnFgruAjqQJrjaR2M4V5yjTRWUlbtV11cWgmjiFppkl5cyG1LpNy5Ix8yVZl78meuYMQey9J3/0Kj38DdKkFsCmprKEh0ea7SrHcLQoM2jTY+zwt4raqSFSHrJh4CG4uapQ47Rjk2QYG64qWtD30vqzVLtDxnGXB55gQLJN77ZfM8hr7D/h8DuY4d4YwhlD5vL5jEcU5wIxRsmf2OW8vJvzwmATgajJmkxfTV3NHzEZhP0mk4LqxIQwcH8U3nIUMmqc0R+Y3gP9ymyzMucs3i+6YzfgR0yQp6eZj65b7EIbVAfaGcmwSovrg2QMcABwxMmQyziLgRJpA6KG32XjLY+DX0XI/VElWvhiPLMNcMCBTiZc7fDiXACjEPTxD+izjoE+DATWAO4oGKqjngal0HdVHbHC7uyJYGlmo+wTxJQvXU5sn9oCWqGQkD9iilCj4yJqf0i8OZrvONIveovzj9A7MWU1mxraN7HShbHG2t7uNh8A8zp+h/S6uNO8HhScx3NA8eyQmkXVcvbDnt1ufsnE9eDaYws3NttD7JJvq2Io7zNE48C6Iym5KuxjMTkdZuBfqvv68eewL/YzszetlfTlEP0FgHaQ1FVz0PNENuVLLJDppJBUez+T84F0lgRBwTmZIXEgDGtDvNQmoP1d7ZAFjDogVtZrBgQKL3GXxzZMU7Yl+aMZGVq8c0p8CkMpKWlZKkzKkNC5d3igl9MuiNRWv+jpdBtXsSx8xYgaHPAZm7OcovAP9TYsGCJZRpZEr7rCAurIJZ4Mha6b6cMB6lU9A50qzkfBT0nLpjMLxQlcg0zBBiTGu9y7E0PY+opM4MbJMRHUD4wTAJV7rk0sCF0bJQtEI9Cft54qBcy4x4z9UuGlxFvDE32BMB6vjwH70U/h4/Txs/PMOEJfu2rcBuwkImNAamtZe4TYP3uIdnXrgaYn3L+JQeZvAU79QsmFhi9yysPmGIfy93nVt+Rh2EhckBkjD5AIvBl4Wsw=="
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"question\", \"tools\": [\"fleet_overview\", \"submit_answer\"], \"steps\": [\"Retrieve fleet overview to establish standard evidence for fleet telemetry coverage.\", \"Submit final answer stating CPU usage telemetry is not collected.\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00c-5fd5-72ea-b23c-add5e25ebf34-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Retrieve fleet overview to establish standard evidence for fleet telemetry coverage.",
+       "Submit final answer stating CPU usage telemetry is not collected."
+      ],
+      "tools": [
+       "fleet_overview",
+       "submit_answer"
+      ]
+     },
+     "id": "call_14383847238513825550",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2808,
+    "output_token_details": {
+     "reasoning": 251
+    },
+    "output_tokens": 312,
+    "total_tokens": 3120
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

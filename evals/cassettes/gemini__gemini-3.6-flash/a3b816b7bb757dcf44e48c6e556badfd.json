@@ -1,0 +1,64 @@
+{
+ "key": "a3b816b7bb757dcf44e48c6e556badfd",
+ "latency_s": 2.63,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_10842507035765325087": "EtwICtkIAWkUfRNUZCNvjPshJ7IY+LUbT2XXwV3TagidXKvqe3Dlpo3gLzP8yMQXfZ7OBweCQivakQYagJZqgy7abZ61pYQLTitgfzX4GnuaCLu2DosIoxwzJbNuS8V0zBDqMQ2Vos/Ni6WW8UmLMT7hShxGRdLrfwHLIBN4/GNQD2ZSR3CgDPUd4AufNN8tQSp1v/rPcwJG5cgyzHtCXEePtpxqoTn9HeQNJh47C1AiCcL4+PvBrfoxA8sl5h+11NCiXPESVMHrJIK/yGRMW9wsP3NUOeiV8LLyYo+eup8pD97rIqqbUCU10ppddW24Z5i4NxWwRHcxdiHg9ASPhKo4bFisr1Rd/y/nJO79SUQpQnCYC6c+CY+GZK1uBCEyrfwAnj+io3mC3zhvkvurAEMFRsHj0i/qXyopuwH6bMCSnBpdpfJZjeo6kSDY8G+Atlp6eqUY6EMVVcA8pH6t5to5jxNmGrQtrbU3O+Sx30CW10ukPKFJTqa0467sQThxnsiow0WHHYbDJld0OWGOuv+hDOsVCFQxG6TmiErPJNz82ESsLINFpuHApNEWgSabnJsFqurD6SJ7rslnoe5FcFbTpvnUz3ZOE5++r6QkhWdSbxcyNWIMJzIuC2brtOMioIohboi9LQH1rXV+YB+Md4Bm7kX5jwHobYAWcmMGwBY/rdoYCqYrN463JCVSQH9QvY8BrxAoXOAncgmtNctFQuf6G/TfLgFzMiBPo/Lf7QWOUJnSf0WvZTcPs5idvuggJkea/GeawuEWdWX1/7K9aVvGsINkOX8D3jWWozYlBD2Xy/ts8JElXd7Uq5OrB/VYqmHvvNX/KOZOW3j+Ikvq5sEx5c9WfVzlBa6EoB7CecFkgDV13f+Yb21rVvyqAb1Nus/dVbUeXltXRdcHTEyAXN4WR9448DhjJw4TXTnEaKexbxMpvsEU7+v83loR7JcT6HY2D1hslTE4J7TnYrzAom60xElKrONIY3SFBrcx5fSjJr3aHTm+rIcGXxeHMml0YvFLpsm41V7VJPep+Gh7Fd+6O8Aszoz3CPycPboWcQuJFbmVnfSPjrPipD8g5aAWRr8M2QWZi8xHBfUyZs3x2ZlBky4Ji9Cz99YLH1+U8hg/B4YpzJT3l7IG+FyEKr24oBGsr60TkhLQNIsxiDDwlWi/jHb2IQav7f1NYBong/oBhOCoh3hmg7BxsKd84iNtSwAoalJqk1VEI7xQBRfOJ/l5USxyF49z7ySsIsA6U1+KUSRMovNzcCAR+80S4AdD1AXG1peSVdicIvKqlpIH3wfatQayPoS5jN8N/h/93eDQc4zpCziLhOM7M/yTm239vkZG5SQoncGtxnpY8IXVJ+lYoTXIpKUYFW8hkWQrCz2wRwfK41qn1znT7UJjQIDjvu5b4Xonoouzra2hAuHplg2t5KYju0Tie2Fn2fNjXr8F+0VR2fn1TWM2K/iArCPiUoUNCahA+whwjFv357SB"
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Load fleet-health-review skill\", \"Run compliance_summary to check pass rates over time\", \"Run detect_insights with kind compliance_drift to identify devices that got worse\", \"Retrieve device history or check details if needed\", \"Submit answer with findings and evidence IDs\"], \"intent\": \"insight\", \"tools\": [\"load_skill\", \"compliance_summary\", \"detect_insights\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00f-434a-7767-82fb-e806922c996d-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "insight",
+      "steps": [
+       "Load fleet-health-review skill",
+       "Run compliance_summary to check pass rates over time",
+       "Run detect_insights with kind compliance_drift to identify devices that got worse",
+       "Retrieve device history or check details if needed",
+       "Submit answer with findings and evidence IDs"
+      ],
+      "tools": [
+       "load_skill",
+       "compliance_summary",
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_10842507035765325087",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2810,
+    "output_token_details": {
+     "reasoning": 247
+    },
+    "output_tokens": 353,
+    "total_tokens": 3163
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

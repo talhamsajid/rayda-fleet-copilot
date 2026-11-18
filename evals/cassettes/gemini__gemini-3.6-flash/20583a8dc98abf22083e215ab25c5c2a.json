@@ -1,0 +1,51 @@
+{
+ "key": "20583a8dc98abf22083e215ab25c5c2a",
+ "latency_s": 5.0,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_7553790298211619588": "EuYCCuMCAWkUfRMHsgm3/kvxM17SUmf0bV26n2cQRbWv78D/ffWaCFllKWf+uO4C8Yc5OaI6FkvH9Ydw3m8naZ9T27BJAry3NPLestMesThLsUOtywaq/J51Fd2wUrsD9vyjYx346BR6LeYpaxuPdpvA16a72K09iX0vZWWTQrPKOodAF+kW2WQ+ohxg6CBtodPi2H9u+UOvQt6hbcZd8IUHvZicGIm4LQHUGBuol8Az9k5DhXKzXFh/h0XdiKYEs2QezkjwLukKPVtWOhVyDX7eLTMsUUY5QNN1LBC2E7K5HLatVs5grIctuDygzBMgrkywUnLNWMNmUQATku5qKB7Y4qKorIHPm3cTeEB6Y60cEwjWRq3P1EGKQfBBdS5WlPn91jqHhH4NYmy0sjAo1wqyTUaFgp4c/vTSqNRHGG4TZpjjiGNIpHYkDkht0lSVCOXiSKoGBP87adjuU58PJWla+8DgpnHF8g=="
+    },
+    "function_call": {
+     "arguments": "{\"name\": \"fleet-health-review\"}",
+     "name": "load_skill"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00f-4d98-73fd-8624-78fac5bf2841-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "name": "fleet-health-review"
+     },
+     "id": "call_7553790298211619588",
+     "name": "load_skill",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3193,
+    "output_token_details": {
+     "reasoning": 55
+    },
+    "output_tokens": 75,
+    "total_tokens": 3268
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

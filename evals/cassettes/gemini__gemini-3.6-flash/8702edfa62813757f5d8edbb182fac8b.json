@@ -1,0 +1,60 @@
+{
+ "key": "8702edfa62813757f5d8edbb182fac8b",
+ "latency_s": 1.94,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_12182154301031488064": "ErAFCq0FAWkUfRP+0G0XofR4aHdgCaaCi5EWG8ddGWZlQNn3UnXjA4ezuOFNX8pqXVCECpCJe3XuIUmCpCs6wo3PB1JGvWPsoGjXiaRUZMxu6Sm8d8sqqmv9E08ri2+AODPrw9HFM5i9YR4EBzsLZOFssjwYTVwGXfURMPokwR2zU+bQUzITzfobRAI2FNBxoJr6RiRF2Kf9u00d+bj6QXQXULD4C5jyJfj+sjuHN+x2GWp0HKhVDxZDWO7mVs3TR2Ft7m+j7SbukEVitpi4uC79iK2X73MwuDxyMG+yWACSo08PKcDEVFZy/BINdFIsnpUMuRSPXjArOuJNE7Sd4EYKdSA3UqImxbjVGalng668T3z/2cSwPXLZPqpBorMRRh8dxrlbe1pknwjPhO3PJ26HbRAVChFoowPw/PEK/2LQSmb5U6BQNBUJ/GC2gBSuSPPLM/w4sevhnGGVndcccH+s7DHWj/txp04zyFPLYZ3GaCS82bhIVwx4R3MQa9UFhVToFfYMTaNl7FuFOBOiqo7zvkCslfRzPxSDwlxN/Pvulj4KtYqpRtm/sbhfZcAi2XV02T0msCld/YlVMkHaGtVO+iR6BxFz9oByS/Ch4EPanKtTxC/N6a5Y/fWzDbSX9dKmKV6/fbjoWduAIKh+gRjMIDUvoTmHBPG83hMhWPAv9ylCr1L5ZQAwSHP0lDcJQHKtzbjHr6/1WraNLgChfMUYiRppN3uGOiiaoTsvgXLsdvNq7+5wWfcI3Ylpp5emKbI8F/1D4N3guvh2lHAokj8UE9Eeqg6CYuMhsOg9gZbKWIxnsjGprN1RVORW+tKL7xG2ESIn6bpzRp+qeG/9nyR5CW82JxMQk35RZZG44mW9DHlgdxy8Op3h6cp64qXTbvY7nkUvkSVa8xjRAPcPkwqz/w=="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Detect battery_eol insights across the fleet\", \"Review findings and identify devices with batteries approaching end of life\", \"Submit final answer with evidence citations\"], \"tools\": [\"detect_insights\", \"submit_answer\"], \"intent\": \"insight\"}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00d-c403-766a-9b0a-7651526c8c6b-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "insight",
+      "steps": [
+       "Detect battery_eol insights across the fleet",
+       "Review findings and identify devices with batteries approaching end of life",
+       "Submit final answer with evidence citations"
+      ],
+      "tools": [
+       "detect_insights",
+       "submit_answer"
+      ]
+     },
+     "id": "call_12182154301031488064",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2808,
+    "output_token_details": {
+     "reasoning": 136
+    },
+    "output_tokens": 202,
+    "total_tokens": 3010
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

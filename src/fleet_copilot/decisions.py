@@ -86,13 +86,17 @@ def screen(question: str, tenant: str) -> dict[str, float]:
     return {k: round(v["noul"], 3) for k, v in answers.items()}
 
 
-def faithfulness(answer: dict, ledger: dict) -> dict[str, float]:
+def faithfulness(answer: dict, ledger: dict, proposals: list[dict] = ()) -> dict[str, float]:
     findings = [{"finding": n, "statement": f["statement"],
                  "evidence": [{k: ledger[i].get(k) for k in ("id", "device_id", "collected_at", "window", "fields")
                                if ledger[i].get(k) is not None} for i in f["evidence_ids"] if i in ledger]}
                 for n, f in enumerate(answer["findings"], 1)]
-    doc = json.dumps({"summary": answer["summary"], "caveats": answer.get("caveats", []), "findings": findings},
-                     sort_keys=True, default=str)
+    body = {"summary": answer["summary"], "caveats": answer.get("caveats", []), "findings": findings}
+    if proposals:
+        body["proposals"] = [{"id": p["id"], "action": p["tool"], "status": "queued for administrator approval",
+                              "target": p["args"].get("device_id") or p["args"].get("employee_id"),
+                              "justification": p["justification"]} for p in proposals]
+    doc = json.dumps(body, sort_keys=True, default=str)
     rule = ("Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and "
             "paraphrase are fine. Claims that need information absent from the evidence count as unsupported.")
     questions = {f"f{f['finding']}": {"type": "noul", "instructions":
@@ -101,6 +105,8 @@ def faithfulness(answer: dict, ledger: dict) -> dict[str, float]:
     questions["summary"] = {"type": "noul", "instructions":
                             "Is every factual claim in `summary` and in `caveats` supported by the evidence of the "
                             "findings? Statements about what the telemetry does not cover, or about the assistant's "
-                            f"own limits, count as supported. {rule}"}
+                            "own limits, count as supported. "
+                            + ("Statements about the listed `proposals` count as supported. " if proposals else "")
+                            + rule}
     answers = decide(doc, questions)
     return {k: round(v["noul"], 3) for k, v in sorted(answers.items())}

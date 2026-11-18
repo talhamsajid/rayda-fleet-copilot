@@ -1,0 +1,98 @@
+{
+ "key": "aafb2165da9bbac8a6027f6ce0047558",
+ "latency_s": 10.54,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_17783993476897515637": "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"
+    },
+    "function_call": {
+     "arguments": "{\"findings\": [{\"device_ids\": [], \"statement\": \"There are 4 devices in the fleet currently running an operating system older than macOS 15.\", \"evidence_ids\": [\"ev:query:find_devices:8a6852b0\"]}, {\"statement\": \"acme-macbook-1 (MacBook Pro) is running macOS 13.6.\", \"device_ids\": [\"7VP16KHV88LM\"], \"evidence_ids\": [\"ev:snap:7VP16KHV88LM:2026-06-12\"]}, {\"device_ids\": [\"1LYSSFD074BB\"], \"evidence_ids\": [\"ev:snap:1LYSSFD074BB:2026-06-12\"], \"statement\": \"acme-macbook-2 (MacBook Pro) is running macOS 14.5.\"}, {\"statement\": \"acme-macbook-4 (MacBook Pro) is running macOS 14.5.\", \"device_ids\": [\"MT7PJB7N5LRE\"], \"evidence_ids\": [\"ev:snap:MT7PJB7N5LRE:2026-06-12\"]}, {\"statement\": \"acme-macbook-6 (MacBook Pro) is running macOS 14.5.\", \"device_ids\": [\"XSU9UUDGU6AC\"], \"evidence_ids\": [\"ev:snap:XSU9UUDGU6AC:2026-06-12\"]}], \"summary\": \"There are 4 devices running an operating system older than macOS 15.\", \"caveats\": [], \"status\": \"answered\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00a-bd5b-73e5-92f4-d02ab4dbea1d-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [],
+        "evidence_ids": [
+         "ev:query:find_devices:8a6852b0"
+        ],
+        "statement": "There are 4 devices in the fleet currently running an operating system older than macOS 15."
+       },
+       {
+        "device_ids": [
+         "7VP16KHV88LM"
+        ],
+        "evidence_ids": [
+         "ev:snap:7VP16KHV88LM:2026-06-12"
+        ],
+        "statement": "acme-macbook-1 (MacBook Pro) is running macOS 13.6."
+       },
+       {
+        "device_ids": [
+         "1LYSSFD074BB"
+        ],
+        "evidence_ids": [
+         "ev:snap:1LYSSFD074BB:2026-06-12"
+        ],
+        "statement": "acme-macbook-2 (MacBook Pro) is running macOS 14.5."
+       },
+       {
+        "device_ids": [
+         "MT7PJB7N5LRE"
+        ],
+        "evidence_ids": [
+         "ev:snap:MT7PJB7N5LRE:2026-06-12"
+        ],
+        "statement": "acme-macbook-4 (MacBook Pro) is running macOS 14.5."
+       },
+       {
+        "device_ids": [
+         "XSU9UUDGU6AC"
+        ],
+        "evidence_ids": [
+         "ev:snap:XSU9UUDGU6AC:2026-06-12"
+        ],
+        "statement": "acme-macbook-6 (MacBook Pro) is running macOS 14.5."
+       }
+      ],
+      "status": "answered",
+      "summary": "There are 4 devices running an operating system older than macOS 15."
+     },
+     "id": "call_17783993476897515637",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 4009,
+    "output_token_details": {
+     "reasoning": 1076
+    },
+    "output_tokens": 1461,
+    "total_tokens": 5470
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

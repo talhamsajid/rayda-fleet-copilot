@@ -1,0 +1,63 @@
+{
+ "key": "6b8505451ec9d5cd15ffa9491a922d52",
+ "latency_s": 2.38,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_1710878875692871154": "Ep4GCpsGAWkUfRPtFmJ372SeSXHHRzyZCIcEMLuNa61yk1fv1eL0rIGkPeKQ9hi5twOWzP//HpXhGet8d5vxsBavJoX9xU6oZ3DJIcPpf6DKYqSc2IvVyqkUQaexy9LIfh3Tezunyvj/Mk7pwuu2SQWByG/c3Ch7jGd1vuEoSCx4ARxzUsxvQEZEDHAq2x8aPjjJct1qO6FT9JM3LDcS3Z2Rqg/fa5v+wl0uZKH/cCybMAer/u8h7yxmI77Dc2FZ4rcbEfin+Zs+7duoH1D5s4aU37DbPN1w1Z1P5ZO4qOWPtS1qoKuWC0R8w2fgnCT1LO7j4XeKs+4lQXzoPl/lzTr/eNtTg4yAAEekuffu2IyV0mCeuyFIQcKvUGh1jEACtpL/sK5eAm+NHL/yu/eLS1b2HDDKKmBWnqv6BDgXMwm6fMVdzzCDl2zKOhnLN8kZltMROlXtQ3zvhYnLdCUG9YPXnxCFSgHmB/148eNjBaaBKxdJLIGXWGYECiRhEdy6SVbx90UZrdH6jsBNsTm2lXW4dfvK0fiTIakfu6LiQsUmazOTKI3Idh7PX2mt6vnUEwL3Iuma2yYFDr/kHqs5UC4hBXQjCNQc2L6QCCGYsr+5p1xmI7jkhAESIg1rOSkIBXlQsk+cyCRHV+/H12Srnt5+yppXU/W7HGY7xwvk4pfUDsBm2lpVQWXZV8ESVivm3fSfQ/tD+63Jk3RQR8enzQY3i3KqTIXog+ils0laOpmp7zLqdbulY66tzn6D3azSk4Yl+RWbDF2P2FQWnqGCTXztlkyQ9XQig38PGDOYTCro92BTJXKI1zyEJxuOYmeuD3uwzWodgqz9+9mOGBhWeasV9MjdtXlB33EkYc1xVaasu2QQqmuEh/5MTK6OHGd0utz/cXLIaPHCshNtOoL13DtgaEcDOW9kgoxooGKexaQPgMFa6R6GxtoYQNcBr405Wk0f45VhdEPJSBTpJvlSWpyuwaX1gzbEk+odAobRvQXij0nfZkoxTe2FoXc/V9X/RI9u6+X9pRsoc+7X5fCxrYnUGeEF9eRts+VdZxEeUPr3"
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Load the employee-notification skill\", \"Fetch telemetry for device MT7PJB7N5LRE to confirm the low disk finding and retrieve employee_id and evidence IDs\", \"Propose employee notification via notify_employee\", \"Submit final answer\"], \"tools\": [\"load_skill\", \"get_device\", \"notify_employee\", \"submit_answer\"], \"intent\": \"action\"}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f013-7537-7651-8e67-bc8c9708b0ea-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load the employee-notification skill",
+       "Fetch telemetry for device MT7PJB7N5LRE to confirm the low disk finding and retrieve employee_id and evidence IDs",
+       "Propose employee notification via notify_employee",
+       "Submit final answer"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "notify_employee",
+       "submit_answer"
+      ]
+     },
+     "id": "call_1710878875692871154",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2818,
+    "output_token_details": {
+     "reasoning": 194
+    },
+    "output_tokens": 294,
+    "total_tokens": 3112
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

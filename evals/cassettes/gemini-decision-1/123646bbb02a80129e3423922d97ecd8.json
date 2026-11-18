@@ -1,0 +1,51 @@
+{
+ "key": "123646bbb02a80129e3423922d97ecd8",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-06-12T10:47:00Z\", \"device_id\": \"CUXW0BQSV1B7\", \"fields\": {\"avg_used_pct\": 85.0, \"employee_id\": \"emp-globex-1004\", \"hostname\": \"globex-thinkpad-6\", \"mem_used_pct\": 87.7, \"model\": \"ThinkPad X1 Carbon\", \"peak_used_pct\": 92.8, \"ram_gb\": 16, \"share_over_threshold\": 0.93}, \"id\": \"ev:snap:CUXW0BQSV1B7:2026-06-12\"}, {\"device_id\": \"CUXW0BQSV1B7\", \"fields\": {\"avg_used_pct\": 85.0, \"employee_id\": \"emp-globex-1004\", \"hostname\": \"globex-thinkpad-6\", \"peak_used_pct\": 92.8, \"share_over_threshold\": 0.93}, \"id\": \"ev:trend:ram_constrained:CUXW0BQSV1B7\", \"window\": {\"from\": \"2026-05-14T11:14:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T10:47:00Z\"}}], \"finding\": 1, \"statement\": \"globex-thinkpad-6 (ThinkPad X1 Carbon) is consistently memory-constrained, averaging 85% memory usage with peaks up to 93% across its snapshots.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-12T10:46:00Z\", \"device_id\": \"JRZSGXVMKE6M\", \"fields\": {\"avg_used_pct\": 87.5, \"employee_id\": \"emp-globex-1005\", \"hostname\": \"globex-thinkpad-8\", \"mem_used_pct\": 88.8, \"model\": \"ThinkPad X1 Carbon\", \"peak_used_pct\": 94.1, \"ram_gb\": 16, \"share_over_threshold\": 0.97}, \"id\": \"ev:snap:JRZSGXVMKE6M:2026-06-12\"}, {\"device_id\": \"JRZSGXVMKE6M\", \"fields\": {\"avg_used_pct\": 87.5, \"employee_id\": \"emp-globex-1005\", \"hostname\": \"globex-thinkpad-8\", \"peak_used_pct\": 94.1, \"share_over_threshold\": 0.97}, \"id\": \"ev:trend:ram_constrained:JRZSGXVMKE6M\", \"window\": {\"from\": \"2026-05-14T11:30:00Z\", \"snapshots\": 30, \"to\": \"2026-06-12T10:46:00Z\"}}], \"finding\": 2, \"statement\": \"globex-thinkpad-8 (ThinkPad X1 Carbon) is consistently memory-constrained, averaging 88% memory usage with peaks up to 94% across its snapshots.\"}], \"summary\": \"Two devices in the fleet are consistently constrained by RAM: globex-thinkpad-6 (ThinkPad X1 Carbon) and globex-thinkpad-8 (ThinkPad X1 Carbon). Both 16 GB systems sustain memory usage above 80% across almost all recorded daily snapshots.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9187174181696587,
+    "noul": 0.9187174181696587,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.8996042623332562,
+    "noul": 0.8996042623332562,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.8432721189458848,
+    "noul": 0.8432721189458848,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1227
+    }
+   ],
+   "total_input_tokens": 1227,
+   "total_output_tokens": 0,
+   "total_tokens": 1227
+  }
+ }
+}

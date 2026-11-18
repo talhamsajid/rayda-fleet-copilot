@@ -1,0 +1,52 @@
+{
+ "key": "ac13230e4639351f9aef7b4939cb8ebf",
+ "latency_s": 5.87,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_3400553564075797999": "ErEECq4EAWkUfRNm4M5ZsmvTv+szmf9pOxodnbPUlBWRqVZbs5pBN+g7+C23X0iLUky0AtE3jW2eb8WZmn/DNrDmxIKa5Jhn40R8TcH5prT5povIdDj0ZqYUlwmtshcdgV4VP/Vf7wNd/QHg+tKH504nYwQhIkmJWkr3a5EkFSdJvk8WpRJL8a3vAAJkgVgW6s4mak2Z2Z3AzNBJkHiqSp7gJMblEkT2Rw315OWCpBH8tmEum4/7vHc59ClPGKkUPIA6QSoO3uXXRtvBQS/irXA3p4PYtUog50G4iHFmJgh1arHB/LIBLO/zm5PG5Slf8xyZIhUeJI9wNBRPYsjrwi0BMaTuD/phsduyyJsZzVPZq8cRMDTsDhlsCsR4j/nDfaYsTocwZyp5GpCcsOUJXzeoA8oM3OELsCHUp5lLDzP01I5H7/Iu5HivS2zHRqn7KIGrF/RTjPRp0DKTSqsQp+egc2sgTeje/kiYGTCpCirEUKWGqgy81Si4VEBtBEBIHnQeKQB33PqVDhQ2mMkItSCaZOplKelP7FcHu0VaAriNaDvE6cME99KAmceg1zVn54wuN8PuqUTZAAi1NtrdMNsIjCtK2MdrmvSAjguIJ7kP3shj1IqSbOPjihiUUCxCgT7A7sihxXfEVR7VtSVdJ/HYPdaUBwv90g1owbX2eXk1dLlHLvlFa6Xij3O4IUcgc3IuzaXTliq6cD17gQwOxVfmcgoN0GaPkxkXJgPukIe+R0PB"
+    },
+    "function_call": {
+     "arguments": "{\"os_version_below\": \"15\", \"os_name\": \"macOS\"}",
+     "name": "find_devices"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00a-a667-7196-b698-43e25710f3dc-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "os_name": "macOS",
+      "os_version_below": "15"
+     },
+     "id": "call_3400553564075797999",
+     "name": "find_devices",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 3011,
+    "output_token_details": {
+     "reasoning": 138
+    },
+    "output_tokens": 168,
+    "total_tokens": 3179
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

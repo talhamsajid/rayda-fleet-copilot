@@ -1,0 +1,60 @@
+{
+ "key": "4c310542edb9f7dffcd8736c88e008f7",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-05-21T09:43:00Z\", \"device_id\": \"DARFCP0BQM2G\", \"fields\": {\"employee_id\": \"emp-initech-1000\", \"hostname\": \"initech-macbook-6\", \"installed\": \"TeamViewer\"}, \"id\": \"ev:snap:DARFCP0BQM2G:2026-05-21\"}, {\"collected_at\": \"2026-06-12T10:31:00Z\", \"device_id\": \"DARFCP0BQM2G\", \"fields\": {\"approved\": false, \"employee_id\": \"emp-initech-1000\", \"first_seen\": \"2026-05-21\", \"hostname\": \"initech-macbook-6\", \"installed\": \"TeamViewer\", \"model\": \"MacBook Pro\", \"software\": \"TeamViewer\", \"version\": \"15.5\"}, \"id\": \"ev:snap:DARFCP0BQM2G:2026-06-12\"}], \"finding\": 1, \"statement\": \"initech-macbook-6 (MacBook Pro) has unapproved software TeamViewer 15.5 installed, first detected on 21 May.\"}, {\"evidence\": [{\"collected_at\": \"2026-05-29T10:52:00Z\", \"device_id\": \"I3JLKILKQTAC\", \"fields\": {\"employee_id\": \"emp-initech-1001\", \"hostname\": \"initech-mac-3\", \"installed\": \"uTorrent\"}, \"id\": \"ev:snap:I3JLKILKQTAC:2026-05-29\"}, {\"collected_at\": \"2026-06-12T10:57:00Z\", \"device_id\": \"I3JLKILKQTAC\", \"fields\": {\"approved\": false, \"employee_id\": \"emp-initech-1001\", \"first_seen\": \"2026-05-29\", \"hostname\": \"initech-mac-3\", \"installed\": \"uTorrent\", \"model\": \"Mac mini\", \"software\": \"uTorrent\", \"version\": \"3.6\"}, \"id\": \"ev:snap:I3JLKILKQTAC:2026-06-12\"}], \"finding\": 2, \"statement\": \"initech-mac-3 (Mac mini) has unapproved software uTorrent 3.6 installed, first detected on 29 May.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-02T10:45:00Z\", \"device_id\": \"W2656QDAE2ZJ\", \"fields\": {\"employee_id\": \"emp-initech-1004\", \"hostname\": \"initech-dell-1\", \"installed\": \"uTorrent\"}, \"id\": \"ev:snap:W2656QDAE2ZJ:2026-06-02\"}, {\"collected_at\": \"2026-06-12T09:48:00Z\", \"device_id\": \"W2656QDAE2ZJ\", \"fields\": {\"approved\": false, \"employee_id\": \"emp-initech-1004\", \"first_seen\": \"2026-06-02\", \"hostname\": \"initech-dell-1\", \"installed\": \"uTorrent\", \"model\": \"Dell XPS 15\", \"software\": \"uTorrent\", \"version\": \"3.6\"}, \"id\": \"ev:snap:W2656QDAE2ZJ:2026-06-12\"}], \"finding\": 3, \"statement\": \"initech-dell-1 (Dell XPS 15) has unapproved software uTorrent 3.6 installed, first detected on 2 June.\"}], \"summary\": \"Yes, three devices in the fleet have unapproved software installed. Specifically, initech-macbook-6 (MacBook Pro) has TeamViewer installed, while initech-mac-3 (Mac mini) and initech-dell-1 (Dell XPS 15) have uTorrent installed.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f3": {
+    "instructions": "Is every factual claim in the `statement` of finding 3 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.9027865352769415,
+    "noul": 0.9027865352769415,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.8752197554025496,
+    "noul": 0.8752197554025496,
+    "type": "noul"
+   },
+   "f3": {
+    "confidence": 0.9443566143668949,
+    "noul": 0.9443566143668949,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.9534313098400331,
+    "noul": 0.9534313098400331,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 1468
+    }
+   ],
+   "total_input_tokens": 1468,
+   "total_output_tokens": 0,
+   "total_tokens": 1468
+  }
+ }
+}

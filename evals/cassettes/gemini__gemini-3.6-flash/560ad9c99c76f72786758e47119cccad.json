@@ -1,0 +1,64 @@
+{
+ "key": "560ad9c99c76f72786758e47119cccad",
+ "latency_s": 2.02,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_2988394145807453746": "Es4FCssFAWkUfRMbYgEkj12Z/oMprK2PQe9N/vlkweDwnYrJDdOTbG5dVoSsr0LYYWO5TiyvlQQMz/DB4zMW87wjqCwRa4NeprEY2KG13199h0WT8tB71+sR1TQym7bIq6ik7UDj2mNpWWrlRC4QAlVrfwkAbtqgWIy9Uo3Yxgo63MSW9tdT7nL9YaCpOnArU9xkNhY6/6yP1UlY+TWIQjId0x9VEx9WiOvoaDZ4X045kfa1iSi1c9PgQR2lErfH9X0LpxgEQ3vyAVBXm73mug6GIsBGsLQtFQqz2Eqf7WPn0FDrOYSAkjpOvVu/47qSWliU45TVJRTw+sJORHClE0kATYJklQJpqt55bM6kX/pEDt2EM/c4vu3kJyTSr7laU0QSEpxRGK1HweGQ6YbO1bhmuppp6JGqQzAxvdILHvkCaQbJBUls1uYdPNJKBLry1oAAnVOfNumWF2999XIEDVE+/vDX4bRNKsIiYbmUOGNpD9im8SByw95436Sx/HNDHIa3ybz8o/g1mEZ/zZLfxKGhiajQ7p1MYIn2y5lutBU2Mh5zrEQ0t4XTRMvvi1vdJLgHGo+rl7J6/hyQ4NGgjOJO2S6ryLZzA7ub+lXADIyB4+LJcPj5TeZ9wG+mXQcFxD0xTJ4ILnroTizhxZ1TB8GJsj8EqKGOF+CojewfbHUpkV6qC2j+PZJOV+Rrj7clCMGM8R14XwmZgxuVIvUU6D2O/p27BMiZ32QpBKb4NEm0CqoiYpVdVGv+Rec+l6xtTbdTuteS3ZNeVNQc3EHTA5tnCoaP/t92ckzBmgo32Y9hJZ19LaCuf9+zzvFZLRpPd8F3PwzzezN1xqgP81tzF/pbBjCJWcBG/0G/KrRMFrEIucgQ6XD+vnXTwbWuPTOyJZt0Kp9IymAtTxZh5SjYcWUip7fRgdpwGcfdETJUOFFFx1H6LeWmybgmlW1z1XF91w=="
+    },
+    "function_call": {
+     "arguments": "{\"intent\": \"action\", \"tools\": [\"load_skill\", \"get_device\", \"detect_insights\", \"create_upgrade_order\", \"submit_answer\"], \"steps\": [\"Load hardware-remediation skill\", \"Check device hardware status and RAM constraint evidence\", \"Propose RAM upgrade order to 32 GB\", \"Submit final answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f011-faa8-7431-98c1-502391700a73-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "action",
+      "steps": [
+       "Load hardware-remediation skill",
+       "Check device hardware status and RAM constraint evidence",
+       "Propose RAM upgrade order to 32 GB",
+       "Submit final answer"
+      ],
+      "tools": [
+       "load_skill",
+       "get_device",
+       "detect_insights",
+       "create_upgrade_order",
+       "submit_answer"
+      ]
+     },
+     "id": "call_2988394145807453746",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2818,
+    "output_token_details": {
+     "reasoning": 169
+    },
+    "output_tokens": 260,
+    "total_tokens": 3078
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

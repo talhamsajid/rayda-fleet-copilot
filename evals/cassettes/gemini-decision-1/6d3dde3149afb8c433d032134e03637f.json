@@ -1,0 +1,78 @@
+{
+ "key": "6d3dde3149afb8c433d032134e03637f",
+ "request": {
+  "input": "{\"caveats\": [], \"findings\": [{\"evidence\": [{\"collected_at\": \"2026-05-22T09:41:00Z\", \"device_id\": \"1LYSSFD074BB\", \"fields\": {\"employee_id\": \"emp-acme-1001\", \"hostname\": \"acme-macbook-2\", \"screen_lock\": \"fail\"}, \"id\": \"ev:snap:1LYSSFD074BB:2026-05-22\"}, {\"collected_at\": \"2026-06-12T09:47:00Z\", \"device_id\": \"1LYSSFD074BB\", \"fields\": {\"check_id\": \"screen_lock\", \"consecutive_failures\": 22, \"disk_free_pct\": 51.0, \"employee_id\": \"emp-acme-1001\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-05-22\", \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-2\", \"last_pass\": \"2026-05-21\", \"mem_used_pct\": 55.9, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"screen_lock\": \"fail\", \"severity\": \"medium\"}, \"id\": \"ev:snap:1LYSSFD074BB:2026-06-12\"}], \"finding\": 1, \"statement\": \"Proposed ticket P-1 for acme-macbook-2 (MacBook Pro), which has been failing screen lock since 22 May.\"}, {\"evidence\": [{\"collected_at\": \"2026-05-30T08:38:00Z\", \"device_id\": \"8NM23J95R5I6\", \"fields\": {\"employee_id\": \"emp-acme-1005\", \"hostname\": \"acme-thinkpad-8\", \"screen_lock\": \"fail\"}, \"id\": \"ev:snap:8NM23J95R5I6:2026-05-30\"}, {\"collected_at\": \"2026-06-12T09:02:00Z\", \"device_id\": \"8NM23J95R5I6\", \"fields\": {\"check_id\": \"screen_lock\", \"consecutive_failures\": 14, \"disk_free_pct\": 2.6, \"employee_id\": \"emp-acme-1005\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-05-30\", \"form_factor\": \"laptop\", \"hostname\": \"acme-thinkpad-8\", \"last_pass\": \"2026-05-29\", \"mem_used_pct\": 68.8, \"model\": \"ThinkPad X1 Carbon\", \"os\": \"Windows 10 22H2\", \"screen_lock\": \"fail\", \"severity\": \"medium\"}, \"id\": \"ev:snap:8NM23J95R5I6:2026-06-12\"}], \"finding\": 2, \"statement\": \"Proposed ticket P-2 for acme-thinkpad-8 (ThinkPad X1 Carbon), which has been failing screen lock since 30 May.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-01T10:14:00Z\", \"device_id\": \"DLT35MHGTH2D\", \"fields\": {\"employee_id\": \"emp-acme-1003\", \"hostname\": \"acme-mac-5\", \"screen_lock\": \"fail\"}, \"id\": \"ev:snap:DLT35MHGTH2D:2026-06-01\"}, {\"collected_at\": \"2026-06-12T09:36:00Z\", \"device_id\": \"DLT35MHGTH2D\", \"fields\": {\"check_id\": \"screen_lock\", \"consecutive_failures\": 12, \"disk_free_pct\": 50.9, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"screen_lock\": \"medium\"}, \"failing_since\": \"2026-06-01\", \"form_factor\": \"desktop\", \"hostname\": \"acme-mac-5\", \"last_pass\": \"2026-05-31\", \"mem_used_pct\": 39.1, \"model\": \"Mac mini\", \"os\": \"macOS 15.4\", \"screen_lock\": \"fail\", \"severity\": \"medium\"}, \"id\": \"ev:snap:DLT35MHGTH2D:2026-06-12\"}], \"finding\": 3, \"statement\": \"Proposed ticket P-3 for acme-mac-5 (Mac mini), which has been failing screen lock since 1 June.\"}, {\"evidence\": [{\"collected_at\": \"2026-06-01T10:20:00Z\", \"device_id\": \"DSYPSES7SKBB\", \"fields\": {\"employee_id\": \"emp-acme-1002\", \"hostname\": \"acme-macbook-3\", \"screen_lock\": \"fail\"}, \"id\": \"ev:snap:DSYPSES7SKBB:2026-06-01\"}, {\"collected_at\": \"2026-06-12T10:57:00Z\", \"device_id\": \"DSYPSES7SKBB\", \"fields\": {\"check_id\": \"screen_lock\", \"consecutive_failures\": 12, \"disk_free_pct\": 26.8, \"employee_id\": \"emp-acme-1002\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-06-01\", \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-3\", \"last_pass\": \"2026-05-31\", \"mem_used_pct\": 37.3, \"model\": \"MacBook Pro\", \"os\": \"macOS 15.3\", \"screen_lock\": \"fail\", \"severity\": \"medium\"}, \"id\": \"ev:snap:DSYPSES7SKBB:2026-06-12\"}], \"finding\": 4, \"statement\": \"Proposed ticket P-4 for acme-macbook-3 (MacBook Pro), which has been failing screen lock since 1 June.\"}, {\"evidence\": [{\"collected_at\": \"2026-05-28T09:32:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"employee_id\": \"emp-acme-1003\", \"hostname\": \"acme-macbook-4\", \"screen_lock\": \"fail\"}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-05-28\"}, {\"collected_at\": \"2026-06-12T08:39:00Z\", \"device_id\": \"MT7PJB7N5LRE\", \"fields\": {\"check_id\": \"screen_lock\", \"consecutive_failures\": 16, \"disk_free_pct\": 2.0, \"employee_id\": \"emp-acme-1003\", \"failing_checks\": {\"os_up_to_date\": \"medium\", \"screen_lock\": \"medium\"}, \"failing_since\": \"2026-05-28\", \"form_factor\": \"laptop\", \"hostname\": \"acme-macbook-4\", \"last_pass\": \"2026-05-27\", \"mem_used_pct\": 47.6, \"model\": \"MacBook Pro\", \"os\": \"macOS 14.5\", \"screen_lock\": \"fail\", \"severity\": \"medium\"}, \"id\": \"ev:snap:MT7PJB7N5LRE:2026-06-12\"}], \"finding\": 5, \"statement\": \"Proposed ticket P-5 for acme-macbook-4 (MacBook Pro), which has been failing screen lock since 28 May.\"}], \"proposals\": [{\"action\": \"open_remediation_ticket\", \"id\": \"P-1\", \"justification\": \"screen_lock (medium) failing on 2026-06-12\", \"status\": \"queued for administrator approval\", \"target\": \"1LYSSFD074BB\"}, {\"action\": \"open_remediation_ticket\", \"id\": \"P-2\", \"justification\": \"screen_lock (medium) failing on 2026-06-12\", \"status\": \"queued for administrator approval\", \"target\": \"8NM23J95R5I6\"}, {\"action\": \"open_remediation_ticket\", \"id\": \"P-3\", \"justification\": \"screen_lock (medium) failing on 2026-06-12\", \"status\": \"queued for administrator approval\", \"target\": \"DLT35MHGTH2D\"}, {\"action\": \"open_remediation_ticket\", \"id\": \"P-4\", \"justification\": \"screen_lock (medium) failing on 2026-06-12\", \"status\": \"queued for administrator approval\", \"target\": \"DSYPSES7SKBB\"}, {\"action\": \"open_remediation_ticket\", \"id\": \"P-5\", \"justification\": \"screen_lock (medium) failing on 2026-06-12\", \"status\": \"queued for administrator approval\", \"target\": \"MT7PJB7N5LRE\"}], \"summary\": \"Proposed remediation tickets P-1 through P-5 for all 5 devices currently failing the screen lock check. Several devices began failing between 22 May and 1 June, suggesting a central policy change may be the cause.\"}",
+  "model": "gemini-decision-1",
+  "questions": {
+   "f1": {
+    "instructions": "Is every factual claim in the `statement` of finding 1 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f2": {
+    "instructions": "Is every factual claim in the `statement` of finding 2 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f3": {
+    "instructions": "Is every factual claim in the `statement` of finding 3 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f4": {
+    "instructions": "Is every factual claim in the `statement` of finding 4 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "f5": {
+    "instructions": "Is every factual claim in the `statement` of finding 5 supported by the `evidence` listed under that same finding? Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   },
+   "summary": {
+    "instructions": "Is every factual claim in `summary` and in `caveats` supported by the evidence of the findings? Statements about what the telemetry does not cover, or about the assistant's own limits, count as supported. Statements about the listed `proposals` count as supported. Numbers, dates, counts, device models, owners and statuses must match the evidence. Rounding and paraphrase are fine. Claims that need information absent from the evidence count as unsupported.",
+    "type": "noul"
+   }
+  }
+ },
+ "response": {
+  "answers": {
+   "f1": {
+    "confidence": 0.6873115790621992,
+    "noul": 0.6873115790621992,
+    "type": "noul"
+   },
+   "f2": {
+    "confidence": 0.9368781542527398,
+    "noul": 0.9368781542527398,
+    "type": "noul"
+   },
+   "f3": {
+    "confidence": 0.888907282014468,
+    "noul": 0.888907282014468,
+    "type": "noul"
+   },
+   "f4": {
+    "confidence": 0.9168983967309512,
+    "noul": 0.9168983967309512,
+    "type": "noul"
+   },
+   "f5": {
+    "confidence": 0.8595719167713297,
+    "noul": 0.8595719167713297,
+    "type": "noul"
+   },
+   "summary": {
+    "confidence": 0.8380074458706728,
+    "noul": 0.8380074458706728,
+    "type": "noul"
+   }
+  },
+  "usage": {
+   "input_tokens_by_modality": [
+    {
+     "modality": "text",
+     "tokens": 3089
+    }
+   ],
+   "total_input_tokens": 3089,
+   "total_output_tokens": 0,
+   "total_tokens": 3089
+  }
+ }
+}

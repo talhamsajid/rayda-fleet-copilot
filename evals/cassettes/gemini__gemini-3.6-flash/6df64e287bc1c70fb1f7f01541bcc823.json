@@ -1,0 +1,51 @@
+{
+ "key": "6df64e287bc1c70fb1f7f01541bcc823",
+ "latency_s": 9.94,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_5822955832876087066": "EqMJCqAJAWkUfRN71/FEQi+qZ0IUBl2dC3l3TgOZDV7VZAv/DGTHwY9ZnhtadNNJebgO7Q8L92ao2AL5MRs6WuIZwOkQ+l8Qt0SbZK/SNGFGOBWd0SkxS2K6IXe7/jtEqnRhUABy1hglIj2D2TYRqNaxB1wR7tZfkotvA+qSVqG+tNzU3FpOilcfwa5LFRgzEgJbpQNQ6Ogt87cj6ps5hRb5eGhde62mcogCMBrA9wQB9cuIF+8wN7biTnpbtmMhsM7ELjqBL0WWChxgU4lqKcW+KEym2G7UbjGZS90ITCmsX8Hr7Kix1OgLzKWGX00XLNSKZhPj6o+jcRBcEcaE2RZCPZGVaC5TUXfcll49CQX8ecAbzGLRwWr7Uo8tWz+ivFvJ2VXjOJ4k6K3qCnWwRCPqHCvOwqDPaqB/aXYfw6ZJLqRtHWFZUsa0ZKpavhIxy6Xdrv4VeqmGt71sjxJ18uTxaGcxlWjZPFmn2XkrViVdNByNGHde7mA3Cz99G4YLO/xdfJ+CeodBg+J21mQnSd2zC9uulBOFdJdR5si+SxxoqYM7l2tOH5/4H0VK40bp6RxlJkDCMBGySTr6HvM7kG7GRNNOAMZDl6RpWALtnw5Fw9rpOcHR7SnaXYbHsbp6MSlSLDEsYtuVvjc/mBPNf4k6wW1w0GsMoTuSM3INQU+ZLdiwKKkrGIva8DGdDIrVyEES0sdGjehnxck+OcpJh1qERt21Y4zCQISQ7u1PPcmw6HOnnCktOgpHOwvSZZ0P7WZz19w4FzuJkN0SG6YeaA8E2N+PObuVYugG6bcpoLS7MIBEKblKfoc2jtWPH53r0x5FbRylgs1/mJhbFTRSUXFHvkfMy555sKONlwwCGjYKK2mm4u/BMPdD6utNj5RePAEVuXO8IoAhsRe5X81hZDixsVB87QmRyC++8dKV6Pbq2XyOcGBYJ/YBEhB50mBMvBqlSdlNW0WaPyYaj8+CTWfJj9Q65GZEFS9sJrOo5US5DmFZl/W6Dl+mmThJniJnqkTe+wR75AxZHod/tWLzGDilRjyK2S9e7G2F4myjfJUbItQX5zpCwgR6NYNTCJ/KHfFj1IJbw9DkmG3gfgyMLDejw0QSvK6ScYsIvHqqk27OEeYchAZULjjHNmxdaBg+2bEBAvUsCW8LS2s9Vj68+rX6gJ6xlSlyenYQPbftabDxiAUYVK8flj8Pr4vqRatUmLuAW9JqBHeuQSIRwI9007r6sikmV1kDzcZgbGAzcnG+uIKTgvtEo/M595YCC6VIzlEiiRNb2UH9bBip8LySADi5RzRMskk97Ccd8CEARM1f8xKf36cplUpDjqZx5V1t3a/HORRVlupIsJen+jhKuV7vdVZmbKt1d+54Yx87YNXUXYRJgMrIU/Nt8XxsQoMCg4xoEtJFDAwo+4/w+JpuPNT+jJAqI5tNeBsquf76v6BBaFyfSXR8yI60G0GHYHtMliG9lmRuV473hdlnGKH7fWvXUU3QFZIVwNg02/cPyjJPGyC5snEh3iYaLru3IBrZd4ZIBLbO0sAOfVXKOBYRosmb9V2gcutuA6TC0R6rCKs3VlgT4AA="
+    },
+    "function_call": {
+     "arguments": "{\"device_id\": \"Q3VUITEGQ400\"}",
+     "name": "get_device"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f01a-4529-7527-aa29-ea38fff8004b-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "device_id": "Q3VUITEGQ400"
+     },
+     "id": "call_5822955832876087066",
+     "name": "get_device",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 14384
+    },
+    "input_tokens": 17831,
+    "output_token_details": {
+     "reasoning": 400
+    },
+    "output_tokens": 425,
+    "total_tokens": 18256
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

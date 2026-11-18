@@ -1,0 +1,73 @@
+{
+ "key": "305136c08fb59df8e544597bb6c8089f",
+ "latency_s": 13.32,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_9456628222708516784": "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"
+    },
+    "function_call": {
+     "arguments": "{\"caveats\": [], \"findings\": [{\"statement\": \"acme-macbook-6 (MacBook Pro) has healthy hardware with 47% disk free (about 243 GB), 55% memory usage, and a normal battery condition at 212 cycles.\", \"evidence_ids\": [\"ev:snap:XSU9UUDGU6AC:2026-06-12\"], \"device_ids\": [\"XSU9UUDGU6AC\"]}, {\"device_ids\": [\"XSU9UUDGU6AC\"], \"statement\": \"acme-macbook-6 (MacBook Pro) is running macOS 14.5 and is failing OS updates.\", \"evidence_ids\": [\"ev:snap:XSU9UUDGU6AC:2026-06-12\"]}], \"summary\": \"acme-macbook-6 (MacBook Pro) was not flagged for replacement because telemetry shows healthy hardware with no performance or component issues.\", \"status\": \"answered\"}",
+     "name": "submit_answer"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f013-3b46-748b-ae20-6a15faf1fdbb-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "caveats": [],
+      "findings": [
+       {
+        "device_ids": [
+         "XSU9UUDGU6AC"
+        ],
+        "evidence_ids": [
+         "ev:snap:XSU9UUDGU6AC:2026-06-12"
+        ],
+        "statement": "acme-macbook-6 (MacBook Pro) has healthy hardware with 47% disk free (about 243 GB), 55% memory usage, and a normal battery condition at 212 cycles."
+       },
+       {
+        "device_ids": [
+         "XSU9UUDGU6AC"
+        ],
+        "evidence_ids": [
+         "ev:snap:XSU9UUDGU6AC:2026-06-12"
+        ],
+        "statement": "acme-macbook-6 (MacBook Pro) is running macOS 14.5 and is failing OS updates."
+       }
+      ],
+      "status": "answered",
+      "summary": "acme-macbook-6 (MacBook Pro) was not flagged for replacement because telemetry shows healthy hardware with no performance or component issues."
+     },
+     "id": "call_9456628222708516784",
+     "name": "submit_answer",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 9356,
+    "output_token_details": {
+     "reasoning": 1886
+    },
+    "output_tokens": 2118,
+    "total_tokens": 11474
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}

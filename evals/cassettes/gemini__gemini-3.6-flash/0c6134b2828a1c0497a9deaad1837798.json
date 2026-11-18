@@ -1,0 +1,60 @@
+{
+ "key": "0c6134b2828a1c0497a9deaad1837798",
+ "latency_s": 2.09,
+ "message": {
+  "data": {
+   "additional_kwargs": {
+    "__gemini_function_call_thought_signatures__": {
+     "call_11087691876003055493": "EuAFCt0FAWkUfRNcQyFyuWDohMrmiz4l3rGfIg07ys95dqRXHQI7NcPZG+FKgDjhJQCVlR8HjuOAsA6oUQheiakHTbrLmzPjQ10VoJ1fh0AMKeAgCZ00aMJRZ71uvgFxHPSBXqc9Ipsca7JJPmPdSCYQax5TwvhWS8uEZlvBJYzJjiwAz1v4FwMRPNfchPGfZ4wthlrE4Rm0QHBKlkAW5ntoHz+kB5uuqUnzLngfUqM3PmCYEc4MYNgiEaNj514NEYDIbUCFP5+jl1QEUkqKf6DHSoGJISbjrSgHsatyfCp/06AsQZqp16I5uhCM47o2k2hlCJTHEQQ+d9MR3acJxEhxkKkqJgxMvhrFfxW15Rwhz94p1PGbcFRJ/n40INH57wchgdBsL8DDzfclnLji8kXk4ckJBsoWKqH6NGUo+GWbNU9Rmsw6k2eWEF3RaAoNMygthDHl8gdgI9rg+rqM3v8VSPNZGRKDVcCk/xo398x+6oqs1BzUTC6PbikPaN+YQuS4BPCGRrnJTRFuhcsxO8HCpNDQ9/5SZxBYi4sXKdnYgpB9LdVmjXlt7knpnqE2gSQRbKmsqwOWMRTSxmNSCZ/wYdhaiotIVt+X7AZaZJB2wzuTutElrpZe0kE3G0kMguMvjR8dc3MTDKkGAxFJm1s8ftL/hRNlR4JA4mLjifqS0anaHE6xh9hbjd6BAkWiS11Z737rS7CkLX4z0ajUR187nEk9MciMu8ahk8fkbXCjEwWI9kbbtjFbrMQj0elfOGwHfW9VKIjsdHQsVIWOJUl6pHbUBuli++CmwUZUkenRt03eo8Diki/7acbK08/AtH5+Bvi5fhumuhU6N+WoawoqCvEKVd1kJwwjqUY5z51WlZ2DaUegFGXUCSwDHS34Eyvc7J4hP1+V7D7I7a3xpIQj1wpt7JPouMgjZd0Tk1sI6OiRbW9+nufYIqIIooyIS2z7aiBMClfHO+KBCqGnxqesRA=="
+    },
+    "function_call": {
+     "arguments": "{\"steps\": [\"Check for devices failing the disk_encryption check using compliance_summary or find_devices\", \"Submit answer with details of unencrypted disks and evidence IDs\"], \"intent\": \"question\", \"tools\": [\"compliance_summary\", \"find_devices\", \"submit_answer\"]}",
+     "name": "make_plan"
+    }
+   },
+   "content": [],
+   "id": "lc_run--01a1f00c-1d2a-77b0-ae78-bac68e94209e-0",
+   "invalid_tool_calls": [],
+   "name": null,
+   "response_metadata": {
+    "finish_reason": "STOP",
+    "model_name": "gemini-3.6-flash",
+    "model_provider": "google_genai",
+    "safety_ratings": []
+   },
+   "tool_calls": [
+    {
+     "args": {
+      "intent": "question",
+      "steps": [
+       "Check for devices failing the disk_encryption check using compliance_summary or find_devices",
+       "Submit answer with details of unencrypted disks and evidence IDs"
+      ],
+      "tools": [
+       "compliance_summary",
+       "find_devices",
+       "submit_answer"
+      ]
+     },
+     "id": "call_11087691876003055493",
+     "name": "make_plan",
+     "type": "tool_call"
+    }
+   ],
+   "type": "ai",
+   "usage_metadata": {
+    "input_token_details": {
+     "cache_read": 0
+    },
+    "input_tokens": 2806,
+    "output_token_details": {
+     "reasoning": 166
+    },
+    "output_tokens": 238,
+    "total_tokens": 3044
+   }
+  },
+  "type": "ai"
+ },
+ "model": "gemini:gemini-3.6-flash"
+}
