@@ -2,7 +2,7 @@
 
 [![ci](https://github.com/talhamsajid/rayda-fleet-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/talhamsajid/rayda-fleet-copilot/actions/workflows/ci.yml)
 
-An agent for IT administrators that answers fleet health and compliance questions from device telemetry, finds trends across the 30-day time series, and proposes operational actions. Nothing it proposes runs without a human approval. Built with LangGraph. It is built to run on Anthropic, OpenAI, Gemini, DeepSeek, Kimi, Qwen or any OpenAI-compatible endpoint (evaluated on Gemini; see Limitations), from a web UI, a CLI or LangGraph Studio.
+An agent for IT administrators that answers fleet health and compliance questions from device telemetry, finds trends across the 30-day time series, and proposes operational actions. Nothing it proposes runs without a human approval. Built with LangGraph. It is built to run on Anthropic, OpenAI, Gemini, DeepSeek, Kimi, Qwen or any OpenAI-compatible endpoint (evaluated on Gemini), from a web UI, a CLI or LangGraph Studio.
 
 You can check the results without an API key. The model responses of the eval run are committed, so the suite replays offline (CI runs the same three commands on every push):
 
@@ -377,11 +377,3 @@ How the copilot covers the usual agent-engineering checklist:
 - Seeded patterns: three Acme batteries degrading to "Service Recommended"; four RAM-pressured devices; six disks heading to full; screen-lock drift on ten devices starting at different dates; uTorrent, TeamViewer and CleanMyMac X appearing mid-window.
 - Gaps: missing battery blocks on four laptops and missing network on 16 snapshots. These are treated as missing data.
 - Form factor comes from the model name (the Mac mini is the only desktop), because battery presence is unreliable.
-
-## Limitations and next steps
-
-- In-memory data: 750 rows load in milliseconds. A real fleet needs a store with row-level tenant security (for example Postgres RLS), behind the same `TenantView` interface.
-- The audit and outbox files are local JSONL. Production needs a write-once store and real connectors for ticketing, procurement and notifications.
-- Without Decision 1, prose faithfulness is checked only through the structured findings and device IDs. With it, faithfulness is a calibrated yes/no per statement. That is a judgment, not a proof, and the 0.5 threshold should be tuned on labeled answers.
-- Only Gemini 3.6 Flash has been run end to end; the committed recordings are from that model. For the other six provider settings, an offline test checks that each client builds and accepts the tool schemas, but no live eval has run on them. `make eval-live MODEL=<provider:model>` is the check to run before relying on one.
-- The approval step is all-or-nothing per proposal. Editing a proposal (changing the spec, say) before approving it would be a small extension of the resume payload.
