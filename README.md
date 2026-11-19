@@ -7,7 +7,7 @@ An agent for IT administrators that answers fleet health and compliance question
 You can check the results without an API key. The model responses of the eval run are committed, so the suite replays offline (CI runs the same three commands on every push):
 
 ```bash
-make setup && make test && make eval   # 97 tests, then 39/39 agent eval cases, 0 tenant leaks, 0 actions without approval
+make setup && make test && make eval   # 106 tests, then 39/39 agent eval cases, 0 tenant leaks, 0 actions without approval
 ```
 
 ![Web UI: a follow-up answered in plain language, with citations, the conversation list and the evidence inspector](docs/web-ui.jpg)
